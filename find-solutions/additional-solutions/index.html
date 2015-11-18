@@ -56,6 +56,55 @@
 </section>
 
 
+<section class="section-menu">
+  <script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      $(".section-menu li").hover(function(e) {
+        $(e.currentTarget).addClass("selected").siblings().map(function (_, elem) {
+          $(elem).removeClass("selected");
+        });
+      });
+    });
+  </script>
+  <div class="container">
+    <ul class="navbar">
+      <li class="selected">
+        <a class="link" href="../../find-solutions/"> Find Solutions</a>
+        <p class="caption">Browse our curated database of over 600 innovative technologies and superior methods. Search by focus area (e.g. water, energy, agriculture). Learn how you can leverage cost-effective, technology-based solutions to tackle tough problems of poverty.</p>
+      </li>
+      <li>
+        <a class="link" href="../../add-solutions/">Add Solutions</a>
+        <p class="caption">Anyone is welcome to add solutions to our crowdsourced database. Whether you are an innovator end-user or simply a fan, submit a solution and help spread innovation around the world.</p>
+      </li>
+      <li>
+        <a class="link" href="../../take-action/">Take Action</a>
+        <p class="caption">Do stuff in places.</p>
+      </li>
+      <!-- <li>
+        <a class="link" href="../../prizes-and-funding/">Prizes & Funding</a>
+        <p class="caption">From prizes to long-term funding resources, explore our list of competitions, grants, fellowships and awards in support of innovation and innovators against poverty.</p>
+      </li> -->
+      <li>
+        <a class="link" href="../../project-accelerator/">Project Accelerator</a>
+        <p class="caption">Whether you need guidance in selecting and sourcing a solution that is right for you, or xpertise in structuring and promoting your development project, talk directly to a TEL expert to learn more about our service.</p>
+      </li>
+      <li>
+        <a class="link" href="../../stories-from-the-field/">Stories From the Field</a>
+        <p class="caption">Meet the solution providers, social entrepreneurs and communities from around the world that are working to implement development initiatives in last-mile communities. Read stories from the field on our blog.</p>
+      </li>
+      <li>
+        <a class="link" href="../../about-us/">About Us</a>
+        <p class="caption">We do things for people in places.</p>
+      </li>
+      <li>
+        <a class="link" href="../../join-us/">Join Us</a>
+        <p class="caption">Do things for people in places with us.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
 <div class="solution-list">
 
 <div class="solution-list-categories">
@@ -228,7 +277,7 @@
     <div class="column-center">
       <ul class="navbar navbar-footer">
         <li class="link"><a href="../../prizes-and-funding/">Prizes & Funding</a></li>
-        <li class="link"><a href="../../faq/">FAQs</a></li>
+        <li class="link"><a href="../../faqs/">FAQs</a></li>
         <li class="link"><a href="../../terms-of-service/">Terms of Service</a></li>
         <li class="link"><a href="../../privacy-policy/">Privacy Policy</a></li>
       </ul>

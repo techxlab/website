@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-html {
+html, input {
   font-family:              "lato";
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust:     100%;
@@ -813,6 +813,8 @@ button.hamburger {
 #search {
   margin:4px 0;
   border:none;
+  background-color:#bbb;
+  color:#fff;
 }
 
 #search-clear, #count {
@@ -822,6 +824,7 @@ button.hamburger {
   cursor:pointer;
   line-height:2;
   opacity:0.5;
+  color:#fff;
 }
 #search-clear:hover { opacity:1; }
 #search-clear:before { content:"\f05c"; }
@@ -833,7 +836,7 @@ button.hamburger {
 
 
 .solution-list-categories {
-  background-color: #777;
+  background-color: #537fb3;
   padding-left:30px;
 }
 
@@ -853,14 +856,10 @@ button.hamburger {
 
 .searchcategory:hover, .searchcategory.active {
   text-decoration:underline;
-  background-color:#fff;
-  color:#777;
 }
 
 .searchtag:hover, .searchtag.active {
   text-decoration:underline;
-  background-color:#fff;
-  color:#638FC3;
 }
 
 
@@ -903,6 +902,12 @@ button.hamburger {
   font-size:x-small;
   line-height:2;
   text-transform:uppercase;
+}
+
+/** add solutions page ********************************************************/
+
+.section-add-solutions {
+  background-color: #fff;
 }
 
 
@@ -1274,4 +1279,8 @@ button.hamburger {
   height:            20px;
   background-size:   cover;
   background-repeat: no-repeat;
+}
+
+.section-prizes-and-funding {
+  background-color: #fff;
 }
