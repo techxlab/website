@@ -105,7 +105,13 @@ ul {
   display:        flex;
   padding-top:    60px;
   padding-bottom: 60px;
+  background-color: #fff;
 }
+
+.section h2 {
+  margin-top:0;
+}
+
 
 .row {
   display:      flex;
