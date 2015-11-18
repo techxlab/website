@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="robots" content="noindex, nofollow">
+
+  <title>Add Solution</title>
+
+  <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/techxlab.css">
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <script>window.pubRef = {"href":"/add-solution/","relPath":".."};</script>
+<script src="../js/jquery-1.11.3.min.js" ></script>
+<script src="../js/lodash.min.js" ></script>
+<script src="../js/techxlab.js" ></script>
+</head>
+<body>
+  <div data-render-layout="main-layout"><header class="header">
+  <div class="container">
+
+    <!-- logo -->
+    <a href="../"><div class="logo logo-techxlab"></div></a>
+
+    <!-- hamburger -->
+    <button class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <!-- authentication menu -->
+    <ul class="navbar">
+      <li class="link"><a href="../sign-up/">Sign Up</a></li>
+      <li class="link"><a href="../sign-in/">Sign In</a></li>
+    </ul>
+
+  </div>
+</header>
+
+<div data-render-page="add-solution"><div class="subp-content">
+<div>
+<div class="container whole-intake-form">
+<div class="subp-full solution-form col-md-10 col-md-offset-1 ">
+  <h2>Tell us about your solution</h2>
+
+   <!-- BASIC INFO/CAT -->
+  <div id="accordion" style="font-size:1em">
+    <form action="" method="post">
+      <div> <!-- 1er onglet-->
+
+
+		<h3 class="col-md-6">Step 1 - Solution Basics</h3>
+        <div>
+          <table border="0" cellspacing="3" cellpadding="0" class="col-md-12">
+            <tr>
+              <td class="col-md-6"><label class="oblig primary" for="nameProduct">Name of the solution, invention, or method:<span class="required">*&nbsp;</span></label></td>
+              <td class="col-md-6"><input class="form-control"  type="text" name="nameProduct" id="nameProduct" value="" /></td>
+            </tr>
+          </table>
+
+
+          <strong class="col-md-6 form-sub-title">Categories:</strong>
+          <div class="col-md-12 solution-categories">
+                            <div class="solution-category">
+                  <div class="col-md-12">
+                                            <label class="col-md-6 oblig" for="id_techno0">Technology Area:<span class="required">*</span></label>
+
+                    <select name="id_techno0" id="id_techno0" class="col-md-6 select-list">
+                      <option value="">Select technology</option>
+			<option value="1">Water & Sanitation</option><option value="2">Agriculture & Tools</option><option value="3">Energy & Cooking</option><option value="5">Education & Connectivity</option><option value="6">Housing & Transport</option><option value="4">Health & Medical Care</option><option value="7">Additional Solutions</option>			</select>
+                  </div>
+                  <div class="solution-cat col-md-12">
+                    <label class="col-md-6" for="id_cat0">Sub-category:</label>
+
+
+                    <select class="col-md-6 disabled" name="id_cat0" id="id_cat0" disabled="disabled">
+                      <option value="" class="form-control">Select category</option>
+
+		    </select>
+                                      </div>
+                </div>
+                        <div class="col-md-12 text-right">
+              <div class="hint">(Only one is required)</div>
+            <a class="cat-add" href="#">+</a>Add another category            &nbsp;
+
+          </div>
+            <div class="solution-cat-template">
+              <div class="solution-category">
+                <div class="col-md-12">
+                  <label class="col-md-6" for="id_techno">Technology Area:</label>
+
+                  <select name="id_techno" id="id_techno" class="col-md-6 select-list">
+                    <option value="">Select technology</option>
+                    <option value="1">Water & Sanitation</option><option value="2">Agriculture</option><option value="3">Energy</option><option value="5">Education & IT</option><option value="6">Housing & Transport</option><option value="4">Health & Medical Care</option><option value="7">Additional Solutions</option>			<option value="1">Water & Sanitation</option><option value="2">Agriculture & Tools</option><option value="3">Energy & Cooking</option><option value="5">Education & Connectivity</option><option value="6">Housing & Transport</option><option value="4">Health & Medical Care</option><option value="7">Additional Solutions</option>		  </select>
+                </div>
+                <div class="col-md-12 solution-cat">
+                  <label class="col-md-6" for="id_cat">Sub-category:</label>
+
+                  <select name="id_cat" id="id_cat" disabled="disabled" class="col-md-6 select-list">
+                    <option value="">Select category</option>
+		    						<option class="tech-1" value="8">Water Purification</option>
+										<option class="tech-1" value="49">Water Testing</option>
+										<option class="tech-1" value="9">Collection & Storage</option>
+										<option class="tech-1" value="50">Transport</option>
+										<option class="tech-1" value="51">Sanitation</option>
+										<option class="tech-2" value="11">Irrigation</option>
+										<option class="tech-2" value="12">Cultivation & Tools</option>
+										<option class="tech-2" value="13">Seeds & Stock</option>
+										<option class="tech-2" value="14">Methods & Learning</option>
+										<option class="tech-3" value="31">Energy Generation</option>
+										<option class="tech-3" value="32">Energy Storage & Control</option>
+										<option class="tech-3" value="33">Cooling, Heating & Insulation</option>
+										<option class="tech-3" value="15">Safe & Sustainable Cooking</option>
+										<option class="tech-3" value="35">Lighting</option>
+										<option class="tech-5" value="37">Teaching Resources & Aids</option>
+										<option class="tech-5" value="38">Student Resources</option>
+										<option class="tech-5" value="47">Phone Applications</option>
+										<option class="tech-5" value="48">Desktop Applications</option>
+										<option class="tech-5" value="39">Communication Technologies</option>
+										<option class="tech-6" value="40">Housing & Shelter</option>
+										<option class="tech-6" value="41">Transportation</option>
+										<option class="tech-4" value="42">Medical & Surgical Care</option>
+										<option class="tech-4" value="43">Prevention & Vaccination</option>
+										<option class="tech-4" value="44">Nutrition</option>
+										<option class="tech-4" value="45">Women's Health</option>
+										<option class="tech-4" value="46">Maternal & Child Health</option>
+									  <option class="tech-7" value="30">Please Continue</option>
+						</select>
+                  &nbsp; &nbsp;
+                  <a class="cat-remove" href="#">X Remove</a>
+                </div>
+              </div>
+            </div>
+            <input class="form-control"  id="num-cats" type="hidden" name="num_categories" />
+          </div>
+
+
+
+
+
+
+
+<!-- CONTACT SECTION -->
+          <div class="col-md-12 intake-contact">
+           <div class="col-md-6 form-sub-title">Contact details of solution owner:              <div class="hint">
+            Enter first/last names, <em>or</em> organization, but you are not required to provide both.          </div>
+           </div>
+
+          <table border="0" cellspacing="3" cellpadding="0" class="col-md-12">
+            <tr>
+              <td class="col-xs-12 col-md-3"><label class="oblig" for="first_name_owner">First Name:<span class="required">*</span></label></td>
+              <td class="col-xs-12 col-md-3"><input class="form-control"  type="text" name="first_name_owner" id="first_name_owner" value="" /></td>
+              <td class="col-xs-12 col-md-3"><label class="oblig" for="last_name_owner">Last Name:<span class="required">*</span></label></td>
+              <td class="col-xs-12 col-md-3"><input class="form-control"  type="text" name="last_name_owner" id="last_name_owner" value="" /></td>
+            </tr>
+            <tr>
+              <td class="col-xs-12 col-md-3"><label class="oblig" for="company_name_owner">Organization Name:<span class="required">*</span></label></td>
+              <td class="col-xs-12 col-md-3"><input class="form-control"  type="text" name="company_name_owner" id="company_name_owner" value="" /></td>
+              <td class="col3">&nbsp;</td>
+              <td class="col4">&nbsp;</td>
+            </tr>
+
+            <tr>
+              <td class="col-xs-12 col-md-3"><label for="street_adress_owner">Street Address:</label></td>
+              <td class="col-xs-12 col-md-3"><input class="form-control"  type="text"  name="street_adress_owner" id="street_adress_owner" value="" /></td>
+              <td class="col-xs-12 col-md-3"><label class="oblig" for="city_owner">Town/City:<span class="required">*</span></label></td>
+              <td class="col-xs-12 col-md-3">
+			  <input class="form-control"  type="text"  name="city_owner" id="city_owner" value="" /></td>
+            </tr>
+            <tr>
+              <td class="col-xs-12 col-md-3"><label for="postal_code_owner">Postal Code:</label></td>
+              <td class="col-xs-12 col-md-3"><input class="form-control"  type="text" name="postal_code_owner" id="postal_code_owner" value="" /></td>
+              <td class="col-xs-12 col-md-3"><label class="oblig" for="country_owner">Country:<span class="required">*</span></label></td>
+              <td class="col-xs-12 col-md-3">
+			  <input class="form-control"  type="text" name="country_owner" id="country_owner" value="" /></td>
+            </tr>
+            <tr>
+              <td class="col-xs-12 col-md-3"><label for="phone_owner">Phone #:</label></td>
+              <td class="col-xs-12 col-md-3"><input class="form-control"  type="text"  name="phone_owner" id="phone_owner" value="" /></td>
+              <td class="col-xs-12 col-md-3">&nbsp;</td>
+              <td class="col-xs-12 col-md-3">&nbsp;</td>
+            </tr>
+            <tr>
+              <td class="col-xs-12 col-md-3"><label for="email_adress_owner">Email:</label></td>
+              <td class="col-xs-12 col-md-3"><input class="form-control"  type="text"  name="email_adress_owner" id="email_adress_owner" value="" /></td>
+              <td class="col-xs-12 col-md-3">&nbsp;</td>
+              <td class="col-xs-12 col-md-3">&nbsp;</td>
+            </tr>
+          </table>
+        </div> <!-- CLOSE CONTACT SECTION -->
+
+
+
+
+
+
+
+
+<!-- entire section, Contact details of manufacturer or supplier, removed from new solution intake form -ewp -->
+
+          <!-- <input class="btn btn-custom"  type="submit" name="step1" value="Save &amp; Continue" /> -->
+
+            <!-- <p>
+              <span class="name-or-org">**</span>
+              Either first/last names or organization name is required, but
+              you don't need to provide both.
+            </p> -->
+          </div>
+        </div>
+      </div>
+    </form>
+
+
+
+
+
+
+
+
+
+    <!-- MORE ABOUT THIS SOL -->
+
+    <form action="" method="post" enctype="multipart/form-data">
+      <div> <!-- 2e onglet -->
+
+
+
+        <h3 class="col-md-6">Step 2 - More About This Solution</h3>
+        <div>
+          <table border="0" cellspacing="3" cellpadding="0" class="col-md-12">
+            <tr>
+              <td class="col-md-6"><label class="oblig" for="howItWork">Solution purpose and how it works (up to 300 words):<span class="required">*</span></label></td>
+              <td class="col-md-6"><textarea class="form-control"  name="howItWork" id="howItWork" rows="4" ></textarea></td>
+            </tr>
+            <tr>
+              <td class="col-md-6"><label for="historyAndDev">Product history and development, including patent information if applicable (up to 250 words):</label></td>
+              <td class="col-md-6"><textarea class="form-control"  name="historyAndDev" id="historyAndDev" rows="4" ></textarea></td>
+            </tr>
+<!-- patent history no longer asked for -ewp -->
+            <tr>
+              <td class="col-md-6"><label for="dimension">Dimensions (approx):</label></td>
+              <td class="col-md-6"><input class="form-control"  type="text" name="dimension" id="dimension" value=""  /></td>
+            </tr>
+            <tr>
+              <td class="col-md-6"><label for="weight">Weight (approx):</label></td>
+              <td class="col-md-6"><input class="form-control"  type="text" name="weight" id="weight" value=""  /></td>
+            </tr>
+            <tr>
+              <td class="col-md-6"><label for="linkToManufacturer">Link (URL) to the manufacturer&#039;s website:</label></td>
+              <td class="col-md-6"><input class="form-control"  type="text" name="linkToManufacturer" id="linkToManufacturer" value="" /></td>
+            </tr>
+            <tr>
+              <td class="col-md-6"><label for="linkToProduct">Link to the solution webpage:</label></td>
+              <td class="col-md-6"><input class="form-control"  type="text" name="linkToProduct" id="linkToProduct" value=""  /></td>
+            </tr>
+            <tr>
+              <td class="col-md-6">
+                <label class="oblig">Solution Image:<span class="required">*</span></label>
+		<div class="form_desc">Photo or drawing. (gif, jpg, png, or tif format. Max size 5 MB.)</div>
+              </td>
+              <td class="col-md-6">
+
+
+                <input class="upload-btn"  type="file" name="image" id="image" class="multi" maxlength="1" />
+              </td>
+            </tr>
+<!-- video upload no longer asked for -ewp -->
+            <tr>
+              <td class="col-md-6"><label for="video_link">Link to external video, e.g. YouTube or Vimeo:</label></td>
+              <td class="col-md-6"><input class="form-control"  type="text" name="video_link" id="video_link" value="" /></td>
+            </tr>
+            <tr>
+              <td class="col-md-6"><label for="other_link">Link to published documents, such as articles, reviews, or testimonials:</label></td>
+              <td class="col-md-6"><input class="form-control"  type="text" name="other_link" id="other_link" value="" /></td>
+            </tr>
+            <tr>
+              <td class="col-md-6"><label>Documents for direct upload to TEL:</label>
+	      <div class="form_desc">Further documentation, such as instructions, photos, drawings, relevant articles, may be uploaded here. (PDF or Word files, please. Max size is 5 MB.)</div></td>
+              <td class="col-md-6">
+                                                <input class=""  type="file" name="other_file" id="other_file" class="multi" maxlength="1"/>
+              </td>
+            </tr>
+
+          </table>
+
+          <br/>
+
+
+
+
+
+
+
+          <!-- Acquiring the Sol -->
+
+	  <!-- <input class="form-control"  type="submit" name="step2" value="Save &amp; Continue" /> -->
+          <div class="clearfix"></div>
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <form action="" method="post">
+      <div>
+
+        <h3 class="col-md-6  ">Step 3 - Acquiring or Accessing the Solution</h3>
+
+        <div>
+          <table border="0" cellspacing="3" cellpadding="0" class="col-md-12">
+            <tr class="radios">
+              <td class="col-md-6"><label class="commlabel" for="commercial">Is solution publicly available? (Answer &#039;no&#039; if still only in prototype or trial stage.)</label></td>
+              <td class="radios-container ">
+                <input  class="col-xs-12 col-md-2" type="radio" name="commercial" id="commercialYes" value="yes" checked="checked" /><label class="col-md-10" for="commercialYes">Yes</label>
+                <input  class="col-xs-12 col-md-2" type="radio" name="commercial" id="commercialNo" value="no"  /><label class="col-md-10" for="commercialNo">No</label>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-md-6"><label for="priceRange">Solution price range, in USD. It is understood that these may be rough estimates and subject to exchange rate fluctuation. Do not include shipping costs or taxes.</label></td>
+              <td class="col-md-6">
+                <select id="priceRange" name="priceRange" class="select-list">
+                  <option value=""></option>
+				  <!--
+                  < ? php foreach (TELProducts::$PRICE_RANGES as $range) {
+                  ? >
+                      <option value="< ?= $range ? >" < ? php if ($range == $TELProducts->get_priceRange()) echo 'selected="selected"'; ? >>< ?= $range ? ></option>
+                  < ? php
+                  }
+                  ?>-->
+                    <option value="Free" >Free</option>
+                    <option value="1 to 20 USD" >1 to 20 USD</option>
+                    <option value="20 to 50 USD" >20 to 50 USD</option>
+                    <option value="50-100 USD" >50-100 USD</option>
+                    <option value="100-200 USD" >100-200 USD</option>
+                    <option value="Over 200 USD" >Over 200 USD</option>
+                    <option value="Contact supplier for quote" >Contact supplier for quote</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-md-6"><label class="oblig" for="countryavailable">Countries where available, or where it can be shipped:<span class="required">*</span></label></td>
+              <td class="col-md-6"><input class="form-control"  type="text" name="countryavailable" id="countryavailable" value="" /></td>
+            </tr>
+<!-- countries where spare parts available no longer requested -ewp -->
+<!-- can solution be ordered over the Internet no longer requested -ewp -->
+<!--        <tr> ewp - changed to yes/no - lookups of earlier solutions containing text will be treated as blank and default to 'yes'
+              <td class="col-md-6"><label for="offeredOrLicensed">Can solution be offered or licensed for local manufacture?</label></td>
+              <td class="col-md-6"><input class="form-control"  type="text" name="offeredOrLicensed" id="offeredOrLicensed" value="" /></td>
+            </tr>
+-->
+            <tr>
+              <td class="col-md-6"><label for="offeredOrLicensed">Can solution be offered or licensed for local manufacture? (Answer &#039;no&#039; if still only in prototype or trial stage.)</label></td>
+              <td class="radios col-xs-12 col-md-2">
+                <input class="col-xs-12 col-md-2"  type="radio" name="offeredOrlicenced" id="offeredOrlicensedYes" value="yes" checked="checked" /><label class="col-md-10" for="commercialYes">Yes</label>
+                <input class="col-xs-12 col-md-2"  type="radio" name="offeredOrlicenced" id="offeredOrlicensedNo" value="no"  /><label class="col-md-10" for="commercialNo">No</label>
+              </td>
+            </tr>
+          </table>
+
+
+<!-- supplier contact for sales inquiries no longer requested -ewp -->
+          </table>
+<!--           <input class="form-control"  type="submit" name="step3" value="Save &amp; Continue" /> -->
+
+        </div>
+      </div>
+    </form>
+
+
+<!-- SOL SUBMITTER -->
+
+    <form action="" method="post">
+      <div>
+
+        <h3 class="col-md-6  ">Step 4 - Solution Provider Information</h3>
+
+        <div>
+          <table border="0" cellspacing="3" cellpadding="0" class="col-md-12">
+            <tr>
+              <td class="col-xs-12 col-md-3"><label class="oblig" for="first_name_contact_details">First Name:<span class="required">*</span></label></td>
+              <td class="col-xs-12 col-md-3"><input class="form-control"  type="text"  name="first_name_contact_details" id="first_name_contact_details" value="Brennan" /></td>
+              <td class="col-xs-12 col-md-3"><label class="oblig" for="last_name_contact_details">Last Name:<span class="required">*</span></label></td>
+              <td class="col-xs-12 col-md-3"><input class="form-control"  type="text"  name="last_name_contact_details" id="last_name_contact_details" value="Lake" /></td>		<!--  -->
+            </tr>
+            <tr>
+              <td class="col-xs-12 col-md-3"><label for="company_name_contact_details">Company Name:</label></td>
+              <td class="col-xs-12 col-md-3"><input class="form-control"  type="text"  name="company_name_contact_details" id="company_name_contact_details" value="One World Language Consultants" /></td>
+              <td class="col-xs-12 col-md-3">&nbsp;</td>
+              <td class="col-xs-12 col-md-3">&nbsp;</td>
+            </tr>
+<!-- street, town/city, postal code removed -ewp -->
+            <tr>
+              <td class="col-xs-12 col-md-3"><label class="oblig" for="country_contact_details">Country:<span class="required">*</span></label></td>
+              <td class="col-xs-12 col-md-3"><input class="form-control"  type="text"  name="country_contact_details" id="country_contact_details" value="Argentina" /></td>
+            </tr>
+<!-- contact phone removed -ewp -->
+            <tr>
+              <td class="col-xs-12 col-md-3"><label class="oblig" for="email_adress_contact_details">Email:<span class="required">*</span></label></td>
+              <td class="col-xs-12 col-md-3"><input class="form-control"  type="text"  name="email_adress_contact_details" id="email_adress_contact_details" value="hbclake@gmail.com" /></td>
+              <td class="col-xs-12 col-md-3">&nbsp;</td>
+              <td class="col-xs-12 col-md-3">&nbsp;</td>
+            </tr>
+          </table>
+
+          <p class="submit-buttons text-center col-md-12">
+                        <input class="btn btn-green"  type="submit" name="step4" value="Save and submit" />
+
+            <input class="btn btn-custom"  type="submit" name="step4" value="Save to return later" />
+          </p>
+          <p>
+			<!-- ewp added following line 20121119 -->
+      <div class="last-bits text-center col-md-12">
+		    <div class="form-hints">
+			&nbsp;&nbsp;Any questions or problems using this form? Please <a href="">Contact us</a>.			  </div>		<!-- Any questions or problems using this form? Please <a href="/EN/contact.php">Contact</a> us -->
+            <div><strong>Thank you for contributing another important solution to TEL!</strong></div>
+        </div>
+          </p>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+</div>
+
+<footer class="footer">
+  <div class="container container-footer">
+
+    <!-- logos column -->
+    <div class="column-left">
+      <a href="../"><img src="../img/tel-logo-white.png" alt="Add Solution"></a>
+      <a href="http://greatnonprofits.org/org/technology-exchange-lab-inc" target="_blank"><img src="../img/top-rated.png" alt="Add Solution"></a>
+    </div>
+
+    <!-- menu column -->
+    <div class="column-center">
+      <ul class="navbar navbar-footer">
+        <li class="link"><a href="../prizes-and-funding/">Prizes & Funding</a></li>
+        <li class="link"><a href="../faq/">FAQs</a></li>
+        <li class="link"><a href="../terms-of-service/">Terms of Service</a></li>
+        <li class="link"><a href="../privacy-policy/">Privacy Policy</a></li>
+      </ul>
+      <p>
+        The Technology Exchange Lab, Inc. | Cambridge Innovation Center<br>
+        1 Broadway, 14th Floor | Cambridge, MA 02142, USA
+      </p>
+      <p>
+        TEL is a registered non-proﬁt, tax-exempt charity under section 501(c)(3) of the U.S. Internal Revenue Code. Donations are tax deductible to the extent allowed by U.S. law. TEL is a public resource with no commercial allegiance.
+      </p>
+    </div>
+
+    <!-- social -->
+    <div class="column-right">
+        <h3>Follow Us</h3>
+        <ul class="navbar">
+          <li class="link">
+            <a class="icon-social facebook-white" href="https://www.facebook.com/techxlab" target="_blank"></a>
+          </li>
+          <li class="link">
+            <a class="icon-social twitter-white" href="https://twitter.com/TechExLab" target="_blank"></a>
+            </li>
+          <li class="link">
+            <a class="icon-social linkedin-white" href="https://www.linkedin.com/company/technology-exchange-lab-inc-" target="_blank"></a>
+            </li>
+          <li class="link">
+            <a class="icon-social mail-white" href="mailto:contact@techxlab.org" target="_blank"></a>
+          </li>
+        </ul>
+        <h3>Contact Us</h3>
+        <a href="mailto:contact@techxlab.org">contact@techxlab.org</a>
+        <h3>Subscribe to Updates</h3>
+        <a class="button" href="http://eepurl.com/7GdP9" target="_blank">Sign Up ></a>
+    </div>
+
+  </div>
+</footer>
+</div>
+</body>
+</html>
