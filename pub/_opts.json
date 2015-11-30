@@ -6,7 +6,7 @@
   "no-sockets": true,
   "editor": true,
   "user": "hello",
-  "basedir": "/Users/hello/pub/website",
+  "basedir": "/Users/hello/pub/tel-website",
   "pkgJson": {
     "name": "techxlab-website",
     "version": "0.0.1",
@@ -38,11 +38,11 @@
   "pkgName": "techxlab-website",
   "sources": [
     {
-      "path": "/Users/hello/pub/website/cnt",
+      "name": "pages",
+      "path": "/Users/hello/pub/tel-website/cnt",
       "writable": true,
-      "name": "cnt",
       "type": "FILE",
-      "tmp": "/Users/hello/.tmp/cnt",
+      "tmp": "/Users/hello/.tmp/pages",
       "watch": {},
       "fragmentDelim": true,
       "files": [
@@ -121,8 +121,8 @@
       ]
     },
     {
-      "path": "/Users/hello/pub/website/src",
-      "name": "src",
+      "name": "templates",
+      "path": "/Users/hello/pub/tel-website/src",
       "type": "FILE",
       "watch": {},
       "files": [
@@ -245,10 +245,12 @@
       ]
     },
     {
-      "path": "/Users/hello/pub/solutions-database/src",
-      "name": "_src",
+      "name": "solutions",
+      "writable": true,
+      "path": "/src",
+      "repo": "jldec/tel-solutions",
       "type": "FILE",
-      "watch": {},
+      "tmp": "/Users/hello/.tmp/solutions",
       "fragmentDelim": true,
       "files": [
         {
@@ -2629,7 +2631,7 @@
       "path": "/Users/hello/pub/server/node_modules/pub-pkg-seo/src",
       "fragmentDelim": 1,
       "_pkg": "pub-pkg-seo",
-      "name": "__src",
+      "name": "src",
       "type": "FILE",
       "watch": false,
       "files": [
@@ -2651,7 +2653,7 @@
       "path": "/Users/hello/pub/server/node_modules/pub-pkg-editor/src",
       "route": "/pub",
       "_pkg": "pub-pkg-editor",
-      "name": "___src",
+      "name": "_src",
       "type": "FILE",
       "watch": false,
       "fragmentDelim": true,
@@ -2677,7 +2679,7 @@
   ],
   "staticPaths": [
     {
-      "path": "/Users/hello/pub/website/rsc",
+      "path": "/Users/hello/pub/tel-website/rsc",
       "watch": {},
       "route": "/",
       "depth": 5,
@@ -2688,7 +2690,7 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/hello/pub/website/rsc"
+        "root": "/Users/hello/pub/tel-website/rsc"
       }
     },
     {
@@ -2707,7 +2709,7 @@
       }
     },
     {
-      "path": "/Users/hello/pub/website/CNAME",
+      "path": "/Users/hello/pub/tel-website/CNAME",
       "watch": {},
       "route": "/",
       "depth": 5,
@@ -2718,7 +2720,7 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/hello/pub/website"
+        "root": "/Users/hello/pub/tel-website"
       }
     },
     {
@@ -2836,7 +2838,7 @@
   ],
   "outputs": [
     {
-      "path": "/Users/hello/pub/website/tgt",
+      "path": "/Users/hello/pub/tel-website/tgt",
       "relPaths": true,
       "omitRoutes": [
         "/ast"
@@ -2874,7 +2876,7 @@
       "_pkg": "pub-pkg-font-awesome"
     },
     {
-      "path": "/Users/hello/pub/website/pub-generator-plugin.js"
+      "path": "/Users/hello/pub/tel-website/pub-generator-plugin.js"
     },
     {
       "path": "pub-pager"
@@ -2882,7 +2884,7 @@
   ],
   "serverPlugins": [
     {
-      "path": "/Users/hello/pub/website/pub-server-plugin.js"
+      "path": "/Users/hello/pub/tel-website/pub-server-plugin.js"
     }
   ],
   "injectCss": [
@@ -3017,7 +3019,6 @@
   ],
   "appUrl": "https://techxlab.github.io/website",
   "noRobots": true,
-  "dbg": "pub:*",
   "throttleReload": "1s",
   "linkNewWindow": true,
   "formServer": "https://tel-staging.herokuapp.com/",
