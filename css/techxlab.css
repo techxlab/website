@@ -534,6 +534,7 @@ p, a, label {
 
 #banner.section-banner {
   position:            relative;
+  display:             block; /* needed for ff */
   border-bottom-width: 20px;
   border-bottom-style: solid;
   border-bottom-color: #638fc3;
@@ -621,15 +622,10 @@ p, a, label {
  */
 #banner-home.section-banner-home {
   position:            relative;
-  padding-top:         128%;
+  display:             block;
   border-bottom-width: 20px;
   border-bottom-style: solid;
   border-bottom-color: #7dc243;
-}
-@media (min-width: 575px) {
-  #banner-home.section-banner-home {
-    padding-top: 48%;
-  }
 }
 
 /**
@@ -643,6 +639,15 @@ p, a, label {
   bottom:           0;
   z-index:          -1;
   background-color: #000;
+}
+
+#banner-home .section-banner-wedge {
+  padding-top: 128%;
+}
+@media (min-width: 575px) {
+  #banner-home .section-banner-wedge {
+    padding-top: 48%;
+  }
 }
 
 /**
