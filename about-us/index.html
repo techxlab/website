@@ -7,11 +7,12 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="robots" content="noindex, nofollow">
 
-  <title>Scribble on the Whiteboards</title>
+  <title>About Us</title>
 
-  <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="https://techxlab.github.io/website/img/tel.png" type="image/png">
   <link rel="stylesheet" href="../css/font-awesome.css">
 <link rel="stylesheet" href="../css/techxlab.css">
+<link rel="stylesheet" href="../css/flexslider.css">
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -20,67 +21,83 @@
 <script src="../js/jquery-1.11.3.min.js" ></script>
 <script src="../js/lodash.min.js" ></script>
 <script src="../js/techxlab.js" ></script>
+<script src="../js/jquery.flexslider-min.js" ></script>
+<script src="../server/pub-ux.js" ></script>
 </head>
 <body>
-  <div data-render-layout="main-layout"><header class="header">
+  <div data-render-layout="main-layout"><header id="header" class="section section-header black-white">
   <div class="container">
-
-    <!-- logo -->
-    <a href="../"><div class="logo logo-techxlab"></div></a>
-
-    <!-- hamburger -->
-    <button class="hamburger">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </button>
-
-    <!-- authentication menu -->
-    <ul class="navbar">
-      <li class="link"><a href="../sign-up/">Sign Up</a></li>
-      <li class="link"><a href="../sign-in/">Sign In</a></li>
-    </ul>
-
+    <div class="row row-header">
+      <div class="column">
+        <a href="../"><div class="logo logo-techxlab"></div></a>
+      </div>
+      <div class="column column-header-right">
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="menu menu-header">
+          <li class="menu-item"><a href="../sign-up/">Sign Up</a></li>
+          <li class="menu-item"><a href="../sign-in/">Sign In</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </header>
 
-<div data-render-page="about-us"><section class="section-banner">
-  <img src="../img/moral.jpg" alt="Scribble on the Whiteboards">
-  <div class="container">
-    <div class="banner-box">
-      <h2>Scribble on the Whiteboards</h2>
-      <p>Each and every corporate bs has its beginning.</p>
+<section id="header-shim" class="section-header-shim">
+</section>
 
+<div data-render-page="about"><section id="banner" class="section-banner white-black">
+  <div class="section-banner-wedge">
+    <img src="../img/moral.jpg" alt="">
+  </div>
+  <div class="container container-collapse container-banner">
+    <div class="row row-banner">
+      <div class="column column-banner-feature column-banner-feature">
+        <h2></h2>
+        <h1 id="our-mission">Our Mission</h1>
+<p>A Quality Research significantly deepens the change management by thinking and acting beyond boundaries, while the white-collar workers cocreate an impactful realignment. Responsibility and shareholder value empower the business leaders. The resources address soft cycle issues.</p>
+
+      </div>
     </div>
   </div>
 </section>
 
-
-<section class="section-menu">
+<section id="menu" class="section">
   <script>
-    document.addEventListener("DOMContentLoaded", function(event) {
-      $(".section-menu li").hover(function(e) {
+  // var fadeBanner = function (e) {
+  //   console.log($(e.target).scrollTop() > 731)
+  //   if ($(e.target).scrollTop() % 2 === 0) {
+  //     e.data.$banner.fadeTo(0, 1 - $(e.target).scrollTop() / e.data.$banner.height());
+  //   }
+  // };
+  // $(document).on('scroll', {$banner: $('#banner-home img')}, fadeBanner);
+
+    $(function () {
+      $(".menu-menu li").hover(function(e) {
         $(e.currentTarget).addClass("selected").siblings().map(function (_, elem) {
           $(elem).removeClass("selected");
         });
       });
     });
   </script>
-  <div class="container">
-    <ul class="navbar">
-        <li  class="selected" >
-          <a class="link" href="../find-solutions/">Find Solutions</a>
-          <div class="caption"><div data-render-html="/#menu-one"><p>Browse our curated database of over 600 innovative technologies and superior methods. Search by focus area (e.g. water, energy, agriculture). Learn how you can leverage cost-effective, technology-based solutions to tackle tough problems of poverty.</p>
+  <div class="container container-menu">
+    <ul class="menu menu-menu">
+        <li class="menu-item  selected ">
+          <a class="menu-item-name" href="../solutions/">Find Solutions</a>
+          <div class="menu-item-caption"><div data-render-html="/#menu-one"><p>Browse our curated database of over 600 innovative technologies and superior methods. Search by focus area (e.g. water, energy, agriculture). Learn how you can leverage cost-effective, technology-based solutions to tackle tough problems of poverty.</p>
 </div></div>
         </li>
-        <li >
-          <a class="link" href="../find-solutions/">Add Solutions</a>
-          <div class="caption"><div data-render-html="/#menu-two"><p>Anyone is welcome to add solutions to our crowdsourced database. Whether you are an innovator end-user or simply a fan, submit a solution and help spread innovation around the world.</p>
+        <li class="menu-item ">
+          <a class="menu-item-name" href="../add-solutions/">Add Solutions</a>
+          <div class="menu-item-caption"><div data-render-html="/#menu-two"><p>Anyone is welcome to add solutions to our crowdsourced database. Whether you are an innovator end-user or simply a fan, submit a solution and help spread innovation around the world.</p>
 </div></div>
         </li>
-        <li >
-          <a class="link" href="../take-action/">Take Action</a>
-          <div class="caption"><div data-render-html="/#menu-three"><p>Do things in places for people.</p>
+        <li class="menu-item ">
+          <a class="menu-item-name" href="../take-action/">Take Action</a>
+          <div class="menu-item-caption"><div data-render-html="/#menu-three"><p>Do things in places for people.</p>
 <!-- ---- /#menu-four ----
 name: Prizes & Funding
 link: /prizes-and-funding/
@@ -88,210 +105,283 @@ link: /prizes-and-funding/
 From prizes to long-term funding resources, explore our list of competitions, grants, fellowships and awards in support of innovation and innovators against poverty. -->
 </div></div>
         </li>
-        <li >
-          <a class="link" href="../project-accelerator/">Project Accelerator</a>
-          <div class="caption"><div data-render-html="/#menu-five"><p>Whether you need guidance in selecting and sourcing a solution that is right for you, or xpertise in structuring and promoting your development project, talk directly to a TEL expert to learn more about our service.</p>
+        <li class="menu-item ">
+          <a class="menu-item-name" href="../project-accelerator/">Project Accelerator</a>
+          <div class="menu-item-caption"><div data-render-html="/#menu-five"><p>Whether you need guidance in selecting and sourcing a solution that is right for you, or xpertise in structuring and promoting your development project, talk directly to a TEL expert to learn more about our service.</p>
 </div></div>
         </li>
-        <li >
-          <a class="link" href="../stories-from-the-field/">Stories From the Field</a>
-          <div class="caption"><div data-render-html="/#menu-six"><p>Meet the solution providers, social entrepreneurs and communities from around the world that are working to implement development initiatives in last-mile communities. Read stories from the field on our blog.</p>
+        <li class="menu-item ">
+          <a class="menu-item-name" href="../stories-from-the-field/">Stories From the Field</a>
+          <div class="menu-item-caption"><div data-render-html="/#menu-six"><p>Meet the solution providers, social entrepreneurs and communities from around the world that are working to implement development initiatives in last-mile communities. Read stories from the field on our blog.</p>
 </div></div>
         </li>
-        <li >
-          <a class="link" href="../about-us/">About Us</a>
-          <div class="caption"><div data-render-html="/#menu-seven"><p>We do things for people in places at times.</p>
+        <li class="menu-item ">
+          <a class="menu-item-name" href="../about-us/">About Us</a>
+          <div class="menu-item-caption"><div data-render-html="/#menu-seven"><p>We do things for people in places at times.</p>
 </div></div>
         </li>
-        <li >
-          <a class="link" href="../join-us/">Join Us</a>
-          <div class="caption"><div data-render-html="/#menu-eight"><p>Do things for people in places with us.</p>
+        <li class="menu-item ">
+          <a class="menu-item-name" href="../join-us/">Join Us</a>
+          <div class="menu-item-caption"><div data-render-html="/#menu-eight"><p>Do things for people in places with us.</p>
 </div></div>
         </li>
     </ul>
   </div>
 </section>
 
-
-<div class="team">
-  <h1>The Tel Team</h1>
+<section id="persons" class="section section-persons">
   <div class="container">
-    <ul class="flex-container-row">
-      <li>
-        <img src="../img/karen-von-bismarck.jpeg">
-        <h3>Karen von Bismarck</h3>
-        <p>Founder, CEO</p>
-      </li>
-      <li>
-        <img src="../img/brennan-lake.jpg">
-        <h3>Brennan Lake</h3>
-        <p>Programs Director</p>
-      </li>
-      <li>
-        <img src="../img/eadaoin-ilten.jpg">
-        <h3>Éadaoin Ilten</h3>
-        <p>Operations Manager</p>
-      </li>
-      <li>
-        <img src="../img/adrienne-perez.jpg">
-        <h3>Adrienne Perez</h3>
-        <p>Research & Communications Associate</p>
-      </li>
-      <li>
-        <img src="../img/amrish-kapoor.jpg">
-        <h3>Amrish Kapoor</h3>
-        <p>Chief Technology Officer</p>
-      </li>
-      <li>
-        <img src="../img/dan-swann.jpg">
-        <h3>Dan Swann</h3>
-        <p>Communications Associate</p>
-      </li>
-      <li>
-        <img src="../img/donny-holaschutz.jpg">
-        <h3>Donny Holaschutz</h3>
-        <p>Research Associate</p>
-      </li>
-      <li>
-        <img src="../img/elena-pascual.jpg">
-        <h3>Elena Pascual</h3>
-        <p>Social Media Intern</p>
-      </li>
-      <li>
-        <img src="../img/qingqing-wu.jpg">
-        <h3>Qingqing Wu</h3>
-        <p>Advisory Board Member</p>
-      </li>
-      <li>
-        <img src="../img/tim-zeb-girouard.jpg">
-        <h3>Tim Zeb Girouard</h3>
-        <p>Advisory Board Member</p>
-      </li>
-      <li>
-        <img src="../img/miranda-grizio.jpg">
-        <h3>Miranda Grizio​</h3>
-        <p>Contributing Writer</p>
-      </li>
-      <li>
-        <img src="../img/lee-cusolito.jpg">
-        <h3>Lee Cusolito</h3>
-        <p>Volunteer Design Associate</p>
-      </li>
-      <li>
-        <img src="../img/balaji-mani.jpg">
-        <h3>Balaji Mani</h3>
-        <p>Research Associate</p>
-      </li>
+    <div data-render-html="/about-us/#persons"><h1 id="the-tel-team">The TEL Team</h1>
+</div>
+    <ul class="row row-persons">
+        <li class="item-person">
+          <img src="../img/karen-von-bismarck.jpg" alt="Karen von Bismarck">
+          <h2>Karen von Bismarck</h2>
+          <h3>Founder, CEO</h3>
+          <div data-render-html="/about-us/#persons-person-1"><p>While volunteering in a Haitian clinic, Karen witnessed the toll extreme poverty takes on communities and the environment, and was struck by the resourcefulness of people who live on less than a dollar a day. Meanwhile, the clinic staff was frustrated in its efforts to find appropriate equipment by the lack of a unified, reliable source of information. In order to meet this need on a global basis, she and fellow MIT Sloan School alumnus Gary L. Bergstrom began designing the basics of TEL, with the goal of leveraging technology to help families and communities rise from poverty. After studying political science and economics in Munich, Karen worked as an industrial organization instructor and journalist. She subsequently completed a Master&#39;s degree in Finance at the MIT Sloan School of Management. As a case manager with the Boston Consulting Group she has consulted to international clients in a variety of industries. Volunteering with the St. Boniface Centre de Santi in Haiti, Karen helped out in the medical-surgical clinic and served as board member and CFO. Two school-years spent in Japan resulted in a deep connection to that country. Karen speaks English, German, French and &#39;yon ti kras&#39; Kreyol.</p>
+</div>
+        </li>
+        <li class="item-person">
+          <img src="../img/brennan-lake.jpg" alt="Brennan Lake">
+          <h2>Brennan Lake</h2>
+          <h3>Programs Director</h3>
+          <div data-render-html="/about-us/#persons-person-2"><p>Brennan joined TEL in the Fall of 2013, following four years of working across nonprofit and for-profit sectors in South America. Brennan first experienced the versatility of low-cost, innovative solutions while living in a squatter settlement outside of Valparaiso, Chile, where composting toilets and eco-adobe architecture were readily accepted. After graduating from Occidental College in 2009 with a bachelor&#39;s degree in Diplomacy and World Affairs, Brennan moved to Buenos Aires, Argentina. There he founded a social enterprise in which American expats provided business English training to CEOs and low-income domestic workers. Brennan then joined an e-commerce startup as CFO. Brennan focuses on maximizing TEL&#39;s impact as it continues to grow in mission and scope. If he&#39;s not at TEL headquarters, you can find Brennan freediving or body surfing in the cold waters off of Cape Ann.</p>
+</div>
+        </li>
+        <li class="item-person">
+          <img src="../img/eadaoin-ilten.jpg" alt="Éadaoin Ilten">
+          <h2>Éadaoin Ilten</h2>
+          <h3>Operations Manager</h3>
+          <div data-render-html="/about-us/#persons-person-3"><p>Éadaoin joined TEL in the Summer of 2015, excited to break into the world of nonprofit work. She believes strongly in the goals of TEL, providing access to point­-of-­use technologies to those on the ground, as she has witnessed first hand the sometimes abstract nature of scientific research. Éadaoin holds a PhD in Physics from University College Dublin, with an emphasis on advanced solar cell enhancement materials. After deciding to apply her skills and passion in a more direct manner by entering into the nonprofit field, she worked as a project coordinator intern with a communications based NGO in Geneva, Switzerland, during the winter of 2014. She comes to TEL as a new immigrant from Ireland and is excited to discover more about her adoptive country.</p>
+</div>
+        </li>
+        <li class="item-person">
+          <img src="../img/adrienne-perez.jpg" alt="Adrienne Perez">
+          <h2>Adrienne Perez</h2>
+          <h3>Research & Communications Associate</h3>
+          <div data-render-html="/about-us/#persons-person-4"><p>Adrienne joined TEL in the winter of 2012 to expand the accessibility of small-scale technologies aimed towards uprooting communities from poverty traps. She has been fortunate enough to work in Latin America, Asia, Europe, and North America collaborating on sanitation, agriculture, youth education, and renewable energy projects with local NGOs. In 2012, Adrienne completed her master&#39;s degree in International Development and Social Change from Clark University. She holds dual bachelor degrees in International Relations and Spanish from University of California at Davis. Adrienne lives in the San Francisco Bay Area where she is expanding TEL’s presence on the West Coast.</p>
+</div>
+        </li>
+        <li class="item-person">
+          <img src="../img/amrish-kapoor.jpg" alt="Amrish Kapoor">
+          <h2>Amrish Kapoor</h2>
+          <h3>Chief Technology Officer</h3>
+          <div data-render-html="/about-us/#persons-person-5"><p>Interested in sustainable development and little gestures that make a better tomorrow, Amrish joined TEL in the spring of 2013. Having lived and worked for more than a decade in Bangalore, a city of many languages and dialects, Amrish believes that solutions to local problems are best served in local languages. He transformed TEL&#39;s website into a localized platform capable of quickly on-boarding and churning out content in several languages. Amrish is an engineering graduate and loves math and physics. He has annoyed a many with his ‘whats’ and ‘whys’ but is reluctant to hold out on his passion to explore the world. He is a foodie, loves adventure sports and is a trained paraglider pilot and windsurfer. He is a pro bono technology consultant and works with many local NGOs.</p>
+</div>
+        </li>
+        <li class="item-person">
+          <img src="../img/dan-swann.jpg" alt="Dan Swann">
+          <h2>Dan Swann</h2>
+          <h3>Communications Associate</h3>
+          <div data-render-html="/about-us/#persons-person-6"><p>Dan joined TEL in March 2013 to combine his interest in international development with his interest in communicating through social media. He is especially interested in helping TEL expand its community of solution developers and visitors through online platforms. He enjoys creating new content for online media that allows users to discover the innovative solutions found in TEL’s online database. Dan earned his B.A. in international affairs and a minor in journalism from Northeastern University in 2009 and is currently a graduate student at Yale University. He has worked with various nonprofits focusing on urban education in Boston, and he plans to continue to help TEL expand its online community through creative content creation.</p>
+</div>
+        </li>
+        <li class="item-person">
+          <img src="../img/donny-holaschutz.jpg" alt="Donny Holaschutz">
+          <h2>Donny Holaschutz</h2>
+          <h3>Research Associate</h3>
+          <div data-render-html="/about-us/#persons-person-7"><p>Donny grew up in Mexico and has experienced first hand people&#39;s ingenuity and ability to transform their own communities. He joined TEL in early 2011 because he believes that some of the most difficult challenges of underserved communities can be addressed by empowering people with the tools to help them create their own innovative solutions. Donny earned a masters degree in Management and Engineering from MIT, and holds a dual bachelors and a masters in aerospace engineering from University of Texas at Austin. During his free time he volunteers with community service activities focused on education and youth. Donny currently works between Texas and Chile as an Energy and Sustainability Consultant for Inodú.</p>
+</div>
+        </li>
+        <li class="item-person">
+          <img src="../img/elena-pascual.jpg" alt="Elena Pascual">
+          <h2>Elena Pascual</h2>
+          <h3>Social Media Intern</h3>
+          <div data-render-html="/about-us/#persons-person-8"><p>Elena joined TEL in the fall of 2014 to help promote TEL’s work across its social media channels. She graduated from the University of Michigan – Ann Arbor with a degree in International Studies and Environmental Science. During her time in school she developed a strong interest in sustainable development. Her travels abroad to Kenya and Cuba helped her to see how access to affordable, high-impact technology solutions can address many of the issues faced by people living in the developing world. She is excited to use her background to work together with the TEL team to further TEL’s mission.</p>
+</div>
+        </li>
+        <li class="item-person">
+          <img src="../img/qingqing-wu.jpg" alt="Qingqing Wu">
+          <h2>Qingqing Wu</h2>
+          <h3>Advisory Board Member</h3>
+          <div data-render-html="/about-us/#persons-person-9"><p>Qingqing joined TEL in the spring of 2014 to further explore her interest in expanding access to healthcare in developing countries. As an Advisory Board member, she is involved with providing counsel to the TEL team for special projects and contributing content expertise in the healthcare sector. After graduating from Harvard University with a degree in Linguistics and Neuroscience, Qingqing has been a consultant in both the public health and the biotechnology sectors, helping clients in areas such as health policy implementation and drug development business strategy. Having lived in four countries growing up, she appreciates the diversity that exists in all regions of the world, and hopes to continue travelling.</p>
+</div>
+        </li>
+        <li class="item-person">
+          <img src="../img/tim-zeb-girouard.jpg" alt="Tim Zeb Girouard">
+          <h2>Tim Zeb Girouard</h2>
+          <h3>Advisory Board Member</h3>
+          <div data-render-html="/about-us/#persons-person-10"><p>Tim joined the TEL team at the end of the summer of 2012, and has been happily spreading the word and coding away since then. Tim&#39;s interest in TEL is two-fold: he is driven to simplify the complexity of an elegant technical solution and the complexity of getting solutions to people who need them. Tim is a Software Engineer at Imprivata, and holds a BS in Mathematics from Carnegie Mellon University. He spent three years teaching in Taipei, Taiwan, working with children of all ages, where he witnessed the gap between solution providers and solution seekers. Tim believes that education and empowerment are the keys to solving the difficult problems of the world.</p>
+</div>
+        </li>
+        <li class="item-person">
+          <img src="../img/miranda-grizio.jpg" alt="Miranda Grizio​">
+          <h2>Miranda Grizio​</h2>
+          <h3>Contributing Writer</h3>
+          <div data-render-html="/about-us/#persons-person-11"><p>Miranda is a food scientist and advocate for the use of sustainable food systems and appropriate food technology that can improve the lives of the rural poor in developing countries. She works in R&amp;D for the natural foods industry and has won several new product awards including a Vegetarian Times Foodie Award. She holds a master’s degree in Food Science from Kansas State University and is currently pursuing a master’s degree in International Development from Tulane University. She also volunteers at Compatible Technology International and has been researching opportunities for aflatoxin mitigation through the use of their peanut harvesting and processing tools.</p>
+</div>
+        </li>
+        <li class="item-person">
+          <img src="../img/lee-cusolito.jpg" alt="Lee Cusolito">
+          <h2>Lee Cusolito</h2>
+          <h3>Volunteer Design Associate</h3>
+          <div data-render-html="/about-us/#persons-person-12"><p>Lee joined TEL in February 2015 to help expand TEL&#39;s network of solution providers, and to evaluate appropriate technology solutions from a design-based perspective.  After several years working with Boston-based startups in diverse fields such as online app development and lifestyle apparel marketing, Lee graduated from the Honors College of the University of Massachusetts Amherst in the spring of 2014.  With a keen interest in human-centered product design, Lee volunteers his time to grow TEL&#39;s database of high-quality solutions to problems of poverty.</p>
+</div>
+        </li>
+        <li class="item-person">
+          <img src="../img/balaji-mani.jpg" alt="Balaji Mani">
+          <h2>Balaji Mani</h2>
+          <h3>Research Associate</h3>
+          <div data-render-html="/about-us/#persons-person-13"><p>Balaji joined TEL in the summer of 2010, keen on getting involved with like-minded individuals who had an interest in non-profit work and development. Balaji was interested in joining a network that brought inventors, aid workers, civilians, and students together to work on relevant world issues. Balaji&#39;s spent time as a volunteer on Gandhi&#39;s ashram in Ahmedabad, India working on sanitation, education, and health projects. In Pune, India, he documented rural biodiesel production, helping farmers optimize production and avoid exposure to toxic byproducts. A graduate of MIT&#39;s Environmental Engineering program, Balaji is now a medical student at Georgetown University. When he is not working or studying, Balaji loves to perform on the guitar with his Senegalese afro-pop band or his jazz fusion quartet.</p>
+</div>
+        </li>
     </ul>
   </div>
-</div>
+</section>
 
-<div class="our-partners">
+<section id="partners" class="section">
   <div class="container">
-    <div class="border">
-      <h2>OUR PARTNERS IN ACTION</h2>
-    </div>
-    <p>We are proud to partner with non-profits, universities, social enterprises and other organizations, including:</p>
-    <ul class="flex-container-row">
-      <li><a href=""><img src="../img/siemens-logo.png"></a></li>
-      <li><a href=""><img src="../img/usgdl-logo.png"></a></li>
-      <li><a href=""><img src="../img/aidf-logo.png"></a></li>
-      <li><a href=""><img src="../img/cite-logo.png"></a></li>
-      <li><a href=""><img src="../img/gacc-logo.png"></a></li>
-      <li><a href=""><img class="big" src="../img/d4d-logo.jpeg"></a></li>
-      <li><a href=""><img src="../img/ole-logo.png"></a></li>
-      <li><a href=""><img src="../img/practical-action-logo.png"></a></li>
-      <li><a href=""><img src="../img/innovations-in-healthcare-logo.png"></a></li>
-      <li><a href=""><img src="../img/eia-logo.jpg"></a></li>
-      <li><a href=""><img src="../img/mit-chief-logo.jpg"></a></li>
-      <li><a href=""><img src="../img/rosetta-logo.jpg"></a></li>
-      <li><a href=""><img src="../img/translators-without-borders-logo.jpg"></a></li>
-      <li><a href=""><img src="../img/translations-for-progress-logo.jpg"></a></li>
-      <li><a href=""><img src="../img/nv-logo.jpg"></a></li>
-      <li><a href=""><img src="../img/partnership-for-change-logo.jpg"></a></li>
+    <div data-render-html="/about-us/#partners"><h1 id="our-partners-in-action">Our Partners in Action</h1>
+<p>We are proud to partner with non-profits, universities, social enterprises and other organizations, including:</p>
+</div>
+    <ul class="row row-partners">
+        <li class="menu-item">
+          <a href="http://www.siemens-stiftung.org/en/">
+            <img class="logo-partners" src="../img/siemens-logo.png" alt="Siemens">
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="https://www.usaid.gov/GlobalDevLab/about">
+            <img class="logo-partners" src="../img/usgdl-logo.png" alt="GlobalDevLab">
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="http://www.aidforum.org/">
+            <img class="logo-partners" src="../img/aidf-logo.png" alt="Aid Forum">
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="http://cite.mit.edu/">
+            <img class="logo-partners" src="../img/cite-logo.png" alt="CITE">
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="http://cleancookstoves.org/">
+            <img class="logo-partners" src="../img/gacc-logo.png" alt="Global Alliance For Clean Cookstoves">
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="http://www.harvardd4d.com/">
+            <img class="logo-partners" src="../img/d4d-logo.jpeg" alt="Harvard D4D">
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="http://ole.org/">
+            <img class="logo-partners" src="../img/ole-logo.png" alt="Open Learning Exchange">
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="http://practicalaction.org/">
+            <img class="logo-partners" src="../img/practical-action-logo.png" alt="Practical Action">
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="http://www.innovationsinhealthcare.org/">
+            <img class="logo-partners" src="../img/innovations-in-healthcare-logo.png" alt="Innovations in Health Care">
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="http://www.eia-global.org/">
+            <img class="logo-partners" src="../img/eia-logo.jpg" alt="Environmental Investigation Agency">
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="http://mitchief.org/">
+            <img class="logo-partners" src="../img/mit-chief-logo.jpg" alt="MIT Chief">
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="http://www.therosettafoundation.org/">
+            <img class="logo-partners" src="../img/rosetta-logo.jpg" alt="The Rosetta Foundation">
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="http://translatorswithoutborders.org/">
+            <img class="logo-partners" src="../img/translators-without-borders-logo.jpg" alt="Translators Without Borders">
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="http://www.translationsforprogress.org/index.php">
+            <img class="logo-partners" src="../img/translations-for-progress-logo.jpg" alt="Translations for Progress">
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="http://www.nvlawllp.com/">
+            <img class="logo-partners" src="../img/nv-logo.jpg" alt="Niesar &amp; Vestal LLP">
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="http://www.pfchange.org/">
+            <img class="logo-partners" src="../img/partnership-for-change-logo.jpg" alt="Partnership for Change">
+          </a>
+        </li>
     </ul>
-    <p>Interested in partnering with TEL? <a href="">Contact us</a> to learn more about partnership opportunities. </p>
   </div>
-</div>
+</section>
 
-<div class="contact-us">
+<section id="contact" class="section orange-grey">
   <div class="container">
-    <div class="flex-container-row">
-      <div class="details">
-        <h1 class="tel-orange">Contact Us</h1>
-        <p>Please contact us with any questions, comments or suggestions or to report a problem.</p>
-        <div class="address">
-          <p>The Technology Exchange Lab, Inc.,</p>
-          <p>Cambridge Innovation Center,</p>
-          <p>1 Broadway, 14th Floor,</p>
-          <p>Cambridge, MA 02142, USA</p>
-        </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11792.188115953495!2d-71.083926!3d42.362837!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370a5b761c351%3A0x3ab9187e6e6ffeb9!2s1+Broadway%2C+Cambridge%2C+MA+02142!5e0!3m2!1sen!2sus!4v1447793114962" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div class="row">
+      <div class="column column-contact">
+        <div data-render-html="/about-us/#contact"><h1 id="contact-us">Contact Us</h1>
+<p>Please contact us with any questions, comments or suggestions or to report a problem.</p>
+<p>The Technology Exchange Lab, Inc.<br>Cambridge Innovation Center<br>1  Broadway, 14th Floor<br>Cambridge, MA 02142, USA  </p>
+</div>
       </div>
-      <form>
-        Name:<br>
-        <input type="text" name="name" maxlength="2048">
-        <br>Email:<br>
-        <input type="text" name="email" maxlength="512">
-        <br>Message:<br>
-        <textarea name="message" maxlength="8192" wrap="hard" rows="5"></textarea>
-        <br>
-        <input type="submit" name="submit">
+      <div class="column column-space">
+      </div>
+      <form id="contact-form" class="column column-contact column-contact-form" action="https://tel-staging.herokuapp.com//server/form" method="POST">
+        <label class="label-contact">Name</label>
+        <input id="full-name" name="full-name" type="text" maxlength="2048">
+        <label class="label-contact">Email</label>
+        <input id="email" name="email" type="text" maxlength="2048">
+        <label class="label-contact">Message</label>
+        <textarea id="message" name="message" maxlength="8192" rows="3"></textarea>
+        <input type="hidden" id="validated" name="validated" value="">
+        <input type="hidden" id="location" name="location" value="">
+        <input type="hidden" id="thankyou" name="thankyou" value="../form-thank-you/">
+        <input class="elem button" type="submit" name="submit">
       </form>
     </div>
   </div>
+</section>
+
 </div>
-</div>
 
-<footer class="footer">
-  <div class="container container-footer">
-
-    <!-- logos column -->
-    <div class="column-left">
-      <a href="../"><img src="../img/tel-logo-white.png" alt="Scribble on the Whiteboards"></a>
-      <a href="http://greatnonprofits.org/org/technology-exchange-lab-inc" target="_blank"><img src="../img/top-rated.png" alt="Scribble on the Whiteboards"></a>
-    </div>
-
-    <!-- menu column -->
-    <div class="column-center">
-      <ul class="navbar navbar-footer">
-        <li class="link"><a href="../prizes-and-funding/">Prizes & Funding</a></li>
-        <li class="link"><a href="../faqs/">FAQs</a></li>
-        <li class="link"><a href="../terms-of-service/">Terms of Service</a></li>
-        <li class="link"><a href="../privacy-policy/">Privacy Policy</a></li>
-      </ul>
-      <p>
-        The Technology Exchange Lab, Inc. | Cambridge Innovation Center<br>
-        1 Broadway, 14th Floor | Cambridge, MA 02142, USA
-      </p>
-      <p>
-        TEL is a registered non-proﬁt, tax-exempt charity under section 501(c)(3) of the U.S. Internal Revenue Code. Donations are tax deductible to the extent allowed by U.S. law. TEL is a public resource with no commercial allegiance.
-      </p>
-    </div>
-
-    <!-- social -->
-    <div class="column-right">
-        <h3>Follow Us</h3>
-        <ul class="navbar">
-          <li class="link">
-            <a class="icon-social facebook-white" href="https://www.facebook.com/techxlab" target="_blank"></a>
-          </li>
-          <li class="link">
-            <a class="icon-social twitter-white" href="https://twitter.com/TechExLab" target="_blank"></a>
-            </li>
-          <li class="link">
-            <a class="icon-social linkedin-white" href="https://www.linkedin.com/company/technology-exchange-lab-inc-" target="_blank"></a>
-            </li>
-          <li class="link">
-            <a class="icon-social mail-white" href="mailto:contact@techxlab.org" target="_blank"></a>
-          </li>
+<footer id="footer" class="section green-white">
+  <div class="container">
+    <div class="row">
+      <div class="column column-footer-left">
+        <a class="elem" href="../"><img src="../img/tel-logo-white.png" alt=""></a>
+        <a class="elem" href="http://greatnonprofits.org/org/technology-exchange-lab-inc" target="_blank"><img src="../img/top-rated.png" alt=""></a>
+      </div>
+      <div class="column">
+        <ul class="menu menu-footer">
+          <li class="menu-item"><a href="../prizes-for-ideas/">Prizes for Ideas</a></li>
+          <li class="menu-item"><a href="../funding-resources/">Funding Resources</a></li>
+          <li class="menu-item"><a href="../faqs/">FAQs</a></li>
+          <li class="menu-item"><a href="../terms-of-service/">Terms of Service</a></li>
+          <li class="menu-item"><a href="../privacy-policy/">Privacy Policy</a></li>
         </ul>
-        <h3>Contact Us</h3>
-        <a href="mailto:contact@techxlab.org">contact@techxlab.org</a>
-        <h3>Subscribe to Updates</h3>
-        <a class="button" href="http://eepurl.com/7GdP9" target="_blank">Sign Up ></a>
+        <p class="elem elem-footer-center">
+          The Technology Exchange Lab, Inc. | Cambridge Innovation Center<br>
+          1 Broadway, 14th Floor | Cambridge, MA 02142, USA
+        </p>
+        <p class="elem elem-footer-legal">
+          TEL is a registered non-proﬁt, tax-exempt charity under section 501(c)(3) of the U.S. Internal Revenue Code. Donations are tax deductible to the extent allowed by U.S. law. TEL is a public resource with no commercial allegiance.
+        </p>
+      </div>
+      <div class="column column-footer-right">
+        <ul class="menu menu-footer">
+          <li class="menu-item menu-item-footer-icon"><a class="icon-social facebook-white" href="https://www.facebook.com/techxlab" target="_blank"></a></li>
+          <li class="menu-item menu-item-footer-icon"><a class="icon-social twitter-white" href="https://twitter.com/TechExLab" target="_blank"></a></li>
+          <li class="menu-item menu-item-footer-icon"><a class="icon-social linkedin-white" href="https://www.linkedin.com/company/technology-exchange-lab-inc-" target="_blank"></a></li>
+          <li class="menu-item menu-item-footer-icon"><a class="icon-social mail-white" href="mailto:contact@techxlab.org"></a></li>
+        </ul>
+        <a class="elem button" href="http://technologyexchangelab.us8.list-manage2.com/subscribe?u=1842edb42ca5e2996be75f5b8&id=14bb1b764d" target="_blank">Get Updates</a>
+        <a class="elem button" href="mailto:contact@techxlab.org">Contact Us</a>
+      </div>
     </div>
-
   </div>
 </footer>
 </div>

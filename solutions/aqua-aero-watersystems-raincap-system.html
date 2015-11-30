@@ -9,9 +9,10 @@
 
   <title>RainCAP System</title>
 
-  <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="https://techxlab.github.io/website/img/tel.png" type="image/png">
   <link rel="stylesheet" href="../css/font-awesome.css">
 <link rel="stylesheet" href="../css/techxlab.css">
+<link rel="stylesheet" href="../css/flexslider.css">
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -20,48 +21,87 @@
 <script src="../js/jquery-1.11.3.min.js" ></script>
 <script src="../js/lodash.min.js" ></script>
 <script src="../js/techxlab.js" ></script>
+<script src="../js/jquery.flexslider-min.js" ></script>
+<script src="../server/pub-ux.js" ></script>
 </head>
 <body>
-  <div data-render-layout="main-layout"><header class="header">
+  <div data-render-layout="main-layout"><header id="header" class="section section-header black-white">
   <div class="container">
-
-    <!-- logo -->
-    <a href="../"><div class="logo logo-techxlab"></div></a>
-
-    <!-- hamburger -->
-    <button class="hamburger">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </button>
-
-    <!-- authentication menu -->
-    <ul class="navbar">
-      <li class="link"><a href="../sign-up/">Sign Up</a></li>
-      <li class="link"><a href="../sign-in/">Sign In</a></li>
-    </ul>
-
+    <div class="row row-header">
+      <div class="column">
+        <a href="../"><div class="logo logo-techxlab"></div></a>
+      </div>
+      <div class="column column-header-right">
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="menu menu-header">
+          <li class="menu-item"><a href="../sign-up/">Sign Up</a></li>
+          <li class="menu-item"><a href="../sign-in/">Sign In</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </header>
 
-<div data-render-page="solution"><div class='solution'><div class='solution-left'>
+<section id="header-shim" class="section-header-shim">
+</section>
 
-<img src="https://techxlab.github.io/ast/305_RainCAP_Concept_Brochure-03.jpg" alt="RainCAP System">
+<div data-render-page="solution"><section id="banner-search" class="section-banner-search white-black">
+  <div class="container container-banner-search">
+    <ul class="menu menu-banner-search">
+<li class="menu-item menu-item-banner-search">
+          <a href="../solutions/categories/" >All Solutions</a>
+        </li>
+<li class="menu-item menu-item-banner-search">
+          <a href="../solutions/categories/water/" >Water &amp; Sanitation</a>
+        </li>
+<li class="menu-item menu-item-banner-search">
+          <a href="../solutions/categories/agriculture/" >Agriculture</a>
+        </li>
+<li class="menu-item menu-item-banner-search">
+          <a href="../solutions/categories/energy/" >Energy &amp; Cooking</a>
+        </li>
+<li class="menu-item menu-item-banner-search">
+          <a href="../solutions/categories/medical/" >Health &amp; Medical Care</a>
+        </li>
+<li class="menu-item menu-item-banner-search">
+          <a href="../solutions/categories/education/" >Education &amp; Connectivity</a>
+        </li>
+<li class="menu-item menu-item-banner-search">
+          <a href="../solutions/categories/housing/" >Housing &amp; Transport</a>
+        </li>
+<li class="menu-item menu-item-banner-search">
+          <a href="../solutions/categories/other/" >Additional Solutions</a>
+        </li>
+    </ul>
+  </div>
+</section>
 
-<div class='solution-contact'>
-<h3>Contact Solution Provider</h3>
-<div data-render-html="/solutions/aqua-aero-watersystems-raincap-system#provider"><p>Aqua-Aero WaterSystems BV<br>CG Delft<br>2611<br>Netherlands<br>31 15 212 96 13<br><a href="mailto:info@aaws.nl">info@aaws.nl</a>  </p>
+<section id="solution" class="section section-solution orange-white">
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <h1>RainCAP System</h1>
+        <h2>Aqua-Aero WaterSystems BV</h2>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="column column-solution-left">
+        <img src="https://techxlab.github.io/ast/305_RainCAP_Concept_Brochure-03.jpg" alt="RainCAP System">
+        
+          <h3>Contact Solution Provider</h3>
+          <div data-render-html="/solutions/aqua-aero-watersystems-raincap-system#provider"><p>Aqua-Aero WaterSystems BV<br>CG Delft<br>2611<br>Netherlands<br>31 15 212 96 13<br><a href="mailto:info@aaws.nl">info@aaws.nl</a>  </p>
 </div>
-</div>
+      </div>
 
-</div><div class='solution-right'>
-
-<h2>RainCAP System</h2>
-<h4>Aqua-Aero WaterSystems BV</h4>
-
-<div class='solution-section'>
-<h3>Solution Overview &amp; Benefits</h3>
-<div data-render-html="/solutions/aqua-aero-watersystems-raincap-system"><p>The Rain Collection And Purification system (RainCAP) is a foil sheet tank that is made of a sturdy and durable plastic sheet. The foil tank is placed in the ground and used to collect/capture up to 50 cubic meters of rainwater. From there the water is pumped up, purified when needed and distributed as drinking water to the consumers. Collected water can be stored for a period of up to 8 months dependant on level of maintenance.</p>
+      <div class="column">
+        <h3>Solution Overview &amp; Benefits</h3>
+        <div data-render-html="/solutions/aqua-aero-watersystems-raincap-system"><p>The Rain Collection And Purification system (RainCAP) is a foil sheet tank that is made of a sturdy and durable plastic sheet. The foil tank is placed in the ground and used to collect/capture up to 50 cubic meters of rainwater. From there the water is pumped up, purified when needed and distributed as drinking water to the consumers. Collected water can be stored for a period of up to 8 months dependant on level of maintenance.</p>
 <p>The RainCap system is easy to transport, install and maintain. It can be installed in combination with the UV WaterBox. The tank can be cleaned regularly and removed when needed. The RainCAP system has a lifetime of ten years or more.</p>
 <p>Target group and delivery:
 The RainCAP is designed for usage in tropical countries with modest to high rainfall. Sizes are family level (with a 15 m3 tank) and village level (a 50 m3 tank). The tanks follow a modular design and can be linked dependent on the needs of the client. The 15 m3 tank serves an extended family of 30 people for 8 months consuming 2 liters per person per day. The 50 m3 tank serves a village of 200 people drinking 2 liters per person per day for 4 month.</p>
@@ -70,79 +110,60 @@ Capturing of rainwater is best done using existing roof systems. Schools, medica
 <p>Limitations:
 The RainCAP system is best applied in tropical regions displaying moderate to high rainfall. The systems can be installed in relative soft ground (compacted sand, silts, etc.). It is advised to avoid sharp rocks surfaces in order to prevent puncturing of the foil material.</p>
 </div>
-</div>
 
 
-<div class='solution-section'>
-<h3>Availability</h3>
-<div data-render-html="/solutions/aqua-aero-watersystems-raincap-system#availability"><p>Publicly available: yes<br>Countries where available: Worldwide<br>Price range (USD): Contact supplier for quote  </p>
-</div>
+          <h3>Availability</h3>
+          <div data-render-html="/solutions/aqua-aero-watersystems-raincap-system#availability"><p>Publicly available: yes<br>Countries where available: Worldwide<br>Price range (USD): Contact supplier for quote  </p>
 </div>
 
-<div class='solution-section'>
-<h3>Specifications</h3>
-<div data-render-html="/solutions/aqua-aero-watersystems-raincap-system#specifications"><p>Dimensions: 15 or 50 cubic meter tanks available  </p>
-</div>
+          <h3>Specifications</h3>
+          <div data-render-html="/solutions/aqua-aero-watersystems-raincap-system#specifications"><p>Dimensions: 15 or 50 cubic meter tanks available  </p>
 </div>
 
-<div class='solution-section'>
-<h3>Additional Information</h3>
-<div data-render-html="/solutions/aqua-aero-watersystems-raincap-system#additional-information"><p><a href="http://www.orangewaterfoundation.nl" target="_blank">Website</a><br><a href="http://www.aaws.nl/index.php/products/rain-water-harvesting" target="_blank">Product page</a><br><a href="http://www.aaws.nl/images/stories/bestanden_aaws/brochure_rainCAP_mail.pdf" target="_blank">Documentation, article, or review</a>  </p>
+          <h3>Additional Information</h3>
+          <div data-render-html="/solutions/aqua-aero-watersystems-raincap-system#additional-information"><p><a href="http://www.orangewaterfoundation.nl" target="_blank">Website</a><br><a href="http://www.aaws.nl/index.php/products/rain-water-harvesting" target="_blank">Product page</a><br><a href="http://www.aaws.nl/images/stories/bestanden_aaws/brochure_rainCAP_mail.pdf" target="_blank">Documentation, article, or review</a>  </p>
 </div>
-</div>
+      </div>
 
-</div></div>
-</div>
-
-<footer class="footer">
-  <div class="container container-footer">
-
-    <!-- logos column -->
-    <div class="column-left">
-      <a href="../"><img src="../img/tel-logo-white.png" alt="RainCAP System"></a>
-      <a href="http://greatnonprofits.org/org/technology-exchange-lab-inc" target="_blank"><img src="../img/top-rated.png" alt="RainCAP System"></a>
     </div>
+  </div>
+</section>
+</div>
 
-    <!-- menu column -->
-    <div class="column-center">
-      <ul class="navbar navbar-footer">
-        <li class="link"><a href="../prizes-and-funding/">Prizes & Funding</a></li>
-        <li class="link"><a href="../faqs/">FAQs</a></li>
-        <li class="link"><a href="../terms-of-service/">Terms of Service</a></li>
-        <li class="link"><a href="../privacy-policy/">Privacy Policy</a></li>
-      </ul>
-      <p>
-        The Technology Exchange Lab, Inc. | Cambridge Innovation Center<br>
-        1 Broadway, 14th Floor | Cambridge, MA 02142, USA
-      </p>
-      <p>
-        TEL is a registered non-proﬁt, tax-exempt charity under section 501(c)(3) of the U.S. Internal Revenue Code. Donations are tax deductible to the extent allowed by U.S. law. TEL is a public resource with no commercial allegiance.
-      </p>
-    </div>
-
-    <!-- social -->
-    <div class="column-right">
-        <h3>Follow Us</h3>
-        <ul class="navbar">
-          <li class="link">
-            <a class="icon-social facebook-white" href="https://www.facebook.com/techxlab" target="_blank"></a>
-          </li>
-          <li class="link">
-            <a class="icon-social twitter-white" href="https://twitter.com/TechExLab" target="_blank"></a>
-            </li>
-          <li class="link">
-            <a class="icon-social linkedin-white" href="https://www.linkedin.com/company/technology-exchange-lab-inc-" target="_blank"></a>
-            </li>
-          <li class="link">
-            <a class="icon-social mail-white" href="mailto:contact@techxlab.org" target="_blank"></a>
-          </li>
+<footer id="footer" class="section green-white">
+  <div class="container">
+    <div class="row">
+      <div class="column column-footer-left">
+        <a class="elem" href="../"><img src="../img/tel-logo-white.png" alt="RainCAP System"></a>
+        <a class="elem" href="http://greatnonprofits.org/org/technology-exchange-lab-inc" target="_blank"><img src="../img/top-rated.png" alt="RainCAP System"></a>
+      </div>
+      <div class="column">
+        <ul class="menu menu-footer">
+          <li class="menu-item"><a href="../prizes-for-ideas/">Prizes for Ideas</a></li>
+          <li class="menu-item"><a href="../funding-resources/">Funding Resources</a></li>
+          <li class="menu-item"><a href="../faqs/">FAQs</a></li>
+          <li class="menu-item"><a href="../terms-of-service/">Terms of Service</a></li>
+          <li class="menu-item"><a href="../privacy-policy/">Privacy Policy</a></li>
         </ul>
-        <h3>Contact Us</h3>
-        <a href="mailto:contact@techxlab.org">contact@techxlab.org</a>
-        <h3>Subscribe to Updates</h3>
-        <a class="button" href="http://eepurl.com/7GdP9" target="_blank">Sign Up ></a>
+        <p class="elem elem-footer-center">
+          The Technology Exchange Lab, Inc. | Cambridge Innovation Center<br>
+          1 Broadway, 14th Floor | Cambridge, MA 02142, USA
+        </p>
+        <p class="elem elem-footer-legal">
+          TEL is a registered non-proﬁt, tax-exempt charity under section 501(c)(3) of the U.S. Internal Revenue Code. Donations are tax deductible to the extent allowed by U.S. law. TEL is a public resource with no commercial allegiance.
+        </p>
+      </div>
+      <div class="column column-footer-right">
+        <ul class="menu menu-footer">
+          <li class="menu-item menu-item-footer-icon"><a class="icon-social facebook-white" href="https://www.facebook.com/techxlab" target="_blank"></a></li>
+          <li class="menu-item menu-item-footer-icon"><a class="icon-social twitter-white" href="https://twitter.com/TechExLab" target="_blank"></a></li>
+          <li class="menu-item menu-item-footer-icon"><a class="icon-social linkedin-white" href="https://www.linkedin.com/company/technology-exchange-lab-inc-" target="_blank"></a></li>
+          <li class="menu-item menu-item-footer-icon"><a class="icon-social mail-white" href="mailto:contact@techxlab.org"></a></li>
+        </ul>
+        <a class="elem button" href="http://technologyexchangelab.us8.list-manage2.com/subscribe?u=1842edb42ca5e2996be75f5b8&id=14bb1b764d" target="_blank">Get Updates</a>
+        <a class="elem button" href="mailto:contact@techxlab.org">Contact Us</a>
+      </div>
     </div>
-
   </div>
 </footer>
 </div>
