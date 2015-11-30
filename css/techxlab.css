@@ -168,7 +168,7 @@ head { height: 0; } /* hide text that gets injected by pub into header */
 *******************************************************************************/
 
 h1 {
-  font-family:   "museo-slab";
+  font-family:   Raleway, sans-serif;
   font-size:     36px;
   font-weight:   100;
   /*margin-top:    8px;
@@ -176,7 +176,7 @@ h1 {
 }
 
 h2 {
-  font-family:   "museo-slab";
+  font-family:   Raleway, sans-serif;
   font-size:     28px;
   font-weight:   500;
   /*margin-top:    8px;
@@ -714,7 +714,7 @@ p, a, label {
   background-color: inherit;
 }
 #banner-home .column-banner-feature h1 {
-  font-family:   "museo-slab";
+  font-family:   Raleway, sans-serif;
   font-size:     28px;
   font-weight:   300;
   margin-bottom: 10px;
@@ -1069,7 +1069,7 @@ p, a, label {
 }
 
 #menu .menu-item-name {
-  font-family: 'museo-slab';
+  font-family: Raleway, sans-serif;
   text-align: center;
   font-size:   20px;
   color:       #fff;
@@ -1079,7 +1079,7 @@ p, a, label {
   padding-left:  8px;
   padding-right: 8px;
   margin-top:    30px;
-  font-family:   'museo-slab';
+  font-family:   Raleway, sans-serif;
   font-size:     16px;
   color:         #fff;
 }
@@ -1206,7 +1206,7 @@ p, a, label {
   right:           0;
   bottom:          0;
   left:            0;
-  font-family:     'museo-slab';
+  font-family:     Raleway, sans-serif;
   font-size:       16px;
   color:           #fff;
   background-color: inherit;
@@ -1378,7 +1378,7 @@ p, a, label {
   padding-bottom: 8px;
   padding-left:   4px;
   padding-right:  4px;
-  font-family:    'museo-slab';
+  font-family:    Raleway, sans-serif;
   font-size:      22px;
   line-height:    18px;
 }

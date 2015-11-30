@@ -152,7 +152,7 @@
         },
         {
           "path": "/doc-layout.hbs",
-          "text": "<!DOCTYPE html>\n<html>\n<head>\n\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\">\n  {{{metaSeo}}}\n\n  <title>{{title}}</title>\n\n  <link rel=\"icon\" href=\"{{option 'appUrl'}}/img/tel.png\" type=\"image/png\">\n  {{{injectCss}}}\n  <!--[if lt IE 9]>\n  <script src=\"https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n  <script src=\"https://oss.maxcdn.com/respond/1.4.2/respond.min.js\"></script>\n  <![endif]-->\n  <script src=\"//use.typekit.net/ygb1aha.js\"></script>\n  <script>try{Typekit.load();}catch(e){}</script>\n  {{{injectJs}}}\n</head>\n<body>\n  {{{renderLayout}}}\n</body>\n</html>\n"
+          "text": "<!DOCTYPE html>\n<html>\n<head>\n\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\">\n  {{{metaSeo}}}\n\n  <title>{{title}}</title>\n\n  <link rel=\"icon\" href=\"{{option 'appUrl'}}/img/tel.png\" type=\"image/png\">\n  {{{injectCss}}}\n  <!--[if lt IE 9]>\n  <script src=\"https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js\"></script>\n  <script src=\"https://oss.maxcdn.com/respond/1.4.2/respond.min.js\"></script>\n  <![endif]-->\n  {{{injectJs}}}\n</head>\n<body>\n  {{{renderLayout}}}\n</body>\n</html>\n"
         },
         {
           "path": "/home.hbs",
