@@ -200,7 +200,7 @@ input[type=text], input[type=password], input[type=search], textarea {
   padding:     6px 12px;
 }
 
-p, a, label, input[type=submit] {
+p, a, label {
   font-family: "lato";
   font-size:   14px;
   line-height: 24px;
@@ -313,13 +313,13 @@ p, a, label, input[type=submit] {
 .button,
 .button a,
 .button input[type=submit] {
-  display:         flex;
+  flex-direction: row;
   justify-content: center;
   padding:         16px 10px;
   border-width:    0;
   border-radius:   2px;
   text-transform:  uppercase;
-  text-align: center;
+  text-align:      center;
   letter-spacing:  2px;
   color:           #fff;
 }
@@ -479,8 +479,28 @@ p, a, label, input[type=submit] {
 
 /** add solutions page ********************************************************/
 
-.section-add-solutions {
+#add-solutions.section-add-solutions {
   background-color: #fff;
+}
+
+#add-solutions h1 {
+  color: #f9a021;
+}
+
+#add-solutions h2 {
+  margin-top:    15px;
+  margin-bottom: 15px;
+  color: #f9a021;
+}
+
+#add-solutions .column-add-solutions {
+  width: 100%;
+}
+
+#add-solutions .button {
+  margin-top:    15px;
+  margin-bottom: 15px;
+  background-color: #f9a021;
 }
 
 /** accelerate section (project accelerator) **********************************/

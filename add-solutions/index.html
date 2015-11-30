@@ -58,8 +58,7 @@
       <div class="column column-banner-feature column-banner-feature">
         <h2></h2>
         <h1 id="add-solution">Add Solution</h1>
-<p>Whether you are a solution provider or simply a technology enthusiast, share practical solutions to problems of poverty by publishing them in the TEL database.  </p>
-<p>Once your solution has been submitted, our team will review all content to ensure that we provide unbiased information. Our curating process creates a level playing field for solution providers, while also empowering organizations and communities to find the solutions that best suit their unique needs.</p>
+<p>Whether you are a solution provider or simply a technology enthusiast, share practical solutions to problems of poverty by publishing them in the TEL database.</p>
 
       </div>
     </div>
@@ -131,13 +130,14 @@ From prizes to long-term funding resources, explore our list of competitions, gr
 </section>
 
 
-<section class="section section-add-solutions">
+<section id="add-solutions" class="section section-add-solutions">
   <div class="container">
-    <h1>Tell us about your solution</h1>
+    <h1>Tell us About your Solution</h1>
+    <p>Once your solution has been submitted, our team will review all content to ensure that we provide unbiased information. Our curating process creates a level playing field for solution providers, while also empowering organizations and communities to find the solutions that best suit their unique needs.</p>
     <div class="row">
-      <form class="column">
+      <div class="column column-add-solutions">
 
-        <h2>1. Solution Basics</h2>
+        <h2>Basics</h2>
 
         <label>Name of the solution, invention, or method</label>
         <input id="product-name" type="text" name="nameProduct">
@@ -186,7 +186,7 @@ From prizes to long-term funding resources, explore our list of competitions, gr
           <option class="tech-7" value="30">Please Continue</option>
         </select>
 
-        <h2>2. Contact Details</h2>
+        <h2>Contact Information</h2>
 
         <label class="oblig" for="first_name_owner">First Name</label>
         <input class="form-control"  type="text" name="first_name_owner" id="first_name_owner">
@@ -215,7 +215,7 @@ From prizes to long-term funding resources, explore our list of competitions, gr
         <label for="email_adress_owner">Email</label>
         <input class="form-control"  type="text"  name="email_adress_owner" id="email_adress_owner">
 
-        <h2>3. More About This Solution</h2>
+        <h2>Details</h2>
 
         <label class="oblig" for="howItWork">Solution purpose and how it works (up to 300 words)</label>
         <textarea class="form-control"  name="howItWork" id="howItWork" rows="4" ></textarea>
@@ -244,13 +244,13 @@ From prizes to long-term funding resources, explore our list of competitions, gr
         <label for="other_link">Link to published documents, such as articles, reviews, or testimonials</label>
         <input type="file" name="other_file" id="other_file" class="multi" maxlength="1"/>
 
-        <h3>4. Acquiring or Accessing the Solution</h3>
+        <h3>Acquisition Information</h3>
 
         <label class="commlabel" for="commercial">Is solution publicly available? (Answer &#039;no&#039; if still only in prototype or trial stage.)</label>
         <input type="radio" name="commercial" id="commercialYes" value="yes" checked="checked"><label for="commercialYes">Yes</label>
         <input type="radio" name="commercial" id="commercialNo" value="no"><label for="commercialNo">No</label>
 
-        <label for="priceRange">Solution price range, in USD. It is understood that these may be rough estimates and subject to exchange rate fluctuation. Do not include shipping costs or taxes.</label>
+        <label for="priceRange">Price Range</label>
         <select id="priceRange" name="priceRange" class="select-list">
           <option value=""></option>
           <option value="Free" >Free</option>
@@ -269,7 +269,7 @@ From prizes to long-term funding resources, explore our list of competitions, gr
         <input type="radio" name="offeredOrlicenced" id="offeredOrlicensedYes" value="yes" checked="checked"><label class="col-md-10" for="commercialYes">Yes</label>
         <input type="radio" name="offeredOrlicenced" id="offeredOrlicensedNo" value="no"><label class="col-md-10" for="commercialNo">No</label>
 
-        <h2>5. Solution Provider Information</h2>
+        <h2>Provider Information</h2>
 
         <label class="oblig" for="first_name_contact_details">First Name:<span class="required">*</span></label>
         <input class="form-control"  type="text"  name="first_name_contact_details" id="first_name_contact_details">
@@ -287,7 +287,7 @@ From prizes to long-term funding resources, explore our list of competitions, gr
 
         <input class="button" type="submit" name="step4" value="Submit">
 
-      </form>
+      </div>
     </div>
   </div>
 </section>
