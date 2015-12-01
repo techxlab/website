@@ -59,6 +59,7 @@ function initAllViews($el) {
 
 function initForms() {
   $contactForm = $('#contact-form');
+  if (!$contactForm.length) return;
 
   $contactForm.on('submit', validateContactForm);
 

@@ -25,20 +25,47 @@
 </head>
 <body>
   <div data-render-layout="main-layout"><header id="header" class="section section-header black-white">
+  <script>
+    // $(function () {
+    //   $('#hamburgerButton').on('click', function (e) {
+    //     console.log("toggled");
+    //   })
+    // });
+  </script>
   <div class="container">
     <div class="row row-header">
       <div class="column">
         <a href="../"><div class="logo logo-techxlab"></div></a>
       </div>
       <div class="column column-header-right">
-        <div class="hamburger">
+        <div id="hamburgerButton" class="hamburger" onclick="$('#menu-main').toggleClass('show')">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </div>
-        <ul class="menu menu-header">
+        <!-- <ul class="menu menu-header">
           <li class="menu-item"><a href="../sign-up/">Sign Up</a></li>
           <li class="menu-item"><a href="../sign-in/">Sign In</a></li>
+        </ul> -->
+        <ul class="menu menu-header">
+            <li class="menu-item  selected ">
+              <a href="../solutions/">Find Solutions</a>
+            </li>
+            <li class="menu-item ">
+              <a href="../add-solutions/">Add Solutions</a>
+            </li>
+            <li class="menu-item ">
+              <a href="../take-action/">Take Action</a>
+            </li>
+            <li class="menu-item ">
+              <a href="../project-accelerator/">Project Accelerator</a>
+            </li>
+            <li class="menu-item ">
+              <a href="../blog/">Blog</a>
+            </li>
+            <li class="menu-item ">
+              <a href="../about-us/">About Us</a>
+            </li>
         </ul>
       </div>
     </div>
@@ -61,70 +88,6 @@
 
       </div>
     </div>
-  </div>
-</section>
-
-<section id="menu" class="section">
-  <script>
-  // var fadeBanner = function (e) {
-  //   console.log($(e.target).scrollTop() > 731)
-  //   if ($(e.target).scrollTop() % 2 === 0) {
-  //     e.data.$banner.fadeTo(0, 1 - $(e.target).scrollTop() / e.data.$banner.height());
-  //   }
-  // };
-  // $(document).on('scroll', {$banner: $('#banner-home img')}, fadeBanner);
-
-    $(function () {
-      $(".menu-menu li").hover(function(e) {
-        $(e.currentTarget).addClass("selected").siblings().map(function (_, elem) {
-          $(elem).removeClass("selected");
-        });
-      });
-    });
-  </script>
-  <div class="container container-menu">
-    <ul class="menu menu-menu">
-        <li class="menu-item  selected ">
-          <a class="menu-item-name" href="../solutions/">Find Solutions</a>
-          <div class="menu-item-caption"><div data-render-html="/#menu-one"><p>Browse our curated database of over 600 innovative technologies and superior methods. Search by focus area (e.g. water, energy, agriculture). Learn how you can leverage cost-effective, technology-based solutions to tackle tough problems of poverty.</p>
-</div></div>
-        </li>
-        <li class="menu-item ">
-          <a class="menu-item-name" href="../add-solutions/">Add Solutions</a>
-          <div class="menu-item-caption"><div data-render-html="/#menu-two"><p>Anyone is welcome to add solutions to our crowdsourced database. Whether you are an innovator end-user or simply a fan, submit a solution and help spread innovation around the world.</p>
-</div></div>
-        </li>
-        <li class="menu-item ">
-          <a class="menu-item-name" href="../take-action/">Take Action</a>
-          <div class="menu-item-caption"><div data-render-html="/#menu-three"><p>Do things in places for people.</p>
-<!-- ---- /#menu-four ----
-name: Prizes & Funding
-link: /prizes-and-funding/
-
-From prizes to long-term funding resources, explore our list of competitions, grants, fellowships and awards in support of innovation and innovators against poverty. -->
-</div></div>
-        </li>
-        <li class="menu-item ">
-          <a class="menu-item-name" href="../project-accelerator/">Project Accelerator</a>
-          <div class="menu-item-caption"><div data-render-html="/#menu-five"><p>Whether you need guidance in selecting and sourcing a solution that is right for you, or xpertise in structuring and promoting your development project, talk directly to a TEL expert to learn more about our service.</p>
-</div></div>
-        </li>
-        <li class="menu-item ">
-          <a class="menu-item-name" href="../stories-from-the-field/">Stories From the Field</a>
-          <div class="menu-item-caption"><div data-render-html="/#menu-six"><p>Meet the solution providers, social entrepreneurs and communities from around the world that are working to implement development initiatives in last-mile communities. Read stories from the field on our blog.</p>
-</div></div>
-        </li>
-        <li class="menu-item ">
-          <a class="menu-item-name" href="../about-us/">About Us</a>
-          <div class="menu-item-caption"><div data-render-html="/#menu-seven"><p>We do things for people in places at times.</p>
-</div></div>
-        </li>
-        <li class="menu-item ">
-          <a class="menu-item-name" href="../join-us/">Join Us</a>
-          <div class="menu-item-caption"><div data-render-html="/#menu-eight"><p>Do things for people in places with us.</p>
-</div></div>
-        </li>
-    </ul>
   </div>
 </section>
 
@@ -339,6 +302,7 @@ From prizes to long-term funding resources, explore our list of competitions, gr
         <input type="hidden" id="validated" name="validated" value="">
         <input type="hidden" id="location" name="location" value="">
         <input type="hidden" id="thankyou" name="thankyou" value="../form-thank-you/">
+        <input type="hidden" id="sorry" name="sorry" value="../form-sorry/">
         <input class="elem button" type="submit" name="submit">
       </form>
     </div>
