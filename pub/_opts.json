@@ -12,6 +12,10 @@
     "version": "0.0.1",
     "description": "tel website",
     "main": "pub-config.js",
+    "dependencies": {
+      "pub-server": "^1.9.20",
+      "multer": "^1.1.0"
+    },
     "devDependencies": {
       "fs-extra": "^0.24.0",
       "mkdirp": "^0.5.1",
@@ -31,8 +35,8 @@
     },
     "author": "jurgen leschner",
     "license": "MIT",
-    "dependencies": {
-      "multer": "^1.1.0"
+    "engines": {
+      "node": "4.x"
     }
   },
   "pkgName": "techxlab-website",
@@ -247,10 +251,11 @@
     {
       "name": "solutions",
       "writable": true,
-      "path": "/src",
-      "repo": "jldec/tel-solutions",
+      "path": "/Users/hello/pub/tel-solutions/src",
+      "repo": null,
       "type": "FILE",
       "tmp": "/Users/hello/.tmp/solutions",
+      "watch": {},
       "fragmentDelim": true,
       "files": [
         {
@@ -2694,21 +2699,6 @@
       }
     },
     {
-      "path": "/Users/hello/pub/solutions-database/rsc",
-      "route": "/ast",
-      "watch": {},
-      "depth": 5,
-      "maxAge": "10m",
-      "includeBinaries": true,
-      "sendOpts": {
-        "maxAge": "10m",
-        "dotfiles": "ignore",
-        "index": false,
-        "extensions": false,
-        "root": "/Users/hello/pub/solutions-database/rsc"
-      }
-    },
-    {
       "path": "/Users/hello/pub/tel-website/CNAME",
       "watch": {},
       "route": "/",
@@ -2751,6 +2741,21 @@
         "index": false,
         "extensions": false,
         "root": "."
+      }
+    },
+    {
+      "path": "/Users/hello/pub/tel-images",
+      "route": "/ast",
+      "watch": {},
+      "depth": 5,
+      "maxAge": "10m",
+      "includeBinaries": true,
+      "sendOpts": {
+        "maxAge": "10m",
+        "dotfiles": "ignore",
+        "index": false,
+        "extensions": false,
+        "root": "/Users/hello/pub/tel-images"
       }
     },
     {
@@ -2903,9 +2908,6 @@
       "path": "/js/jquery-1.11.3.min.js"
     },
     {
-      "path": "/js/lodash.min.js"
-    },
-    {
       "path": "/js/techxlab.js"
     },
     {
@@ -3021,11 +3023,11 @@
   "noRobots": true,
   "throttleReload": "1s",
   "linkNewWindow": true,
-  "formServer": "https://tel-staging.herokuapp.com/",
   "redis": {
     "prefix": "sess-techxlab:",
     "_log": "log-techxlab:"
   },
+  "formServer": "https://tel-staging.herokuapp.com",
   "_resolved": true,
   "production": false,
   "port": "3001",
