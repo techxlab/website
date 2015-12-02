@@ -24,7 +24,7 @@
 <script src="../server/pub-ux.js" ></script>
 </head>
 <body>
-  <div data-render-layout="main-layout"><header id="header" class="section section-header black-white">
+  <div data-render-layout="main-layout"><header id="header" class="section section-header">
   <script>
     // $(function () {
     //   $('#hamburgerButton').on('click', function (e) {
@@ -48,7 +48,7 @@
           <li class="menu-item"><a href="../sign-in/">Sign In</a></li>
         </ul> -->
         <ul class="menu menu-header">
-            <li class="menu-item ">
+            <li class="menu-item  selected ">
               <a href="../about-us/">Our Mission</a>
             </li>
             <li class="menu-item ">
@@ -75,14 +75,14 @@
 <section id="header-shim" class="section-header-shim">
 </section>
 
-<div data-render-page="project-accelerator"><section id="banner" class="section-banner white-black">
+<div data-render-page="project-accelerator"><section id="banner" class="section-banner">
   <div class="section-banner-wedge">
     <img src="../img/solar-panel-on-temple.jpg" alt="">
   </div>
   <div class="container container-collapse container-banner">
     <div class="row row-banner">
       <div class="column column-banner-feature column-banner-feature">
-        <h2></h2>
+        <h1></h1>
         <h1 id="project-accelerator">Project Accelerator</h1>
 <p>We’re dedicated to maximizing the impact of development projects around the world by applying practical solutions to problems of poverty.</p>
 
@@ -152,12 +152,13 @@
 <label for="description">Description</label>
 <textarea name="Description" id="description"></textarea></p>
 
-<label class="checkbox"><input type="checkbox" name="How" value="Solution Search and Selection">Solution Search and Selection</label>
-<label class="checkbox"><input type="checkbox" name="How" value="Solution Acquisition and Assessment">Solution Acquisition and Assessment</label>
-<label class="checkbox"><input type="checkbox" name="How" value="Fundraising Resources">Fundraising Resources</label>
-<label class="checkbox"><input type="checkbox" name="How" value="Promotion and Publicity">Promotion and Publicity</label>
+<label>How can we help accelerate your project?</label>
 
-<label>How can we help accelerate your project?</label><p>
+<label class="checkbox"><input type="checkbox" name="How can we help" value="Solution Search and Selection">Solution Search and Selection</label>
+<label class="checkbox"><input type="checkbox" name="How can we help" value="Solution Acquisition and Assessment">Solution Acquisition and Assessment</label>
+<label class="checkbox"><input type="checkbox" name="How can we help" value="Fundraising Resources">Fundraising Resources</label>
+<label class="checkbox"><input type="checkbox" name="How can we help" value="Promotion and Publicity">Promotion and Publicity</label>
+<p>
 <input type="submit" value="Submit" class="button"></p>
 <p>
 <input type="hidden" name="form" value="Project Accelerator" id="form">
@@ -272,7 +273,7 @@
 </section-->
 </div>
 
-<footer id="footer" class="section green-white">
+<footer id="footer" class="section section-footer">
   <div class="container">
     <div class="row">
       <div class="column column-footer-left">
@@ -286,6 +287,7 @@
           <li class="menu-item"><a href="../faqs/">FAQs</a></li>
           <li class="menu-item"><a href="../terms-of-service/">Terms of Service</a></li>
           <li class="menu-item"><a href="../privacy-policy/">Privacy Policy</a></li>
+          <li class="menu-item"><a href="../join-us/">Join Us</a></li>
         </ul>
         <p class="elem elem-footer-center">
           The Technology Exchange Lab, Inc. | Cambridge Innovation Center<br>
