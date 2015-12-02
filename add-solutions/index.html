@@ -165,31 +165,31 @@
 <option value="Nutrition">Nutrition</option>
 <option value="Women&#39;s Health">Women&#39;s Health</option>
 <option value="Maternal &amp; Child Health">Maternal &amp; Child Health</option>
-</select><h2 id="provider-information">Provider Information</h2>
+</select><h2 id="solution-provider-contact-info">Solution Provider Contact Info</h2>
 <p>
-<label for="provider-name">Contact Name</label>
+<label for="provider-name">Name:</label>
 <input type="text" name="Provider Name" id="provider-name">
 
-<label for="organization">Company or Organization</label>
-<input type="text" name="Organization" id="organization">
+<label for="provider-organization">Company or Organization:</label>
+<input type="text" name="Provider Organization" id="provider-organization">
 
-<label for="street-address">Street Address</label>
-<input type="text" name="Street Address" id="street-address">
+<label for="provider-street-address">Street Address:</label>
+<input type="text" name="Provider Street Address" id="provider-street-address">
 
-<label for="city">City</label>
-<input type="text" name="City" id="city">
+<label for="provider-city">City:</label>
+<input type="text" name="Provider City" id="provider-city">
 
-<label for="postal-code">Postal Code</label>
-<input type="text" name="Postal Code" id="postal-code">
+<label for="provider-postal-code">Postal Code:</label>
+<input type="text" name="Provider Postal Code" id="provider-postal-code">
 
-<label for="country">Country</label>
-<input type="text" name="Country" id="country">
+<label for="provider-country">Country:</label>
+<input type="text" name="Provider Country" id="provider-country">
 
-<label for="phone">Phone</label>
-<input type="tel" name="Phone" id="phone">
+<label for="provider-phone">Phone:</label>
+<input type="tel" name="Provider Phone" id="provider-phone">
 
-<label for="email">Email</label>
-<input type="email" name="Email" id="email"></p>
+<label for="provider-email">Email:</label>
+<input type="email" name="Provider Email" id="provider-email"></p>
 <h2 id="solution-details">Solution Details</h2>
 <p>
 <label for="how-it-works">Solution purpose and how it works (up to 300 words):</label>
@@ -210,22 +210,26 @@
 <label for="website-url">Link to the solution webpage:</label>
 <input type="text" name="Website url" id="website-url">
 
-<label for="image">Photo or drawing:</label>
-<input type="file" name="Image" id="image">
-
 <label for="video-link">Link to external video, e.g. YouTube or Vimeo:</label>
 <input type="text" name="Video link" id="video-link">
 
-<label for="doc-url">Link to published documents, such as articles, reviews, or testimonials</label>
+<label for="doc-url">Link to published documents, such as articles, reviews, or testimonials:</label>
 <input type="text" name="Doc url" id="doc-url"></p>
-<h3 id="availability">Availability</h3>
+<h2 id="files-for-direct-upload-to-tel">Files for direct upload to TEL</h2>
+<p>
+<label for="image">Solution Image:</label>
+<input type="file" name="Image" id="image">
+
+<label for="other-document-attachment">Further documentation, such as instructions, photos, drawings or relevant articles:</label>
+<input type="file" name="Other document attachment" id="other-document-attachment"></p>
+<h2 id="availability">Availability</h2>
 
 <label>Is solution publicly available? (Answer &quot;No&quot; if still only in prototype or trial stage.)</label>
 
 <label class="radio">Yes<input type="radio" name="Publicly available" value="Yes"></label>
 <label class="radio">No<input type="radio" name="Publicly available" value="No"></label>
 
-<label for="price-range">Price Range</label>
+<label for="price-range">Price Range:</label>
 <select name="Price range" id="price-range">
 <option value="">-- Select from list --</option>
 <option value="Free">Free</option>
@@ -239,10 +243,23 @@
 <label for="where-available">Countries where available, or where it can be shipped:</label>
 <input type="text" name="Where available" id="where-available"></p>
 
-<label>Can solution be offered or licensed for local manufacture? (Answer &quot;no&quot; if still only in prototype or trial stage.)</label>
+<label>Can solution be offered or licensed for local manufacture? (Answer &quot;No&quot; if still only in prototype or trial stage.)</label>
 
 <label class="radio">Yes<input type="radio" name="Licensed for manufacture" value="Yes"></label>
 <label class="radio">No<input type="radio" name="Licensed for manufacture" value="No"></label>
+<h2 id="your-contact-info">Your Contact Info</h2>
+<p>
+<label for="contact-name">Name:</label>
+<input type="text" name="Contact Name" id="contact-name">
+
+<label for="contact-organization">Company or Organization:</label>
+<input type="text" name="Contact Organization" id="contact-organization">
+
+<label for="contact-country">Country:</label>
+<input type="text" name="Contact Country" id="contact-country">
+
+<label for="contact-email">Email:</label>
+<input type="email" name="Contact Email" id="contact-email"></p>
 <p>
 <input type="submit" value="Submit Information" class="button"></p>
 <p>
