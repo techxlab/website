@@ -94,161 +94,169 @@
 
 <section id="add-solutions" class="section section-add-solutions">
   <div class="container">
-    <h1>Tell us About your Solution</h1>
-    <p>Once your solution has been submitted, our team will review all content to ensure that we provide unbiased information. Our curating process creates a level playing field for solution providers, while also empowering organizations and communities to find the solutions that best suit their unique needs.</p>
+    <div data-render-html="/add-solutions/"><h1 id="tell-us-about-your-solution">Tell us About your Solution</h1>
+<p>Once your solution has been submitted, our team will review all content to ensure that we provide unbiased information. Our curating process creates a level playing field for solution providers, while also empowering organizations and communities to find the solutions that best suit their unique needs.</p>
+</div>
     <div class="row">
       <div class="column column-add-solutions">
+        <form id="add-solution-form" class="column column-add-solutions" action="https://tel-staging.herokuapp.com/server/form" method="POST">
+          <div data-render-html="/add-solutions/#form"><h2 id="basics">Basics</h2>
+<p>
+<label for="solution-name">Name of the solution, invention, or method:</label>
+<input name="Solution Name" id="solution-name"></p>
 
-        <h2>Basics</h2>
+<label for="category">Technology Area:</label>
+<select name="Category" id="category">
+<option value="">--- select from list ---</option>
+<option value="water">Water &amp; Sanitation</option>
+<option value="agriculture">Agriculture &amp; Tools</option>
+<option value="energy">Energy &amp; Cooking</option>
+<option value="education">Education &amp; Connectivity</option>
+<option value="housing">Housing &amp; Transport</option>
+<option value="medical">Health &amp; Medical Care</option>
+<option value="other">Additional Solutions</option>
+</select>
+<label style="display:none;" for="sub-category-water">Sub-category:</label>
+<select style="display:none;" disabled name="Sub-category water" id="sub-category-water">
+<option value="">--- select from list ---</option>
+<option value="Water Purification">Water Purification</option>
+<option value="Water Testing">Water Testing</option>
+<option value="Collection &amp; Storage">Collection &amp; Storage</option>
+<option value="Transport">Transport</option>
+<option value="Sanitation">Sanitation</option>
+</select>
+<label style="display:none;" for="sub-category-agricuture">Sub-category:</label>
+<select style="display:none;" disabled name="Sub-category agricuture" id="sub-category-agricuture">
+<option value="">--- select from list ---</option>
+<option value="Irrigation">Irrigation</option>
+<option value="Cultivation &amp; Tools">Cultivation &amp; Tools</option>
+<option value="Seeds &amp; Stock">Seeds &amp; Stock</option>
+<option value="Methods &amp; Learning">Methods &amp; Learning</option>
+</select>
+<label style="display:none;" for="sub-category-energy">Sub-category:</label>
+<select style="display:none;" disabled name="Sub-category energy" id="sub-category-energy">
+<option value="">--- select from list ---</option>
+<option value="Energy Generation">Energy Generation</option>
+<option value="Energy Storage &amp; Control">Energy Storage &amp; Control</option>
+<option value="Cooling, Heating &amp; Insulation">Cooling, Heating &amp; Insulation</option>
+<option value="Safe &amp; Sustainable Cooking">Safe &amp; Sustainable Cooking</option>
+<option value="Lighting">Lighting</option>
+</select>
+<label style="display:none;" for="sub-category-education">Sub-category:</label>
+<select style="display:none;" disabled name="Sub-category education" id="sub-category-education">
+<option value="">--- select from list ---</option>
+<option value="Teaching Resources &amp; Aids">Teaching Resources &amp; Aids</option>
+<option value="Student Resources">Student Resources</option>
+<option value="Phone Applications">Phone Applications</option>
+<option value="Desktop Applications">Desktop Applications</option>
+<option value="Communication Technologies">Communication Technologies</option>
+</select>
+<label style="display:none;" for="sub-category-housing">Sub-category:</label>
+<select style="display:none;" disabled name="Sub-category housing" id="sub-category-housing">
+<option value="">--- select from list ---</option>
+<option value="Housing &amp; Shelter">Housing &amp; Shelter</option>
+<option value="Transportation">Transportation</option>
+</select>
+<label style="display:none;" for="sub-category-medical">Sub-category:</label>
+<select style="display:none;" disabled name="Sub-category medical" id="sub-category-medical">
+<option value="">--- select from list ---</option>
+<option value="Medical &amp; Surgical Care">Medical &amp; Surgical Care</option>
+<option value="Prevention &amp; Vaccination">Prevention &amp; Vaccination</option>
+<option value="Nutrition">Nutrition</option>
+<option value="Women&#39;s Health">Women&#39;s Health</option>
+<option value="Maternal &amp; Child Health">Maternal &amp; Child Health</option>
+</select><h2 id="provider-information">Provider Information</h2>
+<p>
+<label for="name">Name</label>
+<input type="text" name="Name" id="name">
 
-        <label>Name of the solution, invention, or method</label>
-        <input id="product-name" type="text" name="nameProduct">
+<label for="organization">Company or Organization</label>
+<input type="text" name="Organization" id="organization">
 
-        <label>Technology Areaa</label>
-        <select>
-          <option value="">Select Technology</option>
-          <option value="water">Water & Sanitation</option>
-          <option value="agriculture">Agriculture</option>
-          <option value="energy">Energy</option>
-          <option value="education">Education & Technology</option>
-          <option value="housing">Housing & Transport</option>
-          <option value="medical">Health & Medical Care</option>
-          <option value="other">Additional Solutions</option>
-        </select>
+<label for="street-address">Street Address</label>
+<input type="text" name="Street Address" id="street-address">
 
-        <label class="col-md-6" for="id_cat">Sub-category:</label>
-        <select name="id_cat" id="id_cat" disabled="disabled" class="col-md-6 select-list">
-          <option value="">Select category</option>
-          <option class="tech-1" value="8">Water Purification</option>
-          <option class="tech-1" value="49">Water Testing</option>
-          <option class="tech-1" value="9">Collection & Storage</option>
-          <option class="tech-1" value="50">Transport</option>
-          <option class="tech-1" value="51">Sanitation</option>
-          <option class="tech-2" value="11">Irrigation</option>
-          <option class="tech-2" value="12">Cultivation & Tools</option>
-          <option class="tech-2" value="13">Seeds & Stock</option>
-          <option class="tech-2" value="14">Methods & Learning</option>
-          <option class="tech-3" value="31">Energy Generation</option>
-          <option class="tech-3" value="32">Energy Storage & Control</option>
-          <option class="tech-3" value="33">Cooling, Heating & Insulation</option>
-          <option class="tech-3" value="15">Safe & Sustainable Cooking</option>
-          <option class="tech-3" value="35">Lighting</option>
-          <option class="tech-5" value="37">Teaching Resources & Aids</option>
-          <option class="tech-5" value="38">Student Resources</option>
-          <option class="tech-5" value="47">Phone Applications</option>
-          <option class="tech-5" value="48">Desktop Applications</option>
-          <option class="tech-5" value="39">Communication Technologies</option>
-          <option class="tech-6" value="40">Housing & Shelter</option>
-          <option class="tech-6" value="41">Transportation</option>
-          <option class="tech-4" value="42">Medical & Surgical Care</option>
-          <option class="tech-4" value="43">Prevention & Vaccination</option>
-          <option class="tech-4" value="44">Nutrition</option>
-          <option class="tech-4" value="45">Women's Health</option>
-          <option class="tech-4" value="46">Maternal & Child Health</option>
-          <option class="tech-7" value="30">Please Continue</option>
-        </select>
+<label for="city">City</label>
+<input type="text" name="City" id="city">
 
-        <h2>Contact Information</h2>
+<label for="postal-code">Postal Code</label>
+<input type="text" name="Postal Code" id="postal-code">
 
-        <label class="oblig" for="first_name_owner">First Name</label>
-        <input class="form-control"  type="text" name="first_name_owner" id="first_name_owner">
+<label for="country">Country</label>
+<input type="text" name="Country" id="country">
 
-        <label class="oblig" for="last_name_owner">Last Name</label>
-        <input class="form-control"  type="text" name="last_name_owner" id="last_name_owner">
+<label for="phone">Phone</label>
+<input type="tel" name="Phone" id="phone">
 
-        <label class="oblig" for="company_name_owner">Organization Name</label>
-        <input class="form-control"  type="text" name="company_name_owner" id="company_name_owner">
+<label for="email">Email</label>
+<input type="email" name="Email" id="email"></p>
+<h2 id="solution-details">Solution Details</h2>
+<p>
+<label for="how-it-works">Solution purpose and how it works (up to 300 words):</label>
+<textarea name="How It Works" id="how-it-works"></textarea>
 
-        <label for="street_adress_owner">Street Address</label>
-        <input class="form-control"  type="text"  name="street_adress_owner" id="street_adress_owner">
+<label for="history-and-development">Product history and development (up to 250 words):</label>
+<textarea name="History and Development" id="history-and-development"></textarea>
 
-        <label class="oblig" for="city_owner">Town/City</label>
-        <input class="form-control"  type="text"  name="city_owner" id="city_owner">
+<label for="dimensions">Dimensions (approx):</label>
+<input type="text" name="Dimensions" id="dimensions">
 
-        <label for="postal_code_owner">Postal Code</label>
-        <input class="form-control"  type="text" name="postal_code_owner" id="postal_code_owner">
+<label for="weight">Weight (approx):</label>
+<input type="text" name="Weight" id="weight">
 
-        <label for="country_owner">Country</label>
-        <input class="form-control"  type="text" name="country_owner" id="country_owner">
+<label for="manufacturer-url">Link (URL) to the manufacturer&#039;s website:</label>
+<input type="text" name="Manufacturer url" id="manufacturer-url">
 
-        <label for="phone_owner">Phone #</label>
-        <input class="form-control"  type="text"  name="phone_owner" id="phone_owner">
+<label for="website-url">Link to the solution webpage:</label>
+<input type="text" name="Website url" id="website-url">
 
-        <label for="email_adress_owner">Email</label>
-        <input class="form-control"  type="text"  name="email_adress_owner" id="email_adress_owner">
+<label for="image">Photo or drawing:</label>
+<input type="file" name="Image" id="image">
 
-        <h2>Details</h2>
+<label for="video-link">Link to external video, e.g. YouTube or Vimeo:</label>
+<input type="text" name="Video link" id="video-link">
 
-        <label class="oblig" for="howItWork">Solution purpose and how it works (up to 300 words)</label>
-        <textarea class="form-control"  name="howItWork" id="howItWork" rows="4" ></textarea>
+<label for="doc-url">Link to published documents, such as articles, reviews, or testimonials</label>
+<input type="text" name="Doc url" id="doc-url"></p>
+<h3 id="availability">Availability</h3>
 
-        <label for="historyAndDev">Product history and development, including patent information if applicable (up to 250 words)</label>
-        <textarea class="form-control"  name="historyAndDev" id="historyAndDev" rows="4" ></textarea>
+<label>Is solution publicly available? (Answer &quot;No&quot; if still only in prototype or trial stage.)</label>
 
-        <label for="dimension">Dimensions (approx):</label>
-        <input class="form-control"  type="text" name="dimension" id="dimension">
+<label class="radio">Yes<input type="radio" name="Publicly available" value="Yes"></label>
+<label class="radio">No<input type="radio" name="Publicly available" value="No"></label>
 
-        <label for="weight">Weight (approx):</label>
-        <input class="form-control"  type="text" name="weight" id="weight">
+<label for="price-range">Price Range</label>
+<select name="Price range" id="price-range">
+<option value="">-- Select from list --</option>
+<option value="Free">Free</option>
+<option value="1 to 20 USD">1 to 20 USD</option>
+<option value="20 to 50 USD">20 to 50 USD</option>
+<option value="50-100 USD">50-100 USD</option>
+<option value="100-200 USD">100-200 USD</option>
+<option value="Over 200 USD">Over 200 USD</option>
+<option value="Contact supplier for quote">Contact supplier for quote</option>
+</select><p>
+<label for="where-available">Countries where available, or where it can be shipped:</label>
+<input type="text" name="Where available" id="where-available"></p>
 
-        <label for="linkToManufacturer">Link (URL) to the manufacturer&#039;s website:</label>
-        <input class="form-control"  type="text" name="linkToManufacturer" id="linkToManufacturer">
+<label>Can solution be offered or licensed for local manufacture? (Answer &quot;no&quot; if still only in prototype or trial stage.)</label>
 
-        <label for="linkToProduct">Link to the solution webpage:</label>
-        <input class="form-control"  type="text" name="linkToProduct" id="linkToProduct">
+<label class="radio">Yes<input type="radio" name="Licensed for manufacture" value="Yes"></label>
+<label class="radio">No<input type="radio" name="Licensed for manufacture" value="No"></label>
+<p>
+<input type="submit" value="Submit Information" class="button"></p>
+<p>
+<input type="hidden" name="form" value="Add Solution" id="form">
 
-        <label>Solution Image</label>
-        <input class="upload-btn"  type="file" name="image" id="image" class="multi" maxlength="1">
+<input type="hidden" name="thankyou" value="/form-thank-you/" id="thankyou">
 
-        <label for="video_link">Link to external video, e.g. YouTube or Vimeo:</label>
-        <input class="form-control"  type="text" name="video_link" id="video_link">
+<input type="hidden" name="sorry" value="/form-sorry/" id="sorry">
 
-        <label for="other_link">Link to published documents, such as articles, reviews, or testimonials</label>
-        <input type="file" name="other_file" id="other_file" class="multi" maxlength="1"/>
+<input type="hidden" name="validated" id="validated">
 
-        <h3>Acquisition Information</h3>
-
-        <label class="commlabel" for="commercial">Is solution publicly available? (Answer &#039;no&#039; if still only in prototype or trial stage.)</label>
-        <input type="radio" name="commercial" id="commercialYes" value="yes" checked="checked"><label for="commercialYes">Yes</label>
-        <input type="radio" name="commercial" id="commercialNo" value="no"><label for="commercialNo">No</label>
-
-        <label for="priceRange">Price Range</label>
-        <select id="priceRange" name="priceRange" class="select-list">
-          <option value=""></option>
-          <option value="Free" >Free</option>
-          <option value="1 to 20 USD" >1 to 20 USD</option>
-          <option value="20 to 50 USD" >20 to 50 USD</option>
-          <option value="50-100 USD" >50-100 USD</option>
-          <option value="100-200 USD" >100-200 USD</option>
-          <option value="Over 200 USD" >Over 200 USD</option>
-          <option value="Contact supplier for quote" >Contact supplier for quote</option>
-        </select>
-
-        <label class="oblig" for="countryavailable">Countries where available, or where it can be shipped</label>
-        <input class="form-control"  type="text" name="countryavailable" id="countryavailable">
-
-        <label for="offeredOrLicensed">Can solution be offered or licensed for local manufacture? (Answer &#039;no&#039; if still only in prototype or trial stage.)</label>
-        <input type="radio" name="offeredOrlicenced" id="offeredOrlicensedYes" value="yes" checked="checked"><label class="col-md-10" for="commercialYes">Yes</label>
-        <input type="radio" name="offeredOrlicenced" id="offeredOrlicensedNo" value="no"><label class="col-md-10" for="commercialNo">No</label>
-
-        <h2>Provider Information</h2>
-
-        <label class="oblig" for="first_name_contact_details">First Name:<span class="required">*</span></label>
-        <input class="form-control"  type="text"  name="first_name_contact_details" id="first_name_contact_details">
-
-        <label class="oblig" for="last_name_contact_details">Last Name:<span class="required">*</span></label>
-        <input class="form-control"  type="text"  name="last_name_contact_details" id="last_name_contact_details">
-
-        <label for="company_name_contact_details">Company Name</label>
-        <input class="form-control"  type="text"  name="company_name_contact_details" id="company_name_contact_details">
-
-        <label class="oblig" for="country_contact_details">Country</label>
-        <input class="form-control"  type="text"  name="country_contact_details" id="country_contact_details">
-        <label class="oblig" for="email_adress_contact_details">Email</label>
-        <input class="form-control"  type="text"  name="email_adress_contact_details" id="email_adress_contact_details">
-
-        <input class="button" type="submit" name="step4" value="Submit">
-
+<input type="hidden" name="location" id="location"></p>
+</div>
+        </form>
       </div>
     </div>
   </div>

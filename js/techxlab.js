@@ -65,17 +65,17 @@ function initAllViews($el) {
 }
 
 function initForms() {
-  $contactForm = $('#contact-form');
-  if (!$contactForm.length) return;
+  $forms = $('#contact-form, #add-solution-form');
+  if (!$forms.length) return;
 
-  $contactForm.on('submit', validateContactForm);
+  $forms.on('submit', validateForm);
 
   cleanForms = function() {
-    $contactForm.off('submit', validateContactForm);
+    $forms.off('submit', validateForm);
   }
 
-  function validateContactForm() {
-    console.log('validateContactForm: staticroot = ' + opts.staticRoot);
+  function validateForm() {
+    console.log('validateForm: ' + $('#form').val());
     $('#location').val(location.origin + opts.staticRoot);
     $('#validated').val('jawohl!');
   }
