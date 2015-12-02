@@ -8,7 +8,14 @@ var cleanSearch = function(){};
 var cleanForms = function(){};
 
 // generator api
-var pager, generator, opts, log, u;
+var pager, generator, log, u;
+
+// provide opts.staticRoot and location.origin also for forms in non-SPA mode
+var opts = {};
+opts.staticRoot = location.pathname.slice(0, location.pathname.length - pubRef.href.length);
+
+// http://tosbourn.com/a-fix-for-window-location-origin-in-internet-explorer/
+if (!location.origin) { location.origin = location.protocol + "//" + location.hostname + (location.port ? ':' + location.port: ''); }
 
 // load generator on browsers that are up to it
 if (history && history.pushState) {
@@ -19,7 +26,7 @@ if (history && history.pushState) {
 // initialize contact and other form handlers (both SPA and non-SPA modes)
 initForms();
 
-// start single-page-app
+// start SPA mode
 function initClientSide(g) {
   generator = g;
   opts = generator.opts;
@@ -68,8 +75,8 @@ function initForms() {
   }
 
   function validateContactForm() {
-    console.log('validateContactForm');
-    $('#location').val(location);
+    console.log('validateContactForm: staticroot = ' + opts.staticRoot);
+    $('#location').val(location.origin + opts.staticRoot);
     $('#validated').val('jawohl!');
   }
 }

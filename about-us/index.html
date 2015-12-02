@@ -48,23 +48,23 @@
           <li class="menu-item"><a href="../sign-in/">Sign In</a></li>
         </ul> -->
         <ul class="menu menu-header">
-            <li class="menu-item  selected ">
-              <a href="../solutions/">Find Solutions</a>
-            </li>
             <li class="menu-item ">
-              <a href="../add-solutions/">Add Solutions</a>
-            </li>
-            <li class="menu-item ">
-              <a href="../take-action/">Take Action</a>
+              <a href="../about-us/">Our Mission</a>
             </li>
             <li class="menu-item ">
               <a href="../project-accelerator/">Project Accelerator</a>
             </li>
             <li class="menu-item ">
-              <a href="../blog/">Blog</a>
+              <a href="../take-action/">Take Action</a>
             </li>
             <li class="menu-item ">
-              <a href="../about-us/">About Us</a>
+              <a href="../prizes-for-ideas/">Prizes for Ideas</a>
+            </li>
+            <li class="menu-item ">
+              <a href="../funding-resources/">Funding Resources</a>
+            </li>
+            <li class="menu-item ">
+              <a href="../blog/">Stories from the Field</a>
             </li>
         </ul>
       </div>
@@ -84,7 +84,8 @@
       <div class="column column-banner-feature column-banner-feature">
         <h2></h2>
         <h1 id="our-mission">Our Mission</h1>
-<p>A Quality Research significantly deepens the change management by thinking and acting beyond boundaries, while the white-collar workers cocreate an impactful realignment. Responsibility and shareholder value empower the business leaders. The resources address soft cycle issues.</p>
+<p>TEL is dedicated to bringing communities out of poverty by driving the adoption of innovative, cost-effective and sustainable solutions that improve the lives at the bottom of the pyramid.</p>
+<p>We host a crowdsourced database of over 600 innovations in order to connect practical solutions to the people who need them most. Through our Project Accelerator service, we help NGOs and communities leverage appropriate technology solutions to maximize the impact of last-mile development.</p>
 
       </div>
     </div>
@@ -292,18 +293,27 @@
       </div>
       <div class="column column-space">
       </div>
-      <form id="contact-form" class="column column-contact column-contact-form" action="https://techxlab.github.io/website/server/form" method="POST">
-        <label class="label-contact">Name</label>
-        <input id="full-name" name="full-name" type="text" maxlength="2048">
-        <label class="label-contact">Email</label>
-        <input id="email" name="email" type="text" maxlength="2048">
-        <label class="label-contact">Message</label>
-        <textarea id="message" name="message" maxlength="8192" rows="3"></textarea>
-        <input type="hidden" id="validated" name="validated" value="">
-        <input type="hidden" id="location" name="location" value="">
-        <input type="hidden" id="thankyou" name="thankyou" value="../form-thank-you/">
-        <input type="hidden" id="sorry" name="sorry" value="../form-sorry/">
-        <input class="elem button" type="submit" name="submit">
+      <form id="contact-form" class="column column-contact column-contact-form" action="https://tel-staging.herokuapp.com/server/form" method="POST">
+        <div data-render-html="/#contact-form"><p>
+<label for="full-name">Name</label>
+<input type="text" name="full-name" id="full-name">
+
+<label for="email">Email</label>
+<input type="email" name="email" id="email">
+
+<label for="message">Message</label>
+<textarea name="message" id="message"></textarea>
+
+<input type="submit" value="submit" class="button"></p>
+<p>
+<input type="hidden" name="thankyou" value="/form-thank-you/" id="thankyou">
+
+<input type="hidden" name="sorry" value="/form-sorry/" id="sorry">
+
+<input type="hidden" name="validated" id="validated">
+
+<input type="hidden" name="location" id="location"></p>
+</div>
       </form>
     </div>
   </div>
