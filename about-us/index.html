@@ -295,17 +295,19 @@
       </div>
       <form id="contact-form" class="column column-contact column-contact-form" action="https://tel-staging.herokuapp.com/server/form" method="POST">
         <div data-render-html="/#contact-form"><p>
-<label for="full-name">Name</label>
-<input type="text" name="full-name" id="full-name">
+<label for="name">Name</label>
+<input type="text" name="Name" id="name">
 
 <label for="email">Email</label>
-<input type="email" name="email" id="email">
+<input type="email" name="Email" id="email">
 
 <label for="message">Message</label>
-<textarea name="message" id="message"></textarea>
+<textarea name="Message" id="message"></textarea>
 
-<input type="submit" value="submit" class="button"></p>
+<input type="submit" value="Submit" class="button"></p>
 <p>
+<input type="hidden" name="form" value="Contact Us" id="form">
+
 <input type="hidden" name="thankyou" value="/form-thank-you/" id="thankyou">
 
 <input type="hidden" name="sorry" value="/form-sorry/" id="sorry">

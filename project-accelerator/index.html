@@ -135,25 +135,41 @@
       <div class="column column-get-started-left">
           <p>Complete this form by telling us more about your project. Please be as detailed as possible, and we will respond to your inquiry within three business days.</p>
       </div>
-      <form class="column column-contact column-contact-form column-get-started-right">
-        <label class="label-contact">Name</label>
-        <input id="full-name" name="full-name" type="text" maxlength="2048">
-        <label class="label-contact">Your Email</label>
-        <input id="email" name="email" type="text" maxlength="2048">
-        <label class="label-contact">Organization</label>
-        <input id="full-name" name="full-name" type="text" maxlength="2048">
-        <label class="label-contact">Country</label>
-        <input id="full-name" name="full-name" type="text" maxlength="2048">
-        <label class="label-contact">Description</label>
-        <textarea id="message" name="message" maxlength="8192" rows="3"></textarea>
-        <label class="label-contact">How can we help accelerate your project?</label>
-        <div class="checks">
-          <input type="checkbox" name="solution-search-and-selection" value="Solution Search and Selection"> Solution Search and Selection<br>
-          <input type="checkbox" name="" value="Solution Acquisition and Assessment"> Solution Acquisition and Assessment<br>
-          <input type="checkbox" name="" value="Fundraising Resources"> Fundraising Resources<br>
-          <input type="checkbox" name="" value="Promotion and Publicity"> Promotion and Publicity<br>
-        </div>
-        <input class="elem button" type="submit" name="submit">
+      <form id="contact-form" class="column column-contact column-contact-form column-get-started-right" action="https://tel-staging.herokuapp.com/server/form" method="POST">
+        <div data-render-html="/project-accelerator/#accelerator-form"><p>
+<label for="name">Name</label>
+<input type="text" name="Name" id="name">
+
+<label for="email">Email</label>
+<input type="email" name="Email" id="email">
+
+<label for="organization">Organization</label>
+<input type="text" name="Organization" id="organization">
+
+<label for="country">Country</label>
+<input type="text" name="Country" id="country">
+
+<label for="description">Description</label>
+<textarea name="Description" id="description"></textarea></p>
+
+<label>How can we help accelerate your project?</label>
+<label class="checkbox">Solution Search and Selection<input type="checkbox" name="How" value="Solution Search and Selection"></label>
+<label class="checkbox">Solution Acquisition and Assessment<input type="checkbox" name="How" value="Solution Acquisition and Assessment"></label>
+<label class="checkbox">Fundraising Resources<input type="checkbox" name="How" value="Fundraising Resources"></label>
+<label class="checkbox">Promotion and Publicity<input type="checkbox" name="How" value="Promotion and Publicity"></label>
+<p>
+<input type="submit" value="Submit" class="button"></p>
+<p>
+<input type="hidden" name="form" value="Project Accelerator" id="form">
+
+<input type="hidden" name="thankyou" value="/form-thank-you/" id="thankyou">
+
+<input type="hidden" name="sorry" value="/form-sorry/" id="sorry">
+
+<input type="hidden" name="validated" id="validated">
+
+<input type="hidden" name="location" id="location"></p>
+</div>
       </form>
     </div>
   </div>
