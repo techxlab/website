@@ -5,8 +5,8 @@
   "no-watch": true,
   "no-sockets": true,
   "editor": true,
-  "user": "hello",
-  "basedir": "/Users/hello/pub/tel-website",
+  "user": "jumblerg",
+  "basedir": "/Users/jumblerg/Development/app/techxlab/tel-website",
   "pkgJson": {
     "name": "techxlab-website",
     "version": "0.0.1",
@@ -44,10 +44,10 @@
   "sources": [
     {
       "name": "pages",
-      "path": "/Users/hello/pub/tel-website/cnt",
+      "path": "/Users/jumblerg/Development/app/techxlab/tel-website/cnt",
       "writable": true,
       "type": "FILE",
-      "tmp": "/Users/hello/.tmp/pages",
+      "tmp": "/Users/jumblerg/.tmp/pages",
       "watch": {},
       "fragmentDelim": true,
       "files": [
@@ -69,7 +69,7 @@
         },
         {
           "path": "/form-thank-you.md",
-          "text": "---- /form-thank-you/----\nimage:    /img/construction-site.jpg\ntemplate: banner\nnocrawl:  1\n\n# Thanks!\n\nYour information has been received by our server.\n\n\n---- /form-sorry/----\nimage:    /img/construction-site.jpg\ntemplate: banner\nnocrawl:  1\n\n# Oops!\n\nIt looks like your information was not received by our server.\n"
+          "text": "---- /form-thank-you/----\nimage:    /img/construction-site.jpg\ntemplate: banner\n\n# Thanks!\n\nYour information has been received by our server.\n\n\n---- /form-sorry/----\nimage:    /img/construction-site.jpg\ntemplate: banner\n\n# Oops!\n\nIt looks like your information was not received by our server.\n"
         },
         {
           "path": "/funding-resources.md",
@@ -127,7 +127,7 @@
     },
     {
       "name": "templates",
-      "path": "/Users/hello/pub/tel-website/src",
+      "path": "/Users/jumblerg/Development/app/techxlab/tel-website/src",
       "type": "FILE",
       "watch": {},
       "files": [
@@ -256,10 +256,10 @@
     {
       "name": "solutions",
       "writable": true,
-      "path": "/Users/hello/pub/tel-solutions/src",
+      "path": "/Users/jumblerg/Development/app/techxlab/tel-solutions/src",
       "repo": null,
       "type": "FILE",
-      "tmp": "/Users/hello/.tmp/solutions",
+      "tmp": "/Users/jumblerg/.tmp/solutions",
       "watch": {},
       "fragmentDelim": true,
       "files": [
@@ -2638,7 +2638,7 @@
       ]
     },
     {
-      "path": "/Users/hello/pub/server/node_modules/pub-pkg-seo/src",
+      "path": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-seo/src",
       "fragmentDelim": 1,
       "_pkg": "pub-pkg-seo",
       "name": "src",
@@ -2660,7 +2660,7 @@
       ]
     },
     {
-      "path": "/Users/hello/pub/server/node_modules/pub-pkg-editor/src",
+      "path": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-editor/src",
       "route": "/pub",
       "_pkg": "pub-pkg-editor",
       "name": "_src",
@@ -2689,7 +2689,7 @@
   ],
   "staticPaths": [
     {
-      "path": "/Users/hello/pub/tel-website/rsc",
+      "path": "/Users/jumblerg/Development/app/techxlab/tel-website/rsc",
       "watch": {},
       "route": "/",
       "depth": 5,
@@ -2700,11 +2700,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/hello/pub/tel-website/rsc"
+        "root": "/Users/jumblerg/Development/app/techxlab/tel-website/rsc"
       }
     },
     {
-      "path": "/Users/hello/pub/tel-website/CNAME",
+      "path": "/Users/jumblerg/Development/app/techxlab/tel-website/CNAME",
       "watch": {},
       "route": "/",
       "depth": 5,
@@ -2715,7 +2715,7 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/hello/pub/tel-website"
+        "root": "/Users/jumblerg/Development/app/techxlab/tel-website"
       }
     },
     {
@@ -2749,7 +2749,7 @@
       }
     },
     {
-      "path": "/Users/hello/pub/tel-images",
+      "path": "/Users/jumblerg/Development/app/techxlab/tel-images",
       "route": "/ast",
       "watch": {},
       "depth": 5,
@@ -2760,11 +2760,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/hello/pub/tel-images"
+        "root": "/Users/jumblerg/Development/app/techxlab/tel-images"
       }
     },
     {
-      "path": "/Users/hello/pub/server/node_modules/pub-pkg-jquery/js/jquery-1.11.3.min.js",
+      "path": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-jquery/js/jquery-1.11.3.min.js",
       "route": "/js",
       "inject": true,
       "maxAge": "30d",
@@ -2777,11 +2777,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/hello/pub/server/node_modules/pub-pkg-jquery/js"
+        "root": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-jquery/js"
       }
     },
     {
-      "path": "/Users/hello/pub/server/node_modules/pub-pkg-font-awesome/fonts",
+      "path": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-font-awesome/fonts",
       "route": "/fonts",
       "_pkg": "pub-pkg-font-awesome",
       "watch": false,
@@ -2793,11 +2793,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/hello/pub/server/node_modules/pub-pkg-font-awesome/fonts"
+        "root": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-font-awesome/fonts"
       }
     },
     {
-      "path": "/Users/hello/pub/server/node_modules/pub-pkg-font-awesome/css/font-awesome.css",
+      "path": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-font-awesome/css/font-awesome.css",
       "route": "/css",
       "inject": true,
       "_pkg": "pub-pkg-font-awesome",
@@ -2810,11 +2810,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/hello/pub/server/node_modules/pub-pkg-font-awesome/css"
+        "root": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-font-awesome/css"
       }
     },
     {
-      "path": "/Users/hello/pub/server/node_modules/pub-pkg-editor/static/css",
+      "path": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-editor/static/css",
       "route": "/pub/css",
       "_pkg": "pub-pkg-editor",
       "watch": false,
@@ -2826,11 +2826,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/hello/pub/server/node_modules/pub-pkg-editor/static/css"
+        "root": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-editor/static/css"
       }
     },
     {
-      "path": "/Users/hello/pub/server/node_modules/pub-pkg-editor/node_modules/humane-js/themes/flatty.css",
+      "path": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-editor/node_modules/humane-js/themes/flatty.css",
       "route": "/pub/humane-js",
       "_pkg": "pub-pkg-editor",
       "watch": false,
@@ -2842,13 +2842,13 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/hello/pub/server/node_modules/pub-pkg-editor/node_modules/humane-js/themes"
+        "root": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-editor/node_modules/humane-js/themes"
       }
     }
   ],
   "outputs": [
     {
-      "path": "/Users/hello/pub/tel-website/tgt",
+      "path": "/Users/jumblerg/Development/app/techxlab/tel-website/tgt",
       "relPaths": true,
       "omitRoutes": [
         "/ast"
@@ -2860,33 +2860,33 @@
       "name": "tgt",
       "writable": true,
       "type": "FILE",
-      "tmp": "/Users/hello/.tmp/tgt",
+      "tmp": "/Users/jumblerg/.tmp/tgt",
       "watch": {}
     }
   ],
   "browserScripts": [
     {
-      "path": "/Users/hello/pub/server/node_modules/pub-pkg-editor/client/editor-ui.js",
+      "path": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-editor/client/editor-ui.js",
       "route": "/pub/js/editor-ui.js",
       "_pkg": "pub-pkg-editor"
     },
     {
-      "path": "/Users/hello/pub/preview/pub-preview.js",
+      "path": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-editor/node_modules/pub-preview/pub-preview.js",
       "route": "/pub/js/pub-preview.js",
       "_pkg": "pub-pkg-editor"
     }
   ],
   "generatorPlugins": [
     {
-      "path": "/Users/hello/pub/server/node_modules/pub-pkg-seo/generator-plugin.js",
+      "path": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-seo/generator-plugin.js",
       "_pkg": "pub-pkg-seo"
     },
     {
-      "path": "/Users/hello/pub/server/node_modules/pub-pkg-font-awesome/generator-plugin.js",
+      "path": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-font-awesome/generator-plugin.js",
       "_pkg": "pub-pkg-font-awesome"
     },
     {
-      "path": "/Users/hello/pub/tel-website/pub-generator-plugin.js"
+      "path": "/Users/jumblerg/Development/app/techxlab/tel-website/pub-generator-plugin.js"
     },
     {
       "path": "pub-pager"
@@ -2894,7 +2894,7 @@
   ],
   "serverPlugins": [
     {
-      "path": "/Users/hello/pub/tel-website/pub-server-plugin.js"
+      "path": "/Users/jumblerg/Development/app/techxlab/tel-website/pub-server-plugin.js"
     }
   ],
   "injectCss": [
@@ -2939,11 +2939,41 @@
           "type": "git",
           "url": "git://github.com/jldec/pub-pkg-jquery.git"
         },
-        "author": "jurgen leschner",
-        "license": "MIT"
+        "author": {
+          "name": "jurgen leschner"
+        },
+        "license": "MIT",
+        "gitHead": "ae3559b23a373377fe5933b73db06f09d26ba7d0",
+        "bugs": {
+          "url": "https://github.com/jldec/pub-pkg-jquery/issues"
+        },
+        "homepage": "https://github.com/jldec/pub-pkg-jquery#readme",
+        "_id": "pub-pkg-jquery@1.11.3",
+        "scripts": {},
+        "_shasum": "75d35f36153cfe1cb821f9ecc5bb593ee0d1314e",
+        "_from": "pub-pkg-jquery@>=1.11.3 <2.0.0",
+        "_npmVersion": "2.9.0",
+        "_nodeVersion": "2.0.2",
+        "_npmUser": {
+          "name": "jldec",
+          "email": "jldec@ciaosoft.com"
+        },
+        "maintainers": [
+          {
+            "name": "jldec",
+            "email": "jldec@ciaosoft.com"
+          }
+        ],
+        "dist": {
+          "shasum": "75d35f36153cfe1cb821f9ecc5bb593ee0d1314e",
+          "tarball": "http://registry.npmjs.org/pub-pkg-jquery/-/pub-pkg-jquery-1.11.3.tgz"
+        },
+        "directories": {},
+        "_resolved": "https://registry.npmjs.org/pub-pkg-jquery/-/pub-pkg-jquery-1.11.3.tgz",
+        "readme": "ERROR: No README data found!"
       },
       "pkgName": "pub-pkg-jquery",
-      "dir": "/Users/hello/pub/server/node_modules/pub-pkg-jquery"
+      "dir": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-jquery"
     },
     {
       "path": "pub-pkg-font-awesome",
@@ -2971,11 +3001,40 @@
           "docout": "pub -O doc",
           "docview": "pub -S doc/gh-pages doc"
         },
-        "author": "jurgen leschner",
-        "license": "MIT AND OFL-1.1"
+        "author": {
+          "name": "jurgen leschner"
+        },
+        "license": "code: MIT, fonts: SIL OFL 1.1",
+        "gitHead": "5614a01f2ca99b0cd56a901ddb292b46abc73aee",
+        "bugs": {
+          "url": "https://github.com/jldec/pub-pkg-font-awesome/issues"
+        },
+        "homepage": "https://github.com/jldec/pub-pkg-font-awesome#readme",
+        "_id": "pub-pkg-font-awesome@2.2.0",
+        "_shasum": "a72b1ccbde95ae2bfc52a023bc838943b4125280",
+        "_from": "pub-pkg-font-awesome@>=2.2.0 <3.0.0",
+        "_npmVersion": "2.14.2",
+        "_nodeVersion": "4.0.0",
+        "_npmUser": {
+          "name": "jldec",
+          "email": "jldec@ciaosoft.com"
+        },
+        "maintainers": [
+          {
+            "name": "jldec",
+            "email": "jldec@ciaosoft.com"
+          }
+        ],
+        "dist": {
+          "shasum": "a72b1ccbde95ae2bfc52a023bc838943b4125280",
+          "tarball": "http://registry.npmjs.org/pub-pkg-font-awesome/-/pub-pkg-font-awesome-2.2.0.tgz"
+        },
+        "directories": {},
+        "_resolved": "https://registry.npmjs.org/pub-pkg-font-awesome/-/pub-pkg-font-awesome-2.2.0.tgz",
+        "readme": "ERROR: No README data found!"
       },
       "pkgName": "pub-pkg-font-awesome",
-      "dir": "/Users/hello/pub/server/node_modules/pub-pkg-font-awesome"
+      "dir": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-font-awesome"
     },
     {
       "path": "pub-pkg-seo",
@@ -2995,11 +3054,41 @@
           "type": "git",
           "url": "git://github.com/jldec/pub-pkg-seo.git"
         },
-        "author": "jurgen leschner",
-        "license": "MIT"
+        "author": {
+          "name": "jurgen leschner"
+        },
+        "license": "MIT",
+        "gitHead": "87ec08517dca913900ceaf6c9e225ccf6b3a8064",
+        "bugs": {
+          "url": "https://github.com/jldec/pub-pkg-seo/issues"
+        },
+        "homepage": "https://github.com/jldec/pub-pkg-seo#readme",
+        "_id": "pub-pkg-seo@1.0.1",
+        "scripts": {},
+        "_shasum": "02fc13926c5e4718b47bf15c30cbe4f8e8b543a1",
+        "_from": "pub-pkg-seo@>=1.0.1 <2.0.0",
+        "_npmVersion": "2.12.1",
+        "_nodeVersion": "2.3.4",
+        "_npmUser": {
+          "name": "jldec",
+          "email": "jldec@ciaosoft.com"
+        },
+        "maintainers": [
+          {
+            "name": "jldec",
+            "email": "jldec@ciaosoft.com"
+          }
+        ],
+        "dist": {
+          "shasum": "02fc13926c5e4718b47bf15c30cbe4f8e8b543a1",
+          "tarball": "http://registry.npmjs.org/pub-pkg-seo/-/pub-pkg-seo-1.0.1.tgz"
+        },
+        "directories": {},
+        "_resolved": "https://registry.npmjs.org/pub-pkg-seo/-/pub-pkg-seo-1.0.1.tgz",
+        "readme": "ERROR: No README data found!"
       },
       "pkgName": "pub-pkg-seo",
-      "dir": "/Users/hello/pub/server/node_modules/pub-pkg-seo"
+      "dir": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-seo"
     },
     {
       "path": "pub-pkg-editor",
@@ -3017,22 +3106,47 @@
           "type": "git",
           "url": "git://github.com/jldec/pub-pkg-editor.git"
         },
-        "author": "jurgen leschner",
-        "license": "MIT"
+        "author": {
+          "name": "jurgen leschner"
+        },
+        "license": "MIT",
+        "gitHead": "b0123aefd24eaf9c90a66f0deb04ec4ab518e08f",
+        "bugs": {
+          "url": "https://github.com/jldec/pub-pkg-editor/issues"
+        },
+        "homepage": "https://github.com/jldec/pub-pkg-editor#readme",
+        "_id": "pub-pkg-editor@1.5.3",
+        "scripts": {},
+        "_shasum": "277c0394d0141f7b9a3754d79642097a9e70048c",
+        "_from": "pub-pkg-editor@>=1.5.3 <2.0.0",
+        "_npmVersion": "2.14.7",
+        "_nodeVersion": "4.2.1",
+        "_npmUser": {
+          "name": "jldec",
+          "email": "jldec@ciaosoft.com"
+        },
+        "maintainers": [
+          {
+            "name": "jldec",
+            "email": "jldec@ciaosoft.com"
+          }
+        ],
+        "dist": {
+          "shasum": "277c0394d0141f7b9a3754d79642097a9e70048c",
+          "tarball": "http://registry.npmjs.org/pub-pkg-editor/-/pub-pkg-editor-1.5.3.tgz"
+        },
+        "directories": {},
+        "_resolved": "https://registry.npmjs.org/pub-pkg-editor/-/pub-pkg-editor-1.5.3.tgz",
+        "readme": "ERROR: No README data found!"
       },
       "pkgName": "pub-pkg-editor",
-      "dir": "/Users/hello/pub/server/node_modules/pub-pkg-editor"
+      "dir": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-editor"
     }
   ],
   "appUrl": "https://techxlab.github.io/website",
   "noRobots": true,
   "throttleReload": "1s",
   "linkNewWindow": true,
-  "redis": {
-    "prefix": "sess-techxlab:",
-    "_log": "log-techxlab:"
-  },
-  "formServer": "https://tel-staging.herokuapp.com",
   "_resolved": true,
   "production": false,
   "port": "3001",
@@ -3040,5 +3154,6 @@
     "route": "/ast",
     "url": "https://techxlab.github.io"
   },
+  "formServer": "https://techxlab.github.io/website",
   "staticHost": true
 }

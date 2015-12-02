@@ -776,11 +776,6 @@ p, a, label {
   background-color: #444;
 }
 
-#description h1 {
-  margin-bottom: 15px;
-  color:         #f9a021;
-}
-
 /** donate section (take action) **********************************************/
 
 #donate.section-donate {
