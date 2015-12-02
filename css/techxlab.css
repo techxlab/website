@@ -168,10 +168,15 @@ head { height: 0; } /* hide text that gets injected by pub into header */
 
 h1 {
   font-family:   Raleway, sans-serif;
-  font-size:     36px;
-  font-weight:   100;
-  /*margin-top:    8px;
-  margin-bottom: 8px;*/
+  font-size:     26px;
+  font-weight:   300;
+  color:         #f9a021;
+  margin-bottom: 15px;
+}
+@media (min-width: 992px) {
+  h1 {
+    font-size:    34px;
+  }
 }
 
 h2 {
@@ -238,9 +243,6 @@ p, a, label {
   color:            #444;
   background-color: #fff;
 }
-.orange-white h1 {
-  color: #f9a021;
-}
 .orange-white h2 {
   color: #5E92B9;
 }
@@ -285,9 +287,6 @@ p, a, label {
 .green-white a {
   color:            #fff;
   background-color: #7dc243;
-}
-.green-white h1, h2 {
-  /*color: #f9a021;*/
 }
 .green-white a:hover {
   color: #ccc;;
@@ -347,7 +346,308 @@ p, a, label {
 
 *******************************************************************************/
 
+/** body section (prizes, funding) ********************************************/
 
+#content.section-content {
+  background-color: #fff;
+}
+
+#content h2,
+#content h2 a {
+  color:         #f9a021;
+}
+
+#content p {
+  margin-bottom: 15px;
+}
+
+#content img {
+  padding-bottom: 15px;
+}
+
+#content .button {
+  width:            100%;
+  background-color: #f9a021;
+}
+@media (min-width: 768px) {
+  #content .button {
+    width:            300px;
+  }
+}
+
+/** about page template ******************************************************/
+
+.about-banner {
+  width: 100%;
+  height: auto;
+  margin-bottom: -3px;
+  padding: 0;
+}
+.about-banner img {
+  width: 100%;
+}
+
+/** add solutions page ********************************************************/
+
+#add-solutions.section-add-solutions {
+  background-color: #fff;
+}
+
+#add-solutions h2 {
+  margin-top:    15px;
+  margin-bottom: 15px;
+  color: #f9a021;
+}
+
+#add-solutions .column-add-solutions {
+  width: 100%;
+}
+
+#add-solutions .button {
+  margin-top:    15px;
+  margin-bottom: 15px;
+  background-color: #f9a021;
+}
+
+/** accelerate section (project accelerator) **********************************/
+
+#accelerate.section-accelerate {
+  color:            #fff;
+  background-color: #444;
+}
+
+#accelerate h2 {
+  margin-bottom: 15px;
+  font-size:     24px;
+  text-align:    center;
+}
+
+#accelerate img {
+  margin-bottom: 15px;
+}
+
+#accelerate .column-accelerate {
+  flex-basis:  25%;
+  align-items: center;
+}
+
+/** banner section (all but home, search) *************************************/
+
+#banner.section-banner {
+  position:            relative;
+  display:             block; /* needed for ff */
+  border-bottom-width: 20px;
+  border-bottom-style: solid;
+  border-bottom-color: #638fc3;
+}
+
+#banner .section-banner-wedge {
+  padding-top: 95%;
+}
+@media (min-width: 575px) {
+  #banner .section-banner-wedge {
+    padding-top: 30%;
+  }
+}
+
+#banner img {
+  position:    absolute;
+  top:         0;
+  width:       317%;
+  margin-left: -200px;
+  z-index:     -1;
+}
+@media (min-width: 575px) {
+  #banner img {
+    width:  100%;
+    margin: 0;
+  }
+}
+
+#banner .container-banner {
+  position:        absolute;
+  justify-content: center;                                                      -webkit-justify-content: center;
+  left:            0;
+  right:           0;
+  top:             0;
+  bottom:          0;
+}
+
+#banner .row-banner {
+  justify-content: flex-end;                                                    -webkit-justify-content: flex-end;
+  align-items:     flex-end;                                                    -webkit-align-items:     flex-end;
+}
+
+#banner .column-banner-feature {
+  background-color: rgba(0,0,0,.7);
+  height:           100%;
+  margin-right:     15px;
+  margin-left:      15px;
+  padding:          30px;
+  z-index:            -1;
+}
+@media (min-width: 575px) {
+  #banner .column-banner-feature {
+    width: 447px;
+  }
+}
+
+#banner .column-banner-feature h2,
+#banner .column-banner-feature p {
+  margin-top:    15px;
+}
+
+#banner .row-banner {
+  justify-content: flex-end;                                                    -webkit-justify-content: flex-end;
+  align-items:     flex-end;                                                    -webkit-align-items:     flex-end;
+}
+@media (min-width: 575px) {
+  #banner .row-banner {
+    height:          100%;
+  }
+}
+
+/** banner home section(home page) ********************************************/
+
+/**
+ * this element overlays the fixed image in the background, maintaing the aspect
+ * ratio using the padding-top/bottom percentage hack (vertical padding is tied
+ * to the horizontal width). unlike the banner image, it cannot use fixed
+ * positioning because it scrolls with the page.
+ */
+#banner-home.section-banner-home {
+  position:            relative;
+  display:             block;
+  border-bottom-width: 20px;
+  border-bottom-style: solid;
+  border-bottom-color: #7dc243;
+}
+
+#banner-home h1 {
+  margin-bottom: 10px;
+  text-align:    justify;
+  color:         #fff;
+}
+
+/**
+ * element placed behind the image to facilitate the fade-to-black effect
+ */
+#banner-home .underlay {
+  position:         absolute;
+  left:             0;
+  right:            0;
+  top:              0;
+  bottom:           0;
+  z-index:          -1;
+  background-color: #000;
+}
+
+#banner-home .section-banner-wedge {
+  padding-top: 128%;
+}
+@media (min-width: 575px) {
+  #banner-home .section-banner-wedge {
+    padding-top: 48%;
+  }
+}
+
+/**
+ * fixed to the viewport behind, but not within, the banner element to create a
+ * parallax effect.
+ */
+#banner-home img {
+  position:    fixed;
+  top:         71px;
+  width:       317%;
+  margin-left: -200px;
+  z-index:     -1;
+}
+@media (min-width: 575px) {
+  #banner-home img {
+    width:  120%;
+    margin: 0;
+  }
+}
+@media (min-width: 768px) {
+  #banner-home img {
+    top: 77px;
+  }
+}
+@media (min-width: 992px) {
+  #banner-home img {
+    top: 83px;
+  }
+}
+@media (min-width: 1200px) {
+  #banner-home img {
+    top: 98px;
+  }
+}
+
+/**
+ * make the container fill the section
+ */
+#banner-home .container-banner {
+  position:        absolute;
+  justify-content: center;                                                      -webkit-justify-content: center;
+  left:            0;
+  right:           0;
+  top:             0;
+  bottom:          0;
+}
+
+#banner-home .row-banner {
+  justify-content: flex-end;                                                    -webkit-justify-content: flex-end;
+  align-items:     flex-end;                                                    -webkit-align-items:     flex-end;
+}
+
+#banner-home .column-banner-feature {
+  background-color: rgba(0,0,0,.7);
+  height:           100%;
+  padding:          15px;
+  /*padding: 26px;*/
+}
+@media (min-width: 575px) {
+  #banner-home .column-banner-feature {
+    width: 447px;
+  }
+}
+
+/**
+ * fight against poverty...
+ */
+#banner-home .column-banner-feature {
+  background-color: inherit;
+}
+
+/**
+ * mission text
+ */
+#banner-home .column-banner-feature p {
+  padding:          15px;
+  font-size:        12px;
+  line-height:      24px;
+  letter-spacing:   1px;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-bottom:    15px;
+}
+@media (min-width: 768px) {
+  #banner-home .column-banner-feature p {
+    background-color: rgba(100, 100, 100, 0.30);
+    font-size: 14px;
+  }
+}
+
+#banner-home .menu-banner-buttons {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+#banner-home .menu-item-banner {
+  flex-basis: 100%;                                                             -webkit-flex-basis: 100%;
+}
+#banner-home .button-banner {
+  background-color: #F2A028;
+}
 
 /** banner search section *****************************************************/
 
@@ -361,7 +661,7 @@ p, a, label {
 #banner-search img {
   width:       317%;
   margin-left: -200px;
-  z-index: -1;
+  z-index:     -1;
 }
 @media (min-width: 575px) {
   #banner-search img {
@@ -430,352 +730,12 @@ p, a, label {
   top:10px;
 }
 
-/** body section (prizes, funding) ********************************************/
-
-#content.section-content {
-  background-color: #fff;
-}
-
-#content h1 {
-  color: #f9a021;
-  margin-bottom: 15px;
-}
-
-#content h2,
-#content h2 a {
-  color:         #f9a021;
-}
-
-#content p {
-  margin-bottom: 15px;
-}
-
-#content img {
-  padding-bottom: 15px;
-}
-
-#content .button {
-  width:            100%;
-  background-color: #f9a021;
-}
-@media (min-width: 768px) {
-  #content .button {
-    width:            300px;
-  }
-}
-
-/** about page template ******************************************************/
-
-.about-banner {
-  width: 100%;
-  height: auto;
-  margin-bottom: -3px;
-  padding: 0;
-}
-.about-banner img {
-  width: 100%;
-}
-
-/** add solutions page ********************************************************/
-
-#add-solutions.section-add-solutions {
-  background-color: #fff;
-}
-
-#add-solutions h1 {
-  color: #f9a021;
-}
-
-#add-solutions h2 {
-  margin-top:    15px;
-  margin-bottom: 15px;
-  color: #f9a021;
-}
-
-#add-solutions .column-add-solutions {
-  width: 100%;
-}
-
-#add-solutions .button {
-  margin-top:    15px;
-  margin-bottom: 15px;
-  background-color: #f9a021;
-}
-
-/** accelerate section (project accelerator) **********************************/
-
-#accelerate.section-accelerate {
-  color:            #fff;
-  background-color: #444;
-}
-
-#accelerate h1 {
-  margin-bottom: 15px;
-  color:         #f9a021;
-}
-
-#accelerate h2 {
-  margin-bottom: 15px;
-  font-size:     24px;
-  text-align:    center;
-}
-
-#accelerate img {
-  margin-bottom: 15px;
-}
-
-#accelerate .column-accelerate {
-  flex-basis:  25%;
-  align-items: center;
-}
-
-/** banner section (all but home, search) *************************************/
-
-#banner.section-banner {
-  position:            relative;
-  display:             block; /* needed for ff */
-  border-bottom-width: 20px;
-  border-bottom-style: solid;
-  border-bottom-color: #638fc3;
-}
-
-#banner h1 {
-  color: #f9a021;
-}
-
-#banner .section-banner-wedge {
-  padding-top: 95%;
-}
-@media (min-width: 575px) {
-  #banner .section-banner-wedge {
-    padding-top: 30%;
-  }
-}
-
-#banner img {
-  position:    absolute;
-  top:         0;
-  width:       317%;
-  margin-left: -200px;
-  z-index:     -1;
-}
-@media (min-width: 575px) {
-  #banner img {
-    width:  100%;
-    margin: 0;
-  }
-}
-
-#banner .container-banner {
-  position:        absolute;
-  justify-content: center;                                                      -webkit-justify-content: center;
-  left:            0;
-  right:           0;
-  top:             0;
-  bottom:          0;
-}
-
-#banner .row-banner {
-  justify-content: flex-end;                                                    -webkit-justify-content: flex-end;
-  align-items:     flex-end;                                                    -webkit-align-items:     flex-end;
-}
-
-#banner .column-banner-feature {
-  background-color: rgba(0,0,0,.7);
-  height:           100%;
-  margin-right:     15px;
-  margin-left:      15px;
-  padding:          30px;
-  z-index:            -1;
-}
-@media (min-width: 575px) {
-  #banner .column-banner-feature {
-    width: 447px;
-  }
-}
-
-#banner .column-banner-feature h1,
-#banner .column-banner-feature h2,
-#banner .column-banner-feature p {
-  margin-top:    15px;
-  margin-bottom: 15px;
-}
-
-#banner .row-banner {
-  justify-content: flex-end;                                                    -webkit-justify-content: flex-end;
-  align-items:     flex-end;                                                    -webkit-align-items:     flex-end;
-}
-@media (min-width: 575px) {
-  #banner .row-banner {
-    height:          100%;
-  }
-}
-
-/** banner home section(home page) ********************************************/
-
-/**
- * this element overlays the fixed image in the background, maintaing the aspect
- * ratio using the padding-top/bottom percentage hack (vertical padding is tied
- * to the horizontal width). unlike the banner image, it cannot use fixed
- * positioning because it scrolls with the page.
- */
-#banner-home.section-banner-home {
-  position:            relative;
-  display:             block;
-  border-bottom-width: 20px;
-  border-bottom-style: solid;
-  border-bottom-color: #7dc243;
-}
-
-/**
- * element placed behind the image to facilitate the fade-to-black effect
- */
-#banner-home .underlay {
-  position:         absolute;
-  left:             0;
-  right:            0;
-  top:              0;
-  bottom:           0;
-  z-index:          -1;
-  background-color: #000;
-}
-
-#banner-home .section-banner-wedge {
-  padding-top: 128%;
-}
-@media (min-width: 575px) {
-  #banner-home .section-banner-wedge {
-    padding-top: 48%;
-  }
-}
-
-/**
- * fixed to the viewport behind, but not within, the banner element to create a
- * parallax effect.
- */
-#banner-home img {
-  position:    fixed;
-  top:         71px;
-  width:       317%;
-  margin-left: -200px;
-  z-index: -1;
-}
-@media (min-width: 575px) {
-  #banner-home img {
-    width:  120%;
-    margin: 0;
-  }
-}
-@media (min-width: 768px) {
-  #banner-home img {
-    top: 77px;
-  }
-}
-@media (min-width: 992px) {
-  #banner-home img {
-    top: 83px;
-  }
-}
-@media (min-width: 1200px) {
-  #banner-home img {
-    top: 98px;
-  }
-}
-
-/**
- * make the container fill the section
- */
-#banner-home .container-banner {
-  position:        absolute;
-  justify-content: center;                                                      -webkit-justify-content: center;
-  left:            0;
-  right:           0;
-  top:             0;
-  bottom:          0;
-}
-
-#banner-home .row-banner {
-  justify-content: flex-end;                                                    -webkit-justify-content: flex-end;
-  align-items:     flex-end;                                                    -webkit-align-items:     flex-end;
-}
-
-#banner-home .column-banner-feature {
-  background-color: rgba(0,0,0,.7);
-  height:           100%;
-  padding:          15px;
-  /*padding: 26px;*/
-}
-@media (min-width: 575px) {
-  #banner-home .column-banner-feature {
-    width: 447px;
-  }
-}
-
-/**
- * fight against poverty...
- */
-#banner-home .column-banner-feature {
-  background-color: inherit;
-}
-#banner-home .column-banner-feature h1 {
-  font-family:   Raleway, sans-serif;
-  font-size:     28px;
-  font-weight:   300;
-  margin-bottom: 10px;
-  text-align:    justify;
-}
-@media (min-width: 575px) {
-  #banner-home .column-banner-feature h1 {
-    font-weight:  100;
-    font-size:    24px;
-  }
-}
-@media (min-width: 992px) {
-  #banner-home .column-banner-feature h1 {
-    font-size:    34px;
-  }
-}
-
-/**
- * mission text
- */
-#banner-home .column-banner-feature p {
-  padding:          15px;
-  font-size:        12px;
-  line-height:      24px;
-  letter-spacing:   1px;
-  background-color: rgba(0, 0, 0, 0.4);
-  margin-bottom:    15px;
-}
-@media (min-width: 768px) {
-  #banner-home .column-banner-feature p {
-    background-color: rgba(100, 100, 100, 0.30);
-    font-size: 14px;
-  }
-}
-
-#banner-home .menu-banner-buttons {
-  margin-left: -8px;
-  margin-right: -8px;
-}
-#banner-home .menu-item-banner {
-  flex-basis: 100%;                                                             -webkit-flex-basis: 100%;
-}
-#banner-home .button-banner {
-  background-color: #F2A028;
-}
-
 /** blog sections (stories from the field) ************************************/
 
 .section-blog-summary {
   height: 300px;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.section-blog-summary h1 {
-  color:         #F2A028;
-  margin-bottom: 15px;
 }
 
 .section-blog-summary p {
@@ -786,11 +746,6 @@ p, a, label {
   width: 350px;
 }
 /** contact section (home page) ***********************************************/
-
-#contact h1 {
-  color:         #F2A028;
-  margin-bottom: 15px;
-}
 
 #contact p {
   margin-bottom: 15px;
@@ -830,11 +785,6 @@ p, a, label {
 
 #donate.section-donate {
   background-color: #ececec;
-}
-
-#donate h1 {
-  color: #f9a021;
-  margin-bottom: 15px;
 }
 
 #donate p {
@@ -901,11 +851,6 @@ p, a, label {
 
 #get-started.section-get-started {
   background-color: #fff;
-}
-
-#get-started h1 {
-  margin-bottom: 15px;
-  color:         #f9a021;
 }
 
 #get-started .column-get-started-left {
@@ -1131,10 +1076,6 @@ p, a, label {
 
 /** participate section (take action) *****************************************/
 
-#participate h1 {
-  color: #f9a021;
-  margin-bottom: 15px;
-}
 
 #participate p {
   margin-bottom: 15px;
@@ -1160,10 +1101,6 @@ p, a, label {
   background-color: #fff;
 }
 
-#partners h1 {
-  color: #F2A028;
-}
-
 #partners .row-partners {
   justify-content: space-between;
   flex-wrap:       wrap;
@@ -1179,10 +1116,6 @@ p, a, label {
 
 #persons.section-persons {
   background-color: #fff;
-}
-
-#persons h1 {
-  color: #F2A028;
 }
 
 #persons h2 {
@@ -1288,10 +1221,6 @@ p, a, label {
   margin-bottom: -60px;
 }
 
-#quotes h1 {
-  color: #F2A028;
-}
-
 #quotes p {
   color:       #666;
   font-size:   20px;
@@ -1319,11 +1248,6 @@ p, a, label {
 
 /** sign in section (sign in page) ********************************************/
 
-#sign-in h1 {
-  color:         #F2A028;
-  margin-bottom: 15px;
-}
-
 #sign-in .column-sign-in {
   flex-basis: 50%;
 }
@@ -1334,11 +1258,6 @@ p, a, label {
 }
 
 /** sign up section (sign up page) ********************************************/
-
-#sign-up h1 {
-  color:         #F2A028;
-  margin-bottom: 15px;
-}
 
 #sign-up .column {
   width: 100%;
@@ -1433,7 +1352,6 @@ p, a, label {
 
 #take-action h1 {
   position:         absolute;
-  color:            #F2A028;
   background-color: #fff;
   padding:          8px;
 }
