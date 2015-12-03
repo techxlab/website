@@ -198,11 +198,25 @@ h3 {
   color:       #5e92b9;
 }
 
-input[type=text], input[type=password], input[type=search], textarea {
-  font-family: "lato";
-  font-size:   22px;
-  line-height: 28px;
-  padding:     6px 12px;
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=search],
+select,
+textarea {
+  font-family:   "lato";
+  font-size:     14px;
+  line-height:   28px;
+  padding:       6px 12px;
+  margin-bottom: 15px;
+}
+
+input[type=submit] {
+  font-size: 14px;
+}
+
+label {
+  padding-left: 4px;
 }
 
 p, a, label {
@@ -211,8 +225,10 @@ p, a, label {
   line-height: 24px;
   text-align:  justify;
   text-decoration: none;
-  /*margin-top:    8px;
-  margin-bottom: 8px;*/
+}
+
+p {
+    margin-bottom: 15px;
 }
 
 /*******************************************************************************
@@ -447,7 +463,9 @@ p, a, label {
 }
 
 #banner .section-banner-wedge {
+  position: relative;
   padding-top: 95%;
+  overflow: hidden;
 }
 @media (min-width: 575px) {
   #banner .section-banner-wedge {
@@ -456,16 +474,16 @@ p, a, label {
 }
 
 #banner img {
-  position:    absolute;
-  top:         0;
-  width:       317%;
-  margin-left: -200px;
-  z-index:     -1;
+  position: absolute;
+  top:      0;
+  left:     -200px;
+  width:    317%;
+  z-index:  -1;
 }
 @media (min-width: 575px) {
   #banner img {
     width:  100%;
-    margin: 0;
+    left:   0;
   }
 }
 
@@ -485,7 +503,6 @@ p, a, label {
 
 #banner .column-banner-feature {
   background-color: rgba(0,0,0,.7);
-  height:           100%;
   margin-right:     15px;
   margin-left:      15px;
   padding:          30px;
@@ -493,7 +510,8 @@ p, a, label {
 }
 @media (min-width: 575px) {
   #banner .column-banner-feature {
-    width: 447px;
+    height: 100%;
+    width:  447px;
   }
 }
 
@@ -612,9 +630,7 @@ p, a, label {
 
 #banner-home .column-banner-feature {
   background-color: rgba(0,0,0,.7);
-  height:           100%;
   padding:          15px;
-  /*padding: 26px;*/
 }
 @media (min-width: 575px) {
   #banner-home .column-banner-feature {
@@ -765,7 +781,13 @@ p, a, label {
   margin-bottom: 15px;
 }
 
+#contact a {
+  color:           #fff;
+  text-decoration: underline;
+}
+
 #contact .button {
+  margin-top:        15px;
   background-color:  #5E92B9;
 }
 
@@ -778,14 +800,14 @@ p, a, label {
   flex-basis: 47%;
 }
 
+#contact .column-contact-copy p {
+  display: inline;
+}
+
 #contact .label-contact {
   margin-left:   6px;
   margin-top:    10px;
   margin-bottom: 6px
-}
-
-#contact .button {
-  margin-top: 26px;
 }
 
 /** description section (project accelerator) **********************************/
@@ -1055,6 +1077,11 @@ p, a, label {
 }
 
 .show {display: flex !important;}
+
+#menu-main p {
+  font-weight: 300;
+  font-size: 20px;
+}
 
 #menu-main .container-menu-main {
   position: relative;
@@ -1431,8 +1458,10 @@ p, a, label {
   justify-content: center;
 }
 
-#action .column-take-action-side {
-  flex-basis: 35%;
+@media (min-width: 768px) {
+  #action .column-take-action-side {
+    flex-basis: 35%;
+  }
 }
 
 #action .column-take-action-divider {
