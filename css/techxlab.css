@@ -29,8 +29,11 @@
   margin:         0;
   padding:        0;
 }
-a, span, em, strong, img, input[type=checkbox] {
+a, span, em, strong, img, input[type=checkbox], input[type=radio] {
   display: inline;
+}
+label {
+  display: block;
 }
 
 script {
@@ -203,6 +206,7 @@ input[type=password],
 input[type=email],
 input[type=search],
 input[type=tel],
+input[type=file],
 select,
 textarea {
   font-family:   "lato";
@@ -216,8 +220,20 @@ input[type=submit] {
   font-size: 14px;
 }
 
+input[type=checkbox], input[type=radio] {
+  margin: 0 8px;
+}
+
 label {
   padding-left: 4px;
+}
+
+label.radio, label.checkbox {
+  cursor: pointer;
+}
+
+label.radio:hover, label.checkbox:hover {
+  background-color: #eee;
 }
 
 p, a, label {
@@ -981,6 +997,11 @@ p {
 
 /** get started section *******************************************************/
 
+
+#get-started .button {
+  margin-top:        15px;
+  background-color:  #5E92B9;
+}
 
 #get-started.section-get-started {
   background-color: #fff;

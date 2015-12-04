@@ -93,22 +93,24 @@
     <div class="row">
       <div class="column column-add-solutions">
         <form id="add-solution-form" class="column column-add-solutions" action="https://tel-staging.herokuapp.com/server/form" method="POST" enctype="multipart/form-data">
-          <div data-render-html="/add-solutions/#form"><h2 id="basics">Basics</h2>
-<p>
+          <div data-render-html="/add-solutions/#form"><p>
 <label for="name">Name of the solution, invention, or method:</label>
 <input type="text" name="Name" id="name"></p>
+<p>
+<label for="how-it-works">Solution purpose and how it works (up to 300 words):</label>
+<textarea name="How It Works" id="how-it-works"></textarea></p>
+<h2 id="technology-area">Technology Area</h2>
 
-<label for="category">Technology Area:</label>
-<select name="Category" id="category">
-<option value="">--- select from list ---</option>
-<option value="water">Water &amp; Sanitation</option>
-<option value="agriculture">Agriculture &amp; Tools</option>
-<option value="energy">Energy &amp; Cooking</option>
-<option value="education">Education &amp; Connectivity</option>
-<option value="housing">Housing &amp; Transport</option>
-<option value="medical">Health &amp; Medical Care</option>
-<option value="other">Additional Solutions</option>
-</select>
+<label class="radio"><input type="radio" name="Category" value="water">Water &amp; Sanitation</label>
+<label class="radio"><input type="radio" name="Category" value="agriculture">Agriculture &amp; Tools</label>
+<label class="radio"><input type="radio" name="Category" value="energy">Energy &amp; Cooking</label>
+<label class="radio"><input type="radio" name="Category" value="education">Education &amp; Connectivity</label>
+<label class="radio"><input type="radio" name="Category" value="housing">Housing &amp; Transport</label>
+<label class="radio"><input type="radio" name="Category" value="medical">Health &amp; Medical Care</label>
+<label class="radio"><input type="radio" name="Category" value="other">Additional Solutions</label>
+<p></p>
+<p></p>
+
 <label style="display:none;" for="sub-category-water">Sub-category:</label>
 <select style="display:none;" disabled name="Sub-category water" id="sub-category-water">
 <option value="">--- select from list ---</option>
@@ -158,7 +160,14 @@
 <option value="Nutrition">Nutrition</option>
 <option value="Women&#39;s Health">Women&#39;s Health</option>
 <option value="Maternal &amp; Child Health">Maternal &amp; Child Health</option>
-</select><h2 id="solution-provider-contact-info">Solution Provider Contact Info</h2>
+</select><h2 id="files-for-direct-upload-to-tel">Files for direct upload to TEL</h2>
+<p>
+<label for="image">Solution Image:</label>
+<input type="file" name="Image" id="image">
+
+<label for="other-file-attachment">Further documentation, such as instructions, photos, drawings or relevant articles:</label>
+<input type="file" name="Other File Attachment" id="other-file-attachment"></p>
+<h2 id="solution-provider-contact-info">Solution Provider Contact Info</h2>
 <p>
 <label for="provider-name">Name:</label>
 <input type="text" name="Provider Name" id="provider-name">
@@ -185,9 +194,6 @@
 <input type="email" name="Provider Email" id="provider-email"></p>
 <h2 id="solution-details">Solution Details</h2>
 <p>
-<label for="how-it-works">Solution purpose and how it works (up to 300 words):</label>
-<textarea name="How It Works" id="how-it-works"></textarea>
-
 <label for="history-and-development">Product history and development (up to 250 words):</label>
 <textarea name="History and Development" id="history-and-development"></textarea>
 
@@ -208,38 +214,33 @@
 
 <label for="doc-url">Link to published documents, such as articles, reviews, or testimonials:</label>
 <input type="text" name="Doc url" id="doc-url"></p>
-<h2 id="files-for-direct-upload-to-tel">Files for direct upload to TEL</h2>
-<p>
-<label for="image">Solution Image:</label>
-<input type="file" name="Image" id="image">
-
-<label for="other-file-attachment">Further documentation, such as instructions, photos, drawings or relevant articles:</label>
-<input type="file" name="Other File Attachment" id="other-file-attachment"></p>
 <h2 id="availability">Availability</h2>
 
 <label>Is solution publicly available? (Answer &quot;No&quot; if still only in prototype or trial stage.)</label>
 
-<label class="radio">Yes<input type="radio" name="Publicly available" value="Yes"></label>
-<label class="radio">No<input type="radio" name="Publicly available" value="No"></label>
+<label class="radio"><input type="radio" name="Publicly available" value="Yes">Yes</label>
+<label class="radio"><input type="radio" name="Publicly available" value="No">No</label>
+<p></p>
 
-<label for="price-range">Price Range:</label>
-<select name="Price range" id="price-range">
-<option value="">-- Select from list --</option>
-<option value="Free">Free</option>
-<option value="1 to 20 USD">1 to 20 USD</option>
-<option value="20 to 50 USD">20 to 50 USD</option>
-<option value="50-100 USD">50-100 USD</option>
-<option value="100-200 USD">100-200 USD</option>
-<option value="Over 200 USD">Over 200 USD</option>
-<option value="Contact supplier for quote">Contact supplier for quote</option>
-</select><p>
+<label>Price Range:</label>
+
+<label class="radio"><input type="radio" name="Price range" value="Free">Free</label>
+<label class="radio"><input type="radio" name="Price range" value="1 to 20 USD">1 to 20 USD</label>
+<label class="radio"><input type="radio" name="Price range" value="20 to 50 USD">20 to 50 USD</label>
+<label class="radio"><input type="radio" name="Price range" value="50-100 USD">50-100 USD</label>
+<label class="radio"><input type="radio" name="Price range" value="100-200 USD">100-200 USD</label>
+<label class="radio"><input type="radio" name="Price range" value="Over 200 USD">Over 200 USD</label>
+<label class="radio"><input type="radio" name="Price range" value="Contact supplier for quote">Contact supplier for quote</label>
+<p></p>
+
 <label for="where-available">Countries where available, or where it can be shipped:</label>
-<input type="text" name="Where available" id="where-available"></p>
+<input type="text" name="Where available" id="where-available">
 
 <label>Can solution be offered or licensed for local manufacture? (Answer &quot;No&quot; if still only in prototype or trial stage.)</label>
 
-<label class="radio">Yes<input type="radio" name="Licensed for manufacture" value="Yes"></label>
-<label class="radio">No<input type="radio" name="Licensed for manufacture" value="No"></label>
+<label class="radio"><input type="radio" name="Licensed for manufacture" value="Yes">Yes</label>
+<label class="radio"><input type="radio" name="Licensed for manufacture" value="No">No</label>
+<p></p>
 <h2 id="your-contact-info">Your Contact Info</h2>
 <p>
 <label for="contact-name">Name:</label>
