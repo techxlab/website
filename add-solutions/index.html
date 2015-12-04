@@ -92,7 +92,7 @@
 </div>
     <div class="row">
       <div class="column column-add-solutions">
-        <form id="add-solution-form" class="column column-add-solutions" action="https://tel-staging.herokuapp.com/server/form" method="POST">
+        <form id="add-solution-form" class="column column-add-solutions" action="https://tel-staging.herokuapp.com/server/form" method="POST" enctype="multipart/form-data">
           <div data-render-html="/add-solutions/#form"><h2 id="basics">Basics</h2>
 <p>
 <label for="name">Name of the solution, invention, or method:</label>
@@ -213,8 +213,8 @@
 <label for="image">Solution Image:</label>
 <input type="file" name="Image" id="image">
 
-<label for="other-document-attachment">Further documentation, such as instructions, photos, drawings or relevant articles:</label>
-<input type="file" name="Other document attachment" id="other-document-attachment"></p>
+<label for="other-file-attachment">Further documentation, such as instructions, photos, drawings or relevant articles:</label>
+<input type="file" name="Other File Attachment" id="other-file-attachment"></p>
 <h2 id="availability">Availability</h2>
 
 <label>Is solution publicly available? (Answer &quot;No&quot; if still only in prototype or trial stage.)</label>
