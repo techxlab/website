@@ -57,6 +57,7 @@ function initClientSide(g) {
 function cleanAllViews($el) {
   cleanSearch();
   cleanForms();
+  cleanScrollmon();
 }
 
 // initialize all event handlers
@@ -129,18 +130,27 @@ function initSearch() {
     $search.val(txt);
 
     u.set(generator, 'req.query.q', txt);
+    cleanScrollmon();
     $results.html(generator.renderTemplate(pager.page, 'partial/result'));
     initScrollmon();
   }
 }
 
 function initScrollmon() {
-  $('.scrollmon').each(function(idx) {
+  $('.scrollmon').each(function() {
     var $el = $(this);
     var src = $el.data('src');
-    scrollMonitor.create(this).enterViewport(showMe, 500);
-    function showMe() { $el.attr('src',src); }
+    var watcher = scrollMonitor.create(this, 500);
+    watcher.enterViewport(function() {
+      $el.attr('src',src);
+      watcher.destroy();
+    });
   });
 }
+
+function cleanScrollmon() {
+  scrollMonitor.destroyAll();
+}
+
 
 }) // $(function() {
