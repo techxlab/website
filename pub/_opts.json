@@ -5,8 +5,8 @@
   "no-watch": true,
   "no-sockets": true,
   "editor": true,
-  "user": "jumblerg",
-  "basedir": "/Users/jumblerg/Development/app/techxlab/tel-website",
+  "user": "hello",
+  "basedir": "/Users/hello/pub/tel-website",
   "pkgJson": {
     "name": "techxlab-website",
     "version": "0.0.1",
@@ -15,7 +15,7 @@
     "dependencies": {
       "aws-sdk": "^2.2.19",
       "multer": "^1.1.0",
-      "pub-server": "^1.9.20"
+      "pub-server": "^1.9.21"
     },
     "devDependencies": {
       "fs-extra": "^0.24.0",
@@ -44,24 +44,20 @@
   "sources": [
     {
       "name": "pages",
-      "path": "/Users/jumblerg/Development/app/techxlab/tel-website/cnt",
       "writable": true,
+      "path": "/Users/hello/pub/tel-website/cnt",
       "type": "FILE",
-      "tmp": "/Users/jumblerg/.tmp/pages",
+      "tmp": "/Users/hello/.tmp/pages",
       "watch": {},
       "fragmentDelim": true,
       "files": [
-        {
-          "path": "/index.md",
-          "text": "---- / ----\nname:     Home\ntemplate: home\n\n---- #banner-section ----\nimage: /img/home.jpg\n\n# The fight against poverty starts with satisfying basic human needs.\n\nNew solutions with the potential to dramatically improve lives at the \"bottom of the pyramid\" are emerging daily. TEL is an information nexus that connects innovators with solution seekers to lift individuals and communities out of poverty.\n\n---- #feature-menu-item-1 ----\nname: Our Mission\nlink: /about-us/\nselected: true\n\nTEL is dedicated to bringing communities out of poverty by driving the adoption of innovative, cost-effective and sustainable solutions that improve the lives at the bottom of the pyramid.\n\n---- #feature-menu-item-2 ----\nname: Project Accelerator\nlink: /project-accelerator/\n\nWhether you need guidance in selecting and sourcing a solution that is right for you, or xpertise in structuring and promoting your development project, talk directly to a TEL expert to learn more about our Project Accelerator service.\n\n---- #feature-menu-item-3 ----\nname: Take Action\nlink: /take-action/\n\nJoin a growing network of innovators, social enterprises, NGOs and developing-world communities who share and discover sustainable solutions to problems of poverty.\n\n---- #feature-menu-item-4 ----\nname: Prizes for Ideas\nlink: /prizes-for-ideas/\n\nExplore our list of competitions, fellowships and awards in support of innovation and innovators against poverty.\n\n---- #feature-menu-item-5 ----\nname: Funding Resources\nlink: /funding-resources/\n\nSeeking support a high-impact solution or social enterprise? Check out our guide of grants, impact investors, funding platforms and other opportunities to promote and fund your work.\n\n---- #feature-menu-item-6 ----\nname: Stories from the Field\nlink: /blog/\n\nMeet the solution providers, social entrepreneurs and communities from around the world that are working to implement development initiatives in last-mile communities. Read stories from the field on our blog.\n\n\n---- #solution-categories-section ----\n\n# What do you want to Solve?\n\n---- #solution-categories-box-1 ----\nname:  Water & Sanitation\nlink:  /solutions/categories/water/\nimage: /img/girls-at-water-pump.jpg\n\n---- #solution-categories-box-2 ----\nname:  Agriculture & Tools\nlink:  /solutions/categories/agriculture/\nimage: /img/agriculture-irrigation.jpg\n\n---- #solution-categories-box-3 ----\nname:  Energy & Cooking\nlink:  /solutions/categories/energy/\nimage: /img/woman-studying-with-solar-light.jpg\n\n---- #solution-categories-box-4 ----\nname:  Health & Medical Care\nlink:  /solutions/categories/medical/\nimage: /img/measuring-babys-arm.jpg\n\n---- #solution-categories-box-5 ----\nname:  Education & Connectivity\nlink:  /solutions/categories/education/\nimage: /img/woman-teaching-women.jpg\n\n---- #solution-categories-box-6 ----\nname:  Housing & Transport\nlink:  /solutions/categories/housing/\nimage: /img/housing.jpg\n\n---- #solution-categories-box-7 ----\nname:  Additional Solutions\nlink:  /solutions/categories/other/\nimage: /img/women-sitting-in-circle.jpg\n\n---- #solution-categories-box-8 ----\nname:  Partner Solutions\nlink:  /partner-solutions/\nimage: /img/close-up-of-girl.jpg\n\n---- #actions ----\n\n# 2 Ways To Take Action\n\n---- #actions-action-1 ----\nname: Join Us\nlink: /sign-up/\nicon: /img/join.png\n\nParticipate in TEL: a growing network of innovators, social enterprises, NGOs and developing-world communities to share and discover sustainable solutions to problems of poverty.\n\n---- #actions-action-2 ----\nname: Donate\nlink: /take-action/\nicon: /img/donate.png\n\nMake a tax-deductible donation to help deliver real solutions to those whose need them most.\n\n---- #quotes ----\n\n# Our Partners In Action\n\n---- #quotes-quote-1 ----\nstatement: TEL has been a valuable source of ideas and solutions to many of the challenges the Open Learning Exchange is facing in developing countries. Often the usual approaches for ensuring such necessities as clean water, sanitation and mobile power require innovative approaches. That's where TEL is especially helpful in discovering cost-effective ways to solve such challenges.\nsource:  Dr. Richard Rowe, Chair and CEO, Open Learning\n\n---- #quotes-quote-2 ----\nstatement: As we build out our vision and operations for SunSaluter, connecting with the TEL community and having access to their resources has been invaluable. TEL brings together like minded individuals who care about using technology in a meaningful and genuine way to make impact, and there is no other organization quite like it.\nsource: Eden Full, Founder, SunSaluter\n\n---- #quotes-quote-3 ----\nstatement: I really like your mission, and I think any start up would be able to take advantage of the database that you are putting together.  Your database will save nonprofits a lot of time and effort. I admire the work that you are doing, and hope we can help you with it.\nsource: Adam Creighton, Communications and Development Director, InStove\n\n---- #partners-section ----\n\n---- #partners-partner-1 ----\nname:  Siemens\nlink:  http://www.siemens-stiftung.org/en/\nimage: /img/siemens-logo.png\n\n---- #partners-partner-2 ----\nname:  GlobalDevLab\nlink:  https://www.usaid.gov/GlobalDevLab/about\nimage: /img/usgdl-logo.png\n\n---- #partners-partner-3 ----\nname:  Aid Forum\nlink:  http://www.aidforum.org/\nimage: /img/aidf-logo.png\n\n---- #partners-partner-4 ----\nname:  CITE\nlink:  http://cite.mit.edu/\nimage: /img/cite-logo.png\n\n---- #contact ----\n\n# Contact Us\n\nContact a TEL Team member by completing the form or sending an email to [contact@techxlab.org](mailto:contact@techxlab.org).  We will respond within three business days.\n\nPlease note that TEL does not sell any of the solutions contained within our database, nor do we maintain any commercial relationship with providers.  Solutions may be acquired by directly contacting the providers listed on each solution page.  For assistance in finding or implementing the solutions that best suit your needs, explore TEL's [Project Accelerator](/project-accelerator/) service.\n\n\n---- #contact-form ----\n\n[Name ?text?]()\n[Email ?email?]()\n[Message ?textarea?]()\n[Submit ?submit?](- \"button\")\n\n[Contact Us ?hidden?](form)\n[/form-thank-you/ ?hidden?](thankyou)\n[/form-sorry/ ?hidden?](sorry)\n[?hidden?](validated)\n[?hidden?](location)\n"
-        },
         {
           "path": "/about-us.md",
           "text": "---- /about-us/ ----\nimage:    /img/moral.jpg\ntemplate: about\n\n---- #banner ----\n\n# Our Mission\n\nTEL is dedicated to bringing communities out of poverty by driving the adoption of innovative, cost-effective and sustainable solutions that improve the lives at the bottom of the pyramid.\n\nWe host a crowdsourced database of over 600 innovations in order to connect practical solutions to the people who need them most. Through our Project Accelerator service, we help NGOs and communities leverage appropriate technology solutions to maximize the impact of last-mile development.\n\n---- #persons  ----\n\n# The TEL Team\n\n---- #persons-person-1 ----\nimage: /img/karen-von-bismarck.jpg\nname:  Karen von Bismarck\ntitle: Founder, CEO\n\nWhile volunteering in a Haitian clinic, Karen witnessed the toll extreme poverty takes on communities and the environment, and was struck by the resourcefulness of people who live on less than a dollar a day. Meanwhile, the clinic staff was frustrated in its efforts to find appropriate equipment by the lack of a unified, reliable source of information. In order to meet this need on a global basis, she and fellow MIT Sloan School alumnus Gary L. Bergstrom began designing the basics of TEL, with the goal of leveraging technology to help families and communities rise from poverty. After studying political science and economics in Munich, Karen worked as an industrial organization instructor and journalist. She subsequently completed a Master's degree in Finance at the MIT Sloan School of Management. As a case manager with the Boston Consulting Group she has consulted to international clients in a variety of industries. Volunteering with the St. Boniface Centre de Santi in Haiti, Karen helped out in the medical-surgical clinic and served as board member and CFO. Two school-years spent in Japan resulted in a deep connection to that country. Karen speaks English, German, French and 'yon ti kras' Kreyol.\n\n---- #persons-person-2 ----\nimage: /img/brennan-lake.jpg\nname:  Harold Lake\ntitle: Programs Director\n\nBrennan joined TEL in the Fall of 2013, following four years of working across nonprofit and for-profit sectors in South America. Brennan first experienced the versatility of low-cost, innovative solutions while living in a squatter settlement outside of Valparaiso, Chile, where composting toilets and eco-adobe architecture were readily accepted. After graduating from Occidental College in 2009 with a bachelor's degree in Diplomacy and World Affairs, Brennan moved to Buenos Aires, Argentina. There he founded a social enterprise in which American expats provided business English training to CEOs and low-income domestic workers. Brennan then joined an e-commerce startup as CFO. Brennan focuses on maximizing TEL's impact as it continues to grow in mission and scope. If he's not at TEL headquarters, you can find Brennan freediving or body surfing in the cold waters off of Cape Ann.\n\n---- #persons-person-3 ----\nimage: /img/eadaoin-ilten.jpg\nname:  Éadaoin Ilten\ntitle: Operations Manager\n\nÉadaoin joined TEL in the Summer of 2015, excited to break into the world of nonprofit work. She believes strongly in the goals of TEL, providing access to point­-of-­use technologies to those on the ground, as she has witnessed first hand the sometimes abstract nature of scientific research. Éadaoin holds a PhD in Physics from University College Dublin, with an emphasis on advanced solar cell enhancement materials. After deciding to apply her skills and passion in a more direct manner by entering into the nonprofit field, she worked as a project coordinator intern with a communications based NGO in Geneva, Switzerland, during the winter of 2014. She comes to TEL as a new immigrant from Ireland and is excited to discover more about her adoptive country.\n\n---- #persons-person-4 ----\nimage: /img/adrienne-perez.jpg\nname:  Adrienne Perez\ntitle: Research & Communications Associate\n\nAdrienne joined TEL in the winter of 2012 to expand the accessibility of small-scale technologies aimed towards uprooting communities from poverty traps. She has been fortunate enough to work in Latin America, Asia, Europe, and North America collaborating on sanitation, agriculture, youth education, and renewable energy projects with local NGOs. In 2012, Adrienne completed her master's degree in International Development and Social Change from Clark University. She holds dual bachelor degrees in International Relations and Spanish from University of California at Davis. Adrienne lives in the San Francisco Bay Area where she is expanding TEL’s presence on the West Coast.\n\n---- #persons-person-5 ----\nimage: /img/amrish-kapoor.jpg\nname:  Amrish Kapoor\ntitle: Chief Technology Officer\n\nInterested in sustainable development and little gestures that make a better tomorrow, Amrish joined TEL in the spring of 2013. Having lived and worked for more than a decade in Bangalore, a city of many languages and dialects, Amrish believes that solutions to local problems are best served in local languages. He transformed TEL's website into a localized platform capable of quickly on-boarding and churning out content in several languages. Amrish is an engineering graduate and loves math and physics. He has annoyed a many with his ‘whats’ and ‘whys’ but is reluctant to hold out on his passion to explore the world. He is a foodie, loves adventure sports and is a trained paraglider pilot and windsurfer. He is a pro bono technology consultant and works with many local NGOs.\n\n---- #persons-person-6 ----\nimage: /img/dan-swann.jpg\nname:  Dan Swann\ntitle: Communications Associate\n\nDan joined TEL in March 2013 to combine his interest in international development with his interest in communicating through social media. He is especially interested in helping TEL expand its community of solution developers and visitors through online platforms. He enjoys creating new content for online media that allows users to discover the innovative solutions found in TEL’s online database. Dan earned his B.A. in international affairs and a minor in journalism from Northeastern University in 2009 and is currently a graduate student at Yale University. He has worked with various nonprofits focusing on urban education in Boston, and he plans to continue to help TEL expand its online community through creative content creation.\n\n---- #persons-person-7 ----\nimage: /img/donny-holaschutz.jpg\nname: Donny Holaschutz\ntitle: Research Associate\n\nDonny grew up in Mexico and has experienced first hand people's ingenuity and ability to transform their own communities. He joined TEL in early 2011 because he believes that some of the most difficult challenges of underserved communities can be addressed by empowering people with the tools to help them create their own innovative solutions. Donny earned a masters degree in Management and Engineering from MIT, and holds a dual bachelors and a masters in aerospace engineering from University of Texas at Austin. During his free time he volunteers with community service activities focused on education and youth. Donny currently works between Texas and Chile as an Energy and Sustainability Consultant for Inodú.\n\n---- #persons-person-8 ----\nimage: /img/elena-pascual.jpg\nname:  Elena Pascual\ntitle: Social Media Intern\n\nElena joined TEL in the fall of 2014 to help promote TEL’s work across its social media channels. She graduated from the University of Michigan – Ann Arbor with a degree in International Studies and Environmental Science. During her time in school she developed a strong interest in sustainable development. Her travels abroad to Kenya and Cuba helped her to see how access to affordable, high-impact technology solutions can address many of the issues faced by people living in the developing world. She is excited to use her background to work together with the TEL team to further TEL’s mission.\n\n---- #persons-person-9 ----\nimage: /img/qingqing-wu.jpg\nname:  Qingqing Wu\ntitle: Advisory Board Member\n\nQingqing joined TEL in the spring of 2014 to further explore her interest in expanding access to healthcare in developing countries. As an Advisory Board member, she is involved with providing counsel to the TEL team for special projects and contributing content expertise in the healthcare sector. After graduating from Harvard University with a degree in Linguistics and Neuroscience, Qingqing has been a consultant in both the public health and the biotechnology sectors, helping clients in areas such as health policy implementation and drug development business strategy. Having lived in four countries growing up, she appreciates the diversity that exists in all regions of the world, and hopes to continue travelling.\n\n---- #persons-person-10 ----\nimage: /img/tim-zeb-girouard.jpg\nname:  Tim Zeb Girouard\ntitle: Advisory Board Member\n\nTim joined the TEL team at the end of the summer of 2012, and has been happily spreading the word and coding away since then. Tim's interest in TEL is two-fold: he is driven to simplify the complexity of an elegant technical solution and the complexity of getting solutions to people who need them. Tim is a Software Engineer at Imprivata, and holds a BS in Mathematics from Carnegie Mellon University. He spent three years teaching in Taipei, Taiwan, working with children of all ages, where he witnessed the gap between solution providers and solution seekers. Tim believes that education and empowerment are the keys to solving the difficult problems of the world.\n\n---- #persons-person-11 ----\nimage: /img/miranda-grizio.jpg\nname:  Miranda Grizio​\ntitle: Contributing Writer\n\nMiranda is a food scientist and advocate for the use of sustainable food systems and appropriate food technology that can improve the lives of the rural poor in developing countries. She works in R&D for the natural foods industry and has won several new product awards including a Vegetarian Times Foodie Award. She holds a master’s degree in Food Science from Kansas State University and is currently pursuing a master’s degree in International Development from Tulane University. She also volunteers at Compatible Technology International and has been researching opportunities for aflatoxin mitigation through the use of their peanut harvesting and processing tools.\n\n---- #persons-person-12 ----\nimage: /img/lee-cusolito.jpg\nname:  Lee Cusolito\ntitle: Volunteer Design Associate\n\nLee joined TEL in February 2015 to help expand TEL's network of solution providers, and to evaluate appropriate technology solutions from a design-based perspective.  After several years working with Boston-based startups in diverse fields such as online app development and lifestyle apparel marketing, Lee graduated from the Honors College of the University of Massachusetts Amherst in the spring of 2014.  With a keen interest in human-centered product design, Lee volunteers his time to grow TEL's database of high-quality solutions to problems of poverty.\n\n---- #persons-person-13 ----\nimage: /img/balaji-mani.jpg\nname:  Balaji Mani\ntitle: Research Associate\n\nBalaji joined TEL in the summer of 2010, keen on getting involved with like-minded individuals who had an interest in non-profit work and development. Balaji was interested in joining a network that brought inventors, aid workers, civilians, and students together to work on relevant world issues. Balaji's spent time as a volunteer on Gandhi's ashram in Ahmedabad, India working on sanitation, education, and health projects. In Pune, India, he documented rural biodiesel production, helping farmers optimize production and avoid exposure to toxic byproducts. A graduate of MIT's Environmental Engineering program, Balaji is now a medical student at Georgetown University. When he is not working or studying, Balaji loves to perform on the guitar with his Senegalese afro-pop band or his jazz fusion quartet.\n\n---- #partners ----\n\n# Our Partners in Action\n\nWe are proud to partner with non-profits, universities, social enterprises and other organizations, including:\n\n---- #partners-partner-1 ----\nname:  Siemens\nlink:  http://www.siemens-stiftung.org/en/\nimage: /img/siemens-logo.png\n\n---- #partners-partner-2 ----\nname:  GlobalDevLab\nlink:  https://www.usaid.gov/GlobalDevLab/about\nimage: /img/usgdl-logo.png\n\n---- #partners-partner-3 ----\nname:  Aid Forum\nlink:  http://www.aidforum.org/\nimage: /img/aidf-logo.png\n\n---- #partners-partner-4 ----\nname:  CITE\nlink:  http://cite.mit.edu/\nimage: /img/cite-logo.png\n\n---- #partners-partner-5 ----\nname:  Global Alliance For Clean Cookstoves\nlink:  http://cleancookstoves.org/\nimage: /img/gacc-logo.png\n\n---- #partners-partner-6 ----\nname: Harvard D4D\nlink:  http://www.harvardd4d.com/\nimage: /img/d4d-logo.jpeg\n\n---- #partners-partner-7 ----\nname:  Open Learning Exchange\nlink:  http://ole.org/\nimage: /img/ole-logo.png\n\n---- #partners-partner-8 ----\nname:  Practical Action\nlink:  http://practicalaction.org/\nimage: /img/practical-action-logo.png\n\n---- #partners-partner-9 ----\nname:  Innovations in Health Care\nlink:  http://www.innovationsinhealthcare.org/\nimage: /img/innovations-in-healthcare-logo.png\n\n---- #partners-partner-10 ----\nname:  Environmental Investigation Agency\nlink:  http://www.eia-global.org/\nimage: /img/eia-logo.jpg\n\n---- #partners-partner-11 ----\nname:  MIT Chief\nlink:  http://mitchief.org/\nimage: /img/mit-chief-logo.jpg\n\n---- #partners-partner-12 ----\nname:  The Rosetta Foundation\nlink:  http://www.therosettafoundation.org/\nimage: /img/rosetta-logo.jpg\n\n---- #partners-partner-13 ----\nname:  Translators Without Borders\nlink:  http://translatorswithoutborders.org/\nimage: /img/translators-without-borders-logo.jpg\n\n---- #partners-partner-14 ----\nname:  Translations for Progress\nlink:  http://www.translationsforprogress.org/index.php\nimage: /img/translations-for-progress-logo.jpg\n\n---- #partners-partner-15 ----\nname:  Niesar & Vestal LLP\nlink:  http://www.nvlawllp.com/\nimage: /img/nv-logo.jpg\n\n---- #partners-partner-16 ----\nname:  Partnership for Change\nlink:  http://www.pfchange.org/\nimage: /img/partnership-for-change-logo.jpg\n\nInterested in partnering with TEL? [Contact us](/contact-us/) to learn more about partnership opportunities.\n\n---- #contact ----\n\n# Contact Us\n\nPlease contact us with any questions, comments or suggestions or to report a problem.\n\nThe Technology Exchange Lab, Inc.  \nCambridge Innovation Center  \n1  Broadway, 14th Floor  \nCambridge, MA 02142, USA  \n\n[//]: # (<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11792.188115953495!2d-71.083926!3d42.362837!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370a5b761c351%3A0x3ab9187e6e6ffeb9!2s1+Broadway%2C+Cambridge%2C+MA+02142!5e0!3m2!1sen!2sus!4v1447793114962\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>)\n"
         },
         {
           "path": "/add-solutions.md",
-          "text": "---- /add-solutions/ ----\nimage:     /img/children-around-laptop.jpg\ntemplate:   add-solutions\n\n# Tell us About your Solution\n\nOnce your solution has been submitted, our team will review all content to ensure that we provide unbiased information. Our curating process creates a level playing field for solution providers, while also empowering organizations and communities to find the solutions that best suit their unique needs.\n\n---- #form ----\n\n## Basics\n\n[Name of the solution, invention, or method: ?text?](Name)\n\n[Technology Area: ?select?](Category)\n- --- select from list --- \"\"\n- Water & Sanitation \"water\"\n- Agriculture & Tools \"agriculture\"\n- Energy & Cooking \"energy\"\n- Education & Connectivity \"education\"\n- Housing & Transport \"housing\"\n- Health & Medical Care \"medical\"\n- Additional Solutions \"other\"\n\n[Sub-category: ?select?H](Sub-category water)\n- --- select from list --- \"\"\n- Water Purification\n- Water Testing\n- Collection & Storage\n- Transport\n- Sanitation\n\n[Sub-category: ?select?H](Sub-category agricuture)\n- --- select from list --- \"\"\n- Irrigation\n- Cultivation & Tools\n- Seeds & Stock\n- Methods & Learning\n\n[Sub-category: ?select?H](Sub-category energy)\n- --- select from list --- \"\"\n- Energy Generation\n- Energy Storage & Control\n- Cooling, Heating & Insulation\n- Safe & Sustainable Cooking\n- Lighting\n\n[Sub-category: ?select?H](Sub-category education)\n- --- select from list --- \"\"\n- Teaching Resources & Aids\n- Student Resources\n- Phone Applications\n- Desktop Applications\n- Communication Technologies\n\n[Sub-category: ?select?H](Sub-category housing)\n- --- select from list --- \"\"\n- Housing & Shelter\n- Transportation\n\n[Sub-category: ?select?H](Sub-category medical)\n- --- select from list --- \"\"\n- Medical & Surgical Care\n- Prevention & Vaccination\n- Nutrition\n- Women's Health\n- Maternal & Child Health\n\n## Solution Provider Contact Info\n\n[Name: ?text?](Provider Name)\n[Company or Organization: ?text?](Provider Organization)\n[Street Address: ?text?](Provider Street Address)\n[City: ?text?](Provider City)\n[Postal Code: ?text?](Provider Postal Code)\n[Country: ?text?](Provider Country)\n[Phone: ?tel?](Provider Phone)\n[Email: ?email?](Provider Email)\n\n## Solution Details\n\n[Solution purpose and how it works (up to 300 words): ?textarea?](How It Works)\n[Product history and development (up to 250 words): ?textarea?](History and Development)\n[Dimensions (approx): ?text?](Dimensions)\n[Weight (approx): ?text?](Weight)\n[Link (URL) to the manufacturer&#039;s website: ?text?](Manufacturer url)\n[Link to the solution webpage: ?text?](Website url)\n[Link to external video, e.g. YouTube or Vimeo: ?text?](Video link)\n[Link to published documents, such as articles, reviews, or testimonials: ?text?](Doc url)\n\n## Files for direct upload to TEL\n\n[Solution Image: ?file?](Image)\n[Further documentation, such as instructions, photos, drawings or relevant articles: ?file?](Other document attachment)\n\n\n## Availability\n\n[Is solution publicly available? (Answer \"No\" if still only in prototype or trial stage.) ?label?]()\n[?radiolist?](Publicly available)\n- Yes\n- No\n\n[Price Range: ?select?](Price range)\n- -- Select from list -- \"\"\n- Free\n- 1 to 20 USD\n- 20 to 50 USD\n- 50-100 USD\n- 100-200 USD\n- Over 200 USD\n- Contact supplier for quote\n\n[Countries where available, or where it can be shipped: ?text?](Where available)\n\n[?label? Can solution be offered or licensed for local manufacture? (Answer \"No\" if still only in prototype or trial stage.)]()\n[?radiolist?](Licensed for manufacture)\n- Yes\n- No\n\n## Your Contact Info\n\n[Name: ?text?](Contact Name)\n[Company or Organization: ?text?](Contact Organization)\n[Country: ?text?](Contact Country)\n[Email: ?email?](Contact Email)\n\n[Submit Information ?submit?](- \"button\")\n\n[Add Solution ?hidden?](form)\n[/form-thank-you/ ?hidden?](thankyou)\n[/form-sorry/ ?hidden?](sorry)\n[?hidden?](validated)\n[?hidden?](location)\n\n---- #banner ----\n\n# Add Solution\n\nWhether you are a solution provider or simply a technology enthusiast, share practical solutions to problems of poverty by publishing them in the TEL database.\n"
+          "text": "---- /add-solutions/ ----\nimage:     /img/children-around-laptop.jpg\ntemplate:   add-solutions\n\n# Tell us About your Solution\n\nOnce your solution has been submitted, our team will review all content to ensure that we provide unbiased information. Our curating process creates a level playing field for solution providers, while also empowering organizations and communities to find the solutions that best suit their unique needs.\n\n---- #form ----\n\n## Basics\n\n[Name of the solution, invention, or method: ?text?](Name)\n\n[Technology Area: ?select?](Category)\n- --- select from list --- \"\"\n- Water & Sanitation \"water\"\n- Agriculture & Tools \"agriculture\"\n- Energy & Cooking \"energy\"\n- Education & Connectivity \"education\"\n- Housing & Transport \"housing\"\n- Health & Medical Care \"medical\"\n- Additional Solutions \"other\"\n\n[Sub-category: ?select?H](Sub-category water)\n- --- select from list --- \"\"\n- Water Purification\n- Water Testing\n- Collection & Storage\n- Transport\n- Sanitation\n\n[Sub-category: ?select?H](Sub-category agricuture)\n- --- select from list --- \"\"\n- Irrigation\n- Cultivation & Tools\n- Seeds & Stock\n- Methods & Learning\n\n[Sub-category: ?select?H](Sub-category energy)\n- --- select from list --- \"\"\n- Energy Generation\n- Energy Storage & Control\n- Cooling, Heating & Insulation\n- Safe & Sustainable Cooking\n- Lighting\n\n[Sub-category: ?select?H](Sub-category education)\n- --- select from list --- \"\"\n- Teaching Resources & Aids\n- Student Resources\n- Phone Applications\n- Desktop Applications\n- Communication Technologies\n\n[Sub-category: ?select?H](Sub-category housing)\n- --- select from list --- \"\"\n- Housing & Shelter\n- Transportation\n\n[Sub-category: ?select?H](Sub-category medical)\n- --- select from list --- \"\"\n- Medical & Surgical Care\n- Prevention & Vaccination\n- Nutrition\n- Women's Health\n- Maternal & Child Health\n\n## Solution Provider Contact Info\n\n[Name: ?text?](Provider Name)\n[Company or Organization: ?text?](Provider Organization)\n[Street Address: ?text?](Provider Street Address)\n[City: ?text?](Provider City)\n[Postal Code: ?text?](Provider Postal Code)\n[Country: ?text?](Provider Country)\n[Phone: ?tel?](Provider Phone)\n[Email: ?email?](Provider Email)\n\n## Solution Details\n\n[Solution purpose and how it works (up to 300 words): ?textarea?](How It Works)\n[Product history and development (up to 250 words): ?textarea?](History and Development)\n[Dimensions (approx): ?text?](Dimensions)\n[Weight (approx): ?text?](Weight)\n[Link (URL) to the manufacturer&#039;s website: ?text?](Manufacturer url)\n[Link to the solution webpage: ?text?](Website url)\n[Link to external video, e.g. YouTube or Vimeo: ?text?](Video link)\n[Link to published documents, such as articles, reviews, or testimonials: ?text?](Doc url)\n\n## Files for direct upload to TEL\n\n[Solution Image: ?file?](Image)\n[Further documentation, such as instructions, photos, drawings or relevant articles: ?file?](Other File Attachment)\n\n## Availability\n\n[Is solution publicly available? (Answer \"No\" if still only in prototype or trial stage.) ?label?]()\n[?radiolist?](Publicly available)\n- Yes\n- No\n\n[Price Range: ?select?](Price range)\n- -- Select from list -- \"\"\n- Free\n- 1 to 20 USD\n- 20 to 50 USD\n- 50-100 USD\n- 100-200 USD\n- Over 200 USD\n- Contact supplier for quote\n\n[Countries where available, or where it can be shipped: ?text?](Where available)\n\n[?label? Can solution be offered or licensed for local manufacture? (Answer \"No\" if still only in prototype or trial stage.)]()\n[?radiolist?](Licensed for manufacture)\n- Yes\n- No\n\n## Your Contact Info\n\n[Name: ?text?](Contact Name)\n[Company or Organization: ?text?](Contact Organization)\n[Country: ?text?](Contact Country)\n[Email: ?email?](Contact Email)\n\n[Submit Information ?submit?](- \"button\")\n\n[Add Solution ?hidden?](form)\n[/form-thank-you/ ?hidden?](thankyou)\n[/form-sorry/ ?hidden?](sorry)\n[?hidden?](validated)\n[?hidden?](location)\n\n---- #banner ----\n\n# Add Solution\n\nWhether you are a solution provider or simply a technology enthusiast, share practical solutions to problems of poverty by publishing them in the TEL database.\n"
         },
         {
           "path": "/blog.md",
@@ -80,12 +76,16 @@
           "text": "---- /funding-resources/ ----\nimage:    /img/girl-winning-race.jpg\ntemplate: banner\n\n---- #banner ----\n\n# Funding Resources\n\nExplore our list of foundations, impact investors, fellowships, crowdfunding platforms and funding networks that support innovators and social enterprises tackling global issues.\n\nPlease see the original competition websites for the most current and accurate information on deadlines, requirements, and how to apply.\n\n---- #body ----\n\n## [Accion Venture Lab](https://www.accion.org/venturelab)\nAccion Venture Lab is an investment initiative that provides patient seed capital and support to innovative financial inclusion start-ups, fostering experimentation and promoting business models that improve financial access for people living in poverty worldwide.\n\n## [Acumen Fund](http://www.acumenfund.org/)\nAcumen Fund is a non-profit global venture fund that uses entrepreneurial approaches to solve the problems of global poverty. Their investments focus on delivering affordable, critical goods and services - like health, water, housing and energy - through innovative, market-oriented approaches.\n\n## [Ashoka](https://www.ashoka.org/)\nAshoka is the largest network of social entrepreneurs worldwide, with nearly 3,000 Ashoka Fellows in 70 countries putting their system changing ideas into practice on a global scale. Founded by Bill Drayton in 1980, Ashoka has provided start-up financing, professional support services, and connections to a global network across the business and social sectors, and a platform for people dedicated to changing the world.\n\n## [The Bill & Melinda Gates Foundation](http://104.236.27.115/admin/page/edit/?id=1302)\nThe Bill & Melinda Gates Foundation works with partner organizations worldwide to tackle critical problems in four program areas: Global Development, Global Health, United States, and Global Policy & Advocacy.\n\n## [Draper Richards Kaplan Foundation](http://www.drkfoundation.org/)\nThe Draper Richards Kaplan Foundation is a venture philanthriopy firm founded on a belief in the power of innovation and a conviction that with bold foundation support, passionate individuals can change the world.\n\n## [E+Co](http://eandco.net/#sthash.pNUWfUSW.dpuf)\nE+Co invests services and capital in high impact small and growing clean energy businesses in developing countries.\n\n## [Echoing Green](http://www.echoinggreen.org/)\nEchoing Green is a global nonprofit organization that provides fellowships, seed-stage funding and strategic support to social entrepreneurs globally.\n\n## [Fundes International](http://www.fundes.org/)\nFundes International assists small and medium enterprises to access funding in Central and South America.\n\n## [Global Hand](http://www.globalhand.org/)\nGlobal Hand is a matching service helping corporate/ community groups partner with NGOs: a non-profit brokerage facilitating public/ private partnership.\n\n## [Grameen Foundation](http://www.grameenfoundation.org/)\nGrameen Foundation provides direct loans to small institutions and gives loan guarantees that enable larger institutions to secure funding from their local banks. Through the combination of microfinance, technology and innovative solutions the Foundation works to invest in and promote local social entrepreneurs as a means to fight global poverty.\n\n## [Indiegogo for Nonprofits](https://go.indiegogo.com/playbook/indiegogo-basics#indiegogoisgreat)\nIndiegogo, an online crowdfunding platform, offers a 25% discount on our platform fees for any campaign that is raising funds for a nonprofit institution registered as 501(c)(3) in the United States.\n\n## [Kiva Zip](https://zip.kiva.org/)\nKiva Zip allows you to discover inspirational borrowers making a positive impact in their communities. Then support an entrepreneur's dream by making a loan to empower their business and livelihood. Receive repayments on your loan and receive updates on the impact you helped create. Lastly, use your repayments to support another borrower and increase your impact.\n\n## [Livelihoods Fund](http://www.livelihoods.eu/)\nThe Livelihoods Fund supports the efforts of poor rural communities in developing countries to restore their natural ecosystems, which improves their food security, increases their economic revenues, and improves their livelihoods.  The Livelihoods Fund invests in three types of projects (agroforestry, mangrove restoration, rural energy) during an investment period of 3 to 4 years.\n\n## [Planet Finance](http://www.planetfinancegroup.org/)\nPlanet Finance is an international non-governmental organisation specializing in various microfinance -related services including FinanCités which invests directly in microentreprenarial projects in deprived urban areas.\n\n## [Razoo](http://www.razoo.com/)\nRazoo is an online crowdfunding platform that promotes and provides online charitable giving solutions that support a new era in philanthropy. By leveraging secure and efficient technologies, the Razoo Foundation seeks to provide robust, high-value, low-cost end-to-end solutions for donors and nonprofits to easily fundraise and engage in charitable giving activities.\n\n## [Segal Family Foundation](http://segalfamilyfoundation.org/)\nThe Segal Family Foundation is led by a small team with a proactive, informed approach to development. SFF strives to improve the lives of people in Sub-Saharan Africa by seeking out and supporting grassroots solutions that might otherwise be overlooked. SFF finds and funds the rising stars creating these solutions.\n\n## [StartingBloc](http://startingbloc.org/)\nStartingBloc is built on the belief that a small, committed group of people can change the world.  StartingBloc brings together social entrepreneurs, activists, educators, and innovators working to create change.  StartingBloc also offers access to the resources, projects and support that entrepreneurs need to create positive social impact.\n\n## [Sustainable Development Technology Canada](http://www.sdtc.ca/)\nSustainable Development Technology Canada is a not-for-profit organization that grants funding for the development and demonstration of new technologies that address issues of climate change, clean air, water and soil quality. NB Grants are for work primarily conducted in Canada.\n\n## [Triodos Bank](http://www.triodos.com/)\nTriodos Bank lends and invests in companies, institutions and projects that add cultural value and benefit people and the environment, in the fields of microfinance, sustainable trade, renewable energy and venture capital.\n"
         },
         {
+          "path": "/home.md",
+          "text": "---- / ----\nname:     Home\ntemplate: home\n\n\n---- #banner-section ----\nimage: /img/home.jpg\n\n# The fight against poverty starts with satisfying basic human needs.\n\nNew solutions with the potential to dramatically improve lives at the \"bottom of the pyramid\" are emerging daily. TEL is an information nexus that connects innovators with solution seekers to lift individuals and communities out of poverty.\n\n\n---- #solution-categories-section ----\n\n# What do you want to Solve?\n\n---- #solution-categories-box-1 ----\nname:  Water & Sanitation\nlink:  /solutions/categories/water/\nimage: /img/girls-at-water-pump.jpg\n\n---- #solution-categories-box-2 ----\nname:  Agriculture & Tools\nlink:  /solutions/categories/agriculture/\nimage: /img/agriculture-irrigation.jpg\n\n---- #solution-categories-box-3 ----\nname:  Energy & Cooking\nlink:  /solutions/categories/energy/\nimage: /img/woman-studying-with-solar-light.jpg\n\n---- #solution-categories-box-4 ----\nname:  Health & Medical Care\nlink:  /solutions/categories/medical/\nimage: /img/measuring-babys-arm.jpg\n\n---- #solution-categories-box-5 ----\nname:  Education & Connectivity\nlink:  /solutions/categories/education/\nimage: /img/woman-teaching-women.jpg\n\n---- #solution-categories-box-6 ----\nname:  Housing & Transport\nlink:  /solutions/categories/housing/\nimage: /img/housing.jpg\n\n---- #solution-categories-box-7 ----\nname:  Additional Solutions\nlink:  /solutions/categories/other/\nimage: /img/women-sitting-in-circle.jpg\n\n---- #solution-categories-box-8 ----\nname:  Partner Solutions\nlink:  /partner-solutions/\nimage: /img/close-up-of-girl.jpg\n\n---- #actions ----\n\n# 2 Ways To Take Action\n\n---- #actions-action-1 ----\nname: Join Us\nlink: /sign-up/\nicon: /img/join.png\n\nParticipate in TEL: a growing network of innovators, social enterprises, NGOs and developing-world communities to share and discover sustainable solutions to problems of poverty.\n\n---- #actions-action-2 ----\nname: Donate\nlink: /take-action/\nicon: /img/donate.png\n\nMake a tax-deductible donation to help deliver real solutions to those whose need them most.\n\n---- #quotes ----\n\n# Our Partners In Action\n\n---- #quotes-quote-1 ----\nstatement: TEL has been a valuable source of ideas and solutions to many of the challenges the Open Learning Exchange is facing in developing countries. Often the usual approaches for ensuring such necessities as clean water, sanitation and mobile power require innovative approaches. That's where TEL is especially helpful in discovering cost-effective ways to solve such challenges.\nsource:  Dr. Richard Rowe, Chair and CEO, Open Learning\n\n---- #quotes-quote-2 ----\nstatement: As we build out our vision and operations for SunSaluter, connecting with the TEL community and having access to their resources has been invaluable. TEL brings together like minded individuals who care about using technology in a meaningful and genuine way to make impact, and there is no other organization quite like it.\nsource: Eden Full, Founder, SunSaluter\n\n---- #quotes-quote-3 ----\nstatement: I really like your mission, and I think any start up would be able to take advantage of the database that you are putting together.  Your database will save nonprofits a lot of time and effort. I admire the work that you are doing, and hope we can help you with it.\nsource: Adam Creighton, Communications and Development Director, InStove\n\n---- #partners-section ----\n\n---- #partners-partner-1 ----\nname:  Siemens\nlink:  http://www.siemens-stiftung.org/en/\nimage: /img/siemens-logo.png\n\n---- #partners-partner-2 ----\nname:  GlobalDevLab\nlink:  https://www.usaid.gov/GlobalDevLab/about\nimage: /img/usgdl-logo.png\n\n---- #partners-partner-3 ----\nname:  Aid Forum\nlink:  http://www.aidforum.org/\nimage: /img/aidf-logo.png\n\n---- #partners-partner-4 ----\nname:  CITE\nlink:  http://cite.mit.edu/\nimage: /img/cite-logo.png\n\n---- #contact ----\n\n# Contact Us\n\nContact a TEL Team member by completing the form or sending an email to [contact@techxlab.org](mailto:contact@techxlab.org).  We will respond within three business days.\n\nPlease note that TEL does not sell any of the solutions contained within our database, nor do we maintain any commercial relationship with providers.  Solutions may be acquired by directly contacting the providers listed on each solution page.  For assistance in finding or implementing the solutions that best suit your needs, explore TEL's [Project Accelerator](/project-accelerator/) service.\n\n\n---- #contact-form ----\n\n[Name ?text?]()\n[Email ?email?]()\n[Message ?textarea?]()\n[Submit ?submit?](- \"button\")\n\n[Contact Us ?hidden?](form)\n[/form-thank-you/ ?hidden?](thankyou)\n[/form-sorry/ ?hidden?](sorry)\n[?hidden?](validated)\n[?hidden?](location)\n"
+        },
+        {
           "path": "/join-us.md",
           "text": "---- /join-us/----\nimage:    /img/construction-site.jpg\ntemplate: banner\n\n---- #banner ----\n\n# Join the Team\n\nThe key people address the selective diversification. Generic enhanced data captures challenge us to flesh out support structures.\n\n---- #body ----\n\n# Join our growing team of passionate individuals!\n\nInterested in joining the TEL Team?  Think you have a lot to contribute, but your time is limited?  We do not currently have any full-time positions available; however, we are actively recruiting volunteers of all ages and backgrounds to grow with TEL.  Even if you have only a few hours a month to spare, you can make a big impact with our organization. We also occasionally have openings from for paid internships.\n\nIf you are a student interested in an internship, we will work with your university for class credit.\n\n# How to Apply\n\nIf you are interested in joining the exciting and fast-paced non-profit sector, then please send your resume to contact@techxlab.org and let us know how you can contribute!\n\n## Volunteer Blogger / Content Creator\n\n### Location\nVirtual Opportunity\n\n### Commitment\nPart-time, flexible\n\n### Description\nWe are looking for a volunteer to create original content for our blog.  This is a great opportunity for aspiring and established writers to see their work published on a high traffic website.  We are interested in articles that address a wide spectrum of international development topics, including poverty innovations in the field, emerging tech for social good, and highlights of interesting people and organizations making a difference in the world.\n\nThis is a volunteer position.  If you are a student interested in an internship, we will work with your university for class credit.\n\n## Video / Storyboard Creator\n\n### Location:\nVirtual Opportunity\n\n### Commitment\nPart-time, flexible\n\n### Description\nThe Technology Exchange Lab (TEL) is looking for a volunteer to help us create a short (30-45 second) informational animated video for the homepage of our new website.  This is a great opportunity for aspiring or established designers and storytellers to grow their portfolios!\n\nThis is a volunteer position.  If you are a student interested in an internship, we will work with your university for class credit.\n"
         },
         {
           "path": "/menu.md",
-          "text": "---- /#menu-1 ----\nname: Find Solutions\nlink: /solutions/\n\n---- /#menu-2 ----\nname: Add Solutions\nlink: /add-solutions/\n\n---- /#menu-3 ----\nname: Take Action\nlink: /take-action/\n\n---- /#menu-4 ----\nname: Project Accelerator\nlink: /project-accelerator/\n\n---- /#menu-5 ----\nname: Blog\nlink: /blog/\n\n---- /#menu-6 ----\nname: About Us\nlink: /about-us/\n"
+          "text": "---- /#menu-1 ----\nname: Our Mission\nlink: /about-us/\nselected: true\n\nTEL is dedicated to bringing communities out of poverty by driving the adoption of innovative, cost-effective and sustainable solutions that improve the lives at the bottom of the pyramid.\n\n---- /#menu-2 ----\nname: Project Accelerator\nlink: /project-accelerator/\n\nWhether you need guidance in selecting and sourcing a solution that is right for you, or xpertise in structuring and promoting your development project, talk directly to a TEL expert to learn more about our Project Accelerator service.\n\n---- /#menu-3 ----\nname: Take Action\nlink: /take-action/\n\nJoin a growing network of innovators, social enterprises, NGOs and developing-world communities who share and discover sustainable solutions to problems of poverty.\n\n---- /#menu-4 ----\nname: Prizes for Ideas\nlink: /prizes-for-ideas/\n\nExplore our list of competitions, fellowships and awards in support of innovation and innovators against poverty.\n\n---- /#menu-5 ----\nname: Funding Resources\nlink: /funding-resources/\n\nSeeking support a high-impact solution or social enterprise? Check out our guide of grants, impact investors, funding platforms and other opportunities to promote and fund your work.\n\n---- /#menu-6 ----\nname: Stories from the Field\nlink: /blog/\n\nMeet the solution providers, social entrepreneurs and communities from around the world that are working to implement development initiatives in last-mile communities. Read stories from the field on our blog.\n"
         },
         {
           "path": "/partner-solutions",
@@ -127,7 +127,7 @@
     },
     {
       "name": "templates",
-      "path": "/Users/jumblerg/Development/app/techxlab/tel-website/src",
+      "path": "/Users/hello/pub/tel-website/src",
       "type": "FILE",
       "watch": {},
       "files": [
@@ -137,7 +137,7 @@
         },
         {
           "path": "/add-solutions.hbs",
-          "text": "{{{partial \"partial/banner\"}}}\n\n<section id=\"add-solutions\" class=\"section section-add-solutions\">\n  <div class=\"container\">\n    {{{html}}}\n    <div class=\"row\">\n      <div class=\"column column-add-solutions\">\n        <form id=\"add-solution-form\" class=\"column column-add-solutions\" action=\"{{option \"formServer\"}}/server/form\" method=\"POST\">\n          {{{fragmentHtml \"#form\"}}}\n        </form>\n      </div>\n    </div>\n  </div>\n</section>\n"
+          "text": "{{{partial \"partial/banner\"}}}\n\n<section id=\"add-solutions\" class=\"section section-add-solutions\">\n  <div class=\"container\">\n    {{{html}}}\n    <div class=\"row\">\n      <div class=\"column column-add-solutions\">\n        <form id=\"add-solution-form\" class=\"column column-add-solutions\" action=\"{{option \"formServer\"}}/server/form\" method=\"POST\" enctype=\"multipart/form-data\">\n          {{{fragmentHtml \"#form\"}}}\n        </form>\n      </div>\n    </div>\n  </div>\n</section>\n"
         },
         {
           "path": "/banner.hbs",
@@ -161,7 +161,7 @@
         },
         {
           "path": "/home.hbs",
-          "text": "<!-- {{#with [#banner-section]}} -->\n<section id=\"banner-home\" class=\"section-banner-home\">\n  <div class=\"underlay\"></div>\n  <div class=\"section-banner-wedge\">\n    {{{image}}}\n  </div>\n  <div class=\"container container-banner\">\n    <div class=\"row row-banner\">\n      <div class=\"column column-banner-feature\">\n        {{{html}}}\n        <ul class=\"menu menu-banner-buttons\">\n          <li class=\"menu-item menu-item-banner\"><a class=\"button button-banner\" href=\"{{relPath}}/solutions/\">Find Solutions</a></li>\n          <li class=\"menu-item menu-item-banner\"><a class=\"button button-banner\" href=\"{{relPath}}/add-solutions/\">Add Solutions</a></li>\n        </ul>\n      </div>\n    </div>\n  </div>\n  <script>\n    var fadeBanner = function (e) {\n      if ($(e.target).scrollTop() % 2 === 0) {\n        e.data.$banner.fadeTo(0, 1 - $(e.target).scrollTop() / e.data.$banner.height());\n      }\n    };\n    $(document).on('scroll', {$banner: $('#banner-home img')}, fadeBanner);\n    // todo: unsubscribe fadeBanner fn, currently left dangling\n  </script>\n</section>\n<!-- {{/with}} -->\n\n{{{partial \"partial/feature-menu\"}}}\n{{{partial \"partial/image-grid\"}}}\n{{{partial \"partial/action\"}}}\n{{{partial \"partial/quotes\"}}}\n{{{partial \"partial/partners\"}}}\n{{{partial \"partial/contact\"}}}\n"
+          "text": "<!-- {{#with [#banner-section]}} -->\n<section id=\"banner-home\" class=\"section-banner-home\">\n  <div class=\"underlay\"></div>\n  <div class=\"section-banner-wedge\">\n    {{{image}}}\n  </div>\n  <div class=\"container container-banner\">\n    <div class=\"row row-banner\">\n      <div class=\"column column-banner-feature\">\n        {{{html}}}\n        <ul class=\"menu menu-banner-buttons\">\n          <li class=\"menu-item menu-item-banner\"><a class=\"button button-banner\" href=\"{{relPath}}/solutions/\">Find Solutions</a></li>\n          <li class=\"menu-item menu-item-banner\"><a class=\"button button-banner\" href=\"{{relPath}}/add-solutions/\">Add Solutions</a></li>\n        </ul>\n      </div>\n    </div>\n  </div>\n  <script>\n    var fadeBanner = function (e) {\n      if ($(e.target).scrollTop() % 2 === 0) {\n        e.data.$banner.fadeTo(0, 1 - $(e.target).scrollTop() / e.data.$banner.height());\n      }\n    };\n    $(document).on('scroll', {$banner: $('#banner-home img')}, fadeBanner);\n    // todo: unsubscribe fadeBanner fn, currently left dangling\n  </script>\n</section>\n<!-- {{/with}} -->\n\n{{{partial \"partial/menu\"}}}\n{{{partial \"partial/image-grid\"}}}\n{{{partial \"partial/action\"}}}\n{{{partial \"partial/quotes\"}}}\n{{{partial \"partial/partners\"}}}\n{{{partial \"partial/contact\"}}}\n"
         },
         {
           "path": "/main-layout.hbs",
@@ -224,12 +224,12 @@
           "text": "<section id=\"contact\" class=\"section section-contact\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"column column-contact column-contact-copy\">\n        {{{fragmentHtml \"#contact\"}}}\n      </div>\n      <div class=\"column column-space\">\n      </div>\n      <form id=\"contact-form\" class=\"column column-contact column-contact-form\" action=\"{{option 'formServer'}}/server/form\" method=\"POST\">\n        {{{fragmentHtml \"/#contact-form\"}}}\n      </form>\n    </div>\n  </div>\n</section>\n"
         },
         {
-          "path": "/partial/feature-menu.hbs",
-          "text": "<section id=\"menu-main\" class=\"section section-menu-main\">\n  <script>\n  // var fadeBanner = function (e) {\n  //   console.log($(e.target).scrollTop() > 731)\n  //   if ($(e.target).scrollTop() % 2 === 0) {\n  //     e.data.$banner.fadeTo(0, 1 - $(e.target).scrollTop() / e.data.$banner.height());\n  //   }\n  // };\n  // $(document).on('scroll', {$banner: $('#banner-home img')}, fadeBanner);\n    $(function () {\n      $(\".menu-menu-main li\").hover(function(e) {\n        $(e.currentTarget).addClass(\"selected\").siblings().map(function (_, elem) {\n          $(elem).removeClass(\"selected\");\n        });\n      });\n    });\n  </script>\n  <div class=\"container container-menu-main\">\n    <ul class=\"menu menu-menu-main\">\n      {{#eachFragment \"#feature-menu-item\"}}\n        <li class=\"menu-item {{#if selected}} selected {{/if}}\">\n          <a class=\"menu-item-name\" href=\"{{fixPath link}}\">{{name}}</a>\n          <div class=\"menu-item-caption\">{{{html}}}</div>\n        </li>\n      {{/eachFragment}}\n    </ul>\n  </div>\n</section>\n"
-        },
-        {
           "path": "/partial/image-grid.hbs",
           "text": "<section id=\"solution-categories\" class=\"section orange-white\">\n  <div class=\"container\">\n    {{{fragmentHtml \"#solution-categories-section\"}}}\n    <div class=\"row\">\n      <ul class=\"elem elem-product-categories\">\n        {{#eachFragment \"#solution-categories-box\"}}\n          <li>\n            <div class=\"overlay\"></div>\n            <a class=\"name\" href=\"{{fixPath link}}\">{{name}}</a>\n            <img src=\"{{fixPath image}}\">\n          </li>\n        {{/eachFragment}}\n      </ul>\n    </div>\n  </div>\n</section>\n"
+        },
+        {
+          "path": "/partial/menu.hbs",
+          "text": "<section id=\"menu-main\" class=\"section section-menu-main\">\n  <script>\n  // var fadeBanner = function (e) {\n  //   console.log($(e.target).scrollTop() > 731)\n  //   if ($(e.target).scrollTop() % 2 === 0) {\n  //     e.data.$banner.fadeTo(0, 1 - $(e.target).scrollTop() / e.data.$banner.height());\n  //   }\n  // };\n  // $(document).on('scroll', {$banner: $('#banner-home img')}, fadeBanner);\n    $(function () {\n      $(\".menu-menu-main li\").hover(function(e) {\n        $(e.currentTarget).addClass(\"selected\").siblings().map(function (_, elem) {\n          $(elem).removeClass(\"selected\");\n        });\n      });\n    });\n  </script>\n  <div class=\"container container-menu-main\">\n    <ul class=\"menu menu-menu-main\">\n      {{#eachFragment \"/#menu\"}}\n        <li class=\"menu-item {{#if selected}} selected {{/if}}\">\n          <a class=\"menu-item-name\" href=\"{{fixPath link}}\">{{name}}</a>\n          <div class=\"menu-item-caption\">{{{html}}}</div>\n        </li>\n      {{/eachFragment}}\n    </ul>\n  </div>\n</section>\n"
         },
         {
           "path": "/partial/partners.hbs",
@@ -252,11 +252,11 @@
     {
       "name": "solutions",
       "writable": true,
-      "path": "/Users/jumblerg/Development/app/techxlab/tel-solutions/src",
-      "repo": null,
+      "path": "/src",
+      "repo": "jldec/tel-solutions",
+      "branch": "master",
       "type": "FILE",
-      "tmp": "/Users/jumblerg/.tmp/solutions",
-      "watch": {},
+      "tmp": "/Users/hello/.tmp/solutions",
       "fragmentDelim": true,
       "files": [
         {
@@ -2634,7 +2634,18 @@
       ]
     },
     {
-      "path": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-seo/src",
+      "name": "images",
+      "writable": true,
+      "writeOnly": true,
+      "path": "/",
+      "repo": "techxlab/ast",
+      "branch": "gh-pages",
+      "type": "FILE",
+      "tmp": "/Users/hello/.tmp/images",
+      "files": []
+    },
+    {
+      "path": "/Users/hello/pub/server/node_modules/pub-pkg-seo/src",
       "fragmentDelim": 1,
       "_pkg": "pub-pkg-seo",
       "name": "src",
@@ -2656,7 +2667,7 @@
       ]
     },
     {
-      "path": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-editor/src",
+      "path": "/Users/hello/pub/server/node_modules/pub-pkg-editor/src",
       "route": "/pub",
       "_pkg": "pub-pkg-editor",
       "name": "_src",
@@ -2685,7 +2696,7 @@
   ],
   "staticPaths": [
     {
-      "path": "/Users/jumblerg/Development/app/techxlab/tel-website/rsc",
+      "path": "/Users/hello/pub/tel-website/rsc",
       "watch": {},
       "route": "/",
       "depth": 5,
@@ -2696,11 +2707,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/jumblerg/Development/app/techxlab/tel-website/rsc"
+        "root": "/Users/hello/pub/tel-website/rsc"
       }
     },
     {
-      "path": "/Users/jumblerg/Development/app/techxlab/tel-website/CNAME",
+      "path": "/Users/hello/pub/tel-website/CNAME",
       "watch": {},
       "route": "/",
       "depth": 5,
@@ -2711,7 +2722,7 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/jumblerg/Development/app/techxlab/tel-website"
+        "root": "/Users/hello/pub/tel-website"
       }
     },
     {
@@ -2745,22 +2756,7 @@
       }
     },
     {
-      "path": "/Users/jumblerg/Development/app/techxlab/tel-images",
-      "route": "/ast",
-      "watch": {},
-      "depth": 5,
-      "maxAge": "10m",
-      "includeBinaries": true,
-      "sendOpts": {
-        "maxAge": "10m",
-        "dotfiles": "ignore",
-        "index": false,
-        "extensions": false,
-        "root": "/Users/jumblerg/Development/app/techxlab/tel-images"
-      }
-    },
-    {
-      "path": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-jquery/js/jquery-1.11.3.min.js",
+      "path": "/Users/hello/pub/server/node_modules/pub-pkg-jquery/js/jquery-1.11.3.min.js",
       "route": "/js",
       "inject": true,
       "maxAge": "30d",
@@ -2773,11 +2769,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-jquery/js"
+        "root": "/Users/hello/pub/server/node_modules/pub-pkg-jquery/js"
       }
     },
     {
-      "path": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-font-awesome/fonts",
+      "path": "/Users/hello/pub/server/node_modules/pub-pkg-font-awesome/fonts",
       "route": "/fonts",
       "_pkg": "pub-pkg-font-awesome",
       "watch": false,
@@ -2789,11 +2785,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-font-awesome/fonts"
+        "root": "/Users/hello/pub/server/node_modules/pub-pkg-font-awesome/fonts"
       }
     },
     {
-      "path": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-font-awesome/css/font-awesome.css",
+      "path": "/Users/hello/pub/server/node_modules/pub-pkg-font-awesome/css/font-awesome.css",
       "route": "/css",
       "inject": true,
       "_pkg": "pub-pkg-font-awesome",
@@ -2806,11 +2802,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-font-awesome/css"
+        "root": "/Users/hello/pub/server/node_modules/pub-pkg-font-awesome/css"
       }
     },
     {
-      "path": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-editor/static/css",
+      "path": "/Users/hello/pub/server/node_modules/pub-pkg-editor/static/css",
       "route": "/pub/css",
       "_pkg": "pub-pkg-editor",
       "watch": false,
@@ -2822,11 +2818,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-editor/static/css"
+        "root": "/Users/hello/pub/server/node_modules/pub-pkg-editor/static/css"
       }
     },
     {
-      "path": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-editor/node_modules/humane-js/themes/flatty.css",
+      "path": "/Users/hello/pub/server/node_modules/pub-pkg-editor/node_modules/humane-js/themes/flatty.css",
       "route": "/pub/humane-js",
       "_pkg": "pub-pkg-editor",
       "watch": false,
@@ -2838,13 +2834,13 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-editor/node_modules/humane-js/themes"
+        "root": "/Users/hello/pub/server/node_modules/pub-pkg-editor/node_modules/humane-js/themes"
       }
     }
   ],
   "outputs": [
     {
-      "path": "/Users/jumblerg/Development/app/techxlab/tel-website/tgt",
+      "path": "/Users/hello/pub/tel-website/tgt",
       "relPaths": true,
       "omitRoutes": [
         "/ast"
@@ -2856,33 +2852,33 @@
       "name": "tgt",
       "writable": true,
       "type": "FILE",
-      "tmp": "/Users/jumblerg/.tmp/tgt",
+      "tmp": "/Users/hello/.tmp/tgt",
       "watch": {}
     }
   ],
   "browserScripts": [
     {
-      "path": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-editor/client/editor-ui.js",
+      "path": "/Users/hello/pub/server/node_modules/pub-pkg-editor/client/editor-ui.js",
       "route": "/pub/js/editor-ui.js",
       "_pkg": "pub-pkg-editor"
     },
     {
-      "path": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-editor/node_modules/pub-preview/pub-preview.js",
+      "path": "/Users/hello/pub/preview/pub-preview.js",
       "route": "/pub/js/pub-preview.js",
       "_pkg": "pub-pkg-editor"
     }
   ],
   "generatorPlugins": [
     {
-      "path": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-seo/generator-plugin.js",
+      "path": "/Users/hello/pub/server/node_modules/pub-pkg-seo/generator-plugin.js",
       "_pkg": "pub-pkg-seo"
     },
     {
-      "path": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-font-awesome/generator-plugin.js",
+      "path": "/Users/hello/pub/server/node_modules/pub-pkg-font-awesome/generator-plugin.js",
       "_pkg": "pub-pkg-font-awesome"
     },
     {
-      "path": "/Users/jumblerg/Development/app/techxlab/tel-website/pub-generator-plugin.js"
+      "path": "/Users/hello/pub/tel-website/pub-generator-plugin.js"
     },
     {
       "path": "pub-pager"
@@ -2890,7 +2886,7 @@
   ],
   "serverPlugins": [
     {
-      "path": "/Users/jumblerg/Development/app/techxlab/tel-website/pub-server-plugin.js"
+      "path": "/Users/hello/pub/tel-website/pub-server-plugin.js"
     }
   ],
   "injectCss": [
@@ -2935,41 +2931,11 @@
           "type": "git",
           "url": "git://github.com/jldec/pub-pkg-jquery.git"
         },
-        "author": {
-          "name": "jurgen leschner"
-        },
-        "license": "MIT",
-        "gitHead": "ae3559b23a373377fe5933b73db06f09d26ba7d0",
-        "bugs": {
-          "url": "https://github.com/jldec/pub-pkg-jquery/issues"
-        },
-        "homepage": "https://github.com/jldec/pub-pkg-jquery#readme",
-        "_id": "pub-pkg-jquery@1.11.3",
-        "scripts": {},
-        "_shasum": "75d35f36153cfe1cb821f9ecc5bb593ee0d1314e",
-        "_from": "pub-pkg-jquery@>=1.11.3 <2.0.0",
-        "_npmVersion": "2.9.0",
-        "_nodeVersion": "2.0.2",
-        "_npmUser": {
-          "name": "jldec",
-          "email": "jldec@ciaosoft.com"
-        },
-        "maintainers": [
-          {
-            "name": "jldec",
-            "email": "jldec@ciaosoft.com"
-          }
-        ],
-        "dist": {
-          "shasum": "75d35f36153cfe1cb821f9ecc5bb593ee0d1314e",
-          "tarball": "http://registry.npmjs.org/pub-pkg-jquery/-/pub-pkg-jquery-1.11.3.tgz"
-        },
-        "directories": {},
-        "_resolved": "https://registry.npmjs.org/pub-pkg-jquery/-/pub-pkg-jquery-1.11.3.tgz",
-        "readme": "ERROR: No README data found!"
+        "author": "jurgen leschner",
+        "license": "MIT"
       },
       "pkgName": "pub-pkg-jquery",
-      "dir": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-jquery"
+      "dir": "/Users/hello/pub/server/node_modules/pub-pkg-jquery"
     },
     {
       "path": "pub-pkg-font-awesome",
@@ -2997,40 +2963,11 @@
           "docout": "pub -O doc",
           "docview": "pub -S doc/gh-pages doc"
         },
-        "author": {
-          "name": "jurgen leschner"
-        },
-        "license": "code: MIT, fonts: SIL OFL 1.1",
-        "gitHead": "5614a01f2ca99b0cd56a901ddb292b46abc73aee",
-        "bugs": {
-          "url": "https://github.com/jldec/pub-pkg-font-awesome/issues"
-        },
-        "homepage": "https://github.com/jldec/pub-pkg-font-awesome#readme",
-        "_id": "pub-pkg-font-awesome@2.2.0",
-        "_shasum": "a72b1ccbde95ae2bfc52a023bc838943b4125280",
-        "_from": "pub-pkg-font-awesome@>=2.2.0 <3.0.0",
-        "_npmVersion": "2.14.2",
-        "_nodeVersion": "4.0.0",
-        "_npmUser": {
-          "name": "jldec",
-          "email": "jldec@ciaosoft.com"
-        },
-        "maintainers": [
-          {
-            "name": "jldec",
-            "email": "jldec@ciaosoft.com"
-          }
-        ],
-        "dist": {
-          "shasum": "a72b1ccbde95ae2bfc52a023bc838943b4125280",
-          "tarball": "http://registry.npmjs.org/pub-pkg-font-awesome/-/pub-pkg-font-awesome-2.2.0.tgz"
-        },
-        "directories": {},
-        "_resolved": "https://registry.npmjs.org/pub-pkg-font-awesome/-/pub-pkg-font-awesome-2.2.0.tgz",
-        "readme": "ERROR: No README data found!"
+        "author": "jurgen leschner",
+        "license": "MIT AND OFL-1.1"
       },
       "pkgName": "pub-pkg-font-awesome",
-      "dir": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-font-awesome"
+      "dir": "/Users/hello/pub/server/node_modules/pub-pkg-font-awesome"
     },
     {
       "path": "pub-pkg-seo",
@@ -3050,41 +2987,11 @@
           "type": "git",
           "url": "git://github.com/jldec/pub-pkg-seo.git"
         },
-        "author": {
-          "name": "jurgen leschner"
-        },
-        "license": "MIT",
-        "gitHead": "87ec08517dca913900ceaf6c9e225ccf6b3a8064",
-        "bugs": {
-          "url": "https://github.com/jldec/pub-pkg-seo/issues"
-        },
-        "homepage": "https://github.com/jldec/pub-pkg-seo#readme",
-        "_id": "pub-pkg-seo@1.0.1",
-        "scripts": {},
-        "_shasum": "02fc13926c5e4718b47bf15c30cbe4f8e8b543a1",
-        "_from": "pub-pkg-seo@>=1.0.1 <2.0.0",
-        "_npmVersion": "2.12.1",
-        "_nodeVersion": "2.3.4",
-        "_npmUser": {
-          "name": "jldec",
-          "email": "jldec@ciaosoft.com"
-        },
-        "maintainers": [
-          {
-            "name": "jldec",
-            "email": "jldec@ciaosoft.com"
-          }
-        ],
-        "dist": {
-          "shasum": "02fc13926c5e4718b47bf15c30cbe4f8e8b543a1",
-          "tarball": "http://registry.npmjs.org/pub-pkg-seo/-/pub-pkg-seo-1.0.1.tgz"
-        },
-        "directories": {},
-        "_resolved": "https://registry.npmjs.org/pub-pkg-seo/-/pub-pkg-seo-1.0.1.tgz",
-        "readme": "ERROR: No README data found!"
+        "author": "jurgen leschner",
+        "license": "MIT"
       },
       "pkgName": "pub-pkg-seo",
-      "dir": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-seo"
+      "dir": "/Users/hello/pub/server/node_modules/pub-pkg-seo"
     },
     {
       "path": "pub-pkg-editor",
@@ -3102,54 +3009,36 @@
           "type": "git",
           "url": "git://github.com/jldec/pub-pkg-editor.git"
         },
-        "author": {
-          "name": "jurgen leschner"
-        },
-        "license": "MIT",
-        "gitHead": "b0123aefd24eaf9c90a66f0deb04ec4ab518e08f",
-        "bugs": {
-          "url": "https://github.com/jldec/pub-pkg-editor/issues"
-        },
-        "homepage": "https://github.com/jldec/pub-pkg-editor#readme",
-        "_id": "pub-pkg-editor@1.5.3",
-        "scripts": {},
-        "_shasum": "277c0394d0141f7b9a3754d79642097a9e70048c",
-        "_from": "pub-pkg-editor@>=1.5.3 <2.0.0",
-        "_npmVersion": "2.14.7",
-        "_nodeVersion": "4.2.1",
-        "_npmUser": {
-          "name": "jldec",
-          "email": "jldec@ciaosoft.com"
-        },
-        "maintainers": [
-          {
-            "name": "jldec",
-            "email": "jldec@ciaosoft.com"
-          }
-        ],
-        "dist": {
-          "shasum": "277c0394d0141f7b9a3754d79642097a9e70048c",
-          "tarball": "http://registry.npmjs.org/pub-pkg-editor/-/pub-pkg-editor-1.5.3.tgz"
-        },
-        "directories": {},
-        "_resolved": "https://registry.npmjs.org/pub-pkg-editor/-/pub-pkg-editor-1.5.3.tgz",
-        "readme": "ERROR: No README data found!"
+        "author": "jurgen leschner",
+        "license": "MIT"
       },
       "pkgName": "pub-pkg-editor",
-      "dir": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-editor"
+      "dir": "/Users/hello/pub/server/node_modules/pub-pkg-editor"
     }
   ],
   "appUrl": "https://techxlab.github.io/website",
   "formServer": "https://tel-staging.herokuapp.com",
+  "formEmail": "notifications@techxlab.org",
   "noRobots": true,
+  "upload": {
+    "limits": {
+      "fileSize": 5242880,
+      "files": 3,
+      "parts": 200
+    }
+  },
   "throttleReload": "1s",
   "linkNewWindow": true,
-  "_resolved": true,
-  "production": false,
-  "port": "3001",
   "fqImages": {
     "route": "/ast",
     "url": "https://techxlab.github.io"
   },
+  "redis": {
+    "prefix": "sess-techxlab:",
+    "_log": "log-techxlab:"
+  },
+  "_resolved": true,
+  "production": false,
+  "port": "3001",
   "staticHost": true
 }
