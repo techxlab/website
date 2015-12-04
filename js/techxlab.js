@@ -25,6 +25,7 @@ if (history && history.pushState) {
 
 // initialize contact and other form handlers (both SPA and non-SPA modes)
 initForms();
+initScrollmon();
 
 // start SPA mode
 function initClientSide(g) {
@@ -62,6 +63,7 @@ function cleanAllViews($el) {
 function initAllViews($el) {
   initSearch();
   initForms();
+  initScrollmon();
 }
 
 function initForms() {
@@ -128,7 +130,17 @@ function initSearch() {
 
     u.set(generator, 'req.query.q', txt);
     $results.html(generator.renderTemplate(pager.page, 'partial/result'));
+    initScrollmon();
   }
+}
+
+function initScrollmon() {
+  $('.scrollmon').each(function(idx) {
+    var $el = $(this);
+    var src = $el.data('src');
+    scrollMonitor.create(this).enterViewport(showMe, 500);
+    function showMe() { $el.attr('src',src); }
+  });
 }
 
 }) // $(function() {

@@ -257,7 +257,7 @@
         },
         {
           "path": "/partial/result.hbs",
-          "text": "{{#eachSearchResults}}\n  <div class=\"solution-list-item\">\n    <div class=\"header-solution-list-item\">\n      {{{category-icons}}}\n      <a href=\"{{pageHref}}\" title=\"{{name}}\"><h1 class=\"h1-solutions\">{{{name}}}</h1></a>\n    </div>\n    <a class=\"solution-list-item-image\" href=\"{{pageHref}}\" title=\"{{name}}\">{{{image}}}</a>\n    <div class=\"solution-list-item-body\">\n      <h2 class=\"h2-solutions\">{{[#provider].name}}</h2>\n      {{{summary}}}\n    </div>\n  </div>\n{{/eachSearchResults}}\n"
+          "text": "{{#eachSearchResults}}\n  <div class=\"solution-list-item\">\n    <div class=\"header-solution-list-item\">\n      {{{category-icons}}}\n      <a href=\"{{pageHref}}\" title=\"{{name}}\"><h1 class=\"h1-solutions\">{{{name}}}</h1></a>\n    </div>\n    <a class=\"solution-list-item-image\" href=\"{{pageHref}}\" title=\"{{name}}\">\n      {{#iflt @index 6}}\n        {{{image}}}\n      {{else}}\n        <img data-src=\"{{{fixPath image}}}\" class=\"scrollmon\">\n      {{/iflt}}\n    </a>\n    <div class=\"solution-list-item-body\">\n      <h2 class=\"h2-solutions\">{{[#provider].name}}</h2>\n      {{{summary}}}\n    </div>\n  </div>\n{{/eachSearchResults}}\n"
         }
       ]
     },
@@ -2938,6 +2938,9 @@
     },
     {
       "path": "/js/jquery.flexslider-min.js"
+    },
+    {
+      "path": "/js/scrollmonitor.js"
     },
     {
       "path": "/server/pub-ux.js"
