@@ -17,14 +17,7 @@
       "multer": "^1.1.0",
       "pub-server": "^1.9.21"
     },
-    "devDependencies": {
-      "fs-extra": "^0.24.0",
-      "mkdirp": "^0.5.1",
-      "mysql": "^2.9.0",
-      "pub-util": "^2.1.1",
-      "queue3": "^1.0.3",
-      "request": "^2.65.0"
-    },
+    "devDependencies": {},
     "repository": {
       "type": "git",
       "url": "git@bitbucket.org:techxlab/website.git"
@@ -2941,9 +2934,6 @@
     },
     {
       "path": "/js/scrollmonitor.js"
-    },
-    {
-      "path": "/server/pub-ux.js"
     }
   ],
   "pkgs": [
