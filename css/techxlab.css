@@ -207,17 +207,25 @@ input[type=email],
 input[type=search],
 input[type=tel],
 input[type=file],
+input[type=submit],
 select,
 textarea {
+  padding:       6px 12px;
+  margin-bottom: 15px;
   font-family:   "lato";
   font-size:     14px;
   line-height:   28px;
-  padding:       6px 12px;
-  margin-bottom: 15px;
 }
 
-input[type=submit] {
-  font-size: 14px;
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=search],
+input[type=tel],
+textarea {
+  border-style:  solid;
+  border-color:  #aaa;
+  border-width:  1px;
 }
 
 input[type=checkbox], input[type=radio] {
@@ -228,7 +236,7 @@ label {
   padding-left: 4px;
 }
 
-label.radio, label.checkbox {
+label.radio, label.checkbox, input[type=submit] {
   cursor: pointer;
 }
 
@@ -900,6 +908,10 @@ p {
   margin-bottom: 6px
 }
 
+#contact #message {
+  height: 8em;
+}
+
 /** description section (project accelerator) **********************************/
 
 #description.section-description {
@@ -1387,15 +1399,20 @@ p {
   background-color: #fff;
 }
 
+#partners h1 {
+  color: #F2A028;
+  margin-bottom: 15px;
+}
+
 #partners .row-partners {
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap:       wrap;
   align-items:     center;
 }
 
 #partners .logo-partners {
   margin: 15px;
-  width:  180px;
+  width:  130px;
 }
 
 /** persons section (about) ***************************************************/
@@ -1406,11 +1423,16 @@ p {
 
 #persons h2 {
   font-size: 20px;
+  padding-top: 2px
 }
 
 #persons h3 {
   font-size:     12px;
   margin-bottom: 15px;
+}
+
+#persons .bio * {
+  color: #444;
 }
 
 #persons .row-persons {
@@ -1426,6 +1448,73 @@ p {
 
 #persons .item-person p {
   display: none;
+}
+
+/* General Modal Layout */
+
+#persons .selected {
+  justify-content: space-around;
+  position: fixed;
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+}
+#persons .selected .person-container {
+  background-color: white;
+  padding: 40px;
+  height: 100%;
+  margin: 71px 0 0;
+}
+@media (min-width: 550px) {
+  #persons .selected .person-container {
+    padding: 50px;
+    margin: 127px 64px 50px;
+  }
+}
+@media (min-width: 992px) {
+  #persons .selected .person-container {
+    margin: 133px 64px 50px;
+  }
+}
+@media (min-width: 1200px) {
+  #persons .selected .person-container {
+    margin: 148px 64px 50px;
+  }
+}
+#persons .selected .person-row {
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 992px) {
+  #persons .selected .person-row {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+}
+
+/* Modal Contents */
+
+#persons .selected img {
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 5px;
+}
+#persons .selected .bio {
+  overflow-y: scroll;
+  height: 90%;
+}
+#persons .selected .bio :not(p) {
+  padding-bottom: 10px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  #persons .selected .bio :not(p) {
+    text-align: left;
+  }
 }
 
 /** product categories section (home) *****************************************/
