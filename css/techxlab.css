@@ -236,9 +236,20 @@ label {
   padding-left: 4px;
 }
 
-label.required:after { content:" *"; color:#f77; font-size:larger; }
-label.missing:before { content:"Missing! "; color:#f77; }
-label.form-error { white-space:pre; color:#f77; }
+label.required:after { content:" *"; color:#f9a021; }
+label.missing:after {
+  display:inline-block;
+  content:"Missing required value";
+  background-color:#f9a021;
+  color:#fff;
+  padding:0 0.5em;
+  margin-left:0.5em;
+  margin-bottom:1px;
+  border-width:0;
+  border-radius:2px;
+}
+label.form-error:before { content:"Missing required values:"; color:#f9a021; display:block; }
+label.form-error { white-space:pre; } /* show one missing field per line */
 
 label.radio, label.checkbox, input[type=submit] {
   cursor: pointer;

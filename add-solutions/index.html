@@ -90,7 +90,7 @@
 <p>Once your solution has been submitted, our team will review all content to ensure that we provide unbiased information. Our curating process creates a level playing field for solution providers, while also empowering organizations and communities to find the solutions that best suit their unique needs.</p>
 </div>
     <div class="row">
-      <form id="add-solution-form" class="column column-add-solutions" action="https://tel-staging.herokuapp.com/server/form" method="POST" enctype="multipart/form-data">
+      <form id="add-solution-form" class="column column-add-solutions" novalidate="novalidate" action="https://tel-staging.herokuapp.com/server/form" method="POST" enctype="multipart/form-data">
         <div data-render-html="/add-solutions/#form"><p>
 <label for="name" class="required">Name of the solution, invention, or method:</label>
 <input required type="text" name="Name" id="name" class="required"></p>
@@ -253,9 +253,7 @@
 <label for="contact-email" class="required">Email:</label>
 <input required type="email" name="Contact Email" id="contact-email" class="required">
 
-<input type="submit" value="Submit Information" class="button">
-
-<label class="form-error">✓</label></p>
+<input type="submit" value="Submit Information" class="button"></p>
 <p>
 <input type="hidden" name="form" value="Add Solution" id="form">
 
@@ -267,6 +265,7 @@
 
 <input type="hidden" name="location" id="location"></p>
 </div>
+        <label class="form-error" style="display:none;" >
       </form>
     </div>
   </div>

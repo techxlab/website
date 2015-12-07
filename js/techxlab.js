@@ -112,16 +112,16 @@ function checkRequired($form) {
       var label = $('[for='+id+']:visible');
       if (missing) {
         label.addClass('missing');
-        msgs.push('Missing: ' + label.text());
+        msgs.push(name);
       }
       else { label.removeClass('missing'); }
     }
   });
   if (msgs.length) {
-    $('.form-error').text(msgs.join('\n'));
+    $('.form-error').text(msgs.join('\n')).show();
     return false;
   } else {
-    $('.form-error').text('');
+    $('.form-error').hide();
     return true;
   }
 
