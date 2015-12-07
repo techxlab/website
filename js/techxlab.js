@@ -68,8 +68,9 @@ function initAllViews($el) {
 }
 
 function initForms() {
-  $forms = $('#contact-form, #add-solution-form');
+  $forms = $('#contact-form, #get-started-form, #add-solution-form');
   if (!$forms.length) return;
+  $('#location').val(location.origin + opts.staticRoot);
 
   $forms.on('submit', validateForm);
 
@@ -77,10 +78,58 @@ function initForms() {
     $forms.off('submit', validateForm);
   }
 
-  function validateForm() {
-    console.log('validateForm: ' + $('#form').val());
-    $('#location').val(location.origin + opts.staticRoot);
-    $('#validated').val('jawohl!');
+  var revalidatingOnChange = false;
+
+  function validateForm(evt) {
+    var $form = $(this);
+
+    if (!checkRequired($form)) {
+      if (!revalidatingOnChange) {
+        $form.on('change', validateForm);
+        revalidatingOnChange = true;
+      }
+      $('#validated').val('');
+      evt.preventDefault();
+    }
+    else {
+      $('#validated').val('jawohl!');
+    }
+  }
+}
+
+// set/remove .missing class on required fields, return false if any missing
+function checkRequired($form) {
+  var values = formValues();
+  var sel = 'input[required], select[required], textarea[required]';
+  var msgs = [];
+
+  $form.find(sel).each(function() {
+    var $fld = $(this);
+    if (! $fld.is(':disabled')) {
+      var name = $fld.attr('name');
+      var missing = !values[name];
+      var id = $fld.attr('id');
+      var label = $('[for='+id+']:visible');
+      if (missing) {
+        label.addClass('missing');
+        msgs.push('Missing: ' + label.text());
+      }
+      else { label.removeClass('missing'); }
+    }
+  });
+  if (msgs.length) {
+    $('.form-error').text(msgs.join('\n'));
+    return false;
+  } else {
+    $('.form-error').text('');
+    return true;
+  }
+
+  // collect field values (only one per name!) into object o
+  function formValues() {
+    var o = {};
+    $.each($form.serializeArray(), function(idx, v){ o[v.name] = v.value; });
+    return o;
   }
 }
 

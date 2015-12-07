@@ -54,7 +54,7 @@
               <a href="../project-accelerator/">Project Accelerator</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../blog/">Blog</a>
+              <a href="../stories/">Blog</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
               <a href="../about-us/">About Us</a>
@@ -74,8 +74,7 @@
   </div>
   <div class="container container-collapse container-banner">
     <div class="row row-banner">
-      <div class="column column-banner-feature column-banner-feature">
-        <h1></h1>
+      <div class="column column-banner-feature">
         <h1 id="add-solution">Add Solution</h1>
 <p>Whether you are a solution provider or simply a technology enthusiast, share practical solutions to problems of poverty by publishing them in the TEL database.</p>
 
@@ -93,11 +92,11 @@
     <div class="row">
       <form id="add-solution-form" class="column column-add-solutions" action="https://tel-staging.herokuapp.com/server/form" method="POST" enctype="multipart/form-data">
         <div data-render-html="/add-solutions/#form"><p>
-<label for="name">Name of the solution, invention, or method:</label>
-<input type="text" name="Name" id="name"></p>
+<label for="name" class="required">Name of the solution, invention, or method:</label>
+<input required type="text" name="Name" id="name" class="required"></p>
 <p>
-<label for="how-it-works">Solution purpose and how it works (up to 300 words):</label>
-<textarea name="How It Works" id="how-it-works"></textarea></p>
+<label for="how-it-works" class="required">Solution purpose and how it works (up to 300 words):</label>
+<textarea required name="How It Works" id="how-it-works" class="required"></textarea></p>
 <h2 id="technology-area">Technology Area</h2>
 
 <label class="radio"><input type="radio" name="Category" value="water">Water &amp; Sanitation</label>
@@ -207,8 +206,8 @@
 <label class="radio"><input type="radio" name="Price range" value="Contact supplier for quote">Contact supplier for quote</label>
 <p></p>
 
-<label for="where-available">Countries where available, or where it can be shipped:</label>
-<input type="text" name="Where available" id="where-available">
+<label for="where-available" class="required">Countries where available, or where it can be shipped:</label>
+<input required type="text" name="Where available" id="where-available" class="required">
 
 <label>Can solution be offered or licensed for local manufacture? (Answer &quot;No&quot; if still only in prototype or trial stage.)</label>
 
@@ -217,8 +216,8 @@
 <p></p>
 <h2 id="solution-provider-contact-info">Solution Provider Contact Info</h2>
 <p>
-<label for="provider-name">Name:</label>
-<input type="text" name="Provider Name" id="provider-name">
+<label for="provider-name" class="required">Name:</label>
+<input required type="text" name="Provider Name" id="provider-name" class="required">
 
 <label for="provider-organization">Company or Organization:</label>
 <input type="text" name="Provider Organization" id="provider-organization">
@@ -232,29 +231,31 @@
 <label for="provider-postal-code">Postal Code:</label>
 <input type="text" name="Provider Postal Code" id="provider-postal-code">
 
-<label for="provider-country">Country:</label>
-<input type="text" name="Provider Country" id="provider-country">
+<label for="provider-country" class="required">Country:</label>
+<input required type="text" name="Provider Country" id="provider-country" class="required">
 
 <label for="provider-phone">Phone:</label>
 <input type="tel" name="Provider Phone" id="provider-phone">
 
-<label for="provider-email">Email:</label>
-<input type="email" name="Provider Email" id="provider-email"></p>
+<label for="provider-email" class="required">Email:</label>
+<input required type="email" name="Provider Email" id="provider-email" class="required"></p>
 <h2 id="your-contact-info">Your Contact Info</h2>
 <p>
-<label for="contact-name">Name:</label>
-<input type="text" name="Contact Name" id="contact-name">
+<label for="contact-name" class="required">Name:</label>
+<input required type="text" name="Contact Name" id="contact-name" class="required">
 
 <label for="contact-organization">Company or Organization:</label>
 <input type="text" name="Contact Organization" id="contact-organization">
 
-<label for="contact-country">Country:</label>
-<input type="text" name="Contact Country" id="contact-country">
+<label for="contact-country" class="required">Country:</label>
+<input required type="text" name="Contact Country" id="contact-country" class="required">
 
-<label for="contact-email">Email:</label>
-<input type="email" name="Contact Email" id="contact-email"></p>
-<p>
-<input type="submit" value="Submit Information" class="button"></p>
+<label for="contact-email" class="required">Email:</label>
+<input required type="email" name="Contact Email" id="contact-email" class="required">
+
+<input type="submit" value="Submit Information" class="button">
+
+<label class="form-error">✓</label></p>
 <p>
 <input type="hidden" name="form" value="Add Solution" id="form">
 

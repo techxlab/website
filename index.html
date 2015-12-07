@@ -54,7 +54,7 @@
               <a href="./project-accelerator/">Project Accelerator</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="./blog/">Blog</a>
+              <a href="./stories/">Blog</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
               <a href="./about-us/">About Us</a>
@@ -144,7 +144,7 @@
 </div></div>
         </li>
         <li class="menu-item ">
-          <a class="menu-item-name" href="./blog/">Stories from the Field</a>
+          <a class="menu-item-name" href="./stories/">Stories from the Field</a>
           <div class="menu-item-caption"><div data-render-html="/#feature-menu-item-6"><p>Meet the solution providers, social entrepreneurs and communities from around the world that are working to implement development initiatives in last-mile communities. Read stories from the field on our blog.</p>
 </div></div>
         </li>
@@ -305,14 +305,14 @@
       </div>
       <form id="contact-form" class="column column-contact column-contact-form" action="https://tel-staging.herokuapp.com/server/form" method="POST">
         <div data-render-html="/#contact-form"><p>
-<label for="name">Name</label>
-<input type="text" name="Name" id="name">
+<label for="name" class="required">Name</label>
+<input required type="text" name="Name" id="name" class="required">
 
-<label for="email">Email</label>
-<input type="email" name="Email" id="email">
+<label for="email" class="required">Email</label>
+<input required type="email" name="Email" id="email" class="required">
 
-<label for="message">Message</label>
-<textarea name="Message" id="message"></textarea>
+<label for="message" class="required">Message</label>
+<textarea required name="Message" id="message" class="required"></textarea>
 
 <input type="submit" value="Submit" class="button"></p>
 <p>

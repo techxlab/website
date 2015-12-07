@@ -54,7 +54,7 @@
               <a href="../project-accelerator/">Project Accelerator</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../blog/">Blog</a>
+              <a href="../stories/">Blog</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
               <a href="../about-us/">About Us</a>
@@ -74,8 +74,7 @@
   </div>
   <div class="container container-collapse container-banner">
     <div class="row row-banner">
-      <div class="column column-banner-feature column-banner-feature">
-        <h1></h1>
+      <div class="column column-banner-feature">
         <h1 id="our-mission">Our Mission</h1>
 <p>TEL is dedicated to bringing communities out of poverty by driving the adoption of innovative, cost-effective and sustainable solutions that improve the lives at the bottom of the pyramid.</p>
 <p>We host a crowdsourced database of over 600 innovations in order to connect practical solutions to the people who need them most. Through our Project Accelerator service, we help NGOs and communities leverage appropriate technology solutions to maximize the impact of last-mile development.</p>
@@ -88,6 +87,7 @@
 <section id="persons" class="section section-persons">
   <div class="container">
     <div data-render-html="/about-us/#persons"><h1 id="the-tel-team">The TEL Team</h1>
+<p>Quality and risk appetite strengthen the board-level executives, while empowerments accelerate a centerpiece. An innovative edge adds value; nevertheless our pre-integrated methodology adequately incentivises the Chief Legal Officer up-front. The key representatives carefully maximize the value. The white-collar workers challenge the status quo</p>
 </div>
     <ul class="row row-persons">
         <li class="item-person">
@@ -354,14 +354,14 @@
       </div>
       <form id="contact-form" class="column column-contact column-contact-form" action="https://tel-staging.herokuapp.com/server/form" method="POST">
         <div data-render-html="/#contact-form"><p>
-<label for="name">Name</label>
-<input type="text" name="Name" id="name">
+<label for="name" class="required">Name</label>
+<input required type="text" name="Name" id="name" class="required">
 
-<label for="email">Email</label>
-<input type="email" name="Email" id="email">
+<label for="email" class="required">Email</label>
+<input required type="email" name="Email" id="email" class="required">
 
-<label for="message">Message</label>
-<textarea name="Message" id="message"></textarea>
+<label for="message" class="required">Message</label>
+<textarea required name="Message" id="message" class="required"></textarea>
 
 <input type="submit" value="Submit" class="button"></p>
 <p>
