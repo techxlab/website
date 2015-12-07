@@ -70,74 +70,54 @@
 
 <div data-render-page="sign-up"><section id="sign-up" class="section">
   <div class="container">
-    <h1>Create an Account to Join Us!</h1>
+    <div data-render-html="/sign-up/"><h1 id="create-an-account-to-join-us-">Create an Account to Join Us!</h1>
+</div>
     <div class="row">
-      <form class="column">
-        <h2>Personal Information</h2>
+      <form id="sign-up-form" class="column column-add-solutions" novalidate="novalidate" action="https://tel-staging.herokuapp.com/server/form" method="POST">
+        <div data-render-html="/sign-up/#sign-up-form"><h2 id="personal-information">Personal Information</h2>
+<p>
+<label for="name" class="required">Name</label>
+<input required type="text" name="Name" id="name" class="required">
 
-        <label for="first_name_member">First Name</label>
-        <input type="text" id="first_name_member" name="first_name_member" value="" class="text form-control" />
+<label for="email" class="required">Email</label>
+<input required type="email" name="Email" id="email" class="required">
 
-        <label for="last_name_member">Last Name</label>
-        <input type="text" id="last_name_member" name="last_name_member" value="" class="text form-control" />
+<label for="password" class="required">Password</label>
+<input required type="password" name="Password" id="password" class="required">
 
-        <label for="email_adress_member">Email Address</label>
-        <input size="40" id="email_adress_member" type="text" name="email_adress_member" value="" class="text form-control" />
+<label for="confirm-password" class="required">Confirm password</label>
+<input required type="password" name="Confirm password" id="confirm-password" class="required">
 
-        <label for="country_member">Country</label>
-        <input type="text" id="country_member" name="country_member" value="" class="text form-control" />
+<label for="organization">Organization</label>
+<input type="text" name="Organization" id="organization">
 
-        <label for="company_name_member">Organization</label>
-        <input type="text" id="company_name_member" name="company_name_member" value="" class="text form-control" />
+<label for="country" class="required">Country</label>
+<input required type="text" name="Country" id="country" class="required">
 
-        <label for="id_techno">Technology Area of Interest</label>
-        <select name="id_techno" id="id_techno" class="form-control">
-          <option value="">Select technology</option>
-          <option value="1">Water & Sanitation</option><option value="2">Agriculture</option><option value="3">Energy</option><option value="5">Education & IT</option><option value="6">Housing & Transport</option><option value="4">Health & Medical Care</option><option value="7">Additional Solutions</option>        <option value="all">All</option>
-        </select>
+<label for="additional-comments-">Additional comments,</label>
+<textarea name="Additional comments," id="additional-comments-"></textarea></p>
+<h2 id="technology-area-of-interest">Technology area of interest</h2>
 
-        <h2 class="login-info">Login Information</h2>
+<label class="radio"><input type="radio" name="Category" value="water">Water &amp; Sanitation</label>
+<label class="radio"><input type="radio" name="Category" value="agriculture">Agriculture &amp; Tools</label>
+<label class="radio"><input type="radio" name="Category" value="energy">Energy &amp; Cooking</label>
+<label class="radio"><input type="radio" name="Category" value="education">Education &amp; Connectivity</label>
+<label class="radio"><input type="radio" name="Category" value="housing">Housing &amp; Transport</label>
+<label class="radio"><input type="radio" name="Category" value="medical">Health &amp; Medical Care</label>
+<label class="radio"><input type="radio" name="Category" value="other">Additional Solutions</label>
+<p>
+<input type="submit" value="Submit" class="button"></p>
+<p>
+<input type="hidden" name="form" value="Sign up" id="form">
 
-        <label for="login_member">Username</label>
-        <input type="text" id="login_member" name="login_member" value="" class="text form-control" />
+<input type="hidden" name="thankyou" value="/form-thank-you/" id="thankyou">
 
-        <label for="password_member_1">Password</label>
-        <input type="password" id="password_member_1" name="password_member_1" class="text form-control" />
+<input type="hidden" name="sorry" value="/form-sorry/" id="sorry">
 
-        <label for="password_member_2">Confirm Password</label>
-        <input type="password" id="password_member_2" name="password_member_2" class="text form-control" />
+<input type="hidden" name="validated" id="validated">
 
-        <label for="street_adress_member">Street Address</label>
-        <input type="text" id="street_adress_member" name="street_adress_member" value="" class="text form-control" />
-
-        <label for="postal_code_member">Postal code</label>
-        <input type="text" id="postal_code_member" name="postal_code_member" value="" class="text form-control" />
-
-        <label for="city_member">Town</label>
-        <input type="text" id="city_member" name="city_member" value="" class="text form-control" />
-
-        <label for="title_member">Title or work description</label>
-        <input type="text" id="title_member" name="title_member" value="" class="text form-control" />
-
-        <label for="comments_member">Additional comments (150 words or less)</label>
-        <textarea class="form-control" name="comments_member" id="comments_member"></textarea>
-
-        <label for="captcha">Type the code shown</label>
-        <script type="text/javascript">
-            var RecaptchaOptions = {
-                    theme : 'clean'
-            };
-        </script>
-        <script type="text/javascript" src="http://www.google.com/recaptcha/api/challenge?k=6LcOjuESAAAAAPbHIS0cr3-xIJNko6101aul_H_f"></script>
-        <noscript>
-          <iframe src="http://www.google.com/recaptcha/api/noscript?k=6LcOjuESAAAAAPbHIS0cr3-xIJNko6101aul_H_f" height="300" width="500" frameborder="0"></iframe><br/>
-          <textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
-          <input type="hidden" name="recaptcha_response_field" value="manual_challenge"/>
-        </noscript>
-
-        <label for="agree_member"><input type="checkbox" name="agree_member" id="agree_member">By checking the box, you agree to TEL&#039;s Privacy Policy.</label>
-        <input class="button button-sign-up" type="submit" value="Sign Up">
-
+<input type="hidden" name="location" id="location"></p>
+</div>
       </form>
     </div>
   </div>

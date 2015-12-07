@@ -25,7 +25,7 @@
     "scripts": {
       "develop": "pub",
       "test": "pub -S tgt",
-      "build": "pub -O -E"
+      "build": "pub -O"
     },
     "author": "jurgen leschner",
     "license": "MIT",
@@ -98,7 +98,7 @@
         },
         {
           "path": "/sign-up.md",
-          "text": "---- /sign-up/ ----\nname: Join TEL\ntemplate: sign-up\n"
+          "text": "---- /sign-up/ ----\nname: Join TEL\ntemplate: sign-up\n\n# Create an Account to Join Us!\n\n---- #sign-up-form ----\n\n## Personal Information\n\n[Name ?text?*]()\n[Email ?email?*]()\n[Password ?password?*]()\n[Confirm password ?password?*]()\n[Organization ?text?]()\n[Country ?text?*]()\n[Additional comments, ?textarea?]()\n\n## Technology area of interest\n\n[?radiolist? ](Category)\n- Water & Sanitation \"water\"\n- Agriculture & Tools \"agriculture\"\n- Energy & Cooking \"energy\"\n- Education & Connectivity \"education\"\n- Housing & Transport \"housing\"\n- Health & Medical Care \"medical\"\n- Additional Solutions \"other\"\n\n[Submit ?submit?](- \"button\")\n\n[Sign up ?hidden?](form)\n[/form-thank-you/ ?hidden?](thankyou)\n[/form-sorry/ ?hidden?](sorry)\n[?hidden?](validated)\n[?hidden?](location)\n"
         },
         {
           "path": "/solutions.md",
@@ -206,7 +206,7 @@
         },
         {
           "path": "/project-accelerator.hbs",
-          "text": "{{{partial \"partial/banner-feature\"}}}\n{{{partial \"partial/body\"}}}\n{{{partial \"partial/accelerate\"}}}\n{{{partial \"partial/form\"}}}\n{{#eachStudy}}\n  {{{partial \"partial/summary\"}}}\n{{/eachStudy}}\n{{{partial \"partial/quotes\"}}}\n{{{partial \"partial/partners\"}}}\n"
+          "text": "{{{partial \"partial/banner-feature\"}}}\n{{{partial \"partial/body\"}}}\n{{{partial \"partial/accelerate\"}}}\n{{{partial \"partial/get-started-form\"}}}\n{{#eachStudy}}\n  {{{partial \"partial/summary\"}}}\n{{/eachStudy}}\n{{{partial \"partial/quotes\"}}}\n{{{partial \"partial/partners\"}}}\n"
         },
         {
           "path": "/sign-in.hbs",
@@ -214,7 +214,7 @@
         },
         {
           "path": "/sign-up.hbs",
-          "text": "<section id=\"sign-up\" class=\"section\">\n  <div class=\"container\">\n    <h1>Create an Account to Join Us!</h1>\n    <div class=\"row\">\n      <form class=\"column\">\n        <h2>Personal Information</h2>\n\n        <label for=\"first_name_member\">First Name</label>\n        <input type=\"text\" id=\"first_name_member\" name=\"first_name_member\" value=\"\" class=\"text form-control\" />\n\n        <label for=\"last_name_member\">Last Name</label>\n        <input type=\"text\" id=\"last_name_member\" name=\"last_name_member\" value=\"\" class=\"text form-control\" />\n\n        <label for=\"email_adress_member\">Email Address</label>\n        <input size=\"40\" id=\"email_adress_member\" type=\"text\" name=\"email_adress_member\" value=\"\" class=\"text form-control\" />\n\n        <label for=\"country_member\">Country</label>\n        <input type=\"text\" id=\"country_member\" name=\"country_member\" value=\"\" class=\"text form-control\" />\n\n        <label for=\"company_name_member\">Organization</label>\n        <input type=\"text\" id=\"company_name_member\" name=\"company_name_member\" value=\"\" class=\"text form-control\" />\n\n        <label for=\"id_techno\">Technology Area of Interest</label>\n        <select name=\"id_techno\" id=\"id_techno\" class=\"form-control\">\n          <option value=\"\">Select technology</option>\n          <option value=\"1\">Water & Sanitation</option><option value=\"2\">Agriculture</option><option value=\"3\">Energy</option><option value=\"5\">Education & IT</option><option value=\"6\">Housing & Transport</option><option value=\"4\">Health & Medical Care</option><option value=\"7\">Additional Solutions</option>        <option value=\"all\">All</option>\n        </select>\n\n        <h2 class=\"login-info\">Login Information</h2>\n\n        <label for=\"login_member\">Username</label>\n        <input type=\"text\" id=\"login_member\" name=\"login_member\" value=\"\" class=\"text form-control\" />\n\n        <label for=\"password_member_1\">Password</label>\n        <input type=\"password\" id=\"password_member_1\" name=\"password_member_1\" class=\"text form-control\" />\n\n        <label for=\"password_member_2\">Confirm Password</label>\n        <input type=\"password\" id=\"password_member_2\" name=\"password_member_2\" class=\"text form-control\" />\n\n        <label for=\"street_adress_member\">Street Address</label>\n        <input type=\"text\" id=\"street_adress_member\" name=\"street_adress_member\" value=\"\" class=\"text form-control\" />\n\n        <label for=\"postal_code_member\">Postal code</label>\n        <input type=\"text\" id=\"postal_code_member\" name=\"postal_code_member\" value=\"\" class=\"text form-control\" />\n\n        <label for=\"city_member\">Town</label>\n        <input type=\"text\" id=\"city_member\" name=\"city_member\" value=\"\" class=\"text form-control\" />\n\n        <label for=\"title_member\">Title or work description</label>\n        <input type=\"text\" id=\"title_member\" name=\"title_member\" value=\"\" class=\"text form-control\" />\n\n        <label for=\"comments_member\">Additional comments (150 words or less)</label>\n        <textarea class=\"form-control\" name=\"comments_member\" id=\"comments_member\"></textarea>\n\n        <label for=\"captcha\">Type the code shown</label>\n        <script type=\"text/javascript\">\n            var RecaptchaOptions = {\n                    theme : 'clean'\n            };\n        </script>\n        <script type=\"text/javascript\" src=\"http://www.google.com/recaptcha/api/challenge?k=6LcOjuESAAAAAPbHIS0cr3-xIJNko6101aul_H_f\"></script>\n        <noscript>\n          <iframe src=\"http://www.google.com/recaptcha/api/noscript?k=6LcOjuESAAAAAPbHIS0cr3-xIJNko6101aul_H_f\" height=\"300\" width=\"500\" frameborder=\"0\"></iframe><br/>\n          <textarea name=\"recaptcha_challenge_field\" rows=\"3\" cols=\"40\"></textarea>\n          <input type=\"hidden\" name=\"recaptcha_response_field\" value=\"manual_challenge\"/>\n        </noscript>\n\n        <label for=\"agree_member\"><input type=\"checkbox\" name=\"agree_member\" id=\"agree_member\">By checking the box, you agree to TEL&#039;s Privacy Policy.</label>\n        <input class=\"button button-sign-up\" type=\"submit\" value=\"Sign Up\">\n\n      </form>\n    </div>\n  </div>\n</section>\n"
+          "text": "<section id=\"sign-up\" class=\"section\">\n  <div class=\"container\">\n    {{{html}}}\n    <div class=\"row\">\n      <form id=\"sign-up-form\" class=\"column column-add-solutions\" novalidate=\"novalidate\" action=\"{{option \"formServer\"}}/server/form\" method=\"POST\">\n        {{{fragmentHtml \"#sign-up-form\"}}}\n      </form>\n    </div>\n  </div>\n</section>\n"
         },
         {
           "path": "/solution.hbs",
@@ -289,7 +289,7 @@
           "text": "<section id=\"menu-main\" class=\"section section-menu-main\">\n  <script>\n  // var fadeBanner = function (e) {\n  //   console.log($(e.target).scrollTop() > 731)\n  //   if ($(e.target).scrollTop() % 2 === 0) {\n  //     e.data.$banner.fadeTo(0, 1 - $(e.target).scrollTop() / e.data.$banner.height());\n  //   }\n  // };\n  // $(document).on('scroll', {$banner: $('#banner-home img')}, fadeBanner);\n    $(function () {\n      $(\".menu-menu-main li\").hover(function(e) {\n        $(e.currentTarget).addClass(\"selected\").siblings().map(function (_, elem) {\n          $(elem).removeClass(\"selected\");\n        });\n      });\n    });\n  </script>\n  <div class=\"container container-menu-main\">\n    <ul class=\"menu menu-menu-main\">\n      {{#eachFragment \"#feature-menu-item\"}}\n        <li class=\"menu-item {{#if selected}} selected {{/if}}\">\n          <a class=\"menu-item-name\" href=\"{{fixPath link}}\">{{name}}</a>\n          <div class=\"menu-item-caption\">{{{html}}}</div>\n        </li>\n      {{/eachFragment}}\n    </ul>\n  </div>\n</section>\n"
         },
         {
-          "path": "/partial/form.hbs",
+          "path": "/partial/get-started-form.hbs",
           "text": "<section id=\"form\" class=\"section section-form\">\n  <div class=\"container\">\n    {{{fragmentHtml \"#get-started\"}}}\n    <div class=\"row\">\n      <form id=\"get-started-form\" class=\"column column-form\" novalidate=\"novalidate\" action=\"{{option 'formServer'}}/server/form\" method=\"POST\">\n        {{{fragmentHtml \"#get-started-form\"}}}\n      </form>\n    </div>\n  </div>\n</section>\n"
         },
         {
