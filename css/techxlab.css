@@ -1660,7 +1660,13 @@ p {
 }
 
 #solutions .button {
-  background-color:#5e92b9;
+  padding:4px;
+  margin:0 1em;
+  background-color:#638fc3;
+}
+
+#solutions .solution-nav-buttons {
+  justify-content: space-between;                                               -webkit-justify-content: space-between;
 }
 
 /** take action section (home page) *******************************************/
