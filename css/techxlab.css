@@ -1678,6 +1678,10 @@ p {
   margin:        14px;
 }
 
+#solutions .button {
+  background-color:#5e92b9;
+}
+
 /** take action section (home page) *******************************************/
 
 #action.section-take-action {

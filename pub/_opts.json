@@ -173,20 +173,12 @@
           "text": "{{{partial \"partial/banner-feature\"}}}\n\n<section id=\"add-solutions\" class=\"section section-add-solutions\">\n  <div class=\"container\">\n    {{{html}}}\n    <div class=\"row\">\n      <form id=\"add-solution-form\" class=\"column column-add-solutions\" novalidate=\"novalidate\" action=\"{{option \"formServer\"}}/server/form\" method=\"POST\" enctype=\"multipart/form-data\">\n        {{{fragmentHtml \"#form\"}}}\n        <label class=\"form-error\" style=\"display:none;\" >\n      </form>\n    </div>\n  </div>\n</section>\n"
         },
         {
-          "path": "/all-solutions.hbs",
-          "text": "{{{partial 'partial/banner-feature'}}}\n\n<div id=\"solutions\" class=\"section section-solutions\">\n  <div class=\"container container-solutions\">\n    <div id=\"search-results\" class=\"row row-solutions\">\n      {{{partial 'partial/result'}}}\n    </div>\n  </div>\n</div>\n"
-        },
-        {
           "path": "/banner.hbs",
           "text": "{{{partial \"partial/banner-feature\"}}}\n{{{partial \"partial/body\"}}}\n"
         },
         {
           "path": "/basic.hbs",
           "text": "{{{partial \"partial/body\"}}}\n"
-        },
-        {
-          "path": "/category-solutions.hbs",
-          "text": "{{{partial 'partial/banner-feature-category'}}}\n\n<div id=\"solutions\" class=\"section section-solutions\">\n  <div class=\"container container-solutions\">\n    <div id=\"search-results\" class=\"row row-solutions\">\n      {{{partial 'partial/result'}}}\n    </div>\n  </div>\n</div>\n"
         },
         {
           "path": "/default.hbs",
@@ -222,7 +214,7 @@
         },
         {
           "path": "/solutions.hbs",
-          "text": "{{{partial 'partial/banner-solutions'}}}\n{{{partial 'partial/menu-categories'}}}\n\n<div id=\"solutions\" class=\"section section-solutions\">\n  <div class=\"container container-solutions\">\n    <div id=\"search-results\" class=\"row row-solutions\">\n      {{#eachSearchResults}}\n        {{{partial 'partial/result'}}}\n      {{/eachSearchResults}}\n    </div>\n  </div>\n</div>\n"
+          "text": "{{{partial 'partial/banner-solutions'}}}\n{{{partial 'partial/menu-categories'}}}\n\n<div id=\"solutions\" class=\"section section-solutions\">\n  <div class=\"container container-solutions\">\n    <div id=\"search-results\" class=\"row row-solutions\">\n{{#eachSearchResults}}\n      <div class=\"solution-list-item\">\n        <div class=\"header-solution-list-item\">\n          {{{category-icons}}}\n          <a href=\"{{pageHref}}\" title=\"{{name}}\"><h1 class=\"h1-solutions\">{{{name}}}</h1></a>\n        </div>\n        <a class=\"solution-list-item-image\" href=\"{{pageHref}}\" title=\"{{name}}\">\n          {{#iflt @index 6}}\n            {{{image}}}\n          {{else}}\n            <img data-src=\"{{{fixPath image}}}\" class=\"scrollmon\">\n          {{/iflt}}\n        </a>\n        <div class=\"solution-list-item-body\">\n          <h2 class=\"h2-solutions\">{{[#provider].name}}</h2>\n          {{{summary}}}\n        </div>\n      </div>\n{{/eachSearchResults}}\n{{#if more}}<a href=\"{{fixPath more}}\" class=\"button\">More</a>{{/if}}\n    </div>\n  </div>\n</div>\n"
         },
         {
           "path": "/stories.hbs",
@@ -311,10 +303,6 @@
         {
           "path": "/partial/quotes.hbs",
           "text": "<section id=\"quotes\" class=\"section section-quotes\">\n  <script>\n    $(function () {\n      $(\".flexslider\").flexslider({\n        animation:    \"slide\",\n        directionNav: false\n      });\n    });\n  </script>\n  <div class=\"container\">\n    {{{fragmentHtml \"#quotes\"}}}\n    <div class=\"elem-flexslider flexslider\">\n      <ul class=\"slides\">\n        {{#eachFragment \"#quotes-quote\"}}\n          <li>\n            <p class=\"statement\">{{{statement}}}</p>\n            <p class=\"source\">- {{{source}}}</p>\n          </li>\n        {{/eachFragment}}\n      </ul>\n    </div>\n  </div>\n</section>\n"
-        },
-        {
-          "path": "/partial/result.hbs",
-          "text": "<div class=\"solution-list-item\">\n  <div class=\"header-solution-list-item\">\n    {{{category-icons}}}\n    <a href=\"{{pageHref}}\" title=\"{{name}}\"><h1 class=\"h1-solutions\">{{{name}}}</h1></a>\n  </div>\n  <a class=\"solution-list-item-image\" href=\"{{pageHref}}\" title=\"{{name}}\">\n    {{#iflt @index 6}}\n      {{{image}}}\n    {{else}}\n      <img data-src=\"{{{fixPath image}}}\" class=\"scrollmon\">\n    {{/iflt}}\n  </a>\n  <div class=\"solution-list-item-body\">\n    <h2 class=\"h2-solutions\">{{[#provider].name}}</h2>\n    {{{summary}}}\n  </div>\n</div>\n"
         },
         {
           "path": "/partial/summary.hbs",
