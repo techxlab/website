@@ -236,25 +236,6 @@ label {
   padding-left: 4px;
 }
 
-label.required:after { content:" *"; color:#f9a021; }
-label.missing:after, label.mismatched:after {
-  display:inline-block;
-  content:"Missing required value";
-  background-color:#f9a021;
-  color:#fff;
-  padding:0 0.5em;
-  margin-left:0.5em;
-  margin-bottom:1px;
-  border-width:0;
-  border-radius:2px;
-}
-label.mismatched:after {
-  content:"Confirm value does not match";
-}
-
-label.form-error:before { content:"Missing required values:"; color:#f9a021; display:block; }
-label.form-error { white-space:pre; } /* show one missing field per line */
-
 label.radio, label.checkbox, input[type=submit] {
   cursor: pointer;
 }
@@ -851,8 +832,6 @@ p {
 
 #categories-menu.section-categories-menu {
   margin:           0;
-  padding-top:      15px;
-  padding-bottom:   15px;
   background-color: #638fc3;
 }
 
@@ -867,6 +846,7 @@ p {
   margin-top:    15px;
   margin-bottom: 15px;
 }
+
 
 #categories-menu .menu-item-banner-solutions a {
   color: #fff;
@@ -1349,19 +1329,19 @@ p {
 }
 
 #partners h1 {
-  color: #F2A028;
+  color:         #F2A028;
   margin-bottom: 15px;
 }
 
 #partners .row-partners {
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap:       wrap;
   align-items:     center;
 }
 
 #partners .logo-partners {
   margin: 15px;
-  width:  130px;
+  width:  200px;
 }
 
 /** persons section (about) ***************************************************/
@@ -1371,101 +1351,61 @@ p {
 }
 
 #persons h2 {
-  font-size: 20px;
-  padding-top: 2px;
+  font-size:     20px;
+  padding-top:   2px;
   margin-bottom: 5px;
 }
 
 #persons h3 {
-  font-size:     12px;
-}
-
-#persons .bio * {
-  color: #444;
+  font-size:  12px;
 }
 
 #persons .row-persons {
   justify-content: space-between;
   flex-wrap:       wrap;
-  text-align:      center;
 }
 
 #persons .item-person {
-  margin: 15px;
-  width:  150px;
-  cursor: pointer;
+  margin:           15px;
+  text-align:       center;
+  align-items:      center;
+  cursor:           pointer;
 }
-
-#persons .item-person p {
-  display: none;
-}
-
-/* General Modal Layout */
-
-#persons .selected {
-  justify-content: space-around;
-  position: fixed;
-  background-color: rgba(0,0,0,0.5);
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  padding: 0;
-  margin: 0;
-}
-#persons .selected .person-container {
-  background-color: white;
-  padding: 40px;
-  height: 100%;
-  margin: 71px 0 0;
-}
-@media (min-width: 550px) {
-  #persons .selected .person-container {
-    padding: 50px;
-    margin: 127px 64px 50px;
-  }
-}
-@media (min-width: 992px) {
-  #persons .selected .person-container {
-    margin: 133px 64px 50px;
-  }
-}
-@media (min-width: 1200px) {
-  #persons .selected .person-container {
-    margin: 148px 64px 50px;
-  }
-}
-#persons .selected .person-row {
-  flex-direction: column;
-  align-items: center;
-}
-@media (min-width: 992px) {
-  #persons .selected .person-row {
-    align-items: flex-start;
-    flex-direction: row;
+@media (min-width: 768px) {
+  #persons .item-person {
+    width: 150px;
   }
 }
 
-/* Modal Contents */
+#persons .item-person img {
+  width: 150px;
+}
 
-#persons .selected img {
-  max-width: 100%;
-  height: auto;
-  padding-bottom: 5px;
-}
-#persons .selected .bio {
-  overflow-y: scroll;
-  height: 90%;
-}
-#persons .selected .bio :not(p) {
-  padding-bottom: 10px;
-  text-align: center;
-}
-@media (min-width: 992px) {
-  #persons .selected .bio :not(p) {
-    text-align: left;
+@media (min-width: 768px) {
+  #persons .item-person p {
+    display: none;
   }
 }
+
+@media (min-width: 768px) {
+  #persons .selected {
+    position:         fixed;
+    padding:          50px;
+    background-color: #fff;
+    align-items:      center;
+    margin-left:      -400px;
+    margin-top:       -400px;
+    width:            800px;
+    height:           800px;
+    top:              50%;
+    left:             50%;
+    z-index:          9999;
+    border-style: solid;
+    border-color: #969696;
+    border-width: 2px;
+  }
+}
+
 
 /** product categories section (home) *****************************************/
 
@@ -1542,8 +1482,7 @@ p {
 /** quotes section (home, accelerator) ****************************************/
 
 #quotes.section-quotes {
-  padding-bottom: 0;
-  margin-bottom: -60px;
+  padding-top: 0;
 }
 
 #quotes p {
@@ -1586,12 +1525,6 @@ p {
 
 #sign-up .column {
   width: 100%;
-}
-
-#sign-up .button {
-  margin-top:        30px;
-  padding:           15px;
-  background-color:  #5E92B9;
 }
 
 /** solutions section **********************************************************/
@@ -1676,10 +1609,6 @@ p {
 #solutions .solution-list-item-body {
   height:        100%;
   margin:        14px;
-}
-
-#solutions .button {
-  background-color:#5e92b9;
 }
 
 /** take action section (home page) *******************************************/
