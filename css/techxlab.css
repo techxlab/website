@@ -198,7 +198,7 @@ h2 {
 h3 {
   font-family: "lato";
   font-size:   16px;
-  color:       #5e92b9;
+  color:       #f9a021;
 }
 
 input[type=text],
@@ -239,6 +239,25 @@ label {
 label.radio, label.checkbox, input[type=submit] {
   cursor: pointer;
 }
+
+label.required:after { content:" *"; color:#f9a021; }
+label.missing:after, label.mismatched:after {
+  display:inline-block;
+  content:"Missing required value";
+  background-color:#f9a021;
+  color:#fff;
+  padding:0 0.5em;
+  margin-left:0.5em;
+  margin-bottom:1px;
+  border-width:0;
+  border-radius:2px;
+}
+label.mismatched:after {
+  content:"Confirm value does not match";
+}
+
+label.form-error:before { content:"Missing required values:"; color:#f9a021; display:block; }
+label.form-error { white-space:pre; } /* show one missing field per line */
 
 label.radio:hover, label.checkbox:hover {
   background-color: #eee;
@@ -1144,9 +1163,6 @@ p {
   background-color: #999;
 }
 
-/*#header .hamburger {
-  margin: 5px 4px 0;
-}*/
 @media (min-width: 768px) {
   #header .hamburger {
     display: none;
@@ -1170,6 +1186,7 @@ p {
 @media (min-width: 768px) {
   #header .menu-header {
     position: static;
+    align-items: flex-end;
     left: auto;
     right: auto;
     flex-direction: row;
@@ -1530,7 +1547,35 @@ p {
   width: 100%;
 }
 
-/** solutions section **********************************************************/
+#sign-up .button {
+  margin-top:        30px;
+  padding:           15px;
+  background-color:  #5E92B9;
+}
+
+/** solution section **********************************************************/
+
+#solution.section-solution {
+
+}
+
+#solution h3 {
+  padding-bottom: 15px;
+}
+
+#solution .column-solution-left {
+  width: 33%;
+}
+
+#solution img {
+  padding-bottom: 15px;
+}
+
+#solution iframe {
+  padding-bottom: 15px;
+}
+
+/** solutions section *********************************************************/
 
 #solutions.section-solutions {
   padding-top:      15px;
@@ -1612,6 +1657,10 @@ p {
 #solutions .solution-list-item-body {
   height:        100%;
   margin:        14px;
+}
+
+#solutions .button {
+  background-color:#5e92b9;
 }
 
 /** take action section (home page) *******************************************/
