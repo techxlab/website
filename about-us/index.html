@@ -98,6 +98,19 @@
 </section>
 
 <section id="persons" class="section section-persons">
+  <script>
+    $(function () {
+      $(".item-person").on('click', function(e) {
+        if ($(e.currentTarget).hasClass('selected')) {
+          $(e.currentTarget).removeClass('selected');
+        } else {
+          $(e.currentTarget).addClass('selected').siblings().map(function (_, elem) {
+            $(elem).removeClass('selected');
+          });
+        }
+      });
+    });
+  </script>
   <div class="container">
     <div data-render-html="/about-us/#persons"><h1 id="the-tel-team">The TEL Team</h1>
 </div>

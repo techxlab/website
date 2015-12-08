@@ -101,13 +101,6 @@
 
 <section id="menu-main" class="section section-menu-main">
   <script>
-  // var fadeBanner = function (e) {
-  //   console.log($(e.target).scrollTop() > 731)
-  //   if ($(e.target).scrollTop() % 2 === 0) {
-  //     e.data.$banner.fadeTo(0, 1 - $(e.target).scrollTop() / e.data.$banner.height());
-  //   }
-  // };
-  // $(document).on('scroll', {$banner: $('#banner-home img')}, fadeBanner);
     $(function () {
       $(".menu-menu-main li").hover(function(e) {
         $(e.currentTarget).addClass("selected").siblings().map(function (_, elem) {

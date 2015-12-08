@@ -1388,7 +1388,7 @@ p {
 }
 
 @media (min-width: 768px) {
-  #persons .selected {
+  #persons .item-person.selected {
     position:         fixed;
     padding:          50px;
     background-color: #fff;
@@ -1403,6 +1403,9 @@ p {
     border-style: solid;
     border-color: #969696;
     border-width: 2px;
+  }
+  #persons .item-person.selected p {
+    display: block;
   }
 }
 

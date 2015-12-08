@@ -278,7 +278,7 @@
         },
         {
           "path": "/partial/feature-menu.hbs",
-          "text": "<section id=\"menu-main\" class=\"section section-menu-main\">\n  <script>\n  // var fadeBanner = function (e) {\n  //   console.log($(e.target).scrollTop() > 731)\n  //   if ($(e.target).scrollTop() % 2 === 0) {\n  //     e.data.$banner.fadeTo(0, 1 - $(e.target).scrollTop() / e.data.$banner.height());\n  //   }\n  // };\n  // $(document).on('scroll', {$banner: $('#banner-home img')}, fadeBanner);\n    $(function () {\n      $(\".menu-menu-main li\").hover(function(e) {\n        $(e.currentTarget).addClass(\"selected\").siblings().map(function (_, elem) {\n          $(elem).removeClass(\"selected\");\n        });\n      });\n    });\n  </script>\n  <div class=\"container container-menu-main\">\n    <ul class=\"menu menu-menu-main\">\n      {{#eachFragment \"#feature-menu-item\"}}\n        <li class=\"menu-item {{#if selected}} selected {{/if}}\">\n          <a class=\"menu-item-name\" href=\"{{fixPath link}}\">{{name}}</a>\n          <div class=\"menu-item-caption\">{{{html}}}</div>\n        </li>\n      {{/eachFragment}}\n    </ul>\n  </div>\n</section>\n"
+          "text": "<section id=\"menu-main\" class=\"section section-menu-main\">\n  <script>\n    $(function () {\n      $(\".menu-menu-main li\").hover(function(e) {\n        $(e.currentTarget).addClass(\"selected\").siblings().map(function (_, elem) {\n          $(elem).removeClass(\"selected\");\n        });\n      });\n    });\n  </script>\n  <div class=\"container container-menu-main\">\n    <ul class=\"menu menu-menu-main\">\n      {{#eachFragment \"#feature-menu-item\"}}\n        <li class=\"menu-item {{#if selected}} selected {{/if}}\">\n          <a class=\"menu-item-name\" href=\"{{fixPath link}}\">{{name}}</a>\n          <div class=\"menu-item-caption\">{{{html}}}</div>\n        </li>\n      {{/eachFragment}}\n    </ul>\n  </div>\n</section>\n"
         },
         {
           "path": "/partial/get-started-form.hbs",
@@ -298,7 +298,7 @@
         },
         {
           "path": "/partial/persons.hbs",
-          "text": "<section id=\"persons\" class=\"section section-persons\">\n  <div class=\"container\">\n    {{{fragmentHtml \"#persons\"}}}\n    <ul class=\"row row-persons\">\n      {{#eachFragment \"#persons-person\"}}\n        <li class=\"item-person\">\n          {{{image}}}\n          <h2>{{{name}}}</h2>\n          <h3>{{{title}}}</h3>\n          {{{html}}}\n        </li>\n      {{/eachFragment}}\n    </ul>\n  </div>\n</section>\n"
+          "text": "<section id=\"persons\" class=\"section section-persons\">\n  <script>\n    $(function () {\n      $(\".item-person\").on('click', function(e) {\n        if ($(e.currentTarget).hasClass('selected')) {\n          $(e.currentTarget).removeClass('selected');\n        } else {\n          $(e.currentTarget).addClass('selected').siblings().map(function (_, elem) {\n            $(elem).removeClass('selected');\n          });\n        }\n      });\n    });\n  </script>\n  <div class=\"container\">\n    {{{fragmentHtml \"#persons\"}}}\n    <ul class=\"row row-persons\">\n      {{#eachFragment \"#persons-person\"}}\n        <li class=\"item-person\">\n          {{{image}}}\n          <h2>{{{name}}}</h2>\n          <h3>{{{title}}}</h3>\n          {{{html}}}\n        </li>\n      {{/eachFragment}}\n    </ul>\n  </div>\n</section>\n"
         },
         {
           "path": "/partial/quotes.hbs",
