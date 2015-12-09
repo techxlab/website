@@ -1702,8 +1702,8 @@ justify-content:
 
 #solutions .row-solutions-buttons {
   justify-content:  space-between;                                               -webkit-justify-content: space-between;
-  padding-top:      6;
-  padding-bottom:   6;
+  padding-top:      8px;
+  padding-bottom:   8px;
   padding-left:     15px;
   padding-right:    15px;
   flex-direction:   row;
