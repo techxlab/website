@@ -801,12 +801,14 @@ p {
 }
 
 #banner-solutions img {
+  display: none;
   width:       317%;
   margin-left: -200px;
   z-index:     -1;
 }
 @media (min-width: 575px) {
   #banner-solutions img {
+    display: flex;
     width: 50%;
     margin: 0;
   }
@@ -1698,15 +1700,32 @@ justify-content:
   margin:        14px;
 }
 
-#solutions .button {
-  padding:4px;
-  margin:0 1em;
-  background-color:#638fc3;
+#solutions .row-solutions-buttons {
+  justify-content:  space-between;                                               -webkit-justify-content: space-between;
+  padding-top:      6;
+  padding-bottom:   6;
+  padding-left:     15px;
+  padding-right:    15px;
+  flex-direction:   row;
+  background-color: #969696;
+  align-items:      center;
 }
 
-#solutions .solution-nav-buttons {
-  justify-content: space-between;                                               -webkit-justify-content: space-between;
+#solutions .row-solutions-buttons h3 {
+  color: #fff;
+  font-weight: 500;
 }
+
+#solutions .button-solutions {
+  font-size:        28px;
+  font-family:      'lato';
+  padding:          4px;
+  color:            #aaa;
+}
+#solutions .button-solutions.enabled {
+  color: #fff;
+}
+
 
 /** take action section (home page) *******************************************/
 
