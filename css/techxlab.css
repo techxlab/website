@@ -1345,11 +1345,6 @@ p {
   background-color: #fff;
 }
 
-#partners h1 {
-  color:         #F2A028;
-  margin-bottom: 15px;
-}
-
 #partners .row-partners {
   justify-content: space-between;
   flex-wrap:       wrap;
@@ -1367,14 +1362,22 @@ p {
   background-color: #eee;
 }
 
+#persons h1 {
+  color:         #638fc3;
+}
+
 #persons h2 {
-  font-size:     20px;
+  color:         #333;
+  font-weight:   500;
+  font-size:     16px;
   padding-top:   2px;
   margin-bottom: 5px;
 }
 
 #persons h3 {
+  color:      #999;
   font-size:  12px;
+  padding-bottom: 15px;
 }
 
 #persons .row-persons {
@@ -1395,7 +1398,7 @@ p {
 }
 
 #persons .item-person img {
-  width: 150px;
+  width: 160px;
 }
 
 @media (min-width: 768px) {
@@ -1421,11 +1424,47 @@ p {
     border-color: #969696;
     border-width: 2px;
   }
+}
+
+@media (min-width: 768px) {
   #persons .item-person.selected p {
     display: block;
   }
 }
 
+#persons .x {
+  position:     absolute;
+  display:      none;
+  right:        16px;
+  top:          12px;
+  font-family: 'lato';
+  font-size:    28px;
+  font-weight:  bold;
+  color:        #aaa;
+}
+#persons .x:hover {
+  color: #7dc243;
+}
+@media (min-width: 768px) {
+  #persons .item-person.selected .x {
+    display:      block;
+  }
+}
+
+/** modal overlay util (about-us popups) **************************************/
+
+@media (min-width: 768px) {
+  #modal-overlay {
+    position:         fixed;
+    display:          none;
+    left:             0;
+    right:            0;
+    top:              0;
+    bottom:           0;
+    z-index:          9999;
+    background-color: rgba(0,0,0,.8);
+  }
+}
 
 /** product categories section (home) *****************************************/
 
@@ -1556,7 +1595,7 @@ p {
 /** solution section **********************************************************/
 
 #solution.section-solution {
-
+justify-content:
 }
 
 #solution h3 {

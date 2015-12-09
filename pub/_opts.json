@@ -10,17 +10,19 @@
   "pkgJson": {
     "name": "techxlab-website",
     "version": "0.0.1",
-    "description": "tel website",
+    "description": "techxlab website",
     "main": "pub-config.js",
     "dependencies": {
       "aws-sdk": "^2.2.19",
       "multer": "^1.1.0",
       "pub-server": "^1.9.21"
     },
-    "devDependencies": {},
+    "devDependencies": {
+      "tape": "^4.2.2"
+    },
     "repository": {
       "type": "git",
-      "url": "git@bitbucket.org:techxlab/website.git"
+      "url": "git@github.com/techxlab/techxlab-website.git"
     },
     "scripts": {
       "develop": "pub",
@@ -194,7 +196,7 @@
         },
         {
           "path": "/main-layout.hbs",
-          "text": "<header id=\"header\" class=\"section section-header\">\n  <div class=\"container\">\n    <div class=\"row row-header\">\n      <div class=\"column\">\n        <a href=\"{{relPath}}/\" onclick=\"$('.menu-header').removeClass('show')\"><div class=\"logo logo-techxlab\"></div></a>\n      </div>\n      <div class=\"column column-header-right\">\n        <div id=\"hamburgerButton\" class=\"hamburger\" onclick=\"$('.menu-header').toggleClass('show')\">\n          <span class=\"bar\"></span>\n          <span class=\"bar\"></span>\n          <span class=\"bar\"></span>\n        </div>\n        <!-- <ul class=\"menu menu-header\">\n          <li class=\"menu-item\"><a href=\"{{relPath}}/sign-up/\">Sign Up</a></li>\n          <li class=\"menu-item\"><a href=\"{{relPath}}/sign-in/\">Sign In</a></li>\n        </ul> -->\n        <ul class=\"menu menu-header\">\n          {{#eachFragment \"/#menu\"}}\n            <li class=\"menu-item {{#if selected}} selected {{/if}}\" onclick=\"$('.menu-header').toggleClass('show')\">\n              <a href=\"{{fixPath link}}\">{{name}}</a>\n            </li>\n          {{/eachFragment}}\n        </ul>\n      </div>\n    </div>\n  </div>\n</header>\n\n<section id=\"header-shim\" class=\"section-header-shim\">\n</section>\n\n{{{renderPage}}}\n\n<footer id=\"footer\" class=\"section section-footer\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"column column-footer-left\">\n        <a class=\"elem\" href=\"http://www.guidestar.org/organizations/26-3414936/technology-exchange-lab.aspx\" target=\"_blank\">{{{image \"/img/guidestar-silver.png\"}}}</a>\n        <a class=\"elem\" href=\"http://greatnonprofits.org/org/technology-exchange-lab-inc\" target=\"_blank\">{{{image \"/img/top-rated.png\"}}}</a>\n      </div>\n      <div class=\"column\">\n        <ul class=\"menu menu-footer\">\n          <li class=\"menu-item\"><a href=\"{{relPath}}/prizes-for-ideas/\">Prizes for Ideas</a></li>\n          <li class=\"menu-item\"><a href=\"{{relPath}}/funding-resources/\">Funding Resources</a></li>\n          <li class=\"menu-item\"><a href=\"{{relPath}}/faqs/\">FAQs</a></li>\n          <li class=\"menu-item\"><a href=\"{{relPath}}/terms-of-service/\">Terms of Service</a></li>\n          <li class=\"menu-item\"><a href=\"{{relPath}}/privacy-policy/\">Privacy Policy</a></li>\n          <li class=\"menu-item\"><a href=\"{{relPath}}/join-us/\">Join Us</a></li>\n        </ul>\n        <p class=\"elem elem-footer-center\">\n          The Technology Exchange Lab, Inc. | Cambridge Innovation Center<br>\n          1 Broadway, 14th Floor | Cambridge, MA 02142, USA\n        </p>\n        <p class=\"elem elem-footer-legal\">\n          TEL is a registered non-proﬁt, tax-exempt charity under section 501(c)(3) of the U.S. Internal Revenue Code. Donations are tax deductible to the extent allowed by U.S. law. TEL is a public resource with no commercial allegiance.\n        </p>\n      </div>\n      <div class=\"column column-footer-right\">\n        <ul class=\"menu menu-footer\">\n          <li class=\"menu-item menu-item-footer-icon\"><a class=\"icon-social facebook-white\" href=\"https://www.facebook.com/techxlab\" target=\"_blank\"></a></li>\n          <li class=\"menu-item menu-item-footer-icon\"><a class=\"icon-social twitter-white\" href=\"https://twitter.com/TechExLab\" target=\"_blank\"></a></li>\n          <li class=\"menu-item menu-item-footer-icon\"><a class=\"icon-social linkedin-white\" href=\"https://www.linkedin.com/company/technology-exchange-lab-inc-\" target=\"_blank\"></a></li>\n          <li class=\"menu-item menu-item-footer-icon\"><a class=\"icon-social mail-white\" href=\"mailto:contact@techxlab.org\"></a></li>\n        </ul>\n        <a class=\"elem button\" href=\"http://technologyexchangelab.us8.list-manage2.com/subscribe?u=1842edb42ca5e2996be75f5b8&id=14bb1b764d\" target=\"_blank\">Get Updates</a>\n        <a class=\"elem button\" href=\"mailto:contact@techxlab.org\">Contact Us</a>\n      </div>\n    </div>\n  </div>\n</footer>\n"
+          "text": "<div id=\"modal-overlay\"></div>\n<header id=\"header\" class=\"section section-header\">\n  <div class=\"container\">\n    <div class=\"row row-header\">\n      <div class=\"column\">\n        <a href=\"{{relPath}}/\" onclick=\"$('.menu-header').removeClass('show')\"><div class=\"logo logo-techxlab\"></div></a>\n      </div>\n      <div class=\"column column-header-right\">\n        <div id=\"hamburgerButton\" class=\"hamburger\" onclick=\"$('.menu-header').toggleClass('show')\">\n          <span class=\"bar\"></span>\n          <span class=\"bar\"></span>\n          <span class=\"bar\"></span>\n        </div>\n        <!-- <ul class=\"menu menu-header\">\n          <li class=\"menu-item\"><a href=\"{{relPath}}/sign-up/\">Sign Up</a></li>\n          <li class=\"menu-item\"><a href=\"{{relPath}}/sign-in/\">Sign In</a></li>\n        </ul> -->\n        <ul class=\"menu menu-header\">\n          {{#eachFragment \"/#menu\"}}\n            <li class=\"menu-item {{#if selected}} selected {{/if}}\" onclick=\"$('.menu-header').toggleClass('show')\">\n              <a href=\"{{fixPath link}}\">{{name}}</a>\n            </li>\n          {{/eachFragment}}\n        </ul>\n      </div>\n    </div>\n  </div>\n</header>\n\n<section id=\"header-shim\" class=\"section-header-shim\">\n</section>\n\n{{{renderPage}}}\n\n<footer id=\"footer\" class=\"section section-footer\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"column column-footer-left\">\n        <a class=\"elem\" href=\"http://www.guidestar.org/organizations/26-3414936/technology-exchange-lab.aspx\" target=\"_blank\">{{{image \"/img/guidestar-silver.png\"}}}</a>\n        <a class=\"elem\" href=\"http://greatnonprofits.org/org/technology-exchange-lab-inc\" target=\"_blank\">{{{image \"/img/top-rated.png\"}}}</a>\n      </div>\n      <div class=\"column\">\n        <ul class=\"menu menu-footer\">\n          <li class=\"menu-item\"><a href=\"{{relPath}}/prizes-for-ideas/\">Prizes for Ideas</a></li>\n          <li class=\"menu-item\"><a href=\"{{relPath}}/funding-resources/\">Funding Resources</a></li>\n          <li class=\"menu-item\"><a href=\"{{relPath}}/faqs/\">FAQs</a></li>\n          <li class=\"menu-item\"><a href=\"{{relPath}}/terms-of-service/\">Terms of Service</a></li>\n          <li class=\"menu-item\"><a href=\"{{relPath}}/privacy-policy/\">Privacy Policy</a></li>\n          <li class=\"menu-item\"><a href=\"{{relPath}}/join-us/\">Join Us</a></li>\n        </ul>\n        <p class=\"elem elem-footer-center\">\n          The Technology Exchange Lab, Inc. | Cambridge Innovation Center<br>\n          1 Broadway, 14th Floor | Cambridge, MA 02142, USA\n        </p>\n        <p class=\"elem elem-footer-legal\">\n          TEL is a registered non-proﬁt, tax-exempt charity under section 501(c)(3) of the U.S. Internal Revenue Code. Donations are tax deductible to the extent allowed by U.S. law. TEL is a public resource with no commercial allegiance.\n        </p>\n      </div>\n      <div class=\"column column-footer-right\">\n        <ul class=\"menu menu-footer\">\n          <li class=\"menu-item menu-item-footer-icon\"><a class=\"icon-social facebook-white\" href=\"https://www.facebook.com/techxlab\" target=\"_blank\"></a></li>\n          <li class=\"menu-item menu-item-footer-icon\"><a class=\"icon-social twitter-white\" href=\"https://twitter.com/TechExLab\" target=\"_blank\"></a></li>\n          <li class=\"menu-item menu-item-footer-icon\"><a class=\"icon-social linkedin-white\" href=\"https://www.linkedin.com/company/technology-exchange-lab-inc-\" target=\"_blank\"></a></li>\n          <li class=\"menu-item menu-item-footer-icon\"><a class=\"icon-social mail-white\" href=\"mailto:contact@techxlab.org\"></a></li>\n        </ul>\n        <a class=\"elem button\" href=\"http://technologyexchangelab.us8.list-manage2.com/subscribe?u=1842edb42ca5e2996be75f5b8&id=14bb1b764d\" target=\"_blank\">Get Updates</a>\n        <a class=\"elem button\" href=\"mailto:contact@techxlab.org\">Contact Us</a>\n      </div>\n    </div>\n  </div>\n</footer>\n"
         },
         {
           "path": "/project-accelerator.hbs",
@@ -298,7 +300,7 @@
         },
         {
           "path": "/partial/persons.hbs",
-          "text": "<section id=\"persons\" class=\"section section-persons\">\n  <script>\n    $(function () {\n      $(\".item-person\").on('click', function(e) {\n        if ($(e.currentTarget).hasClass('selected')) {\n          $(e.currentTarget).removeClass('selected');\n        } else {\n          $(e.currentTarget).addClass('selected').siblings().map(function (_, elem) {\n            $(elem).removeClass('selected');\n          });\n        }\n      });\n    });\n  </script>\n  <div class=\"container\">\n    {{{fragmentHtml \"#persons\"}}}\n    <ul class=\"row row-persons\">\n      {{#eachFragment \"#persons-person\"}}\n        <li class=\"item-person\">\n          {{{image}}}\n          <h2>{{{name}}}</h2>\n          <h3>{{{title}}}</h3>\n          {{{html}}}\n        </li>\n      {{/eachFragment}}\n    </ul>\n  </div>\n</section>\n"
+          "text": "<section id=\"persons\" class=\"section section-persons\">\n  <script>\n    $(function () {\n      $(\".item-person\").on('click', function(e) {\n        if ($(e.currentTarget).hasClass('selected')) {\n          $(e.currentTarget).removeClass('selected');\n          $('#modal-overlay').css('display', 'none');\n        } else {\n          $('#modal-overlay').css('display', 'block');\n          $(e.currentTarget).addClass('selected').siblings().map(function (_, elem) {\n            $(elem).removeClass('selected');\n          });\n        }\n      });\n    });\n  </script>\n  <div class=\"container\">\n    {{{fragmentHtml \"#persons\"}}}\n    <ul class=\"row row-persons\">\n      {{#eachFragment \"#persons-person\"}}\n        <li class=\"item-person\">\n          <span class=\"x\">X</span>\n          {{{image}}}\n          <h2>{{{name}}}</h2>\n          <h3>{{{title}}}</h3>\n          {{{html}}}\n        </li>\n      {{/eachFragment}}\n    </ul>\n  </div>\n</section>\n"
         },
         {
           "path": "/partial/quotes.hbs",
@@ -3077,7 +3079,7 @@
       ],
       "fqImages": {
         "route": "/ast",
-        "url": "https://techxlab.github.io"
+        "url": "http://images.techxlab.org"
       },
       "name": "tgt",
       "writable": true,
@@ -3243,7 +3245,7 @@
       "dir": "/Users/hello/pub/server/node_modules/pub-pkg-editor"
     }
   ],
-  "appUrl": "https://techxlab.github.io/website",
+  "appUrl": "http://www.techxlab.org",
   "formServer": "https://tel-staging.herokuapp.com",
   "formEmail": "notifications@techxlab.org",
   "noRobots": true,
@@ -3261,7 +3263,7 @@
   "port": "3001",
   "fqImages": {
     "route": "/ast",
-    "url": "https://techxlab.github.io"
+    "url": "http://images.techxlab.org"
   },
   "staticHost": true
 }

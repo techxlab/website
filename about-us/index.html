@@ -9,7 +9,7 @@
 
   <title>About Us</title>
 
-  <link rel="icon" href="https://techxlab.github.io/website/img/tel.png" type="image/png">
+  <link rel="icon" href="http://www.techxlab.org/img/tel.png" type="image/png">
   <link rel="stylesheet" href="../css/font-awesome.css">
 <link rel="stylesheet" href="../css/techxlab.css">
 <link rel="stylesheet" href="../css/flexslider.css">
@@ -24,7 +24,8 @@
 <script src="../js/scrollmonitor.js" ></script>
 </head>
 <body>
-  <div data-render-layout="main-layout"><header id="header" class="section section-header">
+  <div data-render-layout="main-layout"><div id="modal-overlay"></div>
+<header id="header" class="section section-header">
   <div class="container">
     <div class="row row-header">
       <div class="column">
@@ -103,7 +104,9 @@
       $(".item-person").on('click', function(e) {
         if ($(e.currentTarget).hasClass('selected')) {
           $(e.currentTarget).removeClass('selected');
+          $('#modal-overlay').css('display', 'none');
         } else {
+          $('#modal-overlay').css('display', 'block');
           $(e.currentTarget).addClass('selected').siblings().map(function (_, elem) {
             $(elem).removeClass('selected');
           });
@@ -116,6 +119,7 @@
 </div>
     <ul class="row row-persons">
         <li class="item-person">
+          <span class="x">X</span>
           <img src="../img/karen-von-bismarck.jpg" alt="Karen von Bismarck">
           <h2>Karen von Bismarck</h2>
           <h3>Founder, CEO</h3>
@@ -123,6 +127,7 @@
 </div>
         </li>
         <li class="item-person">
+          <span class="x">X</span>
           <img src="../img/brennan-lake.jpg" alt="Brennan Lake">
           <h2>Brennan Lake</h2>
           <h3>Programs Director</h3>
@@ -130,6 +135,7 @@
 </div>
         </li>
         <li class="item-person">
+          <span class="x">X</span>
           <img src="../img/eadaoin-ilten.jpg" alt="Éadaoin Ilten">
           <h2>Éadaoin Ilten</h2>
           <h3>Operations Manager</h3>
@@ -137,6 +143,7 @@
 </div>
         </li>
         <li class="item-person">
+          <span class="x">X</span>
           <img src="../img/adrienne-perez.jpg" alt="Adrienne Perez">
           <h2>Adrienne Perez</h2>
           <h3>Research & Communications Associate</h3>
@@ -144,6 +151,7 @@
 </div>
         </li>
         <li class="item-person">
+          <span class="x">X</span>
           <img src="../img/amrish-kapoor.jpg" alt="Amrish Kapoor">
           <h2>Amrish Kapoor</h2>
           <h3>Chief Technology Officer</h3>
@@ -151,6 +159,7 @@
 </div>
         </li>
         <li class="item-person">
+          <span class="x">X</span>
           <img src="../img/dan-swann.jpg" alt="Dan Swann">
           <h2>Dan Swann</h2>
           <h3>Communications Associate</h3>
@@ -158,6 +167,7 @@
 </div>
         </li>
         <li class="item-person">
+          <span class="x">X</span>
           <img src="../img/donny-holaschutz.jpg" alt="Donny Holaschutz">
           <h2>Donny Holaschutz</h2>
           <h3>Research Associate</h3>
@@ -165,6 +175,7 @@
 </div>
         </li>
         <li class="item-person">
+          <span class="x">X</span>
           <img src="../img/elena-pascual.jpg" alt="Elena Pascual">
           <h2>Elena Pascual</h2>
           <h3>Social Media Intern</h3>
@@ -172,6 +183,7 @@
 </div>
         </li>
         <li class="item-person">
+          <span class="x">X</span>
           <img src="../img/qingqing-wu.jpg" alt="Qingqing Wu">
           <h2>Qingqing Wu</h2>
           <h3>Advisory Board Member</h3>
@@ -179,6 +191,7 @@
 </div>
         </li>
         <li class="item-person">
+          <span class="x">X</span>
           <img src="../img/tim-zeb-girouard.jpg" alt="Tim Zeb Girouard">
           <h2>Tim Zeb Girouard</h2>
           <h3>Advisory Board Member</h3>
@@ -186,6 +199,7 @@
 </div>
         </li>
         <li class="item-person">
+          <span class="x">X</span>
           <img src="../img/miranda-grizio.jpg" alt="Miranda Grizio​">
           <h2>Miranda Grizio​</h2>
           <h3>Contributing Writer</h3>
@@ -193,6 +207,7 @@
 </div>
         </li>
         <li class="item-person">
+          <span class="x">X</span>
           <img src="../img/lee-cusolito.jpg" alt="Lee Cusolito">
           <h2>Lee Cusolito</h2>
           <h3>Volunteer Design Associate</h3>
@@ -200,6 +215,7 @@
 </div>
         </li>
         <li class="item-person">
+          <span class="x">X</span>
           <img src="../img/balaji-mani.jpg" alt="Balaji Mani">
           <h2>Balaji Mani</h2>
           <h3>Research Associate</h3>
