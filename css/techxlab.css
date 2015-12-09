@@ -806,7 +806,7 @@ p {
   margin-left: -200px;
   z-index:     -1;
 }
-@media (min-width: 575px) {
+@media (min-width: 768px) {
   #banner-solutions img {
     display: flex;
     width: 50%;
