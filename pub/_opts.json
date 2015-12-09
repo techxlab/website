@@ -5,8 +5,8 @@
   "no-watch": true,
   "no-sockets": true,
   "editor": true,
-  "user": "jumblerg",
-  "basedir": "/Users/jumblerg/Development/app/techxlab/techxlab-website",
+  "user": "hello",
+  "basedir": "/Users/hello/pub/tel-website",
   "pkgJson": {
     "name": "techxlab-website",
     "version": "0.0.1",
@@ -40,9 +40,9 @@
     {
       "name": "pages",
       "writable": true,
-      "path": "/Users/jumblerg/Development/app/techxlab/techxlab-website/cnt",
+      "path": "/Users/hello/pub/tel-website/cnt",
       "type": "FILE",
-      "tmp": "/Users/jumblerg/.tmp/pages",
+      "tmp": "/Users/hello/.tmp/pages",
       "watch": {},
       "fragmentDelim": true,
       "files": [
@@ -162,7 +162,7 @@
     },
     {
       "name": "templates",
-      "path": "/Users/jumblerg/Development/app/techxlab/techxlab-website/src",
+      "path": "/Users/hello/pub/tel-website/src",
       "type": "FILE",
       "watch": {},
       "files": [
@@ -212,11 +212,11 @@
         },
         {
           "path": "/solution.hbs",
-          "text": "{{{partial 'partial/menu-categories'}}}\n\n<section id=\"solution\" class=\"section section-solution\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"column\">\n        <h1>{{name}}</h1>\n        <h2>{{[#provider].name}}</h2>\n      </div>\n    </div>\n\n    <div class=\"row\">\n\n      <div class=\"column column-solution-left\">\n        {{{image}}}\n        {{{video-player}}}\n        {{#with [#provider]}}\n          <h3>Contact Solution Provider</h3>\n          {{{html}}}\n        {{/with}}\n      </div>\n\n      <div class=\"column\">\n        <h3>Solution Overview &amp; Benefits</h3>\n        {{{html}}}\n\n        {{#with [#history-and-development]}}\n          <h3>History &amp; Development</h3>\n          {{{html}}}\n        {{/with}}\n\n        {{#with [#availability]}}\n          <h3>Availability</h3>\n          {{{html}}}\n        {{/with}}\n\n        {{#with [#specifications]}}\n          <h3>Specifications</h3>\n          {{{html}}}\n        {{/with}}\n\n        {{#with [#additional-information]}}\n          <h3>Additional Information</h3>\n          {{{html}}}\n        {{/with}}\n      </div>\n\n    </div>\n  </div>\n</section>\n"
+          "text": "{{{partial 'partial/menu-categories'}}}\n\n<section id=\"solution\" class=\"section section-solution\">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"column\">\n        <h1>{{name}}</h1>\n        <h2>{{[#provider].name}}</h2>\n      </div>\n    </div>\n\n    <div class=\"row\">\n\n      <div class=\"column column-solution-left\">\n        {{{image}}}\n        {{#with [#provider]}}\n          <h3>Contact Solution Provider</h3>\n          {{{html}}}\n        {{/with}}\n      </div>\n\n      <div class=\"column column-solution-right\">\n        <h3>Solution Overview &amp; Benefits</h3>\n        {{{html}}}\n\n        {{#with [#history-and-development]}}\n          <h3>History &amp; Development</h3>\n          {{{html}}}\n        {{/with}}\n\n        {{#with [#availability]}}\n          <h3>Availability</h3>\n          {{{html}}}\n        {{/with}}\n\n        {{#with [#specifications]}}\n          <h3>Specifications</h3>\n          {{{html}}}\n        {{/with}}\n\n        {{#with [#additional-information]}}\n          <h3>Additional Information</h3>\n          {{{html}}}\n        {{/with}}\n\n        {{{video-player}}}\n      </div>\n\n\n    </div>\n  </div>\n</section>\n"
         },
         {
           "path": "/solutions.hbs",
-          "text": "{{{partial 'partial/banner-solutions'}}}\n{{{partial 'partial/menu-categories'}}}\n\n<section id=\"solutions\" class=\"section section-solutions\">\n  <div class=\"container container-solutions\">\n    <div class=\"row row-solutions-buttons\">\n      <a class=\"button button-solutions {{#if unmore }}enabled{{/if}}\" href=\"{{fixPath unmore}}\">&lt;</a>\n      <h3>Page {{pagenum}}</h3>\n      <a class=\"button button-solutions {{#if more   }}enabled{{/if}}\" href=\"{{fixPath  more}}\">&gt;</a>\n    </div>\n    <div id=\"search-results\" class=\"row row-solutions\">\n      {{#eachSearchResults}}\n        <div class=\"solution-list-item\">\n          <div class=\"header-solution-list-item\">\n            {{{category-icons}}}\n            <a href=\"{{pageHref}}\" title=\"{{name}}\"><h1 class=\"h1-solutions\">{{{name}}}</h1></a>\n          </div>\n          <a class=\"solution-list-item-image\" href=\"{{pageHref}}\" title=\"{{name}}\">\n            {{#iflt @index 6}}\n              {{{image}}}\n            {{else}}\n              <img data-src=\"{{{fixPath image}}}\" class=\"scrollmon\">\n            {{/iflt}}\n          </a>\n          <div class=\"solution-list-item-body\">\n            <h2 class=\"h2-solutions\">{{[#provider].name}}</h2>\n            {{{summary}}}\n          </div>\n        </div>\n      {{/eachSearchResults}}\n    </div>\n    <div class=\"row row-solutions-buttons\">\n      <a class=\"button button-solutions {{#if unmore }}enabled{{/if}}\" href=\"{{fixPath unmore}}\">&lt;</a>\n      <h3>Page {{pagenum}}</h3>\n      <a class=\"button button-solutions {{#if more   }}enabled{{/if}}\" href=\"{{fixPath  more}}\">&gt;</a>\n    </div>\n  </div>\n</section>\n"
+          "text": "{{{partial 'partial/banner-solutions'}}}\n{{{partial 'partial/menu-categories'}}}\n\n<section id=\"solutions\" class=\"section section-solutions\">\n  <div class=\"container container-solutions\">\n    <div class=\"row row-solutions-buttons\">\n      <a class=\"button button-solutions {{#if less }}enabled{{/if}}\" href=\"{{fixPath less}}\">&lt;</a>\n      <h3>Page {{pagenum}} of {{pagecnt}}</h3>\n      <a class=\"button button-solutions {{#if more }}enabled{{/if}}\" href=\"{{fixPath  more}}\">&gt;</a>\n    </div>\n    <div id=\"search-results\" class=\"row row-solutions\">\n      {{#eachSearchResults}}\n        <div class=\"solution-list-item\">\n          <div class=\"header-solution-list-item\">\n            {{{category-icons}}}\n            <a href=\"{{pageHref}}\" title=\"{{name}}\"><h1 class=\"h1-solutions\">{{{name}}}</h1></a>\n          </div>\n          <a class=\"solution-list-item-image\" href=\"{{pageHref}}\" title=\"{{name}}\">\n            {{#iflt @index 6}}\n              {{{image}}}\n            {{else}}\n              <img data-src=\"{{{fixPath image}}}\" class=\"scrollmon\">\n            {{/iflt}}\n          </a>\n          <div class=\"solution-list-item-body\">\n            <h2 class=\"h2-solutions\">{{[#provider].name}}</h2>\n            {{{summary}}}\n          </div>\n        </div>\n      {{/eachSearchResults}}\n    </div>\n    <div class=\"row row-solutions-buttons\">\n      <a class=\"button button-solutions {{#if less }}enabled{{/if}}\" href=\"{{fixPath less}}\">&lt;</a>\n      <h3>Page {{pagenum}} of {{pagecnt}}</h3>\n      <a class=\"button button-solutions {{#if more }}enabled{{/if}}\" href=\"{{fixPath  more}}\">&gt;</a>\n    </div>\n  </div>\n</section>\n"
         },
         {
           "path": "/stories.hbs",
@@ -315,11 +315,11 @@
     {
       "name": "solutions",
       "writable": true,
-      "path": "/Users/jumblerg/Development/app/techxlab/solutions/src",
+      "path": "/Users/hello/pub/solutions/src",
       "repo": null,
       "branch": null,
       "type": "FILE",
-      "tmp": "/Users/jumblerg/.tmp/solutions",
+      "tmp": "/Users/hello/.tmp/solutions",
       "watch": {},
       "fragmentDelim": true,
       "files": [
@@ -2853,16 +2853,16 @@
       "name": "images",
       "writable": true,
       "writeOnly": true,
-      "path": "/Users/jumblerg/Development/app/techxlab/techxlab-website/upl",
+      "path": "/Users/hello/pub/tel-website/upl",
       "repo": null,
       "branch": null,
       "type": "FILE",
-      "tmp": "/Users/jumblerg/.tmp/images",
+      "tmp": "/Users/hello/.tmp/images",
       "watch": {},
       "files": []
     },
     {
-      "path": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-seo/src",
+      "path": "/Users/hello/pub/server/node_modules/pub-pkg-seo/src",
       "fragmentDelim": 1,
       "_pkg": "pub-pkg-seo",
       "name": "src",
@@ -2884,7 +2884,7 @@
       ]
     },
     {
-      "path": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-editor/src",
+      "path": "/Users/hello/pub/server/node_modules/pub-pkg-editor/src",
       "route": "/pub",
       "_pkg": "pub-pkg-editor",
       "name": "_src",
@@ -2913,7 +2913,7 @@
   ],
   "staticPaths": [
     {
-      "path": "/Users/jumblerg/Development/app/techxlab/techxlab-website/rsc",
+      "path": "/Users/hello/pub/tel-website/rsc",
       "watch": {},
       "route": "/",
       "depth": 5,
@@ -2924,11 +2924,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/jumblerg/Development/app/techxlab/techxlab-website/rsc"
+        "root": "/Users/hello/pub/tel-website/rsc"
       }
     },
     {
-      "path": "/Users/jumblerg/Development/app/techxlab/techxlab-website/CNAME",
+      "path": "/Users/hello/pub/tel-website/CNAME",
       "watch": {},
       "route": "/",
       "depth": 5,
@@ -2939,7 +2939,7 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/jumblerg/Development/app/techxlab/techxlab-website"
+        "root": "/Users/hello/pub/tel-website"
       }
     },
     {
@@ -2973,7 +2973,7 @@
       }
     },
     {
-      "path": "/Users/jumblerg/Development/app/techxlab/images.techxlab.org/ast",
+      "path": "/Users/hello/pub/images.techxlab.org/ast",
       "route": "/ast",
       "watch": {},
       "depth": 5,
@@ -2984,11 +2984,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/jumblerg/Development/app/techxlab/images.techxlab.org/ast"
+        "root": "/Users/hello/pub/images.techxlab.org/ast"
       }
     },
     {
-      "path": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-jquery/js/jquery-1.11.3.min.js",
+      "path": "/Users/hello/pub/server/node_modules/pub-pkg-jquery/js/jquery-1.11.3.min.js",
       "route": "/js",
       "inject": true,
       "maxAge": "30d",
@@ -3001,11 +3001,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-jquery/js"
+        "root": "/Users/hello/pub/server/node_modules/pub-pkg-jquery/js"
       }
     },
     {
-      "path": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-font-awesome/fonts",
+      "path": "/Users/hello/pub/server/node_modules/pub-pkg-font-awesome/fonts",
       "route": "/fonts",
       "_pkg": "pub-pkg-font-awesome",
       "watch": false,
@@ -3017,11 +3017,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-font-awesome/fonts"
+        "root": "/Users/hello/pub/server/node_modules/pub-pkg-font-awesome/fonts"
       }
     },
     {
-      "path": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-font-awesome/css/font-awesome.css",
+      "path": "/Users/hello/pub/server/node_modules/pub-pkg-font-awesome/css/font-awesome.css",
       "route": "/css",
       "inject": true,
       "_pkg": "pub-pkg-font-awesome",
@@ -3034,11 +3034,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-font-awesome/css"
+        "root": "/Users/hello/pub/server/node_modules/pub-pkg-font-awesome/css"
       }
     },
     {
-      "path": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-editor/static/css",
+      "path": "/Users/hello/pub/server/node_modules/pub-pkg-editor/static/css",
       "route": "/pub/css",
       "_pkg": "pub-pkg-editor",
       "watch": false,
@@ -3050,11 +3050,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-editor/static/css"
+        "root": "/Users/hello/pub/server/node_modules/pub-pkg-editor/static/css"
       }
     },
     {
-      "path": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-editor/node_modules/humane-js/themes/flatty.css",
+      "path": "/Users/hello/pub/server/node_modules/pub-pkg-editor/node_modules/humane-js/themes/flatty.css",
       "route": "/pub/humane-js",
       "_pkg": "pub-pkg-editor",
       "watch": false,
@@ -3066,13 +3066,13 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-editor/node_modules/humane-js/themes"
+        "root": "/Users/hello/pub/server/node_modules/pub-pkg-editor/node_modules/humane-js/themes"
       }
     }
   ],
   "outputs": [
     {
-      "path": "/Users/jumblerg/Development/app/techxlab/techxlab-website/tgt",
+      "path": "/Users/hello/pub/tel-website/tgt",
       "relPaths": true,
       "omitRoutes": [
         "/ast"
@@ -3084,38 +3084,38 @@
       "name": "tgt",
       "writable": true,
       "type": "FILE",
-      "tmp": "/Users/jumblerg/.tmp/tgt",
+      "tmp": "/Users/hello/.tmp/tgt",
       "watch": {}
     }
   ],
   "browserScripts": [
     {
-      "path": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-editor/client/editor-ui.js",
+      "path": "/Users/hello/pub/server/node_modules/pub-pkg-editor/client/editor-ui.js",
       "route": "/pub/js/editor-ui.js",
       "_pkg": "pub-pkg-editor"
     },
     {
-      "path": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-editor/node_modules/pub-preview/pub-preview.js",
+      "path": "/Users/hello/pub/preview/pub-preview.js",
       "route": "/pub/js/pub-preview.js",
       "_pkg": "pub-pkg-editor"
     }
   ],
   "generatorPlugins": [
     {
-      "path": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-seo/generator-plugin.js",
+      "path": "/Users/hello/pub/server/node_modules/pub-pkg-seo/generator-plugin.js",
       "_pkg": "pub-pkg-seo"
     },
     {
-      "path": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-font-awesome/generator-plugin.js",
+      "path": "/Users/hello/pub/server/node_modules/pub-pkg-font-awesome/generator-plugin.js",
       "_pkg": "pub-pkg-font-awesome"
     },
     {
-      "path": "/Users/jumblerg/Development/app/techxlab/techxlab-website/pub-generator-plugin.js"
+      "path": "/Users/hello/pub/tel-website/pub-generator-plugin.js"
     }
   ],
   "serverPlugins": [
     {
-      "path": "/Users/jumblerg/Development/app/techxlab/techxlab-website/pub-server-plugin.js"
+      "path": "/Users/hello/pub/tel-website/pub-server-plugin.js"
     }
   ],
   "injectCss": [
@@ -3160,41 +3160,11 @@
           "type": "git",
           "url": "git://github.com/jldec/pub-pkg-jquery.git"
         },
-        "author": {
-          "name": "jurgen leschner"
-        },
-        "license": "MIT",
-        "gitHead": "ae3559b23a373377fe5933b73db06f09d26ba7d0",
-        "bugs": {
-          "url": "https://github.com/jldec/pub-pkg-jquery/issues"
-        },
-        "homepage": "https://github.com/jldec/pub-pkg-jquery#readme",
-        "_id": "pub-pkg-jquery@1.11.3",
-        "scripts": {},
-        "_shasum": "75d35f36153cfe1cb821f9ecc5bb593ee0d1314e",
-        "_from": "pub-pkg-jquery@>=1.11.3 <2.0.0",
-        "_npmVersion": "2.9.0",
-        "_nodeVersion": "2.0.2",
-        "_npmUser": {
-          "name": "jldec",
-          "email": "jldec@ciaosoft.com"
-        },
-        "maintainers": [
-          {
-            "name": "jldec",
-            "email": "jldec@ciaosoft.com"
-          }
-        ],
-        "dist": {
-          "shasum": "75d35f36153cfe1cb821f9ecc5bb593ee0d1314e",
-          "tarball": "http://registry.npmjs.org/pub-pkg-jquery/-/pub-pkg-jquery-1.11.3.tgz"
-        },
-        "directories": {},
-        "_resolved": "https://registry.npmjs.org/pub-pkg-jquery/-/pub-pkg-jquery-1.11.3.tgz",
-        "readme": "ERROR: No README data found!"
+        "author": "jurgen leschner",
+        "license": "MIT"
       },
       "pkgName": "pub-pkg-jquery",
-      "dir": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-jquery"
+      "dir": "/Users/hello/pub/server/node_modules/pub-pkg-jquery"
     },
     {
       "path": "pub-pkg-font-awesome",
@@ -3222,40 +3192,11 @@
           "docout": "pub -O doc",
           "docview": "pub -S doc/gh-pages doc"
         },
-        "author": {
-          "name": "jurgen leschner"
-        },
-        "license": "code: MIT, fonts: SIL OFL 1.1",
-        "gitHead": "5614a01f2ca99b0cd56a901ddb292b46abc73aee",
-        "bugs": {
-          "url": "https://github.com/jldec/pub-pkg-font-awesome/issues"
-        },
-        "homepage": "https://github.com/jldec/pub-pkg-font-awesome#readme",
-        "_id": "pub-pkg-font-awesome@2.2.0",
-        "_shasum": "a72b1ccbde95ae2bfc52a023bc838943b4125280",
-        "_from": "pub-pkg-font-awesome@>=2.2.0 <3.0.0",
-        "_npmVersion": "2.14.2",
-        "_nodeVersion": "4.0.0",
-        "_npmUser": {
-          "name": "jldec",
-          "email": "jldec@ciaosoft.com"
-        },
-        "maintainers": [
-          {
-            "name": "jldec",
-            "email": "jldec@ciaosoft.com"
-          }
-        ],
-        "dist": {
-          "shasum": "a72b1ccbde95ae2bfc52a023bc838943b4125280",
-          "tarball": "http://registry.npmjs.org/pub-pkg-font-awesome/-/pub-pkg-font-awesome-2.2.0.tgz"
-        },
-        "directories": {},
-        "_resolved": "https://registry.npmjs.org/pub-pkg-font-awesome/-/pub-pkg-font-awesome-2.2.0.tgz",
-        "readme": "ERROR: No README data found!"
+        "author": "jurgen leschner",
+        "license": "MIT AND OFL-1.1"
       },
       "pkgName": "pub-pkg-font-awesome",
-      "dir": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-font-awesome"
+      "dir": "/Users/hello/pub/server/node_modules/pub-pkg-font-awesome"
     },
     {
       "path": "pub-pkg-seo",
@@ -3275,41 +3216,11 @@
           "type": "git",
           "url": "git://github.com/jldec/pub-pkg-seo.git"
         },
-        "author": {
-          "name": "jurgen leschner"
-        },
-        "license": "MIT",
-        "gitHead": "87ec08517dca913900ceaf6c9e225ccf6b3a8064",
-        "bugs": {
-          "url": "https://github.com/jldec/pub-pkg-seo/issues"
-        },
-        "homepage": "https://github.com/jldec/pub-pkg-seo#readme",
-        "_id": "pub-pkg-seo@1.0.1",
-        "scripts": {},
-        "_shasum": "02fc13926c5e4718b47bf15c30cbe4f8e8b543a1",
-        "_from": "pub-pkg-seo@>=1.0.1 <2.0.0",
-        "_npmVersion": "2.12.1",
-        "_nodeVersion": "2.3.4",
-        "_npmUser": {
-          "name": "jldec",
-          "email": "jldec@ciaosoft.com"
-        },
-        "maintainers": [
-          {
-            "name": "jldec",
-            "email": "jldec@ciaosoft.com"
-          }
-        ],
-        "dist": {
-          "shasum": "02fc13926c5e4718b47bf15c30cbe4f8e8b543a1",
-          "tarball": "http://registry.npmjs.org/pub-pkg-seo/-/pub-pkg-seo-1.0.1.tgz"
-        },
-        "directories": {},
-        "_resolved": "https://registry.npmjs.org/pub-pkg-seo/-/pub-pkg-seo-1.0.1.tgz",
-        "readme": "ERROR: No README data found!"
+        "author": "jurgen leschner",
+        "license": "MIT"
       },
       "pkgName": "pub-pkg-seo",
-      "dir": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-seo"
+      "dir": "/Users/hello/pub/server/node_modules/pub-pkg-seo"
     },
     {
       "path": "pub-pkg-editor",
@@ -3327,41 +3238,11 @@
           "type": "git",
           "url": "git://github.com/jldec/pub-pkg-editor.git"
         },
-        "author": {
-          "name": "jurgen leschner"
-        },
-        "license": "MIT",
-        "gitHead": "b0123aefd24eaf9c90a66f0deb04ec4ab518e08f",
-        "bugs": {
-          "url": "https://github.com/jldec/pub-pkg-editor/issues"
-        },
-        "homepage": "https://github.com/jldec/pub-pkg-editor#readme",
-        "_id": "pub-pkg-editor@1.5.3",
-        "scripts": {},
-        "_shasum": "277c0394d0141f7b9a3754d79642097a9e70048c",
-        "_from": "pub-pkg-editor@>=1.5.3 <2.0.0",
-        "_npmVersion": "2.14.7",
-        "_nodeVersion": "4.2.1",
-        "_npmUser": {
-          "name": "jldec",
-          "email": "jldec@ciaosoft.com"
-        },
-        "maintainers": [
-          {
-            "name": "jldec",
-            "email": "jldec@ciaosoft.com"
-          }
-        ],
-        "dist": {
-          "shasum": "277c0394d0141f7b9a3754d79642097a9e70048c",
-          "tarball": "http://registry.npmjs.org/pub-pkg-editor/-/pub-pkg-editor-1.5.3.tgz"
-        },
-        "directories": {},
-        "_resolved": "https://registry.npmjs.org/pub-pkg-editor/-/pub-pkg-editor-1.5.3.tgz",
-        "readme": "ERROR: No README data found!"
+        "author": "jurgen leschner",
+        "license": "MIT"
       },
       "pkgName": "pub-pkg-editor",
-      "dir": "/usr/local/lib/node_modules/pub-server/node_modules/pub-pkg-editor"
+      "dir": "/Users/hello/pub/server/node_modules/pub-pkg-editor"
     }
   ],
   "appUrl": "http://www.techxlab.org",

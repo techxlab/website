@@ -263,7 +263,7 @@ label.radio:hover, label.checkbox:hover {
   background-color: #eee;
 }
 
-p, a, label {
+p, a, label, ul {
   font-family: "lato";
   font-size:   14px;
   line-height: 24px;
@@ -1596,24 +1596,32 @@ p {
 
 /** solution section **********************************************************/
 
-#solution.section-solution {
-justify-content:
-}
-
 #solution h3 {
   padding-bottom: 15px;
 }
 
 #solution .column-solution-left {
-  width: 33%;
+  max-width:320px;
+}
+
+@media (min-width: 768px) {
+  #solution .column-solution-left {
+    width: 33%;
+  }
+  #solution .column-solution-right {
+    width: 66%;
+  }
 }
 
 #solution img {
+  width: 100%;
   padding-bottom: 15px;
 }
 
 #solution iframe {
-  padding-bottom: 15px;
+  padding-top: 15px;
+  min-height:350px;
+  max-width:600px;
 }
 
 /** solutions section *********************************************************/
@@ -1692,11 +1700,15 @@ justify-content:
 }
 
 #solutions .solution-list-item-image img {
-  width: 100%;
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 320px;
+  margin: auto;
 }
 
 #solutions .solution-list-item-body {
-  height:        100%;
+  /* height:        100%; */
   margin:        14px;
 }
 
