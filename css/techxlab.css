@@ -423,6 +423,10 @@ p {
   text-align: center;
 }
 
+.menu-item a:hover {
+  text-decoration: none;
+}
+
 /*******************************************************************************
 
   SECTIONS
@@ -583,6 +587,7 @@ p {
   background-color: rgba(0,0,0,.7);
   padding:          30px;
   z-index:            -1;
+  text-align:    justify;
 }
 @media (min-width: 575px) {
   #banner .column-banner-feature {
