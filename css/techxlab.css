@@ -32,8 +32,18 @@
 a, span, em, strong, img, input[type=checkbox], input[type=radio] {
   display: inline;
 }
-label {
+label, p,
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=search],
+input[type=tel],
+input[type=file],
+input[type=submit],
+select,
+textarea {
   display: block;
+  width:100%;
 }
 
 script {
@@ -182,7 +192,7 @@ h1 {
   }
 }
 
-h2 {
+h2, h2 a {
   margin-bottom: 15px;
   font-family:   Raleway, sans-serif;
   font-size:     22px;
@@ -215,6 +225,10 @@ textarea {
   font-family:   "lato";
   font-size:     14px;
   line-height:   28px;
+}
+
+input[type=file] {
+  line-height:   normal;
 }
 
 input[type=text],
@@ -267,8 +281,15 @@ p, a, label, ul {
   font-family: "lato";
   font-size:   14px;
   line-height: 24px;
-  text-align:  justify;
   text-decoration: none;
+}
+
+a {
+  color:#638fc3;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 p {
@@ -423,6 +444,10 @@ p {
   margin-bottom: 15px;
 }
 
+#content p + h2 {
+  margin-top: 30px;
+}
+
 #content img {
   padding-bottom: 15px;
 }
@@ -466,7 +491,7 @@ p {
 }
 
 #add-solutions .button {
-  margin-top:    15px;
+  margin-top:    30px;
   padding:       15px;
   background-color: #f9a021;
 }
@@ -924,7 +949,7 @@ p {
 }
 
 #contact .button {
-  margin-top:        15px;
+  margin-top:        30px;
   padding:           15px;
   background-color:  #5E92B9;
 }
