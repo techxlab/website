@@ -587,8 +587,8 @@ p {
   background-color: rgba(0,0,0,.7);
   padding:          30px;
   z-index:            -1;
-  text-align:    justify;
 }
+
 @media (min-width: 575px) {
   #banner .column-banner-feature {
     height:       100%;
@@ -723,7 +723,9 @@ p {
   letter-spacing:   1px;
   background-color: rgba(0, 0, 0, 0.4);
   margin-bottom:    15px;
+  text-align:    justify;
 }
+
 @media (min-width: 768px) {
   #banner-home .column-banner-feature p {
     background-color: rgba(100, 100, 100, 0.30);
