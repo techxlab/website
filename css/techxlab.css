@@ -41,7 +41,8 @@ input[type=tel],
 input[type=file],
 input[type=submit],
 select,
-textarea {
+textarea,
+div[data-render-html] {
   display: block;
   width:100%;
 }
