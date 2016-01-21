@@ -73,13 +73,12 @@
 <p>We&#39;re sorry - this page was not found.</p>
 </div>
 <script>
-$(function() {
-  redirects = {
-    '/find-solutions/': '/solutions/',
-    '/find-solutions/show/?id=674&cat=1': '/solutions/afrisan-s-p-u-d-toilet'
-  }
-  location = redirects[location.pathname] || '/';
-})
+console.log('redirecting');
+redirects = {
+  '/find-solutions/': '/solutions/',
+  '/find-solutions/show/?id=674&cat=1': '/solutions/afrisan-s-p-u-d-toilet'
+};
+location = redirects[location.pathname] || '/';
 </script>
 </div>
 
