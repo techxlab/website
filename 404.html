@@ -43,22 +43,22 @@
         </ul> -->
         <ul class="menu menu-header">
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="./solutions/">Find Solutions</a>
+              <a href="./solutions/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Find Solutions', 'eventValue': 1 });">Find Solutions</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="./add-solutions/">Add Solutions</a>
+              <a href="./add-solutions/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Add Solutions', 'eventValue': 1 });">Add Solutions</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="./donate/">Take Action</a>
+              <a href="./donate/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Take Action', 'eventValue': 1 });">Take Action</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="./project-accelerator/">Project Accelerator</a>
+              <a href="./project-accelerator/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Project Accelerator', 'eventValue': 1 });">Project Accelerator</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="./stories/">Blog</a>
+              <a href="./stories/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Blog', 'eventValue': 1 });">Blog</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="./about-us/">About Us</a>
+              <a href="./about-us/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'About Us', 'eventValue': 1 });">About Us</a>
             </li>
         </ul>
       </div>
@@ -69,31 +69,18 @@
 <section id="header-shim" class="section-header-shim">
 </section>
 
-<div data-render-page="banner"><section id="banner" class="section-banner">
-  <div class="section-banner-wedge">
-    <img src="./img/construction-site.jpg" alt="">
-  </div>
-  <div class="container container-collapse container-banner">
-    <div class="row row-banner">
-      <div class="column column-banner-feature">
-        <h1 id="oops-">Oops!</h1>
+<div data-render-page="404"><div data-render-html="/404"><h1 id="oops-">Oops!</h1>
 <p>We&#39;re sorry - this page was not found.</p>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="content" class="section section-content">
-  <div class="container">
-    <div class="row">
-      <div class="column">
-        <div data-render-html="">&nbsp;</div>
-      </div>
-    </div>
-  </div>
-</section>
-
+</div>
+<script>
+$(function() {
+  redirects = {
+    '/find-solutions/': '/solutions/',
+    '/find-solutions/show/?id=674&cat=1': '/solutions/afrisan-s-p-u-d-toilet'
+  }
+  location = redirects[location.pathname] || '/';
+})
+</script>
 </div>
 
 <footer id="footer" class="section section-footer">

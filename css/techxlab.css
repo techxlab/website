@@ -298,6 +298,22 @@ p {
     margin-bottom: 15px;
 }
 
+input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: buttontext;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    background-color: red;
+    box-sizing: border-box;
+    padding: 2px 6px 3px;
+    border: 2px outset buttonface;
+}
+
 /*******************************************************************************
 
   PALLETES (DEPRICATE)
@@ -399,7 +415,7 @@ p {
   justify-content: center;                                                      -webkit-justify-content: center;
   padding:         16px 10px;
   border-width:    0;
-  border-radius:   2px;
+  border-radius:   5px;
   text-transform:  uppercase;
   text-align:      center;
   letter-spacing:  2px;
