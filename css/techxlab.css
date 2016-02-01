@@ -915,6 +915,7 @@ p {
 
 .section-summary img {
   width:         100%;
+  min-height:       0;
   margin-bottom: 15px;
 }
 
@@ -1518,7 +1519,8 @@ p {
 }
 
 #solution-categories .elem-product-categories img {
-  width: 100%;
+  width:      100%;
+  min-height: 0;
 }
 
 #solution-categories .elem-product-categories a {
@@ -1648,7 +1650,8 @@ p {
 }
 
 #solution img {
-  width: 100%;
+  width:          100%;
+  min-height:     0;
   padding-bottom: 15px;
 }
 
