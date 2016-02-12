@@ -942,6 +942,22 @@ p {
 }
 
 
+/** contact-PA section (solution pages) ***********************************************/
+
+#contact-PA.section-contact-PA {
+  background-color: #eee;
+}
+
+#contact-PA p {
+  font-style: italic;
+  font-size: 20px;
+}
+
+#contact-PA a {
+  font-style: italic;
+  font-size: 20px;
+}
+
 /** contact section (home page) ***********************************************/
 
 #contact.section-contact {
