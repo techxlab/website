@@ -941,6 +941,51 @@ p {
   }
 }
 
+#story .story-author img{
+padding: 10px;
+}
+
+@media (max-width: 768px) {
+  #story .story-author img{
+  display: none;
+  }
+
+}
+
+
+#story .story-author {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding-right: 10px;
+  justify-content:  space-between;                                               -webkit-justify-content: space-between;
+  flex-direction:   row;
+}
+
+#story .story-author p{
+  padding-top:30px;
+}
+
+#story img{
+  width: 100%;
+  min-height: 0;
+  padding-bottom:10px;
+}
+
+@media (min-width: 768px) {
+  #story .column-story-left {
+    width: 33%;
+  }
+  #story .column-story-right {
+    width: 66%;
+  }
+}
+
+.column-author-left{
+  width: 100%;
+}
+
+
+
 
 /** contact-PA section (solution pages) ***********************************************/
 
@@ -1116,6 +1161,7 @@ p {
   padding:           15px;
   background-color:  #5E92B9;
 }
+
 
 /** studies section ***********************************************************/
 
