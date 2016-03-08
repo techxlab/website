@@ -441,6 +441,10 @@ p {
   background-color: #fff;
 }
 
+#content h3, h2 {
+  margin-bottom: 10px;
+}
+
 /*#content h2,
 #content h2 a {
   color:         #f9a021;
