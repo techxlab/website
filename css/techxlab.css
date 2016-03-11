@@ -918,10 +918,8 @@ p {
 /** sub-categories menu section (solutions) ***************************************/
 
 #sub-categories-menu .row-sub-categories-menu-items {
-  justify-content: space-between;
   color:           #fff;
   text-align:      left;
-  align-items:     center;
   display:          block;
 }
 
@@ -930,12 +928,8 @@ p {
     margin-bottom: 5px;
 }
 
-#sub-categories-menu .menu-item {
-  padding: 0;
-}
-
 #sub-categories-menu .sub-cats a {
-    padding-left:   15px;
+    padding-left:   20px;
 }
 
 @media (min-width: 768px){
@@ -954,6 +948,7 @@ p {
   color: #fff;
   background-color: #678bcc;
   padding:    15px;
+  width: 100%;
 }
 
 @media (max-width: 786px) {
@@ -963,27 +958,39 @@ margin-bottom: 0;
 }
 }
 
-#sub-categories-menu .active {
-  color: #f29810;
+@media (max-width: 768px) {
+#sub-categories-menu .menu-item {
+  padding: 0;
+}
+}
+
+#sub-categories-menu .container {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+@media (min-width: 768px) {
+#sub-categories-menu .container {
+  width: 100%;
+}
 }
 
 @media (min-width: 768px) {
  .column-subs-left {
-    width: 20%;
+    width: 15%;
+    padding-right: 0;
 }
 .column-subs-right {
-    width: 80%;
+    width: 85%;
+    padding-left: 0px;
   }
 }
-
 .row-subs {
-  padding: 0;
+  padding: 0px;
+   box-sizing: content-box;
 }
 
-@media (min-width: 768px){
-.column-subs-left{
-  margin-top: 20px;
-}}
+
 /** blog sections (stories from the field) ************************************/
 
 .section-summary img {
