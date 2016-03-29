@@ -180,15 +180,16 @@ head { height: 0; } /* hide text that gets injected by pub into header */
 
 *******************************************************************************/
 
-h1 {
+h1, h1 a {
   margin-bottom: 15px;
   font-family:   Raleway, sans-serif;
   font-size:     26px;
   font-weight:   300;
+  line-height: 36px;
   color:         #f9a021;
 }
 @media (min-width: 992px) {
-  h1 {
+  h1, h1 a {
     font-size: 34px;
   }
 }
@@ -201,7 +202,7 @@ h2, h2 a {
   color:         #f9a021;
 }
 @media (min-width: 992px) {
-  h2 {
+  h2, h2 a {
     font-size: 26px;
   }
 }
@@ -280,7 +281,7 @@ label.radio:hover, label.checkbox:hover {
 
 p, a, label, ul {
   font-family: "lato";
-  font-size:   14px;
+  font-size:   15px;
   line-height: 24px;
   text-decoration: none;
 }
@@ -398,7 +399,7 @@ p {
   justify-content: center;                                                      -webkit-justify-content: center;
   padding:         16px 10px;
   border-width:    0;
-  border-radius:   2px;
+  border-radius:   5px;
   text-transform:  uppercase;
   text-align:      center;
   letter-spacing:  2px;
@@ -438,6 +439,10 @@ p {
 
 #content.section-content {
   background-color: #fff;
+}
+
+#content h3, h2 {
+  margin-bottom: 10px;
 }
 
 /*#content h2,
@@ -910,10 +915,87 @@ p {
   color: #7dc243;
 }
 
+/** sub-categories menu section (solutions) ***************************************/
+
+#sub-categories-menu .row-sub-categories-menu-items {
+  color:           #fff;
+  text-align:      left;
+  display:          block;
+}
+
+#sub-categories-menu  a {
+    margin-top:    10px;
+    margin-bottom: 5px;
+}
+
+#sub-categories-menu .sub-cats a {
+    padding-left:   20px;
+}
+
+@media (min-width: 768px){
+#sub-categories-menu .row-sub-categories-menu-items a {
+    text-align:     left;
+}
+}
+
+@media (max-width: 768px){
+#sub-categories-menu .sub-cats a {
+    display: none;
+}
+}
+
+#sub-categories-menu .top-cat a {
+  color: #fff;
+  background-color: #678bcc;
+  padding:    15px;
+  width: 100%;
+}
+
+@media (max-width: 786px) {
+#sub-categories-menu a {
+margin-top: 0;
+margin-bottom: 0;
+}
+}
+
+@media (max-width: 768px) {
+#sub-categories-menu .menu-item {
+  padding: 0;
+}
+}
+
+#sub-categories-menu .container {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+@media (min-width: 768px) {
+#sub-categories-menu .container {
+  width: 100%;
+}
+}
+
+@media (min-width: 768px) {
+ .column-subs-left {
+    width: 15%;
+    padding-right: 0;
+}
+.column-subs-right {
+    width: 85%;
+    padding-left: 0px;
+  }
+}
+.row-subs {
+  padding: 0px;
+   box-sizing: content-box;
+}
+
+
 /** blog sections (stories from the field) ************************************/
 
 .section-summary img {
   width:         100%;
+  min-height:       0;
   margin-bottom: 15px;
 }
 
@@ -939,6 +1021,67 @@ p {
   }
 }
 
+#story .story-author img{
+padding: 10px;
+}
+
+@media (max-width: 768px) {
+  #story .story-author img{
+  display: none;
+  }
+
+}
+
+
+#story .story-author {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding-right: 10px;
+  justify-content:  space-between;                                               -webkit-justify-content: space-between;
+  flex-direction:   row;
+}
+
+#story .story-author p{
+  padding-top:30px;
+}
+
+#story img{
+  width: 100%;
+  min-height: 0;
+  padding-bottom:10px;
+}
+
+@media (min-width: 768px) {
+  #story .column-story-left {
+    width: 33%;
+  }
+  #story .column-story-right {
+    width: 66%;
+  }
+}
+
+.column-author-left{
+  width: 100%;
+}
+
+
+
+
+/** contact-PA section (solution pages) ***********************************************/
+
+#contact-PA.section-contact-PA {
+  background-color: #eee;
+}
+
+#contact-PA p {
+  font-style: italic;
+  font-size: 20px;
+}
+
+#contact-PA a {
+  font-style: italic;
+  font-size: 20px;
+}
 
 /** contact section (home page) ***********************************************/
 
@@ -1098,6 +1241,7 @@ p {
   padding:           15px;
   background-color:  #5E92B9;
 }
+
 
 /** studies section ***********************************************************/
 
@@ -1517,7 +1661,8 @@ p {
 }
 
 #solution-categories .elem-product-categories img {
-  width: 100%;
+  width:      100%;
+  min-height: 0;
 }
 
 #solution-categories .elem-product-categories a {
@@ -1647,7 +1792,8 @@ p {
 }
 
 #solution img {
-  width: 100%;
+  width:          100%;
+  min-height:     0;
   padding-bottom: 15px;
 }
 

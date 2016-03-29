@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="google-site-verification" content="HmxALOljrFkNvP-x61Dp7hnsQXMGZLpIAA5tGP--t_w" />
   
 
   <title>Project Accelerator</title>
@@ -43,22 +44,22 @@
         </ul> -->
         <ul class="menu menu-header">
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../solutions/">Find Solutions</a>
+              <a href="../solutions/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Find Solutions', 'eventValue': 1 });">Find Solutions</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../add-solutions/">Add Solutions</a>
+              <a href="../add-solutions/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Add Solutions', 'eventValue': 1 });">Add Solutions</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../donate/">Take Action</a>
+              <a href="../donate/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Take Action', 'eventValue': 1 });">Take Action</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../project-accelerator/">Project Accelerator</a>
+              <a href="../project-accelerator/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Project Accelerator', 'eventValue': 1 });">Project Accelerator</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../stories/">Blog</a>
+              <a href="../stories/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Blog', 'eventValue': 1 });">Blog</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../about-us/">About Us</a>
+              <a href="../about-us/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'About Us', 'eventValue': 1 });">About Us</a>
             </li>
         </ul>
       </div>
@@ -91,6 +92,7 @@
         <div data-render-html="/project-accelerator/#body"><h1 id="project-accelerator">Project Accelerator</h1>
 <p>TEL users are passionate individuals and organizations that take innovative approaches to improve the wellbeing and livelihoods of people at the bottom of the pyramid. Whether your work is not-for-profit, in the public sector or through private enterprise, we can help accelerate your development project by leveraging appropriate technology solutions.</p>
 <p>The solutions in our database were developed by a process of human-centered design in order to respond to the needs, dreams and behaviors of end users.  Likewise, by intimately understanding our clients and the stakeholders they serve, we empower projects to deliver appropriate solutions that meet key standards of desirability, feasibility and viability.</p>
+<p>To learn more about the Project Accelerator, download this <a href="../img/TEL-Project-Accelerator.pdf">in-depth presentation (pdf)</a>.</p>
 </div>
       </div>
     </div>
@@ -121,14 +123,13 @@
     </ul>
   </div>
 </section>
-
 <section id="form" class="section section-form">
   <div class="container">
     <div data-render-html="/project-accelerator/#get-started"><h1 id="let-s-get-started">Let&#39;s Get Started</h1>
 <p>Complete this form by telling us more about your project. Please be as detailed as possible, and we will respond to your inquiry within three business days.</p>
 </div>
     <div class="row">
-      <form id="get-started-form" class="column column-form" novalidate="novalidate" action="https://tel-staging.herokuapp.com/server/form" method="POST">
+      <form id="get-started-form" class="column column-form" novalidate="novalidate" action="https://tel-forms.herokuapp.com/server/form" method="POST">
         <div data-render-html="/project-accelerator/#get-started-form"><p>
 <label for="name" class="required">Name</label>
 <input required type="text" name="Name" id="name" class="required">
@@ -169,70 +170,69 @@
     </div>
   </div>
 </section>
-
-  <div class="container">
-     <div data-render-html="/project-accelerator/#case-studies"><h1 id="project-accelerator-case-studies">Project Accelerator Case Studies</h1>
+<section class="container">
+   <div data-render-html="/project-accelerator/#case-studies"><h1 id="project-accelerator-case-studies">Project Accelerator Case Studies</h1>
 </div>
-  </div>
-<section class="section section-summary">
-  <div class="container">
-    <div class="row">
-      <div class="column column-section-summary-left">
-        <img src="../img/solar-karnataka.png" alt="">
-      </div>
-      <div class="column column-section-summary-right">
-        <h1 id="solar-program-karnataka">Solar Program Karnataka</h1>
+</section>
+  <section class="section section-summary">
+    <div class="container">
+      <div class="row">
+        <div class="column column-section-summary-left">
+          <img src="/img/solar-karnataka.png">
+        </div>
+        <div class="column column-section-summary-right">
+          <h1 id="-solar-program-karnataka-studies-solar-program-karnataka-"><a href="../studies/solar-program-karnataka/">Solar Program Karnataka</a></h1>
 <p>Posted by TEL Team 10 December 2015</p>
 <h2 id="the-project">The Project</h2>
 <p>The Solar Program Karnataka is an initiative of Sumangali Seva Ashrama to power 30,000 rural homes with point-of-use solar light solutions.  By outfitting remote mom &amp; pop shops with inventories of solar lights through a microconsignment model, the program creates employment opportunities for local entrepreneurs, while also providing a safe, cost-effective and sustainable alternative to kerosene lamps for thousands of families.</p>
 <h2 id="tel-s-role">TEL&#39;s Role</h2>
 <p>Upon engaging the organization through a detailed process of needs assessment, TEL assisted the program in identifying and procuring solar lighting solutions from five different providers.  TEL also applied to joint grant opportunities with Sumangali Seva Ashrama for funds to aid in the procurement of solar lights.</p>
 <h2 id="results">Results</h2>
-<p>After field testing the five demo units and conducting extensive interviews with stakeholders, the Solar Program Karnataka is in the process of ...</p>
+<p>After field testing the five demo units and conducting extensive interviews with stakeholders, the Solar ...</p>
 
-        <a href="../studies/solar-program-karnataka/">Continue Reading</a>
+          <a href="../studies/solar-program-karnataka/">Continue Reading</a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<section class="section section-summary">
-  <div class="container">
-    <div class="row">
-      <div class="column column-section-summary-left">
-        <img src="../img/tippy-taps.jpg" alt="">
-      </div>
-      <div class="column column-section-summary-right">
-        <h1 id="tippy-taps-sierra-leone">Tippy Taps Sierra Leone</h1>
-<p>Posted by TEL Team 2 September 2015 3:45 pm</p>
+  </section>
+  <section class="section section-summary">
+    <div class="container">
+      <div class="row">
+        <div class="column column-section-summary-left">
+          <img src="/img/tippy-taps.jpg">
+        </div>
+        <div class="column column-section-summary-right">
+          <h1 id="-tippy-taps-sierra-leone-studies-tippy-taps-sierra-leone-"><a href="../studies/tippy-taps-sierra-leone/">Tippy Taps Sierra Leone</a></h1>
+<p>Posted by TEL Team 2 September 2015</p>
 <h2 id="the-project">The project</h2>
 <p>COMIN-SL is a small nonprofit organization currently working to improve water and sanitation conditions within communities ravaged by the Ebola crisis. With little expertise in water and sanitation solutions, COMIN-SL is further challenged by a lack of financial resources, and logistical obstacles that prevent them from importing pre-manufactured water and sanitation solutions into Sierra Leone.</p>
 <h2 id="tel-s-role">TEL’s Role</h2>
-<p>After working with COMIN-SL to identify the major issues faced by community members in relation to their water and sanitation needs, TEL introduced COMIN-SL to a variety of ‘Do-It-Yourself’ solutions that can be locally manufactured to provide clean drinking water and adequate sanitation facilities. Once COMIN-SL selected the solutions that best respond to their stakeholders’ needs and desires, TEL provided the organizations with detailed design specifications for the local manufacture of simple ...</p>
+<p>After working with COMIN-SL to identify the major issues faced by community members in relation to their water and sanitation needs, TEL introduced COMIN-SL to a variety of ‘Do-It-Yourself’ solutions that can be locally manufactured to provide clean drinking water and adequate sanitation facilities. Once COMIN-SL selected the solutions that best respond to their stakeholders’ needs and desires, TEL provided the organizations with detailed design specifications for the ...</p>
 
-        <a href="../studies/tippy-taps-sierra-leone/">Continue Reading</a>
+          <a href="../studies/tippy-taps-sierra-leone/">Continue Reading</a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<section class="section section-summary">
-  <div class="container">
-    <div class="row">
-      <div class="column column-section-summary-left">
-        <img src="../img/joy.png" alt="">
-      </div>
-      <div class="column column-section-summary-right">
-        <h1 id="jaya-organic-yojana">Jaya Organic Yojana</h1>
-<p>Posted by TEL Team 11 March 2015 3:52 pm</p>
+  </section>
+  <section class="section section-summary">
+    <div class="container">
+      <div class="row">
+        <div class="column column-section-summary-left">
+          <img src="/img/joy.png">
+        </div>
+        <div class="column column-section-summary-right">
+          <h1 id="-jaya-organic-yojana-studies-jaya-organic-jojana-"><a href="../studies/jaya-organic-jojana/">Jaya Organic Yojana</a></h1>
+<p>Posted by TEL Team 11 March 2015</p>
 <h2 id="the-project">The Project</h2>
 <p>Jaya Organic Yojana (JOY) is a grassroots movement in Karnataka, India, that leverages the collective power and network of 300 Indian nonprofit organizations to restore soil fertility and provide business opportunities for thousands of impoverished villagers and farmers, by switching to organic farming and composting.  At the core of JOY&#39;s activity is a training program that teaches thousands of villagers (most of whom are women) how to create nutrient-rich fertilizer through vermiculture, a process of composting that uses live earthworms, manure and green waste.   Villagers can secure a livelihood by selling the fertilizer to farmers, who in turn benefit from organic farming practices.</p>
 <h2 id="tel-s-role">TEL&#39;s Role</h2>
-<p>After conducting a field visit in Karnataka in late 2013, TEL began working with JOY to both raise the public profile of the movement through the creation and promotion of original content, and to secure ...</p>
+<p>After conducting a field visit in Karnataka in late 2013, TEL began working with JOY to both raise the public profile of the movement through the creation and promotion of original ...</p>
 
-        <a href="../studies/jaya-organic-jojana/">Continue Reading</a>
+          <a href="../studies/jaya-organic-jojana/">Continue Reading</a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 <section id="partners" class="section">
   <div class="container">
     <div data-render-html="/project-accelerator/#partners"><h1 id="clients-served">Clients Served</h1>
@@ -240,37 +240,47 @@
     <ul class="row row-partners">
         <li class="menu-item">
           <a href="http://www.stopcorporateabuse.org/" target="_blank">
-            <img class="logo-partners" src="../img/clients/corporate-accountability-international-logo.jpg" alt="Stop Corporate Abuse">
+            <img class="logo-partners" src="../img/clients/corporate-accountability-international-logo.png" alt="Stop Corporate Abuse">
           </a>
         </li>
         <li class="menu-item">
           <a href="http://mercybeyondborders.org/" target="_blank">
-            <img class="logo-partners" src="../img/clients/mercy-beyond-borders-logo.jpg" alt="Mercy Beyond Borders">
+            <img class="logo-partners" src="../img/clients/mercy-beyond-borders-logo.png" alt="Mercy Beyond Borders">
           </a>
         </li>
         <li class="menu-item">
           <a href="http://livelyhoods.org/" target="_blank">
-            <img class="logo-partners" src="../img/clients/archimedes-logo.jpg" alt="Lively Hoods">
+            <img class="logo-partners" src="../img/clients/lively-hoods-logo.png" alt="Lively Hoods">
           </a>
         </li>
         <li class="menu-item">
-          <a href="http://cite.mit.edu/" target="_blank">
-            <img class="logo-partners" src="../img/clients/lively-hoods-logo.jpg" alt="CITE">
+          <a href="http://www.archimedesproject.com/#welcome" target="_blank">
+            <img class="logo-partners" src="../img/clients/archimedes-logo.png" alt="Archimedes Project">
           </a>
         </li>
         <li class="menu-item">
           <a href="http://www.weforum.org/" target="_blank">
-            <img class="logo-partners" src="../img/clients/world-economic-forum-logo.jpg" alt="We Forum">
+            <img class="logo-partners" src="../img/clients/world-economic-forum-logo.png" alt="We Forum">
           </a>
         </li>
         <li class="menu-item">
           <a href="http://cardbankph.com/" target="_blank">
-            <img class="logo-partners" src="../img/clients/card-bank-logo.jpg" alt="Card Bank">
+            <img class="logo-partners" src="../img/clients/card-bank-logo.png" alt="Card Bank">
           </a>
         </li>
         <li class="menu-item">
           <a href="http://www.outreachjusticemissionsl.org/" target="_blank">
-            <img class="logo-partners" src="../img/clients/christian-outreach-logo.jpg" alt="Outreach Justice Missions">
+            <img class="logo-partners" src="../img/clients/christian-outreach-logo.png" alt="Outreach Justice Missions">
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="../studies/solar-program-karnataka/" target="_blank">
+            <img class="logo-partners" src="../img/clients/solar-karnataka.png" alt="Solar Program Karnataka">
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="../studies/jaya-organic-jojana/" target="_blank">
+            <img class="logo-partners" src="../img/clients/jaya-organic-logo.jpg" alt="Jaya Organic Yojana">
           </a>
         </li>
     </ul>
@@ -326,7 +336,10 @@
           1 Broadway, 14th Floor | Cambridge, MA 02142, USA
         </p>
         <p class="elem elem-footer-legal">
-          TEL is a registered non-proﬁt, tax-exempt charity under section 501(c)(3) of the U.S. Internal Revenue Code. Donations are tax deductible to the extent allowed by U.S. law. TEL is a public resource with no commercial allegiance.
+          TEL is a registered non-proﬁt, tax-exempt charity under section 501(c)(3) of the U.S. Internal Revenue Code. <a href="/donate/"> Donations </a>are tax deductible to the extent allowed by U.S. law. TEL is a public resource with no commercial allegiance.
+        </p>
+        <p class="elem elem-footer-copy">
+          &copy 2016 Technology Exchange Lab, Inc. | <a href="../photo-credits">Photo Credits</a>
         </p>
       </div>
       <div class="column column-footer-right">
@@ -350,6 +363,21 @@
    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
    ga('create', 'UA-27156481-2', 'auto');
    ga('send', 'pageview');
+</script>
+<script type="application/ld+json">
+{
+ "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "name" : "Technology Exchange Lab",
+  "alternateName" : "TechXLab",
+  "url" : "http://www.techxlab.org",
+  "logo" : "http://www.techxlab.org/img/tel.png",
+  "sameAs" : [
+    "http://www.facebook.com/TechXLab",
+    "https://www.linkedin.com/company/technology-exchange-lab-inc-",
+    "https://twitter.com/TechExLab"
+  ]
+}
 </script>
 </div>
 </body>

@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="google-site-verification" content="HmxALOljrFkNvP-x61Dp7hnsQXMGZLpIAA5tGP--t_w" />
   
 
   <title>Biogas Backpack (B-pack)</title>
@@ -43,22 +44,22 @@
         </ul> -->
         <ul class="menu menu-header">
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../solutions/">Find Solutions</a>
+              <a href="../solutions/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Find Solutions', 'eventValue': 1 });">Find Solutions</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../add-solutions/">Add Solutions</a>
+              <a href="../add-solutions/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Add Solutions', 'eventValue': 1 });">Add Solutions</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../donate/">Take Action</a>
+              <a href="../donate/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Take Action', 'eventValue': 1 });">Take Action</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../project-accelerator/">Project Accelerator</a>
+              <a href="../project-accelerator/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Project Accelerator', 'eventValue': 1 });">Project Accelerator</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../stories/">Blog</a>
+              <a href="../stories/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Blog', 'eventValue': 1 });">Blog</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../about-us/">About Us</a>
+              <a href="../about-us/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'About Us', 'eventValue': 1 });">About Us</a>
             </li>
         </ul>
       </div>
@@ -72,30 +73,46 @@
 <div data-render-page="solution"><section id="categories-menu" class="section-categories-menu">
   <div class="container">
     <ul class="row row-categories-menu-items">
-<li class="menu-item menu-item-banner-solutions">
-          <a href="../solutions/categories/" >All Solutions</a>
-        </li>
-<li class="menu-item menu-item-banner-solutions">
-          <a href="../solutions/categories/water/" >Water &amp; Sanitation</a>
-        </li>
-<li class="menu-item menu-item-banner-solutions">
-          <a href="../solutions/categories/agriculture/" >Agriculture &amp; Tools</a>
-        </li>
-<li class="menu-item menu-item-banner-solutions">
-          <a href="../solutions/categories/energy/" >Energy &amp; Cooking</a>
-        </li>
-<li class="menu-item menu-item-banner-solutions">
-          <a href="../solutions/categories/medical/" >Health &amp; Medical Care</a>
-        </li>
-<li class="menu-item menu-item-banner-solutions">
-          <a href="../solutions/categories/education/" >Education &amp; Connectivity</a>
-        </li>
-<li class="menu-item menu-item-banner-solutions">
-          <a href="../solutions/categories/housing/" >Housing &amp; Transport</a>
-        </li>
-<li class="menu-item menu-item-banner-solutions">
-          <a href="../solutions/categories/other/" >Additional Solutions</a>
-        </li>
+      <li class="menu-item menu-item-banner-solutions">
+        <div class ="top-cat">
+        <a href="../solutions/categories/all-solutions/" onclick="ga('send', 'event', {'eventCategory': 'Solution Categories',  'eventAction': 'click', 'eventLabel': 'All Solutions', 'eventValue': 5 });">All Solutions</a>
+        </div>
+      </li>
+      <li class="menu-item menu-item-banner-solutions">
+        <div class ="top-cat">
+        <a href="../solutions/categories/water/" onclick="ga('send', 'event', {'eventCategory': 'Solution Categories',  'eventAction': 'click', 'eventLabel': 'Water & Sanitation', 'eventValue': 5 });">Water &amp; Sanitation</a>
+        </div>
+      </li>
+      <li class="menu-item menu-item-banner-solutions">
+        <div class ="top-cat">
+        <a href="../solutions/categories/energy/" onclick="ga('send', 'event', {'eventCategory': 'Solution Categories',  'eventAction': 'click', 'eventLabel': 'Energy & Cooking', 'eventValue': 5 });">Energy &amp; Cooking</a>
+        </div>
+      </li>
+      <li class="menu-item menu-item-banner-solutions">
+        <div class ="top-cat">
+        <a href="../solutions/categories/medical/" onclick="ga('send', 'event', {'eventCategory': 'Solution Categories',  'eventAction': 'click', 'eventLabel': 'Health & Medical Care', 'eventValue': 5 });">Health &amp; Medical Care</a>
+        </div>
+      </li>
+      <li class="menu-item menu-item-banner-solutions">
+        <div class ="top-cat">
+        <a href="../solutions/categories/agriculture/" onclick="ga('send', 'event', {'eventCategory': 'Solution Categories',  'eventAction': 'click', 'eventLabel': 'Agriculture & Tools', 'eventValue': 5 });">Agriculture &amp; Tools</a>
+        </div>
+      </li>
+      <li class="menu-item menu-item-banner-solutions">
+        <div class ="top-cat">
+        <a href="../solutions/categories/education/" onclick="ga('send', 'event', {'eventCategory': 'Solution Categories',  'eventAction': 'click', 'eventLabel': 'Education & Connectivity', 'eventValue': 5 });">Education &amp; Connectivity</a>
+        </div>
+      </li>
+      <li class="menu-item menu-item-banner-solutions">
+        <div class ="top-cat">
+        <a href="../solutions/categories/housing/" onclick="ga('send', 'event', {'eventCategory': 'Solution Categories',  'eventAction': 'click', 'eventLabel': 'Housing & Transport', 'eventValue': 5 });">Housing &amp; Transport</a>
+        </div>
+      </li>
+      <li class="menu-item menu-item-banner-solutions">
+        <div class ="top-cat">
+        <a href="../solutions/categories/other/" onclick="ga('send', 'event', {'eventCategory': 'Solution Categories',  'eventAction': 'click', 'eventLabel': 'Additional Solutions', 'eventValue': 5 });">Additional Solutions</a>
+        </div>
+      </li>
     </ul>
   </div>
 </section>
@@ -106,22 +123,33 @@
     <div class="row">
       <div class="column">
         <h1>Biogas Backpack (B-pack)</h1>
-        <h2>(B) energy</h2>
+        <h2 style="color: #638fc3;">(B) energy</h2>
       </div>
     </div>
 
     <div class="row">
-
       <div class="column column-solution-left">
         <img src="http://images.techxlab.org/ast/404-bpack.jpg" alt="Biogas Backpack (B-pack)">
-          <h3>Contact Solution Provider</h3>
-          <div data-render-html="/solutions/b-energy-biogas-backpack-pack#contact"><p>Katrin Puetz<br>(B) energy<br>Addis Ababa<br>Ethiopia<br><a href="mailto:k.puetz@uni-hohenheim.de">k.puetz@uni-hohenheim.de</a>  </p>
+      <a  class="button"
+          onclick="$('.solution-provider').toggle(); ga('send', 'event', {'eventCategory': 'SP-Contact-Info',  'eventAction': 'click', 'eventLabel': 'Biogas Backpack (B-pack)', 'eventValue': 10 });"
+          style="cursor:pointer; background-color: #F2A028;font-size: 15pt; letter-spacing: 0px; margin-top: 20px;margin-bottom: 20px;text-transform: none;">
+          Contact Solution Provider
+      </a>
+
+        <div class="solution-provider" style="display:none;">
+
+             <h3>Solution Provider</h3>
+             <div data-render-html="/solutions/b-energy-biogas-backpack-pack#contact"><p>Katrin Puetz<br>(B) energy<br>Addis Ababa<br>Ethiopia<br><a href="mailto:k.puetz@uni-hohenheim.de">k.puetz@uni-hohenheim.de</a>  </p>
 </div>
+             <a href=""></a>
+        </div>
+        <a href="/partner-solutions/partners/empowering-people/"> <img src="../img/partner-icons/empowering-people.jpg" alt="empowering-people"></a>
+
       </div>
 
       <div class="column column-solution-right">
         <h3>Solution Overview &amp; Benefits</h3>
-        <div data-render-html="/solutions/b-energy-biogas-backpack-pack"><p>The biogas backpack is a low-tech biogas storage &amp; transport container to facilitate the sale of biogas in developing countries. The backpack is a balloon of flexible, gas tight material equipped with backpack straps for body transport &amp; a ball valve for fill-up &amp; emptying. By directly connecting it to a biogas digester it is inflated with biogas &amp; by weighting it down with an external weight: enough pressure &amp; flow can be provided to supply a biogas stove or lamp for cooking &amp; lighting.The pillow shaped pack have better characteristics in terms of providing constant gas pressure when weight down. In a fully inflated state the pack holds 1.2 m³ of biogas &amp; weights 4.4 kg. It persist 0.53 bar inner pressure &amp; 30,000 daN external pressure. The chosen material allows carbon dioxide (CO2) to transmit at a rate of about 840 ccm m-² d1, while methane is stored due to the low transmission rate of 200 ccm m-² d1. 
+        <div data-render-html="/solutions/b-energy-biogas-backpack-pack"><p>The biogas backpack is a low-tech biogas storage &amp; transport container to facilitate the sale of biogas in developing countries. The backpack is a balloon of flexible, gas tight material equipped with backpack straps for body transport &amp; a ball valve for fill-up &amp; emptying. By directly connecting it to a biogas digester it is inflated with biogas &amp; by weighting it down with an external weight: enough pressure &amp; flow can be provided to supply a biogas stove or lamp for cooking &amp; lighting.The pillow shaped pack have better characteristics in terms of providing constant gas pressure when weight down. In a fully inflated state the pack holds 1.2 m³ of biogas &amp; weights 4.4 kg. It persist 0.53 bar inner pressure &amp; 30,000 daN external pressure. The chosen material allows carbon dioxide (CO2) to transmit at a rate of about 840 ccm m-² d1, while methane is stored due to the low transmission rate of 200 ccm m-² d1.
 The biogas backpack provides the opportunity to produce biogas in one central, technically more advanced biogas plant rather than in many individual small-scale, low productive digesters that is commonly used in developing countries. Installation, operation &amp; maintenance are done by the owner of the biogas business. Surrounding farmers can contribute to the biogas production by selling substrate to the plant owner. In return they can buy biogas &amp; fertiliser with an affordable price &amp; convenience.  These create an income opportunities &amp; can be the motor for further independent development &amp; improve living conditions of poor rural households.</p>
 </div>
 
@@ -140,9 +168,13 @@ The biogas backpack provides the opportunity to produce biogas in one central, t
 
         <iframe src="//www.youtube.com/embed/7nzTpjL0_7g" frameborder="0"></iframe>
       </div>
-
-
     </div>
+  </div>
+</section>
+
+<section id="contact-PA" class="section section-contact-PA">
+  <div class="container">
+    <p>Need help finding solutions that respond to your unique development challenges? Apply through our <a href="/project-accelerator/">Project Accelerator</a> service or <a href="mailto:contact@techxlab.org">Contact us</a> directly for needs-based project consulting.</p>
   </div>
 </section>
 </div>
@@ -168,7 +200,10 @@ The biogas backpack provides the opportunity to produce biogas in one central, t
           1 Broadway, 14th Floor | Cambridge, MA 02142, USA
         </p>
         <p class="elem elem-footer-legal">
-          TEL is a registered non-proﬁt, tax-exempt charity under section 501(c)(3) of the U.S. Internal Revenue Code. Donations are tax deductible to the extent allowed by U.S. law. TEL is a public resource with no commercial allegiance.
+          TEL is a registered non-proﬁt, tax-exempt charity under section 501(c)(3) of the U.S. Internal Revenue Code. <a href="/donate/"> Donations </a>are tax deductible to the extent allowed by U.S. law. TEL is a public resource with no commercial allegiance.
+        </p>
+        <p class="elem elem-footer-copy">
+          &copy 2016 Technology Exchange Lab, Inc. | <a href="../photo-credits">Photo Credits</a>
         </p>
       </div>
       <div class="column column-footer-right">
@@ -192,6 +227,21 @@ The biogas backpack provides the opportunity to produce biogas in one central, t
    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
    ga('create', 'UA-27156481-2', 'auto');
    ga('send', 'pageview');
+</script>
+<script type="application/ld+json">
+{
+ "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "name" : "Technology Exchange Lab",
+  "alternateName" : "TechXLab",
+  "url" : "http://www.techxlab.org",
+  "logo" : "http://www.techxlab.org/img/tel.png",
+  "sameAs" : [
+    "http://www.facebook.com/TechXLab",
+    "https://www.linkedin.com/company/technology-exchange-lab-inc-",
+    "https://twitter.com/TechExLab"
+  ]
+}
 </script>
 </div>
 </body>

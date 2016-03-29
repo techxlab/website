@@ -1,147 +1,214 @@
 <!DOCTYPE html>
 <html>
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  
-
-  <title>404</title>
-
-  <link rel="icon" href="http://www.techxlab.org/img/tel.png" type="image/png">
-  <link rel="stylesheet" href="./css/font-awesome.css">
-<link rel="stylesheet" href="./css/techxlab.css">
-<link rel="stylesheet" href="./css/flexslider.css">
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-  <script>window.pubRef = {"href":"/404","relPath":"."};</script>
-<script src="./js/jquery-1.11.3.min.js" ></script>
-<script src="./js/techxlab.js" ></script>
-<script src="./js/jquery.flexslider-min.js" ></script>
-<script src="./js/scrollmonitor.js" ></script>
+  <title>TEL - Technology Exchange Lab</title>
+<style>
+body { font-family: sans-serif; background-color: #eee; }
+h1 { font-size: 30px; font-weight: 300; color: #f9a021; text-align: center; margin-top:3em; }
+div { text-align: center; }
+a { font-size: xx-large; color: #777; }
+</style>
+<script>
+redirects = {
+  // Menu pages
+  '/find-solutions/': '/solutions/',
+  '/about/': '/about-us/',
+  '/add-a-solution/': '/add-solutions/',
+  '/resources/': '/funding-resources/',
+  '/articles/': '/stories/',
+  '/faq/': '/faqs/',
+  '/contact/': '/about-us/',
+  '/health-medical': '/solutions/categories/medical/',
+  // Other pages
+  '/annualreport': '/img/TEL_AnnualReport_2015.pdf',
+  '/idhack': '/idhackathon-2016/',
+  '/pa-service': '/img/TEL-Project-Accelerator.pdf',
+  // Short url's for solution pages (tel.ngo)
+  '/hunterstove': '/solutions/silverfire-hunter-chimney-stove',
+  '/pumani-bcpap': '/solutions/hadleigh-health-technologies-subsidiary-of-3rd-stone-design-pumani-bcpap-device',
+  '/solutions/hadleigh-health-technologies-subsidiary-of-3rd-stone-design-bubble-continuous-positive-airway-pressure-bcpap-device': '/solutions/hadleigh-health-technologies-subsidiary-of-3rd-stone-design-pumani-bcpap-device',
+  '/sbox': '/solutions/shelterbox',
+  '/sunoven': '/solutions/sun-ovens-international-global-oven',
+  '/berkeleystove': '/solutions/potential-energy-berkeley-darfur-stove',
+  '/rdicwater': '/solutions/potters-for-peace-ceramic-water-filter',
+  '/pumpset': '/solutions/practica-foundation-low-cost-pump-set',
+  '/leowood': '/solutions/prakti-design-lab-leo-wood-stove',
+  '/learnl': '/solutions/project-h-design-learning-landscape',
+  '/elephpump': '/solutions/pump-aid-elephant',
+  '/elephtoilet': '/solutions/pump-aid-elephant-toilet',
+  '/qdrum': '/solutions/q-drum',
+  '/qbotix': '/solutions/qbotix-tracking-system',
+  '/quetsol': '/solutions/quetsol-kit-q1',
+  '/raspberrypi': '/solutions/raspberry-pi-foundation',
+  '/rdiceramic': '/solutions/resource-development-international-ceramic-water-filtration-system',
+  '/m-pesa': '/solutions/safaricom-m-pesa',
+  '/sr_1000': '/solutions/safe-water-systems-sunray-1000-solar-pasteurizer',
+  '/sr30-tel': '/solutions/safe-water-systems-sunray-30-portable-pasteurizer',
+  '/solarschool-tel': '/solutions/samsung-solar-powered-internet-school',
+  '/bharatstove-tel': '/solutions/samuchit-enviro-tech-bharatlaxmi-stove',
+  '/esfintel': '/solutions/seachar-estufa-finca-farm-stove',
+  '/ltrlight': '/solutions/other-solar-bottle-bulb',
+  '/cstart': '/solutions/access-bio-carestart-malaria-professional-kit',
+  '/adlens': '/solutions/adlens-adjustable-eyeglasses',
+  '/mobkiosk': '/solutions/african-renewable-energy-distributor-mobile-kiosk-platform',
+  '/agroam': '/solutions/agroam',
+  '/ricestove': '/solutions/other-rice-husk-stove-agni-star-biomass-gas',
+  '/ram': '/solutions/alternative-indigenous-development-foundation-inc-aidfi-ram-pump',
+  '/ampair': '/solutions/ampair-energy-limited-100-wind-turbine',
+  '/sampada': '/solutions/appropriate-rural-technology-initiative-sampada',
+  '/jaipur-foot': '/solutions/bhagwan-mahaveer-viklang-sahayata-samiti-jaipur-foot',
+  '/dfa-liver': '/solutions/diagnostics-for-all-liver-function-test',
+  '/janma': '/solutions/ayzh-janma-clean-birth-kit',
+  '/dm-firefly': '/solutions/design-that-matters-firefly-newborn-phototherapy-device',
+  '/ubislateci': '/solutions/datawind-ubislate7ci-tablet',
+  '/GravityLight': '/solutions/deciwatt-gravitylight',
+  '/jaipurknee': '/solutions/design-revolution-jaipur-knee-remotion',
+  '/dmfirefly': '/solutions/design-that-matters-firefly-newborn-phototherapy-device',
+  '/ivdv': '/solutions/design-that-matters-iv-drip-controller',
+  '/sieofp': '/solutions/design-that-matters-kinkajou-microfilm-projector',
+  '/driptech': '/solutions/driptech-irrigation-for-small-plot-farmers',
+  '/eco': '/solutions/ecobuild-nigeria-ecobeam-building-technology',
+  '/onedollarglasses': '/solutions/eindollarbrille-e-v-onedollarglasses',
+  '/einz': '/solutions/einztein',
+  '/emwarm': '/solutions/embrace-infant-warmer',
+  '/streamengine': '/solutions/energy-systems-and-design-stream-engine',
+  '/esoko': '/solutions/esoko',
+  '/georadaregd': '/solutions/estudio-g-and-d-georadar-ground-penetrating-radar',
+  '/magsul': '/solutions/every-woman-child-magnesium-sulfate-to-fight-preeclampsia-and-eclampsia',
+  '/eyenetra': '/solutions/eyenetra-netra-g',
+  '/fairsay': '/solutions/fairsay-e-campaigning-tools',
+  '/readyset': '/solutions/fenix-intl-readyset-solar-kit',
+  '/frpap': '/solutions/fenugreen-freshpaper',
+  '/fwtext': '/solutions/flat-world-knowledge-textbooks',
+  '/solmuscle': '/solutions/flexiway-solar-solutions-muscle',
+  '/fwm': '/solutions/free-wheelchair-mission-custom',
+  '/indigo': '/solutions/freeplay-energy-indigo-plus-solar-wind-up-lantern-and-charger',
+  '/eliosolar': '/solutions/independent-designer-eliodomestico-solar-water-distiller',
+  '/biochar': '/solutions/geoecology-energy-organisation-geo-biochar-production-and-application',
+  '/geomaghstove': '/solutions/geoecology-energy-organisation-magh-3g-good-stove',
+  '/bpcpc': '/solutions/global-cycle-solutions-bicycle-powered-cell-phone-charger',
+  '/lfc': '/solutions/grit-leveraged-freedom-chair',
+  '/azadi': '/solutions/azadi-azadipads',
+  '/jana': '/solutions/jana-care',
+  '/vitagoat': '/solutions/malnutrition-matters-vitagoat',
+  '/rucksack': '/solutions/rucksackspende-de-medical-rucksack',
+  '/busse': '/solutions/buses-hospital-disposables-busse-obstetrical-kit',
+  '/hemoLink': '/solutions/tasso-hemolink',
+  '/sampada': '/solutions/appropriate-rural-technology-initiative-sampada',
+  '/artibio': '/solutions/appropriate-rural-technology-institute-arti-biogas-plant',
+  '/riverice': '/solutions/aprotec-river-ice-cooling-system',
+  '/rcap': '/solutions/aqua-aero-watersystems-raincap-system',
+  '/assuredlabor': '/solutions/assured-labor',
+  '/wcone': '/solutions/augustin-produktentwicklung-watercone',
+  '/bpplus': '/solutions/backpack-plus',
+  '/basfnets': '/solutions/basf-se-interceptor-nets',
+  '/betta500': '/solutions/betta-lights-pty-500-solar-street-light',
+  '/solio': '/solutions/better-energy-systems-solio-classic',
+  '/jaipur': '/solutions/bhagwan-mahaveer-viklang-sahayata-samiti-jaipur-foot',
+  '/rotavac': '/solutions/bharat-biotech-rotavac',
+  '/brunton': '/solutions/brunton-solarrolls',
+  '/tank': '/solutions/butyl-products-emergency-water-storage-units',
+  '/pursachets': '/solutions/p-and-g-children-s-safe-drinking-water-pur-purification-sachets',
+  '/mooncocoon': '/solutions/cal-earth-geltaftan-foundation-moon-cocoon-eco-dome',
+  '/cvision': '/solutions/centre-for-vision-in-the-developing-world-child-self-adjustable-eyeglasses',
+  '/childline': '/solutions/childline-kenya-african-child-helpline',
+  '/codecademy': '/solutions/codecademy',
+  '/colalife': '/solutions/colalife-aidpod',
+  '/saha': '/solutions/saha-global-community-water-solutions',
+  '/connex': '/solutions/connexions',
+  '/mightylight': '/solutions/cosmos-ignite-innovations-mightylight',
+  '/coursera':'/solutions/coursera',
+  '/curriki': '/solutions/curriki',
+  '/drevbrill': '/solutions/d-rev-brilliance-neonatal-jaundice-treatment',
+  '/daktari': '/solutions/daktari-diagnostics-cd4',
+  '/ubislate7cplus': '/solutions/datawind-ubislate7c-plus-tablet-smartphone',
+  '/rqefjj': '/solutions/global-village-shelters-shelter',
+  '/laborlink': '/solutions/good-world-solutions-labor-link',
+  '/vilphone': '/solutions/grameen-foundation-technology-centre-village-phone',
+  '/gshaktistove': '/solutions/grameen-shakti-improved-cooking-stove',
+  '/solarhome': '/solutions/grameen-shakti-solar-home-system',
+  '/seds': '/solutions/greenicles-solar-electricity-design-service',
+  '/sklantern': '/solutions/greenlight-planet-sun-king-solar-powered-lantern',
+  '/packh2o': '/solutions/greif-packh2o',
+  '/glife': '/solutions/grundfos-lifelink',
+  '/csa': '/solutions/gujarat-energy-development-agency-community-solar-cooker',
+  '/gedaspump': '/solutions/gujarat-energy-development-agency-solar-voltaic-pump',
+  '/harpswellfdn': '/solutions/harpswell-foundation',
+  '/drybath': '/solutions/headboy-industries-drybath',
+  '/helpeople': '/solutions/health-education-library-for-people-help',
+  '/wadi': '/solutions/helioz-wadi',
+  '/hilight': '/solutions/hination-hilight-by',
+  '/hippo': '/solutions/hippo-water-roller-project',
+  '/bpack': '/solutions/b-energy-biogas-backpack-pack',
+  '/hif': '/solutions/hope-in-flight',
+  '/horizonint': '/solutions/horizon-international-solutions-site',
+  '/hifbot': '/solutions/hug-it-foward-bottle-schools',
+  '/hbproject': '/solutions/human-bionic-project',
+  '/crds': '/solutions/ichigo-holdings-co-ltd-aquanext-division-compact-ro-desalination-system',
+  '/iawbiosand': '/solutions/ideas-at-work-bio-sand-filter',
+  '/rovai': '/solutions/ideas-at-work-rovai-rope-pump',
+  '/hcdkit': '/solutions/ideo-org-human-centered-design-toolkit',
+  '/ila': '/solutions/ila-trust-mobile-clinics-and-electronic-medical-record-system-to-improve-quality-of-living',
+  '/ilandtube': '/solutions/iland-green-technologies-tube-portable-solar-charger-kit',
+  '/mandarin': '/solutions/illumination-headquarters-limited-mandarin-ultra-solar-light',
+  '/1pkwwss': '/solutions/innovations-in-international-health-solarclave-solar-autoclave',
+  '/snsgyan': '/solutions/innoz-technologies-smsgyan',
+  '/geochat': '/solutions/instedd-geochat',
+  '/coco': '/solutions/instituto-de-medicina-tropical-coconuts-used-to-prevent-malaria',
+  '/kbtread': '/solutions/ide-treadle-pump',
+  '/avaz': '/solutions/invention-labs-avaz',
+  '/askit': '/solutionsjhpiego-antenatal-screening-kit',
+  '/viacryo': '/solutions/johns-hopkins-university-via-cryo',
+  '/sages': '/solutions/johns-hopkins-university-applied-physics-laboratory-sages-suite-for-automated-global-electronic-biosurveillance',
+  '/jompywater': '/solutions/jompy-water-boiler',
+  '/skillnova': '/solutions/kalibrr-skillnova',
+  '/moonlight': '/solutions/kamworks-moonlight',
+  '/kirabu': '/solutions/karibu-solar-power',
+  '/khan': '/solutions/khan-academy',
+  '/kiblock': '/solutions/kickstart-international-moneymaker-block-press',
+  '/solutions/path-clean-delivery-kit/': '/solutions/path-clean-delivery-kit',
+  '/tippytap': '/solutions/tippytap-org-tippy-tap',
+  '/sunking': '/solutions/greenlight-planet-sun-king-solar-powered-lantern',
+  '/cornshell': '/solutions/mit-d-lab-corn-sheller',
+  '/brck': '/solutions/ushahidi-brck',
+  '/pallethouse': '/solutions/i-beam-design-pallet-house',
+  '/childvision': '/solutions/centre-for-vision-in-the-developing-world-child-self-adjustable-eyeglasses',
+  '/mmhip': '/solutions/kickstart-international-moneymaker-hip-pump',
+  '/ufu3wo': '/solutions/kickstart-international-super-moneymaker-pump',
+  '/komaza': '/solutions/komaza-mit',
+  '/vfridge': '/solutions/kxn-nigeria-solar-vaccine-refrigerator',
+  '/kyotobag': '/solutions/kyoto-energy-bag',
+  '/kyotobox': '/solutions/kyoto-energy-box',
+  '/kyotobfly': '/solutions/kyoto-energy-butterfly',
+  '/kyotoflash': '/solutions/kyoto-energy-flash',
+  '/kyotosuntrap': '/solutions/kyoto-energy-suntrap',
+  '/kyototurbo': '/solutions/kyoto-energy-turbo',
+  '/ecar': '/solutions/lawrence-berkeley-national-lab-usa-ecar-arsenic-safe-drinking-water',
+  '/lazarianwh': '/solutions/lazarian-world-homes',
+  '/leafbed': '/solutions/leaf-supply-leafbed-emergency-bed',
+  '/pharox': '/solutions/lemnis-lighting-pharox-solar-kit',
+  '/lgtphone': '/solutions/lgtmedical-pulse-oximeter',
+  '/mobilemed': '/solutions/medic-mobile',
+  '/biohavensust': '/solutions/midwest-floating-island-sustology-improve-water-quality-using-recycled-plastics',
+  '/hymini': '/solutions/miniwiz-sustainable-energy-dev-hymini-biscuit',
+  '/mitcourse': '/solutions/mit-opencourseware',
+  '/mitk12': '/solutions/massachusetts-institute-of-technology-mit-plus-k12',
+  '/mitgrassmap': '/solutions/mit-media-lab-grassroots-mapping-balloon-aerial-photography',
+  '/konbit': '/solutions/mit-media-lab-konbit',
+  '/mobi-ultra': '/solutions/mobisante-mobius-sp1-ultrasound-system',
+  '/m2m': '/solutions/mothers2mothers',
+  '/mxshare': '/solutions/movirtu-limited-mxshare',
+};
+location = redirects[(location.pathname + location.search).toLowerCase()] || '/';
+</script>
 </head>
 <body>
-  <div data-render-layout="main-layout"><div id="modal-overlay"></div>
-<header id="header" class="section section-header">
-  <div class="container">
-    <div class="row row-header">
-      <div class="column">
-        <a href="./" onclick="$('.menu-header').removeClass('show')"><div class="logo logo-techxlab"></div></a>
-      </div>
-      <div class="column column-header-right">
-        <div id="hamburgerButton" class="hamburger" onclick="$('.menu-header').toggleClass('show')">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-        <!-- <ul class="menu menu-header">
-          <li class="menu-item"><a href="./sign-up/">Sign Up</a></li>
-          <li class="menu-item"><a href="./sign-in/">Sign In</a></li>
-        </ul> -->
-        <ul class="menu menu-header">
-            <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="./solutions/">Find Solutions</a>
-            </li>
-            <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="./add-solutions/">Add Solutions</a>
-            </li>
-            <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="./donate/">Take Action</a>
-            </li>
-            <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="./project-accelerator/">Project Accelerator</a>
-            </li>
-            <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="./stories/">Blog</a>
-            </li>
-            <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="./about-us/">About Us</a>
-            </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</header>
-
-<section id="header-shim" class="section-header-shim">
-</section>
-
-<div data-render-page="banner"><section id="banner" class="section-banner">
-  <div class="section-banner-wedge">
-    <img src="./img/construction-site.jpg" alt="">
-  </div>
-  <div class="container container-collapse container-banner">
-    <div class="row row-banner">
-      <div class="column column-banner-feature">
-        <h1 id="oops-">Oops!</h1>
-<p>We&#39;re sorry - this page was not found.</p>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="content" class="section section-content">
-  <div class="container">
-    <div class="row">
-      <div class="column">
-        <div data-render-html="">&nbsp;</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-</div>
-
-<footer id="footer" class="section section-footer">
-  <div class="container">
-    <div class="row">
-      <div class="column column-footer-left">
-        <a class="elem" href="http://www.guidestar.org/organizations/26-3414936/technology-exchange-lab.aspx" target="_blank"><img src="./img/guidestar-silver.png" alt=""></a>
-        <a class="elem" href="http://greatnonprofits.org/org/technology-exchange-lab-inc" target="_blank"><img src="./img/top-rated.png" alt=""></a>
-      </div>
-      <div class="column">
-        <ul class="menu menu-footer">
-          <li class="menu-item"><a href="./prizes-for-ideas/">Prizes for Ideas</a></li>
-          <li class="menu-item"><a href="./funding-resources/">Funding Resources</a></li>
-          <li class="menu-item"><a href="./faqs/">FAQs</a></li>
-          <li class="menu-item"><a href="./terms-of-service/">Terms of Service</a></li>
-          <li class="menu-item"><a href="./privacy-policy/">Privacy Policy</a></li>
-          <li class="menu-item"><a href="./join-us/">Join Us</a></li>
-        </ul>
-        <p class="elem elem-footer-center">
-          The Technology Exchange Lab, Inc. | Cambridge Innovation Center<br>
-          1 Broadway, 14th Floor | Cambridge, MA 02142, USA
-        </p>
-        <p class="elem elem-footer-legal">
-          TEL is a registered non-proﬁt, tax-exempt charity under section 501(c)(3) of the U.S. Internal Revenue Code. Donations are tax deductible to the extent allowed by U.S. law. TEL is a public resource with no commercial allegiance.
-        </p>
-      </div>
-      <div class="column column-footer-right">
-        <ul class="menu menu-footer">
-          <li class="menu-item menu-item-footer-icon"><a class="icon-social facebook-white" href="https://www.facebook.com/techxlab" target="_blank"></a></li>
-          <li class="menu-item menu-item-footer-icon"><a class="icon-social twitter-white" href="https://twitter.com/TechExLab" target="_blank"></a></li>
-          <li class="menu-item menu-item-footer-icon"><a class="icon-social linkedin-white" href="https://www.linkedin.com/company/technology-exchange-lab-inc-" target="_blank"></a></li>
-          <li class="menu-item menu-item-footer-icon"><a class="icon-social mail-white" href="mailto:contact@techxlab.org"></a></li>
-        </ul>
-        <a class="elem button" href="http://technologyexchangelab.us8.list-manage2.com/subscribe?u=1842edb42ca5e2996be75f5b8&id=14bb1b764d" target="_blank">Get Updates</a>
-        <a class="elem button" href="mailto:contact@techxlab.org">Contact Us</a>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-   ga('create', 'UA-27156481-2', 'auto');
-   ga('send', 'pageview');
-</script>
+<div data-render-html="/404"><h1 id="we-re-sorry-that-url-was-not-found-">We&#39;re sorry - that URL was not found.</h1>
+<p>Please check out our new website at</p>
+<p><a href="//www.techxlab.org/">www.techxlab.org</a></p>
 </div>
 </body>
 </html>

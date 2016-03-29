@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="google-site-verification" content="HmxALOljrFkNvP-x61Dp7hnsQXMGZLpIAA5tGP--t_w" />
   
 
   <title>Esoko</title>
@@ -43,22 +44,22 @@
         </ul> -->
         <ul class="menu menu-header">
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../solutions/">Find Solutions</a>
+              <a href="../solutions/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Find Solutions', 'eventValue': 1 });">Find Solutions</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../add-solutions/">Add Solutions</a>
+              <a href="../add-solutions/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Add Solutions', 'eventValue': 1 });">Add Solutions</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../donate/">Take Action</a>
+              <a href="../donate/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Take Action', 'eventValue': 1 });">Take Action</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../project-accelerator/">Project Accelerator</a>
+              <a href="../project-accelerator/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Project Accelerator', 'eventValue': 1 });">Project Accelerator</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../stories/">Blog</a>
+              <a href="../stories/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Blog', 'eventValue': 1 });">Blog</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../about-us/">About Us</a>
+              <a href="../about-us/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'About Us', 'eventValue': 1 });">About Us</a>
             </li>
         </ul>
       </div>
@@ -72,30 +73,46 @@
 <div data-render-page="solution"><section id="categories-menu" class="section-categories-menu">
   <div class="container">
     <ul class="row row-categories-menu-items">
-<li class="menu-item menu-item-banner-solutions">
-          <a href="../solutions/categories/" >All Solutions</a>
-        </li>
-<li class="menu-item menu-item-banner-solutions">
-          <a href="../solutions/categories/water/" >Water &amp; Sanitation</a>
-        </li>
-<li class="menu-item menu-item-banner-solutions">
-          <a href="../solutions/categories/agriculture/" >Agriculture &amp; Tools</a>
-        </li>
-<li class="menu-item menu-item-banner-solutions">
-          <a href="../solutions/categories/energy/" >Energy &amp; Cooking</a>
-        </li>
-<li class="menu-item menu-item-banner-solutions">
-          <a href="../solutions/categories/medical/" >Health &amp; Medical Care</a>
-        </li>
-<li class="menu-item menu-item-banner-solutions">
-          <a href="../solutions/categories/education/" >Education &amp; Connectivity</a>
-        </li>
-<li class="menu-item menu-item-banner-solutions">
-          <a href="../solutions/categories/housing/" >Housing &amp; Transport</a>
-        </li>
-<li class="menu-item menu-item-banner-solutions">
-          <a href="../solutions/categories/other/" >Additional Solutions</a>
-        </li>
+      <li class="menu-item menu-item-banner-solutions">
+        <div class ="top-cat">
+        <a href="../solutions/categories/all-solutions/" onclick="ga('send', 'event', {'eventCategory': 'Solution Categories',  'eventAction': 'click', 'eventLabel': 'All Solutions', 'eventValue': 5 });">All Solutions</a>
+        </div>
+      </li>
+      <li class="menu-item menu-item-banner-solutions">
+        <div class ="top-cat">
+        <a href="../solutions/categories/water/" onclick="ga('send', 'event', {'eventCategory': 'Solution Categories',  'eventAction': 'click', 'eventLabel': 'Water & Sanitation', 'eventValue': 5 });">Water &amp; Sanitation</a>
+        </div>
+      </li>
+      <li class="menu-item menu-item-banner-solutions">
+        <div class ="top-cat">
+        <a href="../solutions/categories/energy/" onclick="ga('send', 'event', {'eventCategory': 'Solution Categories',  'eventAction': 'click', 'eventLabel': 'Energy & Cooking', 'eventValue': 5 });">Energy &amp; Cooking</a>
+        </div>
+      </li>
+      <li class="menu-item menu-item-banner-solutions">
+        <div class ="top-cat">
+        <a href="../solutions/categories/medical/" onclick="ga('send', 'event', {'eventCategory': 'Solution Categories',  'eventAction': 'click', 'eventLabel': 'Health & Medical Care', 'eventValue': 5 });">Health &amp; Medical Care</a>
+        </div>
+      </li>
+      <li class="menu-item menu-item-banner-solutions">
+        <div class ="top-cat">
+        <a href="../solutions/categories/agriculture/" onclick="ga('send', 'event', {'eventCategory': 'Solution Categories',  'eventAction': 'click', 'eventLabel': 'Agriculture & Tools', 'eventValue': 5 });">Agriculture &amp; Tools</a>
+        </div>
+      </li>
+      <li class="menu-item menu-item-banner-solutions">
+        <div class ="top-cat">
+        <a href="../solutions/categories/education/" onclick="ga('send', 'event', {'eventCategory': 'Solution Categories',  'eventAction': 'click', 'eventLabel': 'Education & Connectivity', 'eventValue': 5 });">Education &amp; Connectivity</a>
+        </div>
+      </li>
+      <li class="menu-item menu-item-banner-solutions">
+        <div class ="top-cat">
+        <a href="../solutions/categories/housing/" onclick="ga('send', 'event', {'eventCategory': 'Solution Categories',  'eventAction': 'click', 'eventLabel': 'Housing & Transport', 'eventValue': 5 });">Housing &amp; Transport</a>
+        </div>
+      </li>
+      <li class="menu-item menu-item-banner-solutions">
+        <div class ="top-cat">
+        <a href="../solutions/categories/other/" onclick="ga('send', 'event', {'eventCategory': 'Solution Categories',  'eventAction': 'click', 'eventLabel': 'Additional Solutions', 'eventValue': 5 });">Additional Solutions</a>
+        </div>
+      </li>
     </ul>
   </div>
 </section>
@@ -106,31 +123,42 @@
     <div class="row">
       <div class="column">
         <h1>Esoko</h1>
-        <h2>Esoko</h2>
+        <h2 style="color: #638fc3;">Esoko</h2>
       </div>
     </div>
 
     <div class="row">
-
       <div class="column column-solution-left">
         <img src="http://images.techxlab.org/ast/284-esoko-logo.png" alt="Esoko">
-          <h3>Contact Solution Provider</h3>
-          <div data-render-html="/solutions/esoko#contact"><p>Mark Davies<br>Esoko<br>Accra<br>Ghana<br>+233 30 221 1611<br><a href="mailto:ghana@esoko.com">ghana@esoko.com</a>  </p>
+      <a  class="button"
+          onclick="$('.solution-provider').toggle(); ga('send', 'event', {'eventCategory': 'SP-Contact-Info',  'eventAction': 'click', 'eventLabel': 'Esoko', 'eventValue': 10 });"
+          style="cursor:pointer; background-color: #F2A028;font-size: 15pt; letter-spacing: 0px; margin-top: 20px;margin-bottom: 20px;text-transform: none;">
+          Contact Solution Provider
+      </a>
+
+        <div class="solution-provider" style="display:none;">
+
+             <h3>Solution Provider</h3>
+             <div data-render-html="/solutions/esoko#contact"><p>Mark Davies<br>Esoko<br>Accra<br>Ghana<br>+233 30 221 1611<br><a href="mailto:ghana@esoko.com">ghana@esoko.com</a>  </p>
 </div>
+             <a href=""></a>
+        </div>
+        
+
       </div>
 
       <div class="column column-solution-right">
         <h3>Solution Overview &amp; Benefits</h3>
-        <div data-render-html="/solutions/esoko"><p>Esoko is a technology platform and consulting service that helps organizations profile people and manage the information flows between them. Esoko&#39;s focus is on agricultural value chains with the explicit goal of improving the transparency of markets and the operational efficiency of organizations. The founders believe mobile phones provide an unprecedented and disruptive opportunity to change how markets work for both businesses and consumers. </p>
-<p>On one hand, Esoko collects and provides content such as prices, bids and offers, weather, and agricultural tips to which users can subscribe. On the other, Esoko provides a powerful set of tools so that organizations can manage their own information and content: not only pushing out alerts and advisories to the field, but also tracking information from the field (like activities, compliance, profiles). </p>
-<p>Smallholder farmers can sign up to Esoko to receive a package of weekly advisory services. This typically consists of current market prices, matching bids and offers, weather forecasts, and news and tips. 
+        <div data-render-html="/solutions/esoko"><p>Esoko is a technology platform and consulting service that helps organizations profile people and manage the information flows between them. Esoko&#39;s focus is on agricultural value chains with the explicit goal of improving the transparency of markets and the operational efficiency of organizations. The founders believe mobile phones provide an unprecedented and disruptive opportunity to change how markets work for both businesses and consumers.</p>
+<p>On one hand, Esoko collects and provides content such as prices, bids and offers, weather, and agricultural tips to which users can subscribe. On the other, Esoko provides a powerful set of tools so that organizations can manage their own information and content: not only pushing out alerts and advisories to the field, but also tracking information from the field (like activities, compliance, profiles).</p>
+<p>Smallholder farmers can sign up to Esoko to receive a package of weekly advisory services. This typically consists of current market prices, matching bids and offers, weather forecasts, and news and tips.
 Not only can farmers negotiate better prices, choose different markets, or time sales better, but they may also participate in outgrower schemes through Esoko profiling and reputational history. The goal is simply to put more money into the hands of smallholder farmers, and try to address the information asymmetry that exists where farmers are frequently disadvantaged price-takers, often selling at a loss. After receiving better information, income improvements for farmers are estimated to be between 10-30%. Sometimes individual sales to new markets can increase by 100%. Esoko is not trying to remove the important role that traders must continue to play, but believes a more transparent system will reduce the overall time to market for goods, improve margins for all, and create an ecosystem of facilitation and brokering.</p>
 </div>
 
           <h3>History &amp; Development</h3>
-          <div data-render-html="/solutions/esoko#history-and-development"><p>Based in Mauritius and Ghana, Esoko is a private business, focused on changing the way markets work through innovative mobile solutions. Esoko was established in 2005 simply to collect and distribute market prices via SMS, and over the years the team and business has evolved. </p>
-<p>Today, Esoko is a team of 60, half of whom are building the technology and the other half focused on providing consulting and support services to our partners and clients across the world. Financed privately by two individuals, the International Finance Corporation (IFC) and the Soros Economic Development Fund (SEDF), Esoko&#39;s team believes that private sector service organizations, which are accountable to clients for their revenues and long-term survival, are an effective means of development. Esoko is focused on client needs, professional services, fiscal discipline and social change. The team is an ambitious, animated, committed and fun group of young technology pioneers who believe that the scale and opportunity of African Agriculture is irresistible. </p>
-<p>Esoko has a diverse range of partners, including international organizations, businesses, NGOs, research institutions, and mobile network operators (MNOs), throughout the globe. </p>
+          <div data-render-html="/solutions/esoko#history-and-development"><p>Based in Mauritius and Ghana, Esoko is a private business, focused on changing the way markets work through innovative mobile solutions. Esoko was established in 2005 simply to collect and distribute market prices via SMS, and over the years the team and business has evolved.</p>
+<p>Today, Esoko is a team of 60, half of whom are building the technology and the other half focused on providing consulting and support services to our partners and clients across the world. Financed privately by two individuals, the International Finance Corporation (IFC) and the Soros Economic Development Fund (SEDF), Esoko&#39;s team believes that private sector service organizations, which are accountable to clients for their revenues and long-term survival, are an effective means of development. Esoko is focused on client needs, professional services, fiscal discipline and social change. The team is an ambitious, animated, committed and fun group of young technology pioneers who believe that the scale and opportunity of African Agriculture is irresistible.</p>
+<p>Esoko has a diverse range of partners, including international organizations, businesses, NGOs, research institutions, and mobile network operators (MNOs), throughout the globe.</p>
 </div>
 
           <h3>Availability</h3>
@@ -144,9 +172,13 @@ Not only can farmers negotiate better prices, choose different markets, or time 
 
         <iframe src="//www.youtube.com/embed/YJ2GMkyjLSk" frameborder="0"></iframe>
       </div>
-
-
     </div>
+  </div>
+</section>
+
+<section id="contact-PA" class="section section-contact-PA">
+  <div class="container">
+    <p>Need help finding solutions that respond to your unique development challenges? Apply through our <a href="/project-accelerator/">Project Accelerator</a> service or <a href="mailto:contact@techxlab.org">Contact us</a> directly for needs-based project consulting.</p>
   </div>
 </section>
 </div>
@@ -172,7 +204,10 @@ Not only can farmers negotiate better prices, choose different markets, or time 
           1 Broadway, 14th Floor | Cambridge, MA 02142, USA
         </p>
         <p class="elem elem-footer-legal">
-          TEL is a registered non-proﬁt, tax-exempt charity under section 501(c)(3) of the U.S. Internal Revenue Code. Donations are tax deductible to the extent allowed by U.S. law. TEL is a public resource with no commercial allegiance.
+          TEL is a registered non-proﬁt, tax-exempt charity under section 501(c)(3) of the U.S. Internal Revenue Code. <a href="/donate/"> Donations </a>are tax deductible to the extent allowed by U.S. law. TEL is a public resource with no commercial allegiance.
+        </p>
+        <p class="elem elem-footer-copy">
+          &copy 2016 Technology Exchange Lab, Inc. | <a href="../photo-credits">Photo Credits</a>
         </p>
       </div>
       <div class="column column-footer-right">
@@ -196,6 +231,21 @@ Not only can farmers negotiate better prices, choose different markets, or time 
    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
    ga('create', 'UA-27156481-2', 'auto');
    ga('send', 'pageview');
+</script>
+<script type="application/ld+json">
+{
+ "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "name" : "Technology Exchange Lab",
+  "alternateName" : "TechXLab",
+  "url" : "http://www.techxlab.org",
+  "logo" : "http://www.techxlab.org/img/tel.png",
+  "sameAs" : [
+    "http://www.facebook.com/TechXLab",
+    "https://www.linkedin.com/company/technology-exchange-lab-inc-",
+    "https://twitter.com/TechExLab"
+  ]
+}
 </script>
 </div>
 </body>

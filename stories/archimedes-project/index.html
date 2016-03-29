@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="google-site-verification" content="HmxALOljrFkNvP-x61Dp7hnsQXMGZLpIAA5tGP--t_w" />
   
 
   <title>Stories Archimedes Project</title>
@@ -43,22 +44,22 @@
         </ul> -->
         <ul class="menu menu-header">
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../../solutions/">Find Solutions</a>
+              <a href="../../solutions/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Find Solutions', 'eventValue': 1 });">Find Solutions</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../../add-solutions/">Add Solutions</a>
+              <a href="../../add-solutions/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Add Solutions', 'eventValue': 1 });">Add Solutions</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../../donate/">Take Action</a>
+              <a href="../../donate/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Take Action', 'eventValue': 1 });">Take Action</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../../project-accelerator/">Project Accelerator</a>
+              <a href="../../project-accelerator/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Project Accelerator', 'eventValue': 1 });">Project Accelerator</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../../stories/">Blog</a>
+              <a href="../../stories/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Blog', 'eventValue': 1 });">Blog</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../../about-us/">About Us</a>
+              <a href="../../about-us/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'About Us', 'eventValue': 1 });">About Us</a>
             </li>
         </ul>
       </div>
@@ -71,17 +72,28 @@
 
 <div data-render-page="story"><section id="banner" class="section-banner">
   <div class="section-banner-wedge">
-    <img src="../../img/woman.jpg" alt="">
+    <img src="../../img/archimedes-project-banner.png" alt="">
   </div>
 </section>
 
-<section id="content" class="section section-content">
+
+<section id="story" class="section section-solution">
   <div class="container">
     <div class="row">
-      <div class="column">
-        <div data-render-html="/stories/archimedes-project/"><h1 id="the-archimedes-project-to-combat-cholera-in-haiti">The Archimedes Project to Combat Cholera in Haiti</h1>
-<p>Posted by Dan Swann 24 October 2013 12:00 am</p>
-<p>A Talk with Founder Faith Wallace-Gadsden</p>
+      <div class="column column-story-left">
+        <img src="/img/woman.jpg">
+          <div data-render-html="/stories/archimedes-project/#caption">&nbsp;</div>
+        <div class="story-author">
+            <a href="../../about-us/"><img src="../../img/team-pics/dan-swann.jpg" alt="dan-swann"></a>
+            <div data-render-html="/stories/archimedes-project/#author"><p><a href="../../about-us/">Dan Swann</a><br>24 October 2013</p>
+</div>
+        </div>
+      </div>
+
+      <div class="column column-story-right">
+          <div data-render-html="/stories/archimedes-project/#title"><h1 id="-the-archimedes-project-to-combat-cholera-in-haiti-stories-archimedes-project-"><a href="../../stories/archimedes-project/">The Archimedes Project to Combat Cholera in Haiti</a></h1>
+</div>
+          <div data-render-html="/stories/archimedes-project/#body"><p>A Talk with Founder Faith Wallace-Gadsden</p>
 <p>The Archimedes Project is holding a kickoff event November 1-3 at Impact Hub Boston and Cambridge Innovation Center that will bring together people from several sectors – including technology, health, disaster relief, and academia – to form a social enterprise aimed at eliminating cholera in Haiti.</p>
 <p>There have been over 8,000 deaths from cholera since the recent widespread outbreak began in 2010. Archimedes Project founder Faith Wallace notes that, while many interventions have been successful in reducing the number of infections and deaths, the disease has yet to be eliminated from Haiti. Without a stronger response, the epidemic is likely to persist.</p>
 <p>“Conditions are perfect for cholera: 80 percent of the people lack sanitation coverage in Haiti, and 50 percent lack access to clean water. If nothing changes to treat the problem, the disease will continue to devastate Haiti as a yearly endemic as it has Bangladesh.”</p>
@@ -114,7 +126,6 @@
     </div>
   </div>
 </section>
-
 </div>
 
 <footer id="footer" class="section section-footer">
@@ -138,7 +149,10 @@
           1 Broadway, 14th Floor | Cambridge, MA 02142, USA
         </p>
         <p class="elem elem-footer-legal">
-          TEL is a registered non-proﬁt, tax-exempt charity under section 501(c)(3) of the U.S. Internal Revenue Code. Donations are tax deductible to the extent allowed by U.S. law. TEL is a public resource with no commercial allegiance.
+          TEL is a registered non-proﬁt, tax-exempt charity under section 501(c)(3) of the U.S. Internal Revenue Code. <a href="/donate/"> Donations </a>are tax deductible to the extent allowed by U.S. law. TEL is a public resource with no commercial allegiance.
+        </p>
+        <p class="elem elem-footer-copy">
+          &copy 2016 Technology Exchange Lab, Inc. | <a href="../../photo-credits">Photo Credits</a>
         </p>
       </div>
       <div class="column column-footer-right">
@@ -162,6 +176,21 @@
    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
    ga('create', 'UA-27156481-2', 'auto');
    ga('send', 'pageview');
+</script>
+<script type="application/ld+json">
+{
+ "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "name" : "Technology Exchange Lab",
+  "alternateName" : "TechXLab",
+  "url" : "http://www.techxlab.org",
+  "logo" : "http://www.techxlab.org/img/tel.png",
+  "sameAs" : [
+    "http://www.facebook.com/TechXLab",
+    "https://www.linkedin.com/company/technology-exchange-lab-inc-",
+    "https://twitter.com/TechExLab"
+  ]
+}
 </script>
 </div>
 </body>

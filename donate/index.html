@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="google-site-verification" content="HmxALOljrFkNvP-x61Dp7hnsQXMGZLpIAA5tGP--t_w" />
   
 
   <title>Donate</title>
@@ -43,22 +44,22 @@
         </ul> -->
         <ul class="menu menu-header">
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../solutions/">Find Solutions</a>
+              <a href="../solutions/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Find Solutions', 'eventValue': 1 });">Find Solutions</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../add-solutions/">Add Solutions</a>
+              <a href="../add-solutions/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Add Solutions', 'eventValue': 1 });">Add Solutions</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../donate/">Take Action</a>
+              <a href="../donate/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Take Action', 'eventValue': 1 });">Take Action</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../project-accelerator/">Project Accelerator</a>
+              <a href="../project-accelerator/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Project Accelerator', 'eventValue': 1 });">Project Accelerator</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../stories/">Blog</a>
+              <a href="../stories/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Blog', 'eventValue': 1 });">Blog</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../about-us/">About Us</a>
+              <a href="../about-us/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'About Us', 'eventValue': 1 });">About Us</a>
             </li>
         </ul>
       </div>
@@ -69,7 +70,7 @@
 <section id="header-shim" class="section-header-shim">
 </section>
 
-<div data-render-page="take-action"><section id="banner" class="section-banner">
+<div data-render-page="donate"><section id="banner" class="section-banner">
   <div class="section-banner-wedge">
     <img src="../img/women-farming.jpg" alt="">
   </div>
@@ -85,39 +86,38 @@
 </section>
 
   <section class="section section-summary">
-  <div class="container">
-    <h1>Donate</h1>
-    <div class="row">
-      <div class="column column-section-summary-left">
-        <img src="../img/women-holding-candles.jpg" alt="">
-      </div>
-      <div class="column column-section-summary-right">
-        <div data-render-html="/donate/#captions-caption-1"><p>TEL relies on supporters like you to sustain our work in delivering innovative solutions to the people that need them most.  As a registered 501(c)(3) organization, all contributions to the Technology Exchange Lab are tax-deductible.</p>
+    <div class="container">
+      <h1>Donate</h1>
+      <div class="row">
+        <div class="column column-section-summary-left">
+          <img src="../img/women-holding-candles.jpg" alt="">
+        </div>
+        <div class="column column-section-summary-right">
+          <div data-render-html="/donate/#captions-caption-1"><p>TEL relies on supporters like you to sustain our work in delivering innovative solutions to the people that need them most.  As a registered 501(c)(3) organization, all contributions to the Technology Exchange Lab are tax-deductible.</p>
 <p>All contributions made to TEL directly support programs that help satisfy basic human needs in the developing world, like access to clean water, education, adequate health care and more. You can easily make your tax-deductible donation:</p>
-<p>By Mail: send a check or money order to our office at:<br>Technology Exchange Lab<br>1 Broadway, 14th Floor<br>Cambridge, MA 02142  </p>
+<p><strong>By Mail</strong> send a check or money order to our office at:<br>Technology Exchange Lab<br>1 Broadway, 14th Floor<br>Cambridge, MA 02142  </p>
+<p><strong>Online</strong> via SocialSeam with any major credit card. Make your donation via SocialSeam by clicking the donate button, below.</p>
 </div>
-        <a class="button" href="https://socialseam.org/non_profits/303/donations/new">Donate</a>
+          <a class="button" href="https://socialseam.org/non_profits/303/donations/new">Donate</a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-
+  </section>
   <section class="section section-summary">
-  <div class="container">
-    <h1>Participate</h1>
-    <div class="row">
-      <div class="column column-section-summary-left">
-        <img src="../img/man-on-bicycle.jpg" alt="">
-      </div>
-      <div class="column column-section-summary-right">
-        <div data-render-html="/donate/#captions-caption-2"><p>Participate in TEL: a growing network of innovators, social enterprises, NGOs and developing-world communities who to share and discover sustainable solutions to problems of poverty.</p>
+    <div class="container">
+      <h1>Participate</h1>
+      <div class="row">
+        <div class="column column-section-summary-left">
+          <img src="../img/man-on-bicycle.jpg" alt="">
+        </div>
+        <div class="column column-section-summary-right">
+          <div data-render-html="/donate/#captions-caption-2"><p>Participate in TEL: a growing network of innovators, social enterprises, NGOs and developing-world communities to share and discover sustainable solutions to problems of poverty.</p>
 </div>
-        <a class="button" href="../sign-up/">Sign Up Today</a>
+          <a class="button" href="../sign-up/">Sign Up Today</a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-
+  </section>
 </div>
 
 <footer id="footer" class="section section-footer">
@@ -141,7 +141,10 @@
           1 Broadway, 14th Floor | Cambridge, MA 02142, USA
         </p>
         <p class="elem elem-footer-legal">
-          TEL is a registered non-proﬁt, tax-exempt charity under section 501(c)(3) of the U.S. Internal Revenue Code. Donations are tax deductible to the extent allowed by U.S. law. TEL is a public resource with no commercial allegiance.
+          TEL is a registered non-proﬁt, tax-exempt charity under section 501(c)(3) of the U.S. Internal Revenue Code. <a href="/donate/"> Donations </a>are tax deductible to the extent allowed by U.S. law. TEL is a public resource with no commercial allegiance.
+        </p>
+        <p class="elem elem-footer-copy">
+          &copy 2016 Technology Exchange Lab, Inc. | <a href="../photo-credits">Photo Credits</a>
         </p>
       </div>
       <div class="column column-footer-right">
@@ -165,6 +168,21 @@
    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
    ga('create', 'UA-27156481-2', 'auto');
    ga('send', 'pageview');
+</script>
+<script type="application/ld+json">
+{
+ "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "name" : "Technology Exchange Lab",
+  "alternateName" : "TechXLab",
+  "url" : "http://www.techxlab.org",
+  "logo" : "http://www.techxlab.org/img/tel.png",
+  "sameAs" : [
+    "http://www.facebook.com/TechXLab",
+    "https://www.linkedin.com/company/technology-exchange-lab-inc-",
+    "https://twitter.com/TechExLab"
+  ]
+}
 </script>
 </div>
 </body>

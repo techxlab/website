@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="google-site-verification" content="HmxALOljrFkNvP-x61Dp7hnsQXMGZLpIAA5tGP--t_w" />
   
 
   <title>Add Solutions</title>
@@ -43,22 +44,22 @@
         </ul> -->
         <ul class="menu menu-header">
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../solutions/">Find Solutions</a>
+              <a href="../solutions/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Find Solutions', 'eventValue': 1 });">Find Solutions</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../add-solutions/">Add Solutions</a>
+              <a href="../add-solutions/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Add Solutions', 'eventValue': 1 });">Add Solutions</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../donate/">Take Action</a>
+              <a href="../donate/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Take Action', 'eventValue': 1 });">Take Action</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../project-accelerator/">Project Accelerator</a>
+              <a href="../project-accelerator/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Project Accelerator', 'eventValue': 1 });">Project Accelerator</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../stories/">Blog</a>
+              <a href="../stories/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Blog', 'eventValue': 1 });">Blog</a>
             </li>
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
-              <a href="../about-us/">About Us</a>
+              <a href="../about-us/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'About Us', 'eventValue': 1 });">About Us</a>
             </li>
         </ul>
       </div>
@@ -87,18 +88,18 @@
 
 <section id="add-solutions" class="section section-add-solutions">
   <div class="container">
-    <div data-render-html="/add-solutions/"><h1 id="tell-us-about-your-solution">Tell us About your Solution</h1>
+    <div data-render-html="/add-solutions/"><h1 id="submit-a-solution-to-tel">Submit a solution to TEL</h1>
 <p>Once your solution has been submitted, our team will review all content to ensure that we provide unbiased information. Our curating process creates a level playing field for solution providers, while also empowering organizations and communities to find the solutions that best suit their unique needs.</p>
 </div>
     <div class="row">
-      <form id="add-solution-form" class="column column-add-solutions" novalidate="novalidate" action="https://tel-staging.herokuapp.com/server/form" method="POST" enctype="multipart/form-data">
+      <form id="add-solution-form" class="column column-add-solutions" novalidate="novalidate" action="https://tel-forms.herokuapp.com/server/form" method="POST" enctype="multipart/form-data">
         <div data-render-html="/add-solutions/#form"><p>
-<label for="name" class="required">Name of the solution, invention, or method:</label>
+<label for="name" class="required">Name of the solution, product, invention, or method:</label>
 <input required type="text" name="Name" id="name" class="required"></p>
 <p>
 <label for="how-it-works" class="required">Solution purpose and how it works (up to 300 words):</label>
 <textarea required name="How It Works" id="how-it-works" class="required"></textarea></p>
-<h2 id="technology-area">Technology Area</h2>
+<h2 id="solution-sector">Solution Sector</h2>
 
 <label class="radio"><input type="radio" name="Category" value="water">Water &amp; Sanitation</label>
 <label class="radio"><input type="radio" name="Category" value="agriculture">Agriculture &amp; Tools</label>
@@ -168,16 +169,16 @@
 <input type="file" name="Other File Attachment" id="other-file-attachment"></p>
 <h2 id="solution-details">Solution Details</h2>
 <p>
-<label for="history-and-development">Product history and development (up to 250 words):</label>
+<label for="history-and-development">Solution history and development (up to 250 words):</label>
 <textarea name="History and Development" id="history-and-development"></textarea>
 
-<label for="dimensions">Dimensions (approx):</label>
+<label for="dimensions">Approximate Dimensions (if physical product):</label>
 <input type="text" name="Dimensions" id="dimensions">
 
-<label for="weight">Weight (approx):</label>
+<label for="weight">Approximate Weight (if physical product):</label>
 <input type="text" name="Weight" id="weight">
 
-<label for="manufacturer-url">Link (URL) to the manufacturer&#39;s website:</label>
+<label for="manufacturer-url">Link (URL) to the solution provider&#39;s website:</label>
 <input type="text" name="Manufacturer url" id="manufacturer-url">
 
 <label for="website-url">Link to the solution webpage:</label>
@@ -210,7 +211,7 @@
 <label for="where-available" class="required">Countries where available, or where it can be shipped:</label>
 <input required type="text" name="Where available" id="where-available" class="required">
 
-<label>Can solution be offered or licensed for local manufacture? (Answer &quot;No&quot; if still only in prototype or trial stage.)</label>
+<label>Can solution be offered or licensed for local manufacture?</label>
 
 <label class="radio"><input type="radio" name="Licensed for manufacture" value="Yes">Yes</label>
 <label class="radio"><input type="radio" name="Licensed for manufacture" value="No">No</label>
@@ -240,7 +241,7 @@
 
 <label for="provider-email" class="required">Email:</label>
 <input required type="email" name="Provider Email" id="provider-email" class="required"></p>
-<h2 id="your-contact-info">Your Contact Info</h2>
+<h2 id="your-contact-info-personal-info-will-not-be-displayed-or-published-">Your Contact Info (Personal info will not be displayed or published)</h2>
 <p>
 <label for="contact-name" class="required">Name:</label>
 <input required type="text" name="Contact Name" id="contact-name" class="required">
@@ -294,7 +295,10 @@
           1 Broadway, 14th Floor | Cambridge, MA 02142, USA
         </p>
         <p class="elem elem-footer-legal">
-          TEL is a registered non-proﬁt, tax-exempt charity under section 501(c)(3) of the U.S. Internal Revenue Code. Donations are tax deductible to the extent allowed by U.S. law. TEL is a public resource with no commercial allegiance.
+          TEL is a registered non-proﬁt, tax-exempt charity under section 501(c)(3) of the U.S. Internal Revenue Code. <a href="/donate/"> Donations </a>are tax deductible to the extent allowed by U.S. law. TEL is a public resource with no commercial allegiance.
+        </p>
+        <p class="elem elem-footer-copy">
+          &copy 2016 Technology Exchange Lab, Inc. | <a href="../photo-credits">Photo Credits</a>
         </p>
       </div>
       <div class="column column-footer-right">
@@ -318,6 +322,21 @@
    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
    ga('create', 'UA-27156481-2', 'auto');
    ga('send', 'pageview');
+</script>
+<script type="application/ld+json">
+{
+ "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "name" : "Technology Exchange Lab",
+  "alternateName" : "TechXLab",
+  "url" : "http://www.techxlab.org",
+  "logo" : "http://www.techxlab.org/img/tel.png",
+  "sameAs" : [
+    "http://www.facebook.com/TechXLab",
+    "https://www.linkedin.com/company/technology-exchange-lab-inc-",
+    "https://twitter.com/TechExLab"
+  ]
+}
 </script>
 </div>
 </body>
