@@ -216,7 +216,6 @@ h3 {
 input[type=text],
 input[type=password],
 input[type=email],
-input[type=search],
 input[type=tel],
 input[type=file],
 input[type=submit],
@@ -227,6 +226,13 @@ textarea {
   font-family:   "lato";
   font-size:     14px;
   line-height:   28px;
+}
+
+input[type=search]{
+  padding:       6px 12px;
+  font-family:   "lato";
+  font-size:     14px;
+  line-height:   20px;
 }
 
 input[type=file] {
@@ -760,7 +766,7 @@ p {
 }
 
 #banner-search img {
-  width:       317%;
+  width:       100%;
   margin-left: -200px;
   z-index:     -1;
 }
@@ -830,6 +836,8 @@ p {
   right:40px;
   top:10px;
 }
+
+
 
 /** banner category section ***************************************************/
 
@@ -921,6 +929,11 @@ p {
   color:           #fff;
   text-align:      left;
   display:          block;
+}
+
+#sub-categories-menu .menu-item {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 #sub-categories-menu  a {
@@ -1064,9 +1077,101 @@ padding: 10px;
   width: 100%;
 }
 
+/** Search results styling ***********************************************/
 
+#search-form > ul {
+  max-height: 400px;
+  /*width: 400px;*/
+  overflow-y: scroll;
+  border: solid 1px #ccc;
+  }
 
+#search-form li a {
+     display:block; padding-left:16px;
+}
 
+#q-list.show {
+  display: block !important;
+}
+
+@media (max-width: 768px) {
+  #header .searchicon {
+    display: none;
+  }
+}
+
+#header .searchicon.vanish{
+  display: none;
+}
+
+/*@media (max-width: 768px) {
+  #header div.column.column-search {
+    width: 100%;
+  }
+}*/
+
+@media (max-width: 768px) {
+ #header .searchbox {
+  display: none;
+}
+}
+
+#header .searchbox.large {
+  width: 50%;
+  display: block;
+}
+
+#q-list{
+  position: absolute;
+  background-color: #fff;
+  /*padding: 20px;*/
+  display: none;
+  width: 400px;
+}
+
+#q-list a{
+line-height: 40px;
+}
+
+#search-form .selected {
+  background-color: #eee;
+  font-weight: bold;
+  color: #eee;
+  /*padding-left: 10px;*/
+}
+
+#search-form a:hover{
+  color: #555 !important;
+  background-color: #eee;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.searchitem.solutions{
+  /*font-weight: bold;*/
+  background-color: #638fc3;
+  font-size: 25px;
+  color: #fff;
+  border-bottom: solid 1px #ccc;
+
+}
+
+#header .searchitem.solutions a {
+    color: #fff;
+    /*font-size: 15px;*/
+}
+
+#header .searchitem.solution a {
+    color: #f9a021;
+}
+
+#header .searchitem.solutions.selected a {
+    color: #555;
+}
+
+#header .searchitem.solution.selected a {
+    color: #555;
+}
 /** contact-PA section (solution pages) ***********************************************/
 
 #contact-PA.section-contact-PA {
@@ -1303,6 +1408,12 @@ padding: 10px;
 #header .column-header-right {
   justify-content: center;
 }
+
+#header .column-search{
+  width :50%;
+  padding-bottom:10px;
+}
+
 @media (min-width: 768px) {
   #header .column-header-right {
     justify-content: flex-end;

@@ -32,16 +32,37 @@
       <div class="column">
         <a href="../../../../" onclick="$('.menu-header').removeClass('show')"><div class="logo logo-techxlab"></div></a>
       </div>
-      <div class="column column-header-right">
+            <div class="column column-header-right">
+      <!-- <div id="search" class="searchplace">
+        <div id="SearchIcon" class="searchicon" onclick="$('.searchplace').toggleClass('column');$('.searchbox').toggleClass('show');$('.searchicon').toggleClass('vanish')">
+            <img src="/img/search-symbol.png">
+        </div> -->
+        <div class="row-header">
+
+
+        <div class="column">
+
         <div id="hamburgerButton" class="hamburger" onclick="$('.menu-header').toggleClass('show')">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
-        </div>
+
+      </div>
+      </div>
+      <div class="column column-search">
+      <form id="search-form" action="" method="GET" class="searchbox">
+        <input type="search" name="q" id="q" placeholder="Search..." value="" autocomplete="off">
+        <!--<a id="submitq" class="submit" href="javascript:$('#search-form').submit();" title="submit">▸▸</a> -->
+        <ul id="q-list" class="shadow"></ul>
+      </form>
+    </div>
+
+    </div>
         <!-- <ul class="menu menu-header">
           <li class="menu-item"><a href="../../../../sign-up/">Sign Up</a></li>
           <li class="menu-item"><a href="../../../../sign-in/">Sign In</a></li>
         </ul> -->
+        <div class="row-header">
         <ul class="menu menu-header">
             <li class="menu-item " onclick="$('.menu-header').toggleClass('show')">
               <a href="../../../../solutions/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'Find Solutions', 'eventValue': 1 });">Find Solutions</a>
@@ -62,7 +83,9 @@
               <a href="../../../../about-us/" onclick="ga('send', 'event', {'eventCategory': 'Navigation Menu',  'eventAction': 'click', 'eventLabel': 'About Us', 'eventValue': 1 });">About Us</a>
             </li>
         </ul>
-      </div>
+</div>
+    </div>
+    </div>
     </div>
   </div>
 </header>
@@ -827,6 +850,8 @@ Solar charging semi-automatic blood pressure monitor</p>
    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
    ga('create', 'UA-27156481-2', 'auto');
    ga('send', 'pageview');
+</script>
+<script src="/js/underscore.js">
 </script>
 <script type="application/ld+json">
 {
