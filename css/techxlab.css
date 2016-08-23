@@ -1124,9 +1124,15 @@ padding: 10px;
 #q-list{
   position: absolute;
   background-color: #fff;
-  /*padding: 20px;*/
+  top: 50px;
   display: none;
   width: 400px;
+}
+
+@media (min-width: 1288px) {
+ #q-list{
+   top: 55px;
+}
 }
 
 #q-list a{
