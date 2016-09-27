@@ -304,6 +304,10 @@ p {
     margin-bottom: 15px;
 }
 
+div[data-render-html] li {
+    display: list-item;
+}
+
 /*******************************************************************************
 
   PALLETES (DEPRICATE)
