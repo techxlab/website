@@ -1028,6 +1028,57 @@ margin-bottom: 0;
   }
 }
 
+@media (min-width: 768px) {
+  .column-imageside-left-summary-left {
+    width: 40%;
+  }
+}
+
+@media (min-width: 768px) {
+   .column-imageside-left-summary-right {
+    width: 60%;
+  }
+}
+
+@media (min-width: 768px) {
+  .column-imageside-right-summary-left {
+    width: 60%;
+  }
+}
+
+@media (min-width: 768px) {
+   .column-imageside-right-summary-right {
+    width: 40%;
+  }
+}
+
+.column-imageside-left-summary-right p{
+  padding:          8px;
+  line-height: 36px;
+  font-size: 25px;
+}
+
+.column-imageside-right-summary-left p{
+  padding:          8px;
+  line-height: 36px;
+  font-size: 25px;
+}
+
+#video .column-imageside-summary-left p{
+  padding:          8px;
+  line-height: 36px;
+  font-size: 25px;
+}
+
+#video .column-imageside-summary-left a{
+    color: #638fc3;
+    font-size: 25px;
+}
+
+#right-image {
+  background-color: #eee
+}
+
 .section-summary .button {
   color:             #fff;
   background-color:  #F2A028;
@@ -1523,18 +1574,18 @@ line-height: 40px;
 /** header shim section *******************************************************/
 
 #header-shim.section-header-shim {
-  height:              77px;
+  height:              75px;
 }
 
 @media (min-width: 768px) {
   #header-shim.section-header-shim {
-    height: 103px;
+    height: 101px;
   }
 }
 
 @media (min-width: 1080px) {
   #header-shim.section-header-shim {
-    height: 93px;
+    height: 91px;
   }
 }
 
@@ -1546,7 +1597,7 @@ line-height: 40px;
 
 @media (min-width: 1288px) {
   #header-shim.section-header-shim {
-    height: 98px;
+    height: 94px;
   }
 }
 
@@ -1670,6 +1721,10 @@ line-height: 40px;
 #partners .logo-partners {
   margin: 15px;
   width:  200px;
+}
+
+#video {
+  background-color: #eee;
 }
 
 /** persons section (about) ***************************************************/
