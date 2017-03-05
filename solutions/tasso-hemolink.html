@@ -162,9 +162,10 @@
         <div class="solution-provider" style="display:none;">
 
              <h3>Solution Provider</h3>
-             <div data-render-html="/solutions/tasso-hemolink#contact"><p>Tasso, Inc.<br>Madison, WI<br>53703<br>United States<br><a href="mailto:INFO@TASSOINC.COM">INFO@TASSOINC.COM</a>  </p>
+             <div data-render-html="/solutions/tasso-hemolink#contact"><p>Tasso, Inc.<br>Madison, WI<br>53703<br>United States<br><a href="mailto:INFO@TASSOINC.COM?subject=I found your solution on techxlab.org&amp;cc=notifications@techxlab.org">INFO@TASSOINC.COM</a>  </p>
 </div>
-             <a href=""></a>
+             <a href="" onclick="ga('send', 'event', {'eventCategory': 'SP-url-clickthrough', 'eventAction': 'click', 'eventLabel': '../solutions/tasso-hemolink#contact', 'eventValue': 10 });">
+             </a>
         </div>
         
 
@@ -183,8 +184,11 @@
 
 
           <h3>Additional Information</h3>
-          <div data-render-html="/solutions/tasso-hemolink#additional-information"><p><a href="http://www.tassoinc.com/" target="_blank">Website</a><br><a href="http://www.tassoinc.com/vision/" target="_blank">Product page</a>  </p>
-</div>
+          <a href="http://www.tassoinc.com/" onclick="ga('send', 'event', {'eventCategory': 'SP-url-clickthrough', 'eventAction': 'click', 'eventLabel': '../solutions/tasso-hemolink#additional-information', 'eventValue': 10 });">Solution Providers Website (external link)
+          </a>
+          <a href="http://www.tassoinc.com/vision/" onclick="ga('send', 'event', {'eventCategory': 'SP-producturl-clickthrough', 'eventAction': 'click', 'eventLabel': '../solutions/tasso-hemolink#additional-information', 'eventValue': 10 });">Product Webpage (external link)
+          </a>
+          <div data-render-html="/solutions/tasso-hemolink#additional-information">&nbsp;</div>
 
         
       </div>

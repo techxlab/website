@@ -162,9 +162,10 @@
         <div class="solution-provider" style="display:none;">
 
              <h3>Solution Provider</h3>
-             <div data-render-html="/solutions/wonderbag#contact"><p>Wonderbag<br>Umhlanga<br>4319<br>South Africa<br>+27 31 536 8220<br><a href="mailto:enquiries@nb-wonderbag.com">enquiries@nb-wonderbag.com</a>  </p>
+             <div data-render-html="/solutions/wonderbag#contact"><p>Wonderbag<br>Umhlanga<br>4319<br>South Africa<br>+27 31 536 8220<br><a href="mailto:enquiries@nb-wonderbag.com?subject=I found your solution on techxlab.org&amp;cc=notifications@techxlab.org">enquiries@nb-wonderbag.com</a>  </p>
 </div>
-             <a href=""></a>
+             <a href="" onclick="ga('send', 'event', {'eventCategory': 'SP-url-clickthrough', 'eventAction': 'click', 'eventLabel': '../solutions/wonderbag#contact', 'eventValue': 10 });">
+             </a>
         </div>
         
 
@@ -194,8 +195,11 @@
 
 
           <h3>Additional Information</h3>
-          <div data-render-html="/solutions/wonderbag#additional-information"><p><a href="http://nb-wonderbag.com/Pages/Default" target="_blank">Website</a><br><a href="http://nb-wonderbag.com/Pages/WhatsAWonderbagSubpage" target="_blank">Product page</a>  </p>
-</div>
+          <a href="http://nb-wonderbag.com/Pages/Default" onclick="ga('send', 'event', {'eventCategory': 'SP-url-clickthrough', 'eventAction': 'click', 'eventLabel': '../solutions/wonderbag#additional-information', 'eventValue': 10 });">Solution Providers Website (external link)
+          </a>
+          <a href="http://nb-wonderbag.com/Pages/WhatsAWonderbagSubpage" onclick="ga('send', 'event', {'eventCategory': 'SP-producturl-clickthrough', 'eventAction': 'click', 'eventLabel': '../solutions/wonderbag#additional-information', 'eventValue': 10 });">Product Webpage (external link)
+          </a>
+          <div data-render-html="/solutions/wonderbag#additional-information">&nbsp;</div>
 
         <iframe width="560" height="315" src="//www.youtube.com/embed/4-FfsAo1_tg" frameborder="0"></iframe>
       </div>

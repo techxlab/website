@@ -162,9 +162,10 @@
         <div class="solution-provider" style="display:none;">
 
              <h3>Solution Provider</h3>
-             <div data-render-html="/solutions/medic-mobile#contact"><p>Medic Mobile<br>San Francisco, California<br>94105<br>United States<br>1 (415) 746-9758<br><a href="mailto:hello@medicmobile.org">hello@medicmobile.org</a>  </p>
+             <div data-render-html="/solutions/medic-mobile#contact"><p>Medic Mobile<br>San Francisco, California<br>94105<br>United States<br>1 (415) 746-9758<br><a href="mailto:hello@medicmobile.org?subject=I found your solution on techxlab.org&amp;cc=notifications@techxlab.org">hello@medicmobile.org</a>  </p>
 </div>
-             <a href=""></a>
+             <a href="" onclick="ga('send', 'event', {'eventCategory': 'SP-url-clickthrough', 'eventAction': 'click', 'eventLabel': '../solutions/medic-mobile#contact', 'eventValue': 10 });">
+             </a>
         </div>
         
 
@@ -185,8 +186,11 @@
 
 
           <h3>Additional Information</h3>
-          <div data-render-html="/solutions/medic-mobile#additional-information"><p><a href="http://medicmobile.org" target="_blank">Website</a><br><a href="http://medicmobile.org/tools/" target="_blank">Product page</a>  </p>
-</div>
+          <a href="http://medicmobile.org" onclick="ga('send', 'event', {'eventCategory': 'SP-url-clickthrough', 'eventAction': 'click', 'eventLabel': '../solutions/medic-mobile#additional-information', 'eventValue': 10 });">Solution Providers Website (external link)
+          </a>
+          <a href="http://medicmobile.org/tools/" onclick="ga('send', 'event', {'eventCategory': 'SP-producturl-clickthrough', 'eventAction': 'click', 'eventLabel': '../solutions/medic-mobile#additional-information', 'eventValue': 10 });">Product Webpage (external link)
+          </a>
+          <div data-render-html="/solutions/medic-mobile#additional-information">&nbsp;</div>
 
         <iframe width="560" height="315" src="//www.youtube.com/embed/MEZZ138ZTYI" frameborder="0"></iframe>
       </div>

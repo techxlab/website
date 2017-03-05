@@ -162,9 +162,10 @@
         <div class="solution-provider" style="display:none;">
 
              <h3>Solution Provider</h3>
-             <div data-render-html="/solutions/ushahidi-brck#contact"><p>Ushahidi<br>Nairobi<br>Kenya<br><a href="mailto:info@brck.com">info@brck.com</a>  </p>
+             <div data-render-html="/solutions/ushahidi-brck#contact"><p>Ushahidi<br>Nairobi<br>Kenya<br><a href="mailto:info@brck.com?subject=I found your solution on techxlab.org&amp;cc=notifications@techxlab.org">info@brck.com</a>  </p>
 </div>
-             <a href=""></a>
+             <a href="" onclick="ga('send', 'event', {'eventCategory': 'SP-url-clickthrough', 'eventAction': 'click', 'eventLabel': '../solutions/ushahidi-brck#contact', 'eventValue': 10 });">
+             </a>
         </div>
         
 
@@ -201,8 +202,11 @@
 </div>
 
           <h3>Additional Information</h3>
-          <div data-render-html="/solutions/ushahidi-brck#additional-information"><p><a href="http://ushahidi.com" target="_blank">Website</a><br><a href="http://www.brck.com" target="_blank">Product page</a>  </p>
-</div>
+          <a href="http://ushahidi.com" onclick="ga('send', 'event', {'eventCategory': 'SP-url-clickthrough', 'eventAction': 'click', 'eventLabel': '../solutions/ushahidi-brck#additional-information', 'eventValue': 10 });">Solution Providers Website (external link)
+          </a>
+          <a href="http://www.brck.com" onclick="ga('send', 'event', {'eventCategory': 'SP-producturl-clickthrough', 'eventAction': 'click', 'eventLabel': '../solutions/ushahidi-brck#additional-information', 'eventValue': 10 });">Product Webpage (external link)
+          </a>
+          <div data-render-html="/solutions/ushahidi-brck#additional-information">&nbsp;</div>
 
         <iframe width="560" height="315" src="//www.youtube.com/embed/qsJYrwzfd6w" frameborder="0"></iframe>
       </div>

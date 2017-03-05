@@ -162,9 +162,10 @@
         <div class="solution-provider" style="display:none;">
 
              <h3>Solution Provider</h3>
-             <div data-render-html="/solutions/sourcemap#contact"><p>Leonardo Bonanni<br>Sourcemap<br>Cambridge<br>02139<br>USA<br> +1 (617) 851-2857<br><a href="mailto:leo@sourcemap.com">leo@sourcemap.com</a>  </p>
+             <div data-render-html="/solutions/sourcemap#contact"><p>Leonardo Bonanni<br>Sourcemap<br>Cambridge<br>02139<br>USA<br> +1 (617) 851-2857<br><a href="mailto:leo@sourcemap.com?subject=I found your solution on techxlab.org&amp;cc=notifications@techxlab.org">leo@sourcemap.com</a>  </p>
 </div>
-             <a href=""></a>
+             <a href="" onclick="ga('send', 'event', {'eventCategory': 'SP-url-clickthrough', 'eventAction': 'click', 'eventLabel': '../solutions/sourcemap#contact', 'eventValue': 10 });">
+             </a>
         </div>
         
 
@@ -186,8 +187,11 @@ Founder and CEO Leonardo Bonanni proposed the idea of crowd-mapping supply chain
 
 
           <h3>Additional Information</h3>
-          <div data-render-html="/solutions/sourcemap#additional-information"><p><a href="http://sourcemap.com/#" target="_blank">Website</a><br><a href="http://sourcemap.com/#product" target="_blank">Product page</a>  </p>
-</div>
+          <a href="http://sourcemap.com/#" onclick="ga('send', 'event', {'eventCategory': 'SP-url-clickthrough', 'eventAction': 'click', 'eventLabel': '../solutions/sourcemap#additional-information', 'eventValue': 10 });">Solution Providers Website (external link)
+          </a>
+          <a href="http://sourcemap.com/#product" onclick="ga('send', 'event', {'eventCategory': 'SP-producturl-clickthrough', 'eventAction': 'click', 'eventLabel': '../solutions/sourcemap#additional-information', 'eventValue': 10 });">Product Webpage (external link)
+          </a>
+          <div data-render-html="/solutions/sourcemap#additional-information">&nbsp;</div>
 
         <iframe width="560" height="315" src="//player.vimeo.com/video/36053523" frameborder="0"></iframe>
       </div>

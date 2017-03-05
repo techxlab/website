@@ -162,9 +162,10 @@
         <div class="solution-provider" style="display:none;">
 
              <h3>Solution Provider</h3>
-             <div data-render-html="/solutions/mit-1k-house#contact"><p>MIT 1K<br>Cambridge, MA<br>02139<br>United States<br>+1 (617) 253-4401<br><a href="mailto:1khouse@mit.edu">1khouse@mit.edu</a>  </p>
+             <div data-render-html="/solutions/mit-1k-house#contact"><p>MIT 1K<br>Cambridge, MA<br>02139<br>United States<br>+1 (617) 253-4401<br><a href="mailto:1khouse@mit.edu?subject=I found your solution on techxlab.org&amp;cc=notifications@techxlab.org">1khouse@mit.edu</a>  </p>
 </div>
-             <a href=""></a>
+             <a href="" onclick="ga('send', 'event', {'eventCategory': 'SP-url-clickthrough', 'eventAction': 'click', 'eventLabel': '../solutions/mit-1k-house#contact', 'eventValue': 10 });">
+             </a>
         </div>
         
 
@@ -189,8 +190,11 @@
 
 
           <h3>Additional Information</h3>
-          <div data-render-html="/solutions/mit-1k-house#additional-information"><p><a href="http://web.mit.edu/1khouse/contents.htm" target="_blank">Website</a><br><a href="http://web.mit.edu/1khouse/overview.htm" target="_blank">Product page</a>  </p>
-</div>
+          <a href="http://web.mit.edu/1khouse/contents.htm" onclick="ga('send', 'event', {'eventCategory': 'SP-url-clickthrough', 'eventAction': 'click', 'eventLabel': '../solutions/mit-1k-house#additional-information', 'eventValue': 10 });">Solution Providers Website (external link)
+          </a>
+          <a href="http://web.mit.edu/1khouse/overview.htm" onclick="ga('send', 'event', {'eventCategory': 'SP-producturl-clickthrough', 'eventAction': 'click', 'eventLabel': '../solutions/mit-1k-house#additional-information', 'eventValue': 10 });">Product Webpage (external link)
+          </a>
+          <div data-render-html="/solutions/mit-1k-house#additional-information">&nbsp;</div>
 
         
       </div>

@@ -162,9 +162,10 @@
         <div class="solution-provider" style="display:none;">
 
              <h3>Solution Provider</h3>
-             <div data-render-html="/solutions/agroam#contact"><p>Anthony Conor<br>Agroam<br>Cape Town<br>South Africa<br><a href="mailto:contact@agroam.org">contact@agroam.org</a>  </p>
+             <div data-render-html="/solutions/agroam#contact"><p>Anthony Conor<br>Agroam<br>Cape Town<br>South Africa<br><a href="mailto:contact@agroam.org?subject=I found your solution on techxlab.org&amp;cc=notifications@techxlab.org">contact@agroam.org</a>  </p>
 </div>
-             <a href=""></a>
+             <a href="" onclick="ga('send', 'event', {'eventCategory': 'SP-url-clickthrough', 'eventAction': 'click', 'eventLabel': '../solutions/agroam#contact', 'eventValue': 10 });">
+             </a>
         </div>
         
 
@@ -185,8 +186,11 @@
 
 
           <h3>Additional Information</h3>
-          <div data-render-html="/solutions/agroam#additional-information"><p><a href="http://www.agroam.org/" target="_blank">Website</a>  </p>
-</div>
+          <a href="http://www.agroam.org/" onclick="ga('send', 'event', {'eventCategory': 'SP-url-clickthrough', 'eventAction': 'click', 'eventLabel': '../solutions/agroam#additional-information', 'eventValue': 10 });">Solution Providers Website (external link)
+          </a>
+          <a href="" onclick="ga('send', 'event', {'eventCategory': 'SP-producturl-clickthrough', 'eventAction': 'click', 'eventLabel': '../solutions/agroam#additional-information', 'eventValue': 10 });">Product Webpage (external link)
+          </a>
+          <div data-render-html="/solutions/agroam#additional-information">&nbsp;</div>
 
         
       </div>
