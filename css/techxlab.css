@@ -960,6 +960,7 @@ div[data-render-html] li {
 
 #banner-projects .row-banner-projects {
   height: 90%;
+  width: 100%;
   justify-content: flex-end;
 }
 
@@ -1025,6 +1026,10 @@ color: #555;
     padding-bottom: 20px;
 }
 
+#right-image p {
+  font-weight: 400;
+}
+
 #right-image .button{
   width: 100%;
   margin-bottom: 10px;
@@ -1039,6 +1044,7 @@ color: #555;
   right:           0;
   top:             0;
   bottom:          0;
+  height: 70%;
 }
 
 #banner-projects .button {
@@ -1386,6 +1392,11 @@ color:         #FFF;
 
 #left-image p{
   color: #555;
+  font-family: "lato";
+    font-size: 15px;
+    line-height: 24px;
+    text-decoration-style: solid;
+    font-weight: 400;
 }
 
 
