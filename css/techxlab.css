@@ -2495,7 +2495,7 @@ line-height: 40px;
 }
 
 #projects .container-projects {
-  width: 100%;
+  width: 80%;
 }
 
 #projects .row-projects {
@@ -2513,7 +2513,7 @@ line-height: 40px;
 }
 @media (min-width: 768px) {
   #projects .project-list-item {
-    width: 264px;
+    width: 280px;
   }
 }
 
