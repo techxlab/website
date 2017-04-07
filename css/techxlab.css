@@ -526,6 +526,7 @@ div[data-render-html] li {
 #accelerate h2 {
   color: #fff;
   text-align: center;
+  font-size: 20px;
 }
 
 #accelerate img {
@@ -1359,16 +1360,35 @@ padding-top: 10px;
   font-size: 25px;
 }
 
-.column-imageside-left-summary-right h2{
-  padding:          8px;
-  line-height: 36px;
-  font-size: 25px;
+.column-imageside-left-summary-right a{
+  font-weight: 400;
+  font-size: 15px;
+  color: #638fc3;
 }
+
+.column-imageside-right-summary-left a{
+  font-family: "lato";
+  font-size:   15px;
+  line-height: 24px;
+  text-decoration: none;
+  color:#638fc3;
+}
+
+.column-imageside-left-summary-right a:hover {
+  text-decoration: underline;
+}
+
 
 .column-imageside-right-summary-left h2{
   padding:          8px;
   line-height: 36px;
   font-size: 25px;
+}
+
+.column-imageside-right-summary-left a{
+  line-height: 36px;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 .column-imageside-right-summary-left p{
@@ -2048,6 +2068,12 @@ line-height: 40px;
   background-color: #eee;
 }
 
+/** map section ***************************************************************/
+
+#map {
+  background-color: #fff;
+}
+
 /** persons section (about) ***************************************************/
 
 #persons.section-persons {
@@ -2173,6 +2199,10 @@ line-height: 40px;
   opacity: 0;
 }
 
+#solution-categories .name {
+  color: #000eb;
+}
+
 #solution-categories .elem-product-categories img {
   width:      100%;
   min-height: 0;
@@ -2180,6 +2210,7 @@ line-height: 40px;
 
 #solution-categories .elem-product-categories a {
   position:        absolute;
+  padding:         0 15px 0 15px;
   display:         flex;
   align-items:     center;
   justify-content: center;
@@ -2215,7 +2246,7 @@ line-height: 40px;
   left:             10px;
   right:            10px;
   top:              10px;
-  bottom:           12px;
+  bottom:           10px;
   opacity:           0.4;
   transition:       opacity 0.3s ease-in-out;
   background-color: #000 !important;
@@ -2429,7 +2460,120 @@ line-height: 40px;
 #solutions .button-solutions.enabled {
   color: #fff;
 }
+/** Projects Section *********/
 
+#projects.section-projects {
+  padding-top:      15px;
+  padding-bottom:   15px;
+  background-color: #EEE;
+  color:            #EEE;
+}
+
+#projects .h1-projects {
+  margin:       0 4px;
+  font-size:    18px;
+  font-weight:  300;
+  text-align:   left;
+  line-height:  18px;
+}
+#projects a .h1-projects {
+  color: #555;
+}
+#projects a:hover + .h1-projects {
+  color: #F2A028;
+}
+
+#projects .h2-projects {
+  margin-top:    10px;
+  margin-bottom: 10px;
+  font-size:     16px;
+}
+
+#projects p {
+  margin-bottom: 12px;
+  color: #555;
+}
+
+#projects .container-projects {
+  width: 100%;
+}
+
+#projects .row-projects {
+  justify-content: center;
+  flex-wrap:       wrap;
+}
+
+#projects .project-list-item {
+  margin:           8px;
+  background-color: #fff;
+  border-radius:    6px;
+  border-style:     solid;
+  border-color:     #999;
+  border-width:     1px;
+}
+@media (min-width: 768px) {
+  #projects .project-list-item {
+    width: 264px;
+  }
+}
+
+#projects .header-project-list-item {
+  flex-direction: row;
+  align-items:    center;
+  align-content:  center;
+  padding-top:    8px;
+  padding-bottom: 8px;
+  padding-left:   4px;
+  padding-right:  4px;
+  font-family:    Raleway, sans-serif;
+  font-size:      22px;
+  line-height:    18px;
+}
+
+#projects .header-project-list-item img {
+  width:        42px;
+  margin-left:  4px;
+  margin-right: 4px;
+}
+
+#projects .project-list-item-image img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 320px;
+  margin: auto;
+}
+
+#projects .project-list-item-body {
+  /* height:        100%; */
+  margin:        14px;
+}
+
+#projects .row-projects-buttons {
+  justify-content:  space-between;                                               -webkit-justify-content: space-between;
+  padding-top:      8px;
+  padding-bottom:   8px;
+  padding-left:     15px;
+  padding-right:    15px;
+  flex-direction:   row;
+  background-color: #969696;
+  align-items:      center;
+}
+
+#projects .row-projects-buttons h3 {
+  color: #fff;
+  font-weight: 500;
+}
+
+#projects .button-projects {
+  font-size:        28px;
+  font-family:      'lato';
+  padding:          4px;
+  color:            #aaa;
+}
+#projects .button-projects.enabled {
+  color: #fff;
+}
 
 /** take action section (home page) *******************************************/
 
