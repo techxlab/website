@@ -186,7 +186,7 @@ h1, h1 a {
   font-size:     26px;
   font-weight:   300;
   line-height: 36px;
-  color:         #f9a021;
+  color:         #f29810;
 }
 @media (min-width: 992px) {
   h1, h1 a {
@@ -199,7 +199,7 @@ h2, h2 a {
   font-family:   Raleway, sans-serif;
   font-size:     22px;
   font-weight:   300;
-  color:         #f9a021;
+  color:         #f29810;
 }
 @media (min-width: 992px) {
   h2, h2 a {
@@ -210,7 +210,7 @@ h2, h2 a {
 h3 {
   font-family: "lato";
   font-size:   16px;
-  color:       #f9a021;
+  color:       #f29810;
 }
 
 input[type=text],
@@ -262,11 +262,11 @@ label.radio, label.checkbox, input[type=submit] {
   cursor: pointer;
 }
 
-label.required:after { content:" *"; color:#f9a021; }
+label.required:after { content:" *"; color:#f29810; }
 label.missing:after, label.mismatched:after {
   display:inline-block;
   content:"Missing required value";
-  background-color:#f9a021;
+  background-color:#f29810;
   color:#fff;
   padding:0 0.5em;
   margin-left:0.5em;
@@ -278,7 +278,7 @@ label.mismatched:after {
   content:"Confirm value does not match";
 }
 
-label.form-error:before { content:"Missing required values:"; color:#f9a021; display:block; }
+label.form-error:before { content:"Missing required values:"; color:#f29810; display:block; }
 label.form-error { white-space:pre; } /* show one missing field per line */
 
 label.radio:hover, label.checkbox:hover {
@@ -293,7 +293,7 @@ p, a, label, ul, tbody {
 }
 
 a {
-  color:#638fc3;
+  color:#678bcc;
 }
 
 a:hover {
@@ -325,10 +325,10 @@ div[data-render-html] li {
 .white-blue p,
 .white-blue a {
   color:            #fff;
-  background-color: #5E92B9;
+  background-color: #678bcc;
 }
 .white-blue h2 {
-  color: #f9a021;
+  color: #f29810;
 }
 
 .orange-white,
@@ -338,10 +338,10 @@ div[data-render-html] li {
   background-color: #fff;
 }
 .orange-white h2 {
-  color: #5E92B9;
+  color: #678bcc;
 }
 .orange-white h3 {
-  color: #5E92B9;
+  color: #678bcc;
 }
 
 .orange-grey,
@@ -354,13 +354,13 @@ div[data-render-html] li {
   background-color: #444;
 }
 .orange-grey a {
-  color: #5E92B9;
+  color: #678bcc;
 }
 .orange-grey .button {
   background-color: #5f90db;
 }
 .orange-grey h2 {
-  color: #f9a021;
+  color: #f29810;
 }
 
 .black-white,
@@ -373,14 +373,14 @@ div[data-render-html] li {
   background-color: #fff;
 }
 .black-white a:hover {
-  color: #7dc243;
+  color: #76c92a;
 }
 
 .green-white,
 .green-white p,
 .green-white a {
   color:            #fff;
-  background-color: #7dc243;
+  background-color: #76c92a;
 }
 .green-white a:hover {
   color: #ccc;;
@@ -457,7 +457,7 @@ div[data-render-html] li {
 
 /*#content h2,
 #content h2 a {
-  color:         #f9a021;
+  color:         #f29810;
 }*/
 
 #content p {
@@ -474,7 +474,7 @@ div[data-render-html] li {
 
 #content .button {
   width:            100%;
-  background-color: #f9a021;
+  background-color: #f29810;
 }
 @media (min-width: 768px) {
   #content .button {
@@ -503,7 +503,7 @@ div[data-render-html] li {
 /*#add-solutions h2 {
   margin-top:    15px;
   margin-bottom: 15px;
-  color:         #f9a021;
+  color:         #f29810;
 }*/
 
 #add-solutions .column-add-solutions {
@@ -513,20 +513,26 @@ div[data-render-html] li {
 #add-solutions .button {
   margin-top:    30px;
   padding:       15px;
-  background-color: #f9a021;
+  background-color: #f29810;
 }
 
 /** accelerate section (project accelerator) **********************************/
 
 #accelerate.section-accelerate {
   color:            #fff;
-  background-color: #444;
+  background-color: #678bcc;
 }
 
 #accelerate h2 {
   color: #fff;
   text-align: center;
   font-size: 20px;
+}
+
+#accelerate h1 {
+  position: absolute;
+      background-color: #fff;
+      padding: 8px;
 }
 
 #accelerate img {
@@ -542,6 +548,10 @@ div[data-render-html] li {
   }
 }
 
+#accelerate .row-accelerate {
+  margin-top: 80px;
+}
+
 /** banner section (all but home, search) *************************************/
 
 #banner.section-banner {
@@ -549,7 +559,7 @@ div[data-render-html] li {
   display:             block; /* needed for ff */
   border-bottom-width: 20px;
   border-bottom-style: solid;
-  border-bottom-color: #638fc3;
+  border-bottom-color: #678bcc;
 }
 
 #banner p {
@@ -628,7 +638,7 @@ div[data-render-html] li {
   display:             block;
   border-bottom-width: 20px;
   border-bottom-style: solid;
-  border-bottom-color: #7dc243;
+  border-bottom-color: #76c92a;
 }
 
 #banner-home h1 {
@@ -767,7 +777,7 @@ div[data-render-html] li {
   position:            relative;
   border-bottom-width: 60px;
   border-bottom-style: solid;
-  border-bottom-color: #638fc3;
+  border-bottom-color: #678bcc;
 }
 
 #banner-search img {
@@ -904,7 +914,7 @@ div[data-render-html] li {
 #banner-projects .banner-image{
   border-bottom-style: solid;
   border-bottom-width: 20px;
-  border-bottom-color: #638fc3;
+  border-bottom-color: #678bcc;
 }
 
 @media (max-width: 844px) {
@@ -1034,7 +1044,7 @@ color: #555;
 #right-image .button{
   width: 100%;
   margin-bottom: 10px;
-  background-color: #7dc243;
+  background-color: #76c92a;
 }
 
 #banner-projects .container-banner-projects {
@@ -1050,7 +1060,7 @@ color: #555;
 
 #banner-projects .button {
     color: #fff;
-    background-color: #7dc243;
+    background-color: #76c92a;
   }
 
   .row-video {
@@ -1064,7 +1074,7 @@ color: #555;
   }
 
   #gallery h1 {
-    color:         #638fc3;
+    color:         #678bcc;
   }
 
   #gallery h2 {
@@ -1147,7 +1157,7 @@ color: #555;
     color:        #aaa;
   }
   #gallery .x:hover {
-    color: #7dc243;
+    color: #76c92a;
   }
   @media (min-width: 768px) {
     #gallery .item-photo.selected .x {
@@ -1161,7 +1171,7 @@ color: #555;
 
 #categories-menu.section-categories-menu {
   margin:           0;
-  background-color: #638fc3;
+  background-color: #678bcc;
 }
 
 #categories-menu .row-categories-menu-items {
@@ -1182,7 +1192,7 @@ color: #555;
 }
 
 #categories-menu .menu-item-banner-solutions a:hover {
-  color: #7dc243;
+  color: #76c92a;
 }
 
 /** sub-categories menu section (solutions) ***************************************/
@@ -1363,7 +1373,7 @@ padding-top: 10px;
 .column-imageside-left-summary-right a{
   font-weight: 400;
   font-size: 15px;
-  color: #638fc3;
+  color: #678bcc;
 }
 
 .column-imageside-right-summary-left a{
@@ -1371,7 +1381,7 @@ padding-top: 10px;
   font-size:   15px;
   line-height: 24px;
   text-decoration: none;
-  color:#638fc3;
+  color:#678bcc;
 }
 
 .column-imageside-left-summary-right a:hover {
@@ -1402,7 +1412,7 @@ color:         #FFF;
 }
 
 #video .column-imageside-summary-left a{
-    color: #638fc3;
+    color: #678bcc;
     font-size: 25px;
 }
 
@@ -1551,7 +1561,7 @@ line-height: 40px;
 
 .searchitem.solutions{
   /*font-weight: bold;*/
-  background-color: #638fc3;
+  background-color: #678bcc;
   font-size: 25px;
   color: #fff;
   border-bottom: solid 1px #ccc;
@@ -1564,7 +1574,7 @@ line-height: 40px;
 }
 
 #header .searchitem.solution a {
-    color: #f9a021;
+    color: #f29810;
 }
 
 #header .searchitem.solutions.selected a {
@@ -1609,7 +1619,7 @@ line-height: 40px;
 #contact .button {
   margin-top:        30px;
   padding:           15px;
-  background-color:  #5E92B9;
+  background-color:  #678bcc;
 }
 
 
@@ -1661,7 +1671,7 @@ line-height: 40px;
 
 #donate .button {
   width:            100%;
-  background-color: #f9a021;
+  background-color: #f29810;
 }
 @media (min-width: 768px) {
   #donate .button {
@@ -1672,7 +1682,7 @@ line-height: 40px;
 /** footer section (all pages) ************************************************/
 
 #footer.section-footer {
-  background-color: #7dc243;
+  background-color: #76c92a;
 }
 
 #footer p,
@@ -1685,7 +1695,7 @@ line-height: 40px;
 }
 
 #footer .button {
-  background-color:  #5E92B9;
+  background-color:  #678bcc;
 }
 
 #footer .column-footer-left {
@@ -1746,7 +1756,7 @@ line-height: 40px;
 #form .button {
   margin-top:        15px;
   padding:           15px;
-  background-color:  #5E92B9;
+  background-color:  #678bcc;
 }
 
 
@@ -1758,9 +1768,9 @@ line-height: 40px;
 }
 #case-studies .line {
   padding: 30px 30px 0;
-  border-top: 5px solid #f9a021;
+  border-top: 5px solid #f29810;
   margin-top: 50px;
-  color: #f9a021;
+  color: #f29810;
 }
 #case-studies ul {
   display: flex;
@@ -1799,7 +1809,7 @@ line-height: 40px;
   color: #555;
 }
 #header a:hover {
-  color: #7dc243;
+  color: #76c92a;
 }
 
 #header .row-header {
@@ -2011,9 +2021,9 @@ line-height: 40px;
 @media (min-width: 768px) {
   #menu-main .selected .menu-item-name  {
     justify-content: space-between;
-    color:               #7dc243;
+    color:               #76c92a;
     padding-bottom:      6px;
-    border-bottom: solid 2px #7dc243;
+    border-bottom: solid 2px #76c92a;
   }
 }
 
@@ -2039,7 +2049,7 @@ line-height: 40px;
 
 #participate .button {
   width:            100%;
-  background-color: #f9a021;
+  background-color: #f29810;
 }
 @media (min-width: 768px) {
   #participate .button {
@@ -2081,7 +2091,7 @@ line-height: 40px;
 }
 
 #persons h1 {
-  color:         #638fc3;
+  color:         #678bcc;
 }
 
 #persons h2 {
@@ -2161,7 +2171,7 @@ line-height: 40px;
   color:        #aaa;
 }
 #persons .x:hover {
-  color: #7dc243;
+  color: #76c92a;
 }
 @media (min-width: 768px) {
   #persons .item-person.selected .x {
@@ -2281,7 +2291,7 @@ line-height: 40px;
   display: inline-block;
 }
 #quotes .flex-active {
-  background-color: #f9a021;
+  background-color: #f29810;
 }
 #quotes .statement {
   font-style:    italic;
@@ -2313,7 +2323,7 @@ line-height: 40px;
 #sign-up .button {
   margin-top:        30px;
   padding:           15px;
-  background-color:  #5E92B9;
+  background-color:  #678bcc;
 }
 
 /** solution section **********************************************************/
@@ -2462,6 +2472,10 @@ line-height: 40px;
 }
 /** Projects Section *********/
 
+#projects h1{
+  margin-top: 20px;
+}
+
 #projects.section-projects {
   padding-top:      15px;
   padding-bottom:   15px;
@@ -2513,7 +2527,7 @@ line-height: 40px;
 }
 @media (min-width: 768px) {
   #projects .project-list-item {
-    width: 280px;
+    width: 260px;
   }
 }
 
@@ -2578,7 +2592,7 @@ line-height: 40px;
 /** take action section (home page) *******************************************/
 
 #action.section-take-action {
-  background-color: #5E92B9;
+  background-color: #678bcc;
 }
 
 #action h1 {
