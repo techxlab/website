@@ -2345,6 +2345,11 @@ line-height: 40px;
   }
 }
 
+#solution  p{
+color: #555;
+font-weight: 400;
+}
+
 #solution img {
   width:          100%;
   min-height:     0;
