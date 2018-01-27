@@ -292,6 +292,11 @@ p, a, label, ul, tbody {
   text-decoration: none;
 }
 
+ul {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
 a {
   color:#678bcc;
 }
