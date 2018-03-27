@@ -285,11 +285,16 @@ label.radio:hover, label.checkbox:hover {
   background-color: #eee;
 }
 
-p, a, label, ul, tbody {
+p, a, label, ul, ol, tbody {
   font-family: "lato";
   font-size:   15px;
   line-height: 24px;
   text-decoration: none;
+}
+
+ul, ol {
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 
 a {
