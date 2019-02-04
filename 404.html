@@ -484,7 +484,7 @@ redirects = {
 '/bempu': '/solutions/bempu-health-bracelet',
 '/m-drop': '/solutions/madidrop-pbc-m-drop'
 };
-location = redirects[(location.pathname + location.search).toLowerCase()] || '/';
+location = redirects[(location.pathname).toLowerCase()] || '/';
 </script>
 </head>
 <body>
