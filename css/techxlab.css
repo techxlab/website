@@ -47,11 +47,10 @@ div[data-render-html] {
   width:100%;
 }
 
-script {
+/* hide everything normally found in <head> */
+head, script, style, meta, link, title {
   display: none;
 }
-
-head { height: 0; } /* hide text that gets injected by pub into header */
 
 /**
  * SECTION. the outermost, horizontal block entending to the page's edge.
