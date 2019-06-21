@@ -1940,22 +1940,27 @@ line-height: 40px;
 
 @media (min-width: 1080px) {
   #header-shim.section-header-shim {
-    height: 91px;
+    height: 105px;
   }
 }
 
 @media (min-width: 1200px) {
   #header-shim.section-header-shim {
-    height: 105px;
+    height: -10px;
   }
 }
 
 @media (min-width: 1288px) {
   #header-shim.section-header-shim {
-    height: 94px;
+    height: 101px;
   }
 }
 
+@media (min-width: 1496px) {
+  #header-shim.section-header-shim {
+    height: 94px;
+  }
+}
 
 
 /** menu main section (all) ***************************************************/
