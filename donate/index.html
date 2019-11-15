@@ -133,46 +133,39 @@
           <div data-render-html="/donate/#captions-caption-2"><p>TEL relies on supporters like you to sustain our work in delivering innovative solutions to the people that need them most.  As a registered 501(c)(3) organization, all contributions to the Technology Exchange Lab are tax-deductible.</p>
 <p>All contributions made to TEL directly support programs that help satisfy basic human needs in the developing world, like access to clean water, education, adequate health care and more. You can easily make your tax-deductible donation:</p>
 <p><strong>By Mail</strong> send a check or money order to our office at:<br>Technology Exchange Lab<br>1 Broadway, 14th Floor<br>Cambridge, MA 02142  </p>
-<p><strong>Online</strong> via PayPal with your PayPal account or major credit card. Select your payment option below to make your donation.</p>
-<p>The default Donation amount is <strong>$20 USD</strong> if you wish to donate a different amount please do so via our main <a href="https://paypal.me/techxlab" target="_blank">PayPal page</a>.</p>
-</div>
+<p><strong>Online</strong> via PayPal with your PayPal account or major credit card. Click the donate button below to go through the secure PayPal donation platform.</p>
+<section class="section section-summary">
+    <div class="container">
+      <div class="row">
+        <div class="column column-section-summary-right">
+         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="WPAWTM6Q962KC" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit"                title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+         </form>
         </div>
       </div>
     </div>
   </section>
 
 
-<section class="section section-summary">
-    <div class="container">
-<div id="paypal-button-container"></div>
-<script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
-<script>
-    paypal.Buttons({
-        style: {
-            shape: 'rect',
-            color: 'blue',
-            layout: 'vertical',
-            label: 'paypal',
-            
-        },
-        createOrder: function(data, actions) {
-            return actions.order.create({
-                purchase_units: [{
-                    amount: {
-                        value: '20'
-                    }
-                }]
-            });
-        },
-        onApprove: function(data, actions) {
-            return actions.order.capture().then(function(details) {
-                alert('Transaction completed by ' + details.payer.name.given_name + '!');
-            });
-        }
-    }).render('#paypal-button-container');
-</script>
 </div>
+        </div>
+      </div>
+    </div>
   </section>
+
+<section id="content" class="section section-content">
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <div data-render-html="">&nbsp;</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 </div>
 
 <footer id="footer" class="section section-footer">
