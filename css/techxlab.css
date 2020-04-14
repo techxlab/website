@@ -796,6 +796,29 @@ div[data-render-html] li {
   color:        #678bcc;
 }
 
+/** alert section ***********************************************************/
+
+#alert {
+  margin-bottom: 0px;
+  font-family:   Raleway, sans-serif;
+  font-size:     26px;
+  font-weight:   300;
+  line-height: 36px;
+  text-align: center;
+  background-color: rgb(230, 47, 47);
+  color:        #678bcc;
+  border-bottom-width: 20px;
+  border-bottom-style: solid;
+  border-bottom-color: #76c92a;
+  padding-top: 25px;
+  padding-bottom: 0px;
+}
+
+#alert a {
+  color:        #ffffff;
+  font-size:     32px;
+}
+
 /** banner search section *****************************************************/
 
 #banner-search.section-banner-search {

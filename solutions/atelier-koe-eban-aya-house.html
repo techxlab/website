@@ -103,6 +103,11 @@
       </li>
       <li class="menu-item menu-item-banner-solutions">
         <div class ="top-cat">
+        <a href="../solutions/categories/covid19/" onclick="ga('send', 'event', {'eventCategory': 'Solution Categories',  'eventAction': 'click', 'eventLabel': 'COVID-19', 'eventValue': 5 });">COVID-19</a>
+        </div>
+      </li>
+      <li class="menu-item menu-item-banner-solutions">
+        <div class ="top-cat">
         <a href="../solutions/categories/water/" onclick="ga('send', 'event', {'eventCategory': 'Solution Categories',  'eventAction': 'click', 'eventLabel': 'Water & Sanitation', 'eventValue': 5 });">Water &amp; Sanitation</a>
         </div>
       </li>
@@ -192,6 +197,47 @@
 
         
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section section-contact">
+  <div class="container">
+    <div class="row">
+      <div class="column column-contact column-contact-copy">
+        <h2>Updates</h2>
+        <p>If you are aware of any updates to the Eban Aya House project please complete the form
+           or send an email to <a href="mailto:contact@techxlab.org">contact@techxlab.org</a>
+        </p>
+      </div>
+      <div class="column column-space">
+      </div>
+      <form id="contact-form" class="column column-contact column-contact-form" novalidate="novalidate" action="https://tel-forms.herokuapp.com/server/form" method="POST">
+        <div data-render-html="/#contact-form"><p>
+<label for="name" class="required">Name</label>
+<input required type="text" name="Name" id="name" class="required">
+
+<label for="email" class="required">Email</label>
+<input required type="email" name="Email" id="email" class="required">
+
+<label for="message" class="required">Message</label>
+<textarea required name="Message" id="message" class="required"></textarea>
+
+<input type="submit" value="Submit" class="button"></p>
+<p>
+<input type="hidden" name="form" value="Contact Us" id="form">
+
+<input type="hidden" name="thankyou" value="/form-thank-you/" id="thankyou">
+
+<input type="hidden" name="sorry" value="/form-sorry/" id="sorry">
+
+<input type="hidden" name="validated" id="validated">
+
+<input type="hidden" name="location" id="location"></p>
+</div>
+        <input type="hidden" name="solution_name" id="solution_name" value="Eban Aya House">
+        <input type="hidden" name="solution_href" id="solution_href" value="/solutions/atelier-koe-eban-aya-house">
+      </form>
     </div>
   </div>
 </section>

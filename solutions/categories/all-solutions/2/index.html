@@ -118,6 +118,11 @@
       </li>
       <li class="menu-item menu-item-banner-solutions">
         <div class ="top-cat">
+        <a href="../../../../solutions/categories/covid19/" onclick="ga('send', 'event', {'eventCategory': 'Solution Categories',  'eventAction': 'click', 'eventLabel': 'COVID-19', 'eventValue': 5 });">COVID-19</a>
+        </div>
+      </li>
+      <li class="menu-item menu-item-banner-solutions">
+        <div class ="top-cat">
         <a href="../../../../solutions/categories/water/" onclick="ga('send', 'event', {'eventCategory': 'Solution Categories',  'eventAction': 'click', 'eventLabel': 'Water & Sanitation', 'eventValue': 5 });">Water &amp; Sanitation</a>
         </div>
       </li>
@@ -169,6 +174,15 @@
       </li>
       <li class="menu-item menu-item-sub">
         <div class ="top-cat">
+        <a href="../../../../solutions/categories/covid19/"  onclick="ga('send', 'event', {'eventCategory': 'Solution Categories',  'eventAction': 'click', 'eventLabel': 'COVID-19', 'eventValue': 5 });">COVID-19</a>
+        </div>
+        <div class="sub-cats">
+          <a href="../../../../solutions/categories/covid19/ventilator/" >Ventilators</a>
+          <a href="../../../../solutions/categories/covid19/ppe/" >Personal Protective Equipment</a>
+      </div>
+      </li>
+      <li class="menu-item menu-item-sub">
+        <div class ="top-cat">
         <a href="../../../../solutions/categories/water/"  onclick="ga('send', 'event', {'eventCategory': 'Solution Categories',  'eventAction': 'click', 'eventLabel': 'Water & Sanitation', 'eventValue': 5 });">Water &amp; Sanitation</a>
         </div>
         <div class="sub-cats">
@@ -194,6 +208,7 @@
         <a href="../../../../solutions/categories/medical/"  onclick="ga('send', 'event', {'eventCategory': 'Solution Categories',  'eventAction': 'click', 'eventLabel': 'Health & Medical Care', 'eventValue': 5 });">Health &amp; Medical Care</a>
         </div>
         <div class="sub-cats">
+          <a href="../../../../solutions/categories/medical/ventilators/" >Ventilators</a>
           <a href="../../../../solutions/categories/medical/medical-and-surgical-care/" >Medical &amp; Surgical</a>
           <a href="../../../../solutions/categories/medical/mobile-health/" >Mobile Health</a>
           <a href="../../../../solutions/categories/medical/medical-devices/" >Medical Devices</a>
@@ -253,10 +268,38 @@
   <div class="container container-solutions">
     <div class="row row-solutions-buttons">
       <a class="button button-solutions enabled" href="../../../../solutions/categories/all-solutions/">&lt;</a>
-      <h3>Page 2 of 15</h3>
+      <h3>Page 2 of 16</h3>
       <a class="button button-solutions enabled" href="../../../../solutions/categories/all-solutions/3/">&gt;</a>
     </div>
     <div id="search-results" class="row row-solutions">
+        <div class="solution-list-item">
+          <div class="header-solution-list-item">
+            <img src="../../../../img/category-icons/medical.png" alt="medical">
+            <a href="../../../../solutions/basicneeds" title="BasicNeeds"><h1 class="h1-solutions">BasicNeeds</h1></a>
+          </div>
+          <a class="solution-list-item-image" href="../../../../solutions/basicneeds" title="BasicNeeds">
+              <img src="https://images.techxlab.org/ast/484-basic-needs-logo.jpg" alt="BasicNeeds">
+          </a>
+          <div class="solution-list-item-body">
+            <h2 class="h2-solutions">BasicNeeds</h2>
+            <p>BasicNeeds works with over 90 organizations to bring community-based models for mental health to the developing world. The treatment gap for mentally ill patients is as high as 85%.  This can be attributed to a lack of understanding of mental ...</p>
+
+          </div>
+        </div>
+        <div class="solution-list-item">
+          <div class="header-solution-list-item">
+            <img src="../../../../img/category-icons/energy.png" alt="energy">
+            <a href="../../../../solutions/potential-energy-berkeley-darfur-stove" title="Berkeley-Darfur Stove"><h1 class="h1-solutions">Berkeley-Darfur Stove</h1></a>
+          </div>
+          <a class="solution-list-item-image" href="../../../../solutions/potential-energy-berkeley-darfur-stove" title="Berkeley-Darfur Stove">
+              <img src="https://images.techxlab.org/ast/321-bes-front1.jpg" alt="Berkeley-Darfur Stove">
+          </a>
+          <div class="solution-list-item-body">
+            <h2 class="h2-solutions">POTENTIAL ENERGY INC.,</h2>
+            <p>Since 2003, conflict in Darfur has killed at least 300,000 people, forced more than two million people from their homes, and destroyed traditional livelihoods. Many now reside in large displacement camps where they receive food aid but still ...</p>
+
+          </div>
+        </div>
         <div class="solution-list-item">
           <div class="header-solution-list-item">
             <img src="../../../../img/category-icons/energy.png" alt="energy">
@@ -321,7 +364,7 @@
             <a href="../../../../solutions/biolite-basecamp" title="BioLite BaseCamp"><h1 class="h1-solutions">BioLite BaseCamp</h1></a>
           </div>
           <a class="solution-list-item-image" href="../../../../solutions/biolite-basecamp" title="BioLite BaseCamp">
-              <img src="https://images.techxlab.org/ast/780-780-basecamp-opt.jpeg" alt="BioLite BaseCamp">
+              <img data-src="https://images.techxlab.org/ast/780-780-basecamp-opt.jpeg" class="scrollmon">
           </a>
           <div class="solution-list-item-body">
             <h2 class="h2-solutions">BioLIte</h2>
@@ -336,7 +379,7 @@
             <a href="../../../../solutions/biolite-campstove" title="BioLite CampStove"><h1 class="h1-solutions">BioLite CampStove</h1></a>
           </div>
           <a class="solution-list-item-image" href="../../../../solutions/biolite-campstove" title="BioLite CampStove">
-              <img src="https://images.techxlab.org/ast/779-779-campstove-opt.jpeg" alt="BioLite CampStove">
+              <img data-src="https://images.techxlab.org/ast/779-779-campstove-opt.jpeg" class="scrollmon">
           </a>
           <div class="solution-list-item-body">
             <h2 class="h2-solutions">BioLite</h2>
@@ -506,6 +549,21 @@ Designed for use in homes, the ...</p>
 <ul>
 <li>One ...</li>
 </ul>
+
+          </div>
+        </div>
+        <div class="solution-list-item">
+          <div class="header-solution-list-item">
+            <img src="../../../../img/category-icons/medical.png" alt="medical"><img src="../../../../img/category-icons/covid19.png" alt="covid19">
+            <a href="../../../../solutions/open-vent-bristol-covid-19-rapid-manufacture-ventilator-bvm-ambubag" title="COVID-19 Rapid Manufacture Ventilator BVM Ambubag"><h1 class="h1-solutions">COVID-19 Rapid Manufacture Ventilator BVM Ambubag</h1></a>
+          </div>
+          <a class="solution-list-item-image" href="../../../../solutions/open-vent-bristol-covid-19-rapid-manufacture-ventilator-bvm-ambubag" title="COVID-19 Rapid Manufacture Ventilator BVM Ambubag">
+              <img data-src="https://images.techxlab.org/ast/24kxbvpl-openvent-image.jpg" class="scrollmon">
+          </a>
+          <div class="solution-list-item-body">
+            <h2 class="h2-solutions">Open Vent - Bristol</h2>
+            <p>This is an AmbuBag device.</p>
+<p>This design is based on a hand-operated BVM (Bag Valve Mask) or known as Ambu bag, which when combined with a PEEP valve will meet most of the NHS requirements for COVID-19 ventilation treatment.  The manufacturing ...</p>
 
           </div>
         </div>
@@ -740,52 +798,10 @@ Designed for use in homes, the ...</p>
 
           </div>
         </div>
-        <div class="solution-list-item">
-          <div class="header-solution-list-item">
-            <img src="../../../../img/category-icons/water.png" alt="water">
-            <a href="../../../../solutions/hach-chlorine-hardness-iron-and-ph-water-test-kit" title="Chlorine, Hardness, Iron and pH Water Test Kit"><h1 class="h1-solutions">Chlorine, Hardness, Iron and pH Water Test Kit</h1></a>
-          </div>
-          <a class="solution-list-item-image" href="../../../../solutions/hach-chlorine-hardness-iron-and-ph-water-test-kit" title="Chlorine, Hardness, Iron and pH Water Test Kit">
-              <img data-src="https://images.techxlab.org/ast/m8u8kmc-cn-39wr.jpeg" class="scrollmon">
-          </a>
-          <div class="solution-list-item-body">
-            <h2 class="h2-solutions">Hach</h2>
-            <p>The Chlorine, Hardness, Iron and pH Water Test Kit uses titration and color disk methods to test 4 parameters of water quality. The testing kit includes 6 reagents, bottles, color discs, comparator box, viewing tubes, measuring tube ...</p>
-
-          </div>
-        </div>
-        <div class="solution-list-item">
-          <div class="header-solution-list-item">
-            <img src="../../../../img/category-icons/energy.png" alt="energy"><img src="../../../../img/category-icons/partners.png" alt="partners">
-            <a href="../../../../solutions/godrej-and-boyce-manufacturing-company-chotukool" title="Chotukool"><h1 class="h1-solutions">Chotukool</h1></a>
-          </div>
-          <a class="solution-list-item-image" href="../../../../solutions/godrej-and-boyce-manufacturing-company-chotukool" title="Chotukool">
-              <img data-src="https://images.techxlab.org/ast/577-app-077.jpg" class="scrollmon">
-          </a>
-          <div class="solution-list-item-body">
-            <h2 class="h2-solutions">Godrej &amp; Boyce Manufacturing Company Ltd.</h2>
-            <p>Chotukool is a 35-liter, solid-state electronic cooling device that uses no compressor or refrigerant. The device cools up to 28°F below room temperature to maintain the natural flavor, humidity and nutritional value of food. After achieving an ...</p>
-
-          </div>
-        </div>
-        <div class="solution-list-item">
-          <div class="header-solution-list-item">
-            <img src="../../../../img/category-icons/water.png" alt="water">
-            <a href="../../../../solutions/waterreach-clariwash-self-washing-filtration-system" title="ClariWash Self Washing Filtration System"><h1 class="h1-solutions">ClariWash Self Washing Filtration System</h1></a>
-          </div>
-          <a class="solution-list-item-image" href="../../../../solutions/waterreach-clariwash-self-washing-filtration-system" title="ClariWash Self Washing Filtration System">
-              <img data-src="https://images.techxlab.org/ast/clari-wash-uganda.jpeg" class="scrollmon">
-          </a>
-          <div class="solution-list-item-body">
-            <h2 class="h2-solutions">WaterReach</h2>
-            <p>The ClariWash Self-washing Filtration System provides centralized water treatment for use in development or disaster response. It is comprised of a self-washing clarifier and filter system to purify water and provide centralized treatment to ...</p>
-
-          </div>
-        </div>
     </div>
     <div class="row row-solutions-buttons">
       <a class="button button-solutions enabled" href="../../../../solutions/categories/all-solutions/">&lt;</a>
-      <h3>Page 2 of 15</h3>
+      <h3>Page 2 of 16</h3>
       <a class="button button-solutions enabled" href="../../../../solutions/categories/all-solutions/3/">&gt;</a>
     </div>
   </div>
