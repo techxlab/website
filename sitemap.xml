@@ -71,9 +71,6 @@
 <url><loc>https://www.techxlab.org/solutions/categories/all-solutions/14/</loc></url>
 <url><loc>https://www.techxlab.org/solutions/categories/all-solutions/15/</loc></url>
 <url><loc>https://www.techxlab.org/solutions/categories/all-solutions/16/</loc></url>
-<url><loc>https://www.techxlab.org/solutions/categories/covid19/</loc></url>
-<url><loc>https://www.techxlab.org/solutions/categories/covid19/ventilator/</loc></url>
-<url><loc>https://www.techxlab.org/solutions/categories/covid19/ppe/</loc></url>
 <url><loc>https://www.techxlab.org/solutions/categories/water/</loc></url>
 <url><loc>https://www.techxlab.org/solutions/categories/water/2/</loc></url>
 <url><loc>https://www.techxlab.org/solutions/categories/water/3/</loc></url>
@@ -93,7 +90,6 @@
 <url><loc>https://www.techxlab.org/solutions/categories/energy/safe-and-sustainable-cooking/</loc></url>
 <url><loc>https://www.techxlab.org/solutions/categories/energy/safe-and-sustainable-cooking/2/</loc></url>
 <url><loc>https://www.techxlab.org/solutions/categories/energy/energy-generation/</loc></url>
-<url><loc>https://www.techxlab.org/solutions/categories/energy/energy-generation/2/</loc></url>
 <url><loc>https://www.techxlab.org/solutions/categories/energy/cooling/</loc></url>
 <url><loc>https://www.techxlab.org/solutions/categories/medical/</loc></url>
 <url><loc>https://www.techxlab.org/solutions/categories/medical/2/</loc></url>
@@ -101,6 +97,7 @@
 <url><loc>https://www.techxlab.org/solutions/categories/medical/4/</loc></url>
 <url><loc>https://www.techxlab.org/solutions/categories/medical/ventilators/</loc></url>
 <url><loc>https://www.techxlab.org/solutions/categories/medical/medical-and-surgical-care/</loc></url>
+<url><loc>https://www.techxlab.org/solutions/categories/medical/ppe/</loc></url>
 <url><loc>https://www.techxlab.org/solutions/categories/medical/mobile-health/</loc></url>
 <url><loc>https://www.techxlab.org/solutions/categories/medical/medical-devices/</loc></url>
 <url><loc>https://www.techxlab.org/solutions/categories/medical/vaccination/</loc></url>
@@ -214,12 +211,10 @@
 <url><loc>https://www.techxlab.org/solutions/bharat-biotech-rotavac</loc></url>
 <url><loc>https://www.techxlab.org/solutions/biolite-basecamp</loc></url>
 <url><loc>https://www.techxlab.org/solutions/biolite-campstove</loc></url>
-<url><loc>https://www.techxlab.org/solutions/biolite-stoves-homestove</loc></url>
 <url><loc>https://www.techxlab.org/solutions/blue-flame-stoves-double-burner</loc></url>
 <url><loc>https://www.techxlab.org/solutions/blue-flame-stoves/</loc></url>
 <url><loc>https://www.techxlab.org/solutions/books-of-hope-the-speaking-book</loc></url>
 <url><loc>https://www.techxlab.org/solutions/breath-of-life-haiti-clean-delivery-kit</loc></url>
-<url><loc>https://www.techxlab.org/solutions/brunton-solarrolls</loc></url>
 <url><loc>https://www.techxlab.org/solutions/build-change-earthquake-resistant-houses</loc></url>
 <url><loc>https://www.techxlab.org/solutions/burn-design-lab-jikokoa</loc></url>
 <url><loc>https://www.techxlab.org/solutions/buses-hospital-disposables-busse-obstetrical-kit</loc></url>
@@ -246,7 +241,6 @@
 <url><loc>https://www.techxlab.org/solutions/connexions</loc></url>
 <url><loc>https://www.techxlab.org/solutions/cookclean-cookmate</loc></url>
 <url><loc>https://www.techxlab.org/solutions/cookswell-jikos-the-cookswell-charcoal-kiln</loc></url>
-<url><loc>https://www.techxlab.org/solutions/coronatech-1nn0v8tion-headquarters-israel-ambovent</loc></url>
 <url><loc>https://www.techxlab.org/solutions/coursera</loc></url>
 <url><loc>https://www.techxlab.org/solutions/crowdsos</loc></url>
 <url><loc>https://www.techxlab.org/solutions/curriki</loc></url>
@@ -394,8 +388,6 @@
 <url><loc>https://www.techxlab.org/solutions/imara-tech-multi-crop-thresher</loc></url>
 <url><loc>https://www.techxlab.org/solutions/imperial-college-london-jamvent</loc></url>
 <url><loc>https://www.techxlab.org/solutions/independent-designer-eliodomestico-solar-water-distiller</loc></url>
-<url><loc>https://www.techxlab.org/solutions/individual-swirl-flame-lpg-canteen-burner</loc></url>
-<url><loc>https://www.techxlab.org/solutions/individual-wood-fired-bakery-with-temperature-control-and-without-visible-smoke</loc></url>
 <url><loc>https://www.techxlab.org/solutions/indonesia-medika-garbage-clinical-insurance</loc></url>
 <url><loc>https://www.techxlab.org/solutions/innovations-in-international-health-solarclave-solar-autoclave</loc></url>
 <url><loc>https://www.techxlab.org/solutions/inspiration-green-keyhole-gardens</loc></url>
@@ -488,13 +480,11 @@
 <url><loc>https://www.techxlab.org/solutions/nadjibi-zebu-v1-f</loc></url>
 <url><loc>https://www.techxlab.org/solutions/nanoly-bioscience-chemical-protector-for-vaccines</loc></url>
 <url><loc>https://www.techxlab.org/solutions/nazava-water-filters-transparent-filter</loc></url>
-<url><loc>https://www.techxlab.org/solutions/need-to-look-luke-light</loc></url>
 <url><loc>https://www.techxlab.org/solutions/neok12-com</loc></url>
 <url><loc>https://www.techxlab.org/solutions/neurosynaptic-communications-remedi-telemedicine-solution</loc></url>
 <url><loc>https://www.techxlab.org/solutions/niwa-next-energy-products-radio-energy-20w</loc></url>
 <url><loc>https://www.techxlab.org/solutions/niwa-solar-products-light-multi-300-xl</loc></url>
 <url><loc>https://www.techxlab.org/solutions/niwa-solar-products-uno-50-light</loc></url>
-<url><loc>https://www.techxlab.org/solutions/noble-energy-solar-technologies-aishwarya-lantern</loc></url>
 <url><loc>https://www.techxlab.org/solutions/nokero-international-n233-solar-light-bulb</loc></url>
 <url><loc>https://www.techxlab.org/solutions/nokero-international-w100-solar-work-light</loc></url>
 <url><loc>https://www.techxlab.org/solutions/nokia-105</loc></url>
@@ -563,6 +553,7 @@
 <url><loc>https://www.techxlab.org/solutions/prakti-mfs</loc></url>
 <url><loc>https://www.techxlab.org/solutions/prime-cookstoves-fuelwood-cookstove</loc></url>
 <url><loc>https://www.techxlab.org/solutions/proh2o-ewyconsulting</loc></url>
+<url><loc>https://www.techxlab.org/solutions/project-openair</loc></url>
 <url><loc>https://www.techxlab.org/solutions/proximity-designs-baby-elephant-pump</loc></url>
 <url><loc>https://www.techxlab.org/solutions/proximity-designs-gravity-fed-drip-irrigation-systems</loc></url>
 <url><loc>https://www.techxlab.org/solutions/proximity-designs-pressure-pumps</loc></url>
@@ -582,7 +573,6 @@
 <url><loc>https://www.techxlab.org/solutions/safaricom-m-pesa</loc></url>
 <url><loc>https://www.techxlab.org/solutions/safe-water-trust-grifaid-family-aquafilter</loc></url>
 <url><loc>https://www.techxlab.org/solutions/saha-global-community-water-solutions</loc></url>
-<url><loc>https://www.techxlab.org/solutions/samsung-solar-powered-internet-school</loc></url>
 <url><loc>https://www.techxlab.org/solutions/samuchit-enviro-tech-bharatlaxmi-stove</loc></url>
 <url><loc>https://www.techxlab.org/solutions/sana</loc></url>
 <url><loc>https://www.techxlab.org/solutions/sandberg-and-schneidewind-trawas-complete-kit-no-180-108</loc></url>
@@ -596,16 +586,13 @@
 <url><loc>https://www.techxlab.org/solutions/science-for-society-s4s-solar-conduction-dryer</loc></url>
 <url><loc>https://www.techxlab.org/solutions/seachar-estufa-finca-farm-stove</loc></url>
 <url><loc>https://www.techxlab.org/solutions/seawater-greenhouse</loc></url>
-<url><loc>https://www.techxlab.org/solutions/security-classifications-ppe-medical-supply-s</loc></url>
 <url><loc>https://www.techxlab.org/solutions/shamba-technologies-io-solar-power-system</loc></url>
 <url><loc>https://www.techxlab.org/solutions/shelterbox</loc></url>
 <url><loc>https://www.techxlab.org/solutions/silverfire-hunter-chimney-stove</loc></url>
-<url><loc>https://www.techxlab.org/solutions/silverfire-super-dragon</loc></url>
 <url><loc>https://www.techxlab.org/solutions/silverfire-survivor-rocket-stove</loc></url>
 <url><loc>https://www.techxlab.org/solutions/simgas-gesishamba-rural-biogas-digester</loc></url>
 <url><loc>https://www.techxlab.org/solutions/simpa-networks-progressive-purchase-system</loc></url>
 <url><loc>https://www.techxlab.org/solutions/sistema-biobolsa</loc></url>
-<url><loc>https://www.techxlab.org/solutions/siva-cycle-the-atom</loc></url>
 <url><loc>https://www.techxlab.org/solutions/sk-engineers-briquetting-lever-press</loc></url>
 <url><loc>https://www.techxlab.org/solutions/skyjuice-foundation-skyhydrant-water-filtration-unit</loc></url>
 <url><loc>https://www.techxlab.org/solutions/smart-hydro-power-turbine</loc></url>
@@ -671,6 +658,7 @@
 <url><loc>https://www.techxlab.org/solutions/ubuntu-capital-africa-s-online-marketplace-for-services</loc></url>
 <url><loc>https://www.techxlab.org/solutions/udacity</loc></url>
 <url><loc>https://www.techxlab.org/solutions/ugoround-community-alert-app-and-platform</loc></url>
+<url><loc>https://www.techxlab.org/solutions/unite-to-light-luke-light</loc></url>
 <url><loc>https://www.techxlab.org/solutions/unite-to-light-solar-charger-power-bank</loc></url>
 <url><loc>https://www.techxlab.org/solutions/university-college-london-ucl-ventura-cpap-device</loc></url>
 <url><loc>https://www.techxlab.org/solutions/university-of-minnesota-the-conventor</loc></url>
@@ -688,7 +676,6 @@
 <url><loc>https://www.techxlab.org/solutions/verbien</loc></url>
 <url><loc>https://www.techxlab.org/solutions/vestergaard-carepack</loc></url>
 <url><loc>https://www.techxlab.org/solutions/vestergaard-permanet</loc></url>
-<url><loc>https://www.techxlab.org/solutions/village-forward-aquasif-water-filter</loc></url>
 <url><loc>https://www.techxlab.org/solutions/village-savings-and-loans-loan-associations</loc></url>
 <url><loc>https://www.techxlab.org/solutions/voca-centrifuge-2-0</loc></url>
 <url><loc>https://www.techxlab.org/solutions/volcano-grills-stove-iii</loc></url>
